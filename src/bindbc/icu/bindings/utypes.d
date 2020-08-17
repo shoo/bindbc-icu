@@ -122,7 +122,7 @@ enum UErrorCode
 	U_INVALID_RBT_SYNTAX,             /**< A "::id" rule was passed to the RuleBasedTransliterator parser */
 	U_INVALID_PROPERTY_PATTERN,       /**< UNUSED as of ICU 2.4 */
 	U_MALFORMED_PRAGMA,               /**< A 'use' pragma is invalid */
-	U_UNCLOSED_SEGMENT,               /**< A closing ')' is missing */
+	U_UNCLOSED_SEGMENT,               /**< A closing '\)' is missing */
 	U_ILLEGAL_CHAR_IN_SEGMENT,        /**< UNUSED as of ICU 2.4 */
 	U_VARIABLE_RANGE_EXHAUSTED,       /**< Too many stand-ins generated for the given variable range */
 	U_VARIABLE_RANGE_OVERLAP,         /**< The variable range overlaps characters used in rules */

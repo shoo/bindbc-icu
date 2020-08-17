@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Common definitions
+ * Common definitions for internal use.
  * 
  * License: [BSL-1.0](http://boost.org/LICENSE_1_0.txt).
  */
