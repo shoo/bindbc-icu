@@ -2,7 +2,7 @@
 [![status](https://github.com/shoo/bindbc-icu/workflows/status/badge.svg)](https://github.com/shoo/bindbc-icu/actions?query=workflow%3Astatus)
 [![master](https://github.com/shoo/bindbc-icu/workflows/master/badge.svg)](https://github.com/shoo/bindbc-icu/actions?query=workflow%3Amaster)
 [![dub](https://img.shields.io/dub/v/bindbc-icu.svg?cacheSeconds=3600)](https://code.dlang.org/packages/bindbc-icu)
-[![downloads](https://img.shields.io/dub/dt/gendoc.svg?cacheSeconds=3600)](https://code.dlang.org/packages/bindbc-icu)
+[![downloads](https://img.shields.io/dub/dt/bindbc-icu.svg?cacheSeconds=3600)](https://code.dlang.org/packages/bindbc-icu)
 [![BSL-1.0](http://img.shields.io/badge/license-BSL--1.0-blue.svg?style=flat)](./LICENSE)
 [![codecov](https://codecov.io/gh/shoo/bindbc-icu/branch/master/graph/badge.svg)](https://codecov.io/gh/shoo/bindbc-icu)
 [![ICU-Version](http://img.shields.io/badge/icu%20version-67.1-green.svg?style=flat)](https://github.com/unicode-org/icu/releases/tag/release-67-1)
