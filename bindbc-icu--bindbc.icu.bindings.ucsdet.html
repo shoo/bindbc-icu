@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html>    <head>        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" type="text/css" href="css/proj_docs.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/sidebar.js"></script>
+        <script type="text/javascript" src="js/listanchors.js"></script>
+        <title>bindbc.icu.bindings.ucsdet</title>
+        
+        
+    </head>
+    <body>        
+        <div class="container">            
+<div class="sidebar-underbar"></div>
+<div class="sidebar">    <div class="head">        <h2>bindbc-icu</h2>
+        <p><span class="smallprint"><b>version:</b> ~master <span class="separator"><br></span>
+            </span>
+        </p>
+        <p><a href="index.html">overview</a></p>
+    </div>
+    
+    <ul>
+
+	
+	
+	
+		<li class="expand-container open"><a class='expand-toggle' href="#"><span >bindbc</span></a><ul>
+			
+	
+		<li class="expand-container open"><a title='bindbc-icu
+		' class='expand-toggle' href='#'><span >icu</span></a><ul><li><a title='bindbc-icu
+		' href="
+			bindbc-icu--bindbc.icu.html"><span >package</span></a></li>
+			
+
+	<li><a title="Common definitions for internal use." href="bindbc-icu--bindbc.icu.bindcommon.html"><span >bindcommon</span></a></li>
+
+
+
+	<li><a title="For dynamic link" href="bindbc-icu--bindbc.icu.binddynamic.html"><span >binddynamic</span></a></li>
+
+
+	
+	
+		<li class="expand-container open"><a class='expand-toggle' href="#"><span >bindings</span></a><ul>
+			
+
+	<li><a title="ucsdet.h" href="bindbc-icu--bindbc.icu.bindings.ucsdet.html"><span >ucsdet</span></a></li>
+
+
+
+	<li><a title="uenum.h" href="bindbc-icu--bindbc.icu.bindings.uenum.html"><span >uenum</span></a></li>
+
+
+
+	<li><a title="utypes.h" href="bindbc-icu--bindbc.icu.bindings.utypes.html"><span >utypes</span></a></li>
+
+
+		</ul></li>
+	
+
+
+
+
+
+	<li><a title="For static link" href="bindbc-icu--bindbc.icu.bindstatic.html"><span >bindstatic</span></a></li>
+
+</ul></li>
+	
+	
+
+
+
+
+		</ul></li>
+	
+
+
+
+
+</ul>
+</div>
+            <div class="content">                <h1>bindbc.icu.bindings.ucsdet</h1>
+                
+                <div class="quickindex" id="quickindex"></div>
+                
+                <div class="ddoc_summary"><code class="ddoc_psymbol">ucsdet</code>.h
+</div><div class="ddoc_license"><span class="ddoc_license_header">License:</span>
+ <a href="http://boost.org/LICENSE_1_0.txt">BSL-1.0</a>.</div>
+<dl class="ddoc_members"><div class="ddoc_module_members"><dt class="ddoc_decl"><div ><span class="def-anchor" id=".UCharsetDetector"></span><div class="quickindex" id="quickindex.UCharsetDetector"></div>struct <code class="ddoc_psymbol">UCharsetDetector</code>;
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UCharsetMatch"></span><div class="quickindex" id="quickindex.UCharsetMatch"></div>struct <code class="ddoc_psymbol">UCharsetMatch</code>;
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucsdet_open_67"></span><div class="quickindex" id="quickindex.ucsdet_open_67"></div>@system UCharsetDetector* <code class="ddoc_psymbol">ucsdet_open_67</code>(UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucsdet_close_67"></span><div class="quickindex" id="quickindex.ucsdet_close_67"></div>@system void <code class="ddoc_psymbol">ucsdet_close_67</code>(UCharsetDetector* <span class="ddoc_param">ucsd</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucsdet_setText_67"></span><div class="quickindex" id="quickindex.ucsdet_setText_67"></div>void <code class="ddoc_psymbol">ucsdet_setText_67</code>(UCharsetDetector* <span class="ddoc_param">ucsd</span>, const(char)* <span class="ddoc_param">textIn</span>, int <span class="ddoc_param">len</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucsdet_setDeclaredEncoding_67"></span><div class="quickindex" id="quickindex.ucsdet_setDeclaredEncoding_67"></div>void <code class="ddoc_psymbol">ucsdet_setDeclaredEncoding_67</code>(UCharsetDetector* <span class="ddoc_param">ucsd</span>, const(char)* <span class="ddoc_param">encoding</span>, int <span class="ddoc_param">length</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucsdet_detect_67"></span><div class="quickindex" id="quickindex.ucsdet_detect_67"></div>const(UCharsetMatch)* <code class="ddoc_psymbol">ucsdet_detect_67</code>(UCharsetDetector* <span class="ddoc_param">ucsd</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucsdet_detectAll_67"></span><div class="quickindex" id="quickindex.ucsdet_detectAll_67"></div>const(UCharsetMatch)** <code class="ddoc_psymbol">ucsdet_detectAll_67</code>(UCharsetDetector* <span class="ddoc_param">ucsd</span>, int* <span class="ddoc_param">matchesFound</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucsdet_getName_67"></span><div class="quickindex" id="quickindex.ucsdet_getName_67"></div>const(char)* <code class="ddoc_psymbol">ucsdet_getName_67</code>(const(UCharsetMatch)* <span class="ddoc_param">ucsm</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucsdet_getConfidence_67"></span><div class="quickindex" id="quickindex.ucsdet_getConfidence_67"></div>int <code class="ddoc_psymbol">ucsdet_getConfidence_67</code>(const(UCharsetMatch)* <span class="ddoc_param">ucsm</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucsdet_getLanguage_67"></span><div class="quickindex" id="quickindex.ucsdet_getLanguage_67"></div>const(char)* <code class="ddoc_psymbol">ucsdet_getLanguage_67</code>(const(UCharsetMatch)* <span class="ddoc_param">ucsm</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucsdet_getUChars_67"></span><div class="quickindex" id="quickindex.ucsdet_getUChars_67"></div>int <code class="ddoc_psymbol">ucsdet_getUChars_67</code>(const(UCharsetMatch)* <span class="ddoc_param">ucsm</span>, UChar* <span class="ddoc_param">buf</span>, int <span class="ddoc_param">cap</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucsdet_getAllDetectableCharsets_67"></span><div class="quickindex" id="quickindex.ucsdet_getAllDetectableCharsets_67"></div>UEnumeration* <code class="ddoc_psymbol">ucsdet_getAllDetectableCharsets_67</code>(const(UCharsetDetector)* <span class="ddoc_param">ucsd</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucsdet_isInputFilterEnabled_67"></span><div class="quickindex" id="quickindex.ucsdet_isInputFilterEnabled_67"></div>UBool <code class="ddoc_psymbol">ucsdet_isInputFilterEnabled_67</code>(const(UCharsetDetector)* <span class="ddoc_param">ucsd</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucsdet_enableInputFilter_67"></span><div class="quickindex" id="quickindex.ucsdet_enableInputFilter_67"></div>UBool <code class="ddoc_psymbol">ucsdet_enableInputFilter_67</code>(UCharsetDetector* <span class="ddoc_param">ucsd</span>, UBool <span class="ddoc_param">filter</span>);
+<br></div></dt>
+<dd>
+</dd>
+</div></dl>
+
+                
+            </div>
+        </div>
+        
+        <script type="text/javascript">jQuery(document).ready(listanchors);</script>
+        
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+     </body>
+</html>

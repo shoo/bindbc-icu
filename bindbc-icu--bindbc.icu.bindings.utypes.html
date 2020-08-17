@@ -1,0 +1,435 @@
+
+<!DOCTYPE html>
+<html>    <head>        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" type="text/css" href="css/proj_docs.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/sidebar.js"></script>
+        <script type="text/javascript" src="js/listanchors.js"></script>
+        <title>bindbc.icu.bindings.utypes</title>
+        
+        
+    </head>
+    <body>        
+        <div class="container">            
+<div class="sidebar-underbar"></div>
+<div class="sidebar">    <div class="head">        <h2>bindbc-icu</h2>
+        <p><span class="smallprint"><b>version:</b> ~master <span class="separator"><br></span>
+            </span>
+        </p>
+        <p><a href="index.html">overview</a></p>
+    </div>
+    
+    <ul>
+
+	
+	
+	
+		<li class="expand-container open"><a class='expand-toggle' href="#"><span >bindbc</span></a><ul>
+			
+	
+		<li class="expand-container open"><a title='bindbc-icu
+		' class='expand-toggle' href='#'><span >icu</span></a><ul><li><a title='bindbc-icu
+		' href="
+			bindbc-icu--bindbc.icu.html"><span >package</span></a></li>
+			
+
+	<li><a title="Common definitions for internal use." href="bindbc-icu--bindbc.icu.bindcommon.html"><span >bindcommon</span></a></li>
+
+
+
+	<li><a title="For dynamic link" href="bindbc-icu--bindbc.icu.binddynamic.html"><span >binddynamic</span></a></li>
+
+
+	
+	
+		<li class="expand-container open"><a class='expand-toggle' href="#"><span >bindings</span></a><ul>
+			
+
+	<li><a title="ucsdet.h" href="bindbc-icu--bindbc.icu.bindings.ucsdet.html"><span >ucsdet</span></a></li>
+
+
+
+	<li><a title="uenum.h" href="bindbc-icu--bindbc.icu.bindings.uenum.html"><span >uenum</span></a></li>
+
+
+
+	<li><a title="utypes.h" href="bindbc-icu--bindbc.icu.bindings.utypes.html"><span >utypes</span></a></li>
+
+
+		</ul></li>
+	
+
+
+
+
+
+	<li><a title="For static link" href="bindbc-icu--bindbc.icu.bindstatic.html"><span >bindstatic</span></a></li>
+
+</ul></li>
+	
+	
+
+
+
+
+		</ul></li>
+	
+
+
+
+
+</ul>
+</div>
+            <div class="content">                <h1>bindbc.icu.bindings.utypes</h1>
+                
+                <div class="quickindex" id="quickindex"></div>
+                
+                <div class="ddoc_summary"><code class="ddoc_psymbol">utypes</code>.h
+</div><div class="ddoc_license"><span class="ddoc_license_header">License:</span>
+ <a href="http://boost.org/LICENSE_1_0.txt">BSL-1.0</a>.</div>
+<dl class="ddoc_members"><div class="ddoc_module_members"><dt class="ddoc_decl"><div ><span class="def-anchor" id=".UBool"></span><div class="quickindex" id="quickindex.UBool"></div>alias <code class="ddoc_psymbol">UBool</code> = bool;
+<br></div></dt>
+<dd><div class="ddoc_summary">from umachine</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UChar"></span><div class="quickindex" id="quickindex.UChar"></div>alias <code class="ddoc_psymbol">UChar</code> = wchar;
+<br></div></dt>
+<dd><div class="ddoc_summary">from umachine</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UChar32"></span><div class="quickindex" id="quickindex.UChar32"></div>alias <code class="ddoc_psymbol">UChar32</code> = dchar;
+<br></div></dt>
+<dd><div class="ddoc_summary">from umachine</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UDate"></span><div class="quickindex" id="quickindex.UDate"></div>alias <code class="ddoc_psymbol">UDate</code> = double;
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".U_MILLIS_PER_SECOND"></span><div class="quickindex" id="quickindex.U_MILLIS_PER_SECOND"></div>enum uint <code class="ddoc_psymbol">U_MILLIS_PER_SECOND</code>;
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".U_MILLIS_PER_MINUTE"></span><div class="quickindex" id="quickindex.U_MILLIS_PER_MINUTE"></div>enum uint <code class="ddoc_psymbol">U_MILLIS_PER_MINUTE</code>;
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".U_MILLIS_PER_HOUR"></span><div class="quickindex" id="quickindex.U_MILLIS_PER_HOUR"></div>enum uint <code class="ddoc_psymbol">U_MILLIS_PER_HOUR</code>;
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".U_MILLIS_PER_DAY"></span><div class="quickindex" id="quickindex.U_MILLIS_PER_DAY"></div>enum uint <code class="ddoc_psymbol">U_MILLIS_PER_DAY</code>;
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".U_DATE_MAX"></span><div class="quickindex" id="quickindex.U_DATE_MAX"></div>enum UDate <code class="ddoc_psymbol">U_DATE_MAX</code>;
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".U_DATE_MIN"></span><div class="quickindex" id="quickindex.U_DATE_MIN"></div>enum UDate <code class="ddoc_psymbol">U_DATE_MIN</code>;
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode"></span><div class="quickindex" id="quickindex.UErrorCode"></div>enum <code class="ddoc_psymbol">UErrorCode</code>: <span class="ddoc_enum_basetype">int</span>;
+<br></div></dt>
+<dd>
+<dl class="ddoc_members"><div class="ddoc_enum_members"><dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_USING_FALLBACK_WARNING"></span><div class="quickindex" id="quickindex.UErrorCode.U_USING_FALLBACK_WARNING"></div><code class="ddoc_psymbol">U_USING_FALLBACK_WARNING</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; A resource bundle lookup returned a fallback result (not an error)</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_ERROR_WARNING_START"></span><div class="quickindex" id="quickindex.UErrorCode.U_ERROR_WARNING_START"></div><code class="ddoc_psymbol">U_ERROR_WARNING_START</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Start of information results (semantically successful)</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_USING_DEFAULT_WARNING"></span><div class="quickindex" id="quickindex.UErrorCode.U_USING_DEFAULT_WARNING"></div><code class="ddoc_psymbol">U_USING_DEFAULT_WARNING</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; A resource bundle lookup returned a result from the root locale (not an error)</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_SAFECLONE_ALLOCATED_WARNING"></span><div class="quickindex" id="quickindex.UErrorCode.U_SAFECLONE_ALLOCATED_WARNING"></div><code class="ddoc_psymbol">U_SAFECLONE_ALLOCATED_WARNING</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; A SafeClone operation required allocating memory (informational only)</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_STATE_OLD_WARNING"></span><div class="quickindex" id="quickindex.UErrorCode.U_STATE_OLD_WARNING"></div><code class="ddoc_psymbol">U_STATE_OLD_WARNING</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; ICU has to use compatibility layer to construct the service. Expect performance/memory usage degradation. Consider upgrading</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_STRING_NOT_TERMINATED_WARNING"></span><div class="quickindex" id="quickindex.UErrorCode.U_STRING_NOT_TERMINATED_WARNING"></div><code class="ddoc_psymbol">U_STRING_NOT_TERMINATED_WARNING</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; An output string could not be NUL-terminated because output length==destCapacity.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_SORT_KEY_TOO_SHORT_WARNING"></span><div class="quickindex" id="quickindex.UErrorCode.U_SORT_KEY_TOO_SHORT_WARNING"></div><code class="ddoc_psymbol">U_SORT_KEY_TOO_SHORT_WARNING</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Number of levels requested in getBound is higher than the number of levels in the sort key</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_AMBIGUOUS_ALIAS_WARNING"></span><div class="quickindex" id="quickindex.UErrorCode.U_AMBIGUOUS_ALIAS_WARNING"></div><code class="ddoc_psymbol">U_AMBIGUOUS_ALIAS_WARNING</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; This converter alias can go to different converter implementations</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_DIFFERENT_UCA_VERSION"></span><div class="quickindex" id="quickindex.UErrorCode.U_DIFFERENT_UCA_VERSION"></div><code class="ddoc_psymbol">U_DIFFERENT_UCA_VERSION</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; ucol_open encountered a mismatch between UCA version and collator image version, so the collator was constructed from rules. No impact to further function</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_PLUGIN_CHANGED_LEVEL_WARNING"></span><div class="quickindex" id="quickindex.UErrorCode.U_PLUGIN_CHANGED_LEVEL_WARNING"></div><code class="ddoc_psymbol">U_PLUGIN_CHANGED_LEVEL_WARNING</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; A plugin caused a level change. May not be an error, but later plugins may not load.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_ZERO_ERROR"></span><div class="quickindex" id="quickindex.UErrorCode.U_ZERO_ERROR"></div><code class="ddoc_psymbol">U_ZERO_ERROR</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; No error, no warning.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_ILLEGAL_ARGUMENT_ERROR"></span><div class="quickindex" id="quickindex.UErrorCode.U_ILLEGAL_ARGUMENT_ERROR"></div><code class="ddoc_psymbol">U_ILLEGAL_ARGUMENT_ERROR</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Start of codes indicating failure</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_MISSING_RESOURCE_ERROR"></span><div class="quickindex" id="quickindex.UErrorCode.U_MISSING_RESOURCE_ERROR"></div><code class="ddoc_psymbol">U_MISSING_RESOURCE_ERROR</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; The requested resource cannot be found</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_INVALID_FORMAT_ERROR"></span><div class="quickindex" id="quickindex.UErrorCode.U_INVALID_FORMAT_ERROR"></div><code class="ddoc_psymbol">U_INVALID_FORMAT_ERROR</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Data format is not what is expected</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_FILE_ACCESS_ERROR"></span><div class="quickindex" id="quickindex.UErrorCode.U_FILE_ACCESS_ERROR"></div><code class="ddoc_psymbol">U_FILE_ACCESS_ERROR</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; The requested file cannot be found</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_INTERNAL_PROGRAM_ERROR"></span><div class="quickindex" id="quickindex.UErrorCode.U_INTERNAL_PROGRAM_ERROR"></div><code class="ddoc_psymbol">U_INTERNAL_PROGRAM_ERROR</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Indicates a bug in the library code</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_MESSAGE_PARSE_ERROR"></span><div class="quickindex" id="quickindex.UErrorCode.U_MESSAGE_PARSE_ERROR"></div><code class="ddoc_psymbol">U_MESSAGE_PARSE_ERROR</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Unable to parse a message (message format)</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_MEMORY_ALLOCATION_ERROR"></span><div class="quickindex" id="quickindex.UErrorCode.U_MEMORY_ALLOCATION_ERROR"></div><code class="ddoc_psymbol">U_MEMORY_ALLOCATION_ERROR</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Memory allocation error</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_INDEX_OUTOFBOUNDS_ERROR"></span><div class="quickindex" id="quickindex.UErrorCode.U_INDEX_OUTOFBOUNDS_ERROR"></div><code class="ddoc_psymbol">U_INDEX_OUTOFBOUNDS_ERROR</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Trying to access the index that is out of bounds</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_PARSE_ERROR"></span><div class="quickindex" id="quickindex.UErrorCode.U_PARSE_ERROR"></div><code class="ddoc_psymbol">U_PARSE_ERROR</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Equivalent to Java ParseException</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_INVALID_CHAR_FOUND"></span><div class="quickindex" id="quickindex.UErrorCode.U_INVALID_CHAR_FOUND"></div><code class="ddoc_psymbol">U_INVALID_CHAR_FOUND</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Character conversion: Unmappable input sequence. In other APIs: Invalid character.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_TRUNCATED_CHAR_FOUND"></span><div class="quickindex" id="quickindex.UErrorCode.U_TRUNCATED_CHAR_FOUND"></div><code class="ddoc_psymbol">U_TRUNCATED_CHAR_FOUND</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Character conversion: Incomplete input sequence.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_ILLEGAL_CHAR_FOUND"></span><div class="quickindex" id="quickindex.UErrorCode.U_ILLEGAL_CHAR_FOUND"></div><code class="ddoc_psymbol">U_ILLEGAL_CHAR_FOUND</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Character conversion: Illegal input sequence/combination of input units.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_INVALID_TABLE_FORMAT"></span><div class="quickindex" id="quickindex.UErrorCode.U_INVALID_TABLE_FORMAT"></div><code class="ddoc_psymbol">U_INVALID_TABLE_FORMAT</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Conversion table file found, but corrupted</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_INVALID_TABLE_FILE"></span><div class="quickindex" id="quickindex.UErrorCode.U_INVALID_TABLE_FILE"></div><code class="ddoc_psymbol">U_INVALID_TABLE_FILE</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Conversion table file not found</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_BUFFER_OVERFLOW_ERROR"></span><div class="quickindex" id="quickindex.UErrorCode.U_BUFFER_OVERFLOW_ERROR"></div><code class="ddoc_psymbol">U_BUFFER_OVERFLOW_ERROR</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; A result would not fit in the supplied buffer</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_UNSUPPORTED_ERROR"></span><div class="quickindex" id="quickindex.UErrorCode.U_UNSUPPORTED_ERROR"></div><code class="ddoc_psymbol">U_UNSUPPORTED_ERROR</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Requested operation not supported in current context</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_RESOURCE_TYPE_MISMATCH"></span><div class="quickindex" id="quickindex.UErrorCode.U_RESOURCE_TYPE_MISMATCH"></div><code class="ddoc_psymbol">U_RESOURCE_TYPE_MISMATCH</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; an operation is requested over a resource that does not support it</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_ILLEGAL_ESCAPE_SEQUENCE"></span><div class="quickindex" id="quickindex.UErrorCode.U_ILLEGAL_ESCAPE_SEQUENCE"></div><code class="ddoc_psymbol">U_ILLEGAL_ESCAPE_SEQUENCE</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; ISO-2022 illegal escape sequence</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_UNSUPPORTED_ESCAPE_SEQUENCE"></span><div class="quickindex" id="quickindex.UErrorCode.U_UNSUPPORTED_ESCAPE_SEQUENCE"></div><code class="ddoc_psymbol">U_UNSUPPORTED_ESCAPE_SEQUENCE</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; ISO-2022 unsupported escape sequence</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_NO_SPACE_AVAILABLE"></span><div class="quickindex" id="quickindex.UErrorCode.U_NO_SPACE_AVAILABLE"></div><code class="ddoc_psymbol">U_NO_SPACE_AVAILABLE</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; No space available for in-buffer expansion for Arabic shaping</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_CE_NOT_FOUND_ERROR"></span><div class="quickindex" id="quickindex.UErrorCode.U_CE_NOT_FOUND_ERROR"></div><code class="ddoc_psymbol">U_CE_NOT_FOUND_ERROR</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Currently used only while setting variable top, but can be used generally</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_PRIMARY_TOO_LONG_ERROR"></span><div class="quickindex" id="quickindex.UErrorCode.U_PRIMARY_TOO_LONG_ERROR"></div><code class="ddoc_psymbol">U_PRIMARY_TOO_LONG_ERROR</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; User tried to set variable top to a primary that is longer than two bytes</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_STATE_TOO_OLD_ERROR"></span><div class="quickindex" id="quickindex.UErrorCode.U_STATE_TOO_OLD_ERROR"></div><code class="ddoc_psymbol">U_STATE_TOO_OLD_ERROR</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; ICU cannot construct a service from this state, as it is no longer supported</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_TOO_MANY_ALIASES_ERROR"></span><div class="quickindex" id="quickindex.UErrorCode.U_TOO_MANY_ALIASES_ERROR"></div><code class="ddoc_psymbol">U_TOO_MANY_ALIASES_ERROR</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; There are too many aliases in the path to the requested resource.
+											 It is very possible that a circular alias definition has occurred</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_ENUM_OUT_OF_SYNC_ERROR"></span><div class="quickindex" id="quickindex.UErrorCode.U_ENUM_OUT_OF_SYNC_ERROR"></div><code class="ddoc_psymbol">U_ENUM_OUT_OF_SYNC_ERROR</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; UEnumeration out of sync with underlying collection</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_INVARIANT_CONVERSION_ERROR"></span><div class="quickindex" id="quickindex.UErrorCode.U_INVARIANT_CONVERSION_ERROR"></div><code class="ddoc_psymbol">U_INVARIANT_CONVERSION_ERROR</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Unable to convert a UChar* string to char* with the invariant converter.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_INVALID_STATE_ERROR"></span><div class="quickindex" id="quickindex.UErrorCode.U_INVALID_STATE_ERROR"></div><code class="ddoc_psymbol">U_INVALID_STATE_ERROR</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Requested operation can not be completed with ICU in its current state</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_COLLATOR_VERSION_MISMATCH"></span><div class="quickindex" id="quickindex.UErrorCode.U_COLLATOR_VERSION_MISMATCH"></div><code class="ddoc_psymbol">U_COLLATOR_VERSION_MISMATCH</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Collator version is not compatible with the base version</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_USELESS_COLLATOR_ERROR"></span><div class="quickindex" id="quickindex.UErrorCode.U_USELESS_COLLATOR_ERROR"></div><code class="ddoc_psymbol">U_USELESS_COLLATOR_ERROR</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Collator is options only and no base is specified</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_NO_WRITE_PERMISSION"></span><div class="quickindex" id="quickindex.UErrorCode.U_NO_WRITE_PERMISSION"></div><code class="ddoc_psymbol">U_NO_WRITE_PERMISSION</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Attempt to modify read-only or constant data.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_BAD_VARIABLE_DEFINITION"></span><div class="quickindex" id="quickindex.UErrorCode.U_BAD_VARIABLE_DEFINITION"></div><code class="ddoc_psymbol">U_BAD_VARIABLE_DEFINITION</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Missing '$$' or duplicate variable name</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_PARSE_ERROR_START"></span><div class="quickindex" id="quickindex.UErrorCode.U_PARSE_ERROR_START"></div><code class="ddoc_psymbol">U_PARSE_ERROR_START</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Start of Transliterator errors</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_MALFORMED_RULE"></span><div class="quickindex" id="quickindex.UErrorCode.U_MALFORMED_RULE"></div><code class="ddoc_psymbol">U_MALFORMED_RULE</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Elements of a rule are misplaced</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_MALFORMED_SET"></span><div class="quickindex" id="quickindex.UErrorCode.U_MALFORMED_SET"></div><code class="ddoc_psymbol">U_MALFORMED_SET</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; A UnicodeSet pattern is invalid</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_MALFORMED_SYMBOL_REFERENCE"></span><div class="quickindex" id="quickindex.UErrorCode.U_MALFORMED_SYMBOL_REFERENCE"></div><code class="ddoc_psymbol">U_MALFORMED_SYMBOL_REFERENCE</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; UNUSED as of ICU 2.4</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_MALFORMED_UNICODE_ESCAPE"></span><div class="quickindex" id="quickindex.UErrorCode.U_MALFORMED_UNICODE_ESCAPE"></div><code class="ddoc_psymbol">U_MALFORMED_UNICODE_ESCAPE</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; A Unicode escape pattern is invalid</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_MALFORMED_VARIABLE_DEFINITION"></span><div class="quickindex" id="quickindex.UErrorCode.U_MALFORMED_VARIABLE_DEFINITION"></div><code class="ddoc_psymbol">U_MALFORMED_VARIABLE_DEFINITION</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; A variable definition is invalid</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_MALFORMED_VARIABLE_REFERENCE"></span><div class="quickindex" id="quickindex.UErrorCode.U_MALFORMED_VARIABLE_REFERENCE"></div><code class="ddoc_psymbol">U_MALFORMED_VARIABLE_REFERENCE</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; A variable reference is invalid</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_MISMATCHED_SEGMENT_DELIMITERS"></span><div class="quickindex" id="quickindex.UErrorCode.U_MISMATCHED_SEGMENT_DELIMITERS"></div><code class="ddoc_psymbol">U_MISMATCHED_SEGMENT_DELIMITERS</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; UNUSED as of ICU 2.4</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_MISPLACED_ANCHOR_START"></span><div class="quickindex" id="quickindex.UErrorCode.U_MISPLACED_ANCHOR_START"></div><code class="ddoc_psymbol">U_MISPLACED_ANCHOR_START</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; A start anchor appears at an illegal position</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_MISPLACED_CURSOR_OFFSET"></span><div class="quickindex" id="quickindex.UErrorCode.U_MISPLACED_CURSOR_OFFSET"></div><code class="ddoc_psymbol">U_MISPLACED_CURSOR_OFFSET</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; A cursor offset occurs at an illegal position</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_MISPLACED_QUANTIFIER"></span><div class="quickindex" id="quickindex.UErrorCode.U_MISPLACED_QUANTIFIER"></div><code class="ddoc_psymbol">U_MISPLACED_QUANTIFIER</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; A quantifier appears after a segment close delimiter</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_MISSING_OPERATOR"></span><div class="quickindex" id="quickindex.UErrorCode.U_MISSING_OPERATOR"></div><code class="ddoc_psymbol">U_MISSING_OPERATOR</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; A rule contains no operator</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_MISSING_SEGMENT_CLOSE"></span><div class="quickindex" id="quickindex.UErrorCode.U_MISSING_SEGMENT_CLOSE"></div><code class="ddoc_psymbol">U_MISSING_SEGMENT_CLOSE</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; UNUSED as of ICU 2.4</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_MULTIPLE_ANTE_CONTEXTS"></span><div class="quickindex" id="quickindex.UErrorCode.U_MULTIPLE_ANTE_CONTEXTS"></div><code class="ddoc_psymbol">U_MULTIPLE_ANTE_CONTEXTS</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; More than one ante context</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_MULTIPLE_CURSORS"></span><div class="quickindex" id="quickindex.UErrorCode.U_MULTIPLE_CURSORS"></div><code class="ddoc_psymbol">U_MULTIPLE_CURSORS</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; More than one cursor</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_MULTIPLE_POST_CONTEXTS"></span><div class="quickindex" id="quickindex.UErrorCode.U_MULTIPLE_POST_CONTEXTS"></div><code class="ddoc_psymbol">U_MULTIPLE_POST_CONTEXTS</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; More than one post context</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_TRAILING_BACKSLASH"></span><div class="quickindex" id="quickindex.UErrorCode.U_TRAILING_BACKSLASH"></div><code class="ddoc_psymbol">U_TRAILING_BACKSLASH</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; A dangling backslash</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_UNDEFINED_SEGMENT_REFERENCE"></span><div class="quickindex" id="quickindex.UErrorCode.U_UNDEFINED_SEGMENT_REFERENCE"></div><code class="ddoc_psymbol">U_UNDEFINED_SEGMENT_REFERENCE</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; A segment reference does not correspond to a defined segment</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_UNDEFINED_VARIABLE"></span><div class="quickindex" id="quickindex.UErrorCode.U_UNDEFINED_VARIABLE"></div><code class="ddoc_psymbol">U_UNDEFINED_VARIABLE</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; A variable reference does not correspond to a defined variable</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_UNQUOTED_SPECIAL"></span><div class="quickindex" id="quickindex.UErrorCode.U_UNQUOTED_SPECIAL"></div><code class="ddoc_psymbol">U_UNQUOTED_SPECIAL</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; A special character was not quoted or escaped</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_UNTERMINATED_QUOTE"></span><div class="quickindex" id="quickindex.UErrorCode.U_UNTERMINATED_QUOTE"></div><code class="ddoc_psymbol">U_UNTERMINATED_QUOTE</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; A closing single quote is missing</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_RULE_MASK_ERROR"></span><div class="quickindex" id="quickindex.UErrorCode.U_RULE_MASK_ERROR"></div><code class="ddoc_psymbol">U_RULE_MASK_ERROR</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; A rule is hidden by an earlier more general rule</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_MISPLACED_COMPOUND_FILTER"></span><div class="quickindex" id="quickindex.UErrorCode.U_MISPLACED_COMPOUND_FILTER"></div><code class="ddoc_psymbol">U_MISPLACED_COMPOUND_FILTER</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; A compound filter is in an invalid location</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_MULTIPLE_COMPOUND_FILTERS"></span><div class="quickindex" id="quickindex.UErrorCode.U_MULTIPLE_COMPOUND_FILTERS"></div><code class="ddoc_psymbol">U_MULTIPLE_COMPOUND_FILTERS</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; More than one compound filter</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_INVALID_RBT_SYNTAX"></span><div class="quickindex" id="quickindex.UErrorCode.U_INVALID_RBT_SYNTAX"></div><code class="ddoc_psymbol">U_INVALID_RBT_SYNTAX</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; A "::id" rule was passed to the RuleBasedTransliterator parser</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_INVALID_PROPERTY_PATTERN"></span><div class="quickindex" id="quickindex.UErrorCode.U_INVALID_PROPERTY_PATTERN"></div><code class="ddoc_psymbol">U_INVALID_PROPERTY_PATTERN</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; UNUSED as of ICU 2.4</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_MALFORMED_PRAGMA"></span><div class="quickindex" id="quickindex.UErrorCode.U_MALFORMED_PRAGMA"></div><code class="ddoc_psymbol">U_MALFORMED_PRAGMA</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; A 'use' pragma is invalid</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_UNCLOSED_SEGMENT"></span><div class="quickindex" id="quickindex.UErrorCode.U_UNCLOSED_SEGMENT"></div><code class="ddoc_psymbol">U_UNCLOSED_SEGMENT</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; A closing ')' is missing</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_ILLEGAL_CHAR_IN_SEGMENT"></span><div class="quickindex" id="quickindex.UErrorCode.U_ILLEGAL_CHAR_IN_SEGMENT"></div><code class="ddoc_psymbol">U_ILLEGAL_CHAR_IN_SEGMENT</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; UNUSED as of ICU 2.4</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_VARIABLE_RANGE_EXHAUSTED"></span><div class="quickindex" id="quickindex.UErrorCode.U_VARIABLE_RANGE_EXHAUSTED"></div><code class="ddoc_psymbol">U_VARIABLE_RANGE_EXHAUSTED</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Too many stand-ins generated for the given variable range</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_VARIABLE_RANGE_OVERLAP"></span><div class="quickindex" id="quickindex.UErrorCode.U_VARIABLE_RANGE_OVERLAP"></div><code class="ddoc_psymbol">U_VARIABLE_RANGE_OVERLAP</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; The variable range overlaps characters used in rules</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_ILLEGAL_CHARACTER"></span><div class="quickindex" id="quickindex.UErrorCode.U_ILLEGAL_CHARACTER"></div><code class="ddoc_psymbol">U_ILLEGAL_CHARACTER</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; A special character is outside its allowed context</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_INTERNAL_TRANSLITERATOR_ERROR"></span><div class="quickindex" id="quickindex.UErrorCode.U_INTERNAL_TRANSLITERATOR_ERROR"></div><code class="ddoc_psymbol">U_INTERNAL_TRANSLITERATOR_ERROR</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Internal transliterator system error</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_INVALID_ID"></span><div class="quickindex" id="quickindex.UErrorCode.U_INVALID_ID"></div><code class="ddoc_psymbol">U_INVALID_ID</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; A "::id" rule specifies an unknown transliterator</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_INVALID_FUNCTION"></span><div class="quickindex" id="quickindex.UErrorCode.U_INVALID_FUNCTION"></div><code class="ddoc_psymbol">U_INVALID_FUNCTION</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; A "&fn()" rule specifies an unknown transliterator</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_UNEXPECTED_TOKEN"></span><div class="quickindex" id="quickindex.UErrorCode.U_UNEXPECTED_TOKEN"></div><code class="ddoc_psymbol">U_UNEXPECTED_TOKEN</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Syntax error in format pattern</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_FMT_PARSE_ERROR_START"></span><div class="quickindex" id="quickindex.UErrorCode.U_FMT_PARSE_ERROR_START"></div><code class="ddoc_psymbol">U_FMT_PARSE_ERROR_START</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Start of format library errors</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_MULTIPLE_DECIMAL_SEPARATORS"></span><div class="quickindex" id="quickindex.UErrorCode.U_MULTIPLE_DECIMAL_SEPARATORS"></div><code class="ddoc_psymbol">U_MULTIPLE_DECIMAL_SEPARATORS</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; More than one decimal separator in number pattern</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_MULTIPLE_DECIMAL_SEPERATORS"></span><div class="quickindex" id="quickindex.UErrorCode.U_MULTIPLE_DECIMAL_SEPERATORS"></div><code class="ddoc_psymbol">U_MULTIPLE_DECIMAL_SEPERATORS</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Typo: kept for backward compatibility. Use U_MULTIPLE_DECIMAL_SEPARATORS</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_MULTIPLE_EXPONENTIAL_SYMBOLS"></span><div class="quickindex" id="quickindex.UErrorCode.U_MULTIPLE_EXPONENTIAL_SYMBOLS"></div><code class="ddoc_psymbol">U_MULTIPLE_EXPONENTIAL_SYMBOLS</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; More than one exponent symbol in number pattern</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_MALFORMED_EXPONENTIAL_PATTERN"></span><div class="quickindex" id="quickindex.UErrorCode.U_MALFORMED_EXPONENTIAL_PATTERN"></div><code class="ddoc_psymbol">U_MALFORMED_EXPONENTIAL_PATTERN</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Grouping symbol in exponent pattern</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_MULTIPLE_PERCENT_SYMBOLS"></span><div class="quickindex" id="quickindex.UErrorCode.U_MULTIPLE_PERCENT_SYMBOLS"></div><code class="ddoc_psymbol">U_MULTIPLE_PERCENT_SYMBOLS</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; More than one percent symbol in number pattern</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_MULTIPLE_PERMILL_SYMBOLS"></span><div class="quickindex" id="quickindex.UErrorCode.U_MULTIPLE_PERMILL_SYMBOLS"></div><code class="ddoc_psymbol">U_MULTIPLE_PERMILL_SYMBOLS</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; More than one permill symbol in number pattern</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_MULTIPLE_PAD_SPECIFIERS"></span><div class="quickindex" id="quickindex.UErrorCode.U_MULTIPLE_PAD_SPECIFIERS"></div><code class="ddoc_psymbol">U_MULTIPLE_PAD_SPECIFIERS</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; More than one pad symbol in number pattern</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_PATTERN_SYNTAX_ERROR"></span><div class="quickindex" id="quickindex.UErrorCode.U_PATTERN_SYNTAX_ERROR"></div><code class="ddoc_psymbol">U_PATTERN_SYNTAX_ERROR</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Syntax error in format pattern</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_ILLEGAL_PAD_POSITION"></span><div class="quickindex" id="quickindex.UErrorCode.U_ILLEGAL_PAD_POSITION"></div><code class="ddoc_psymbol">U_ILLEGAL_PAD_POSITION</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Pad symbol misplaced in number pattern</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_UNMATCHED_BRACES"></span><div class="quickindex" id="quickindex.UErrorCode.U_UNMATCHED_BRACES"></div><code class="ddoc_psymbol">U_UNMATCHED_BRACES</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Braces do not match in message pattern</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_UNSUPPORTED_PROPERTY"></span><div class="quickindex" id="quickindex.UErrorCode.U_UNSUPPORTED_PROPERTY"></div><code class="ddoc_psymbol">U_UNSUPPORTED_PROPERTY</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; UNUSED as of ICU 2.4</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_UNSUPPORTED_ATTRIBUTE"></span><div class="quickindex" id="quickindex.UErrorCode.U_UNSUPPORTED_ATTRIBUTE"></div><code class="ddoc_psymbol">U_UNSUPPORTED_ATTRIBUTE</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; UNUSED as of ICU 2.4</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_ARGUMENT_TYPE_MISMATCH"></span><div class="quickindex" id="quickindex.UErrorCode.U_ARGUMENT_TYPE_MISMATCH"></div><code class="ddoc_psymbol">U_ARGUMENT_TYPE_MISMATCH</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Argument name and argument index mismatch in MessageFormat functions</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_DUPLICATE_KEYWORD"></span><div class="quickindex" id="quickindex.UErrorCode.U_DUPLICATE_KEYWORD"></div><code class="ddoc_psymbol">U_DUPLICATE_KEYWORD</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Duplicate keyword in PluralFormat</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_UNDEFINED_KEYWORD"></span><div class="quickindex" id="quickindex.UErrorCode.U_UNDEFINED_KEYWORD"></div><code class="ddoc_psymbol">U_UNDEFINED_KEYWORD</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Undefined Plural keyword</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_DEFAULT_KEYWORD_MISSING"></span><div class="quickindex" id="quickindex.UErrorCode.U_DEFAULT_KEYWORD_MISSING"></div><code class="ddoc_psymbol">U_DEFAULT_KEYWORD_MISSING</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Missing DEFAULT rule in plural rules</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_DECIMAL_NUMBER_SYNTAX_ERROR"></span><div class="quickindex" id="quickindex.UErrorCode.U_DECIMAL_NUMBER_SYNTAX_ERROR"></div><code class="ddoc_psymbol">U_DECIMAL_NUMBER_SYNTAX_ERROR</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Decimal number syntax error</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_FORMAT_INEXACT_ERROR"></span><div class="quickindex" id="quickindex.UErrorCode.U_FORMAT_INEXACT_ERROR"></div><code class="ddoc_psymbol">U_FORMAT_INEXACT_ERROR</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Cannot format a number exactly and rounding mode is ROUND_UNNECESSARY @stable ICU 4.8</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_NUMBER_ARG_OUTOFBOUNDS_ERROR"></span><div class="quickindex" id="quickindex.UErrorCode.U_NUMBER_ARG_OUTOFBOUNDS_ERROR"></div><code class="ddoc_psymbol">U_NUMBER_ARG_OUTOFBOUNDS_ERROR</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; The argument to a NumberFormatter helper method was out of bounds; the bounds are usually 0 to 999. @stable ICU 61</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_NUMBER_SKELETON_SYNTAX_ERROR"></span><div class="quickindex" id="quickindex.UErrorCode.U_NUMBER_SKELETON_SYNTAX_ERROR"></div><code class="ddoc_psymbol">U_NUMBER_SKELETON_SYNTAX_ERROR</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; The number skeleton passed to C++ NumberFormatter or C UNumberFormatter was invalid or contained a syntax error. @stable ICU 62</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_BRK_INTERNAL_ERROR"></span><div class="quickindex" id="quickindex.UErrorCode.U_BRK_INTERNAL_ERROR"></div><code class="ddoc_psymbol">U_BRK_INTERNAL_ERROR</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; An internal error (bug) was detected.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_BRK_ERROR_START"></span><div class="quickindex" id="quickindex.UErrorCode.U_BRK_ERROR_START"></div><code class="ddoc_psymbol">U_BRK_ERROR_START</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Start of codes indicating Break Iterator failures</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_BRK_HEX_DIGITS_EXPECTED"></span><div class="quickindex" id="quickindex.UErrorCode.U_BRK_HEX_DIGITS_EXPECTED"></div><code class="ddoc_psymbol">U_BRK_HEX_DIGITS_EXPECTED</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Hex digits expected as part of a escaped char in a rule.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_BRK_SEMICOLON_EXPECTED"></span><div class="quickindex" id="quickindex.UErrorCode.U_BRK_SEMICOLON_EXPECTED"></div><code class="ddoc_psymbol">U_BRK_SEMICOLON_EXPECTED</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Missing ';' at the end of a RBBI rule.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_BRK_RULE_SYNTAX"></span><div class="quickindex" id="quickindex.UErrorCode.U_BRK_RULE_SYNTAX"></div><code class="ddoc_psymbol">U_BRK_RULE_SYNTAX</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Syntax error in RBBI rule.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_BRK_UNCLOSED_SET"></span><div class="quickindex" id="quickindex.UErrorCode.U_BRK_UNCLOSED_SET"></div><code class="ddoc_psymbol">U_BRK_UNCLOSED_SET</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; UnicodeSet writing an RBBI rule missing a closing ']'.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_BRK_ASSIGN_ERROR"></span><div class="quickindex" id="quickindex.UErrorCode.U_BRK_ASSIGN_ERROR"></div><code class="ddoc_psymbol">U_BRK_ASSIGN_ERROR</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Syntax error in RBBI rule assignment statement.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_BRK_VARIABLE_REDFINITION"></span><div class="quickindex" id="quickindex.UErrorCode.U_BRK_VARIABLE_REDFINITION"></div><code class="ddoc_psymbol">U_BRK_VARIABLE_REDFINITION</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; RBBI rule $Variable redefined.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_BRK_MISMATCHED_PAREN"></span><div class="quickindex" id="quickindex.UErrorCode.U_BRK_MISMATCHED_PAREN"></div><code class="ddoc_psymbol">U_BRK_MISMATCHED_PAREN</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Mis-matched parentheses in an RBBI rule.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_BRK_NEW_LINE_IN_QUOTED_STRING"></span><div class="quickindex" id="quickindex.UErrorCode.U_BRK_NEW_LINE_IN_QUOTED_STRING"></div><code class="ddoc_psymbol">U_BRK_NEW_LINE_IN_QUOTED_STRING</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Missing closing quote in an RBBI rule.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_BRK_UNDEFINED_VARIABLE"></span><div class="quickindex" id="quickindex.UErrorCode.U_BRK_UNDEFINED_VARIABLE"></div><code class="ddoc_psymbol">U_BRK_UNDEFINED_VARIABLE</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Use of an undefined $Variable in an RBBI rule.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_BRK_INIT_ERROR"></span><div class="quickindex" id="quickindex.UErrorCode.U_BRK_INIT_ERROR"></div><code class="ddoc_psymbol">U_BRK_INIT_ERROR</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Initialization failure.  Probable missing ICU Data.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_BRK_RULE_EMPTY_SET"></span><div class="quickindex" id="quickindex.UErrorCode.U_BRK_RULE_EMPTY_SET"></div><code class="ddoc_psymbol">U_BRK_RULE_EMPTY_SET</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Rule contains an empty Unicode Set.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_BRK_UNRECOGNIZED_OPTION"></span><div class="quickindex" id="quickindex.UErrorCode.U_BRK_UNRECOGNIZED_OPTION"></div><code class="ddoc_psymbol">U_BRK_UNRECOGNIZED_OPTION</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; !!option in RBBI rules not recognized.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_BRK_MALFORMED_RULE_TAG"></span><div class="quickindex" id="quickindex.UErrorCode.U_BRK_MALFORMED_RULE_TAG"></div><code class="ddoc_psymbol">U_BRK_MALFORMED_RULE_TAG</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; The {nnn} tag on a rule is malformed</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_REGEX_INTERNAL_ERROR"></span><div class="quickindex" id="quickindex.UErrorCode.U_REGEX_INTERNAL_ERROR"></div><code class="ddoc_psymbol">U_REGEX_INTERNAL_ERROR</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; An internal error (bug) was detected.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_REGEX_ERROR_START"></span><div class="quickindex" id="quickindex.UErrorCode.U_REGEX_ERROR_START"></div><code class="ddoc_psymbol">U_REGEX_ERROR_START</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Start of codes indicating Regexp failures</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_REGEX_RULE_SYNTAX"></span><div class="quickindex" id="quickindex.UErrorCode.U_REGEX_RULE_SYNTAX"></div><code class="ddoc_psymbol">U_REGEX_RULE_SYNTAX</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Syntax error in regexp pattern.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_REGEX_INVALID_STATE"></span><div class="quickindex" id="quickindex.UErrorCode.U_REGEX_INVALID_STATE"></div><code class="ddoc_psymbol">U_REGEX_INVALID_STATE</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; RegexMatcher in invalid state for requested operation</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_REGEX_BAD_ESCAPE_SEQUENCE"></span><div class="quickindex" id="quickindex.UErrorCode.U_REGEX_BAD_ESCAPE_SEQUENCE"></div><code class="ddoc_psymbol">U_REGEX_BAD_ESCAPE_SEQUENCE</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Unrecognized backslash escape sequence in pattern</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_REGEX_PROPERTY_SYNTAX"></span><div class="quickindex" id="quickindex.UErrorCode.U_REGEX_PROPERTY_SYNTAX"></div><code class="ddoc_psymbol">U_REGEX_PROPERTY_SYNTAX</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Incorrect Unicode property</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_REGEX_UNIMPLEMENTED"></span><div class="quickindex" id="quickindex.UErrorCode.U_REGEX_UNIMPLEMENTED"></div><code class="ddoc_psymbol">U_REGEX_UNIMPLEMENTED</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Use of regexp feature that is not yet implemented.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_REGEX_MISMATCHED_PAREN"></span><div class="quickindex" id="quickindex.UErrorCode.U_REGEX_MISMATCHED_PAREN"></div><code class="ddoc_psymbol">U_REGEX_MISMATCHED_PAREN</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Incorrectly nested parentheses in regexp pattern.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_REGEX_NUMBER_TOO_BIG"></span><div class="quickindex" id="quickindex.UErrorCode.U_REGEX_NUMBER_TOO_BIG"></div><code class="ddoc_psymbol">U_REGEX_NUMBER_TOO_BIG</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Decimal number is too large.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_REGEX_BAD_INTERVAL"></span><div class="quickindex" id="quickindex.UErrorCode.U_REGEX_BAD_INTERVAL"></div><code class="ddoc_psymbol">U_REGEX_BAD_INTERVAL</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Error in {min,max} interval</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_REGEX_MAX_LT_MIN"></span><div class="quickindex" id="quickindex.UErrorCode.U_REGEX_MAX_LT_MIN"></div><code class="ddoc_psymbol">U_REGEX_MAX_LT_MIN</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; In {min,max}, max is less than min.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_REGEX_INVALID_BACK_REF"></span><div class="quickindex" id="quickindex.UErrorCode.U_REGEX_INVALID_BACK_REF"></div><code class="ddoc_psymbol">U_REGEX_INVALID_BACK_REF</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Back-reference to a non-existent capture group.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_REGEX_INVALID_FLAG"></span><div class="quickindex" id="quickindex.UErrorCode.U_REGEX_INVALID_FLAG"></div><code class="ddoc_psymbol">U_REGEX_INVALID_FLAG</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Invalid value for match mode flags.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_REGEX_LOOK_BEHIND_LIMIT"></span><div class="quickindex" id="quickindex.UErrorCode.U_REGEX_LOOK_BEHIND_LIMIT"></div><code class="ddoc_psymbol">U_REGEX_LOOK_BEHIND_LIMIT</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Look-Behind pattern matches must have a bounded maximum length.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_REGEX_SET_CONTAINS_STRING"></span><div class="quickindex" id="quickindex.UErrorCode.U_REGEX_SET_CONTAINS_STRING"></div><code class="ddoc_psymbol">U_REGEX_SET_CONTAINS_STRING</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Regexps cannot have UnicodeSets containing strings.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_REGEX_MISSING_CLOSE_BRACKET"></span><div class="quickindex" id="quickindex.UErrorCode.U_REGEX_MISSING_CLOSE_BRACKET"></div><code class="ddoc_psymbol">U_REGEX_MISSING_CLOSE_BRACKET</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Missing closing bracket on a bracket expression.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_REGEX_INVALID_RANGE"></span><div class="quickindex" id="quickindex.UErrorCode.U_REGEX_INVALID_RANGE"></div><code class="ddoc_psymbol">U_REGEX_INVALID_RANGE</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; In a character range [x-y], x is greater than y.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_REGEX_STACK_OVERFLOW"></span><div class="quickindex" id="quickindex.UErrorCode.U_REGEX_STACK_OVERFLOW"></div><code class="ddoc_psymbol">U_REGEX_STACK_OVERFLOW</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Regular expression backtrack stack overflow.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_REGEX_TIME_OUT"></span><div class="quickindex" id="quickindex.UErrorCode.U_REGEX_TIME_OUT"></div><code class="ddoc_psymbol">U_REGEX_TIME_OUT</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Maximum allowed match time exceeded</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_REGEX_STOPPED_BY_CALLER"></span><div class="quickindex" id="quickindex.UErrorCode.U_REGEX_STOPPED_BY_CALLER"></div><code class="ddoc_psymbol">U_REGEX_STOPPED_BY_CALLER</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Matching operation aborted by user callback fn.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_REGEX_PATTERN_TOO_BIG"></span><div class="quickindex" id="quickindex.UErrorCode.U_REGEX_PATTERN_TOO_BIG"></div><code class="ddoc_psymbol">U_REGEX_PATTERN_TOO_BIG</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Pattern exceeds limits on size or complexity. @stable ICU 55</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_REGEX_INVALID_CAPTURE_GROUP_NAME"></span><div class="quickindex" id="quickindex.UErrorCode.U_REGEX_INVALID_CAPTURE_GROUP_NAME"></div><code class="ddoc_psymbol">U_REGEX_INVALID_CAPTURE_GROUP_NAME</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Invalid capture group name. @stable ICU 55</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_PLUGIN_ERROR_START"></span><div class="quickindex" id="quickindex.UErrorCode.U_PLUGIN_ERROR_START"></div><code class="ddoc_psymbol">U_PLUGIN_ERROR_START</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; Start of codes indicating plugin failures</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_PLUGIN_TOO_HIGH"></span><div class="quickindex" id="quickindex.UErrorCode.U_PLUGIN_TOO_HIGH"></div><code class="ddoc_psymbol">U_PLUGIN_TOO_HIGH</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; The plugin's level is too high to be loaded right now.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UErrorCode.U_PLUGIN_DIDNT_SET_LEVEL"></span><div class="quickindex" id="quickindex.UErrorCode.U_PLUGIN_DIDNT_SET_LEVEL"></div><code class="ddoc_psymbol">U_PLUGIN_DIDNT_SET_LEVEL</code><br></div></dt>
+<dd><div class="ddoc_summary">&lt; The plugin didn't call uplug_setPlugLevel in response to a QUERY</div></dd>
+</div></dl>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".U_SUCCESS"></span><div class="quickindex" id="quickindex.U_SUCCESS"></div>UBool <code class="ddoc_psymbol">U_SUCCESS</code><span class="ddoc_template_param_list" title="Template parameter list">()</span>(UErrorCode <span class="ddoc_param">code</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".U_FAILURE"></span><div class="quickindex" id="quickindex.U_FAILURE"></div>UBool <code class="ddoc_psymbol">U_FAILURE</code><span class="ddoc_template_param_list" title="Template parameter list">()</span>(UErrorCode <span class="ddoc_param">code</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".u_errorName_67"></span><div class="quickindex" id="quickindex.u_errorName_67"></div>const(char)* <code class="ddoc_psymbol">u_errorName_67</code>(UErrorCode <span class="ddoc_param">code</span>);
+<br></div></dt>
+<dd>
+</dd>
+</div></dl>
+
+                
+            </div>
+        </div>
+        
+        <script type="text/javascript">jQuery(document).ready(listanchors);</script>
+        
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+     </body>
+</html>

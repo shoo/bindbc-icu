@@ -1,0 +1,4953 @@
+[
+ {
+  "name" : "bindbc.icu",
+  "kind" : "module",
+  "file" : "/home/runner/work/bindbc-icu/bindbc-icu/src/bindbc/icu/package.d",
+  "comment" : " bindbc-icu\n\n License: [BSL-1.0](http://boost.org/LICENSE_1_0.txt).\n",
+  "members" : [
+   {
+    "name" : "bindbc.icu.binddynamic",
+    "kind" : "import",
+    "comment" : "\n",
+    "line" : 12,
+    "char" : 16
+   }
+  ]
+ },
+ {
+  "name" : "bindbc.icu.bindcommon",
+  "kind" : "module",
+  "file" : "/home/runner/work/bindbc-icu/bindbc-icu/src/bindbc/icu/bindcommon.d",
+  "comment" : " Common definitions for internal use.\n\n License: [BSL-1.0](http://boost.org/LICENSE_1_0.txt).\n",
+  "members" : [
+   {
+    "name" : "std.meta",
+    "kind" : "import",
+    "line" : 9,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "bindbc.icu.bindings.utypes",
+    "kind" : "import",
+    "line" : 10,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "bindbc.icu.bindings.uenum",
+    "kind" : "import",
+    "line" : 11,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "bindbc.icu.bindings.ucsdet",
+    "kind" : "import",
+    "line" : 12,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "icuVersion",
+    "kind" : "variable",
+    "protection" : "package",
+    "line" : 14,
+    "char" : 33,
+    "storageClass" : [
+     "enum"
+    ],
+    "deco" : "Aya",
+    "init" : "\"67\""
+   },
+   {
+    "name" : "icuLibraries",
+    "kind" : "alias",
+    "protection" : "package",
+    "line" : 15,
+    "char" : 21,
+    "originalType" : "AliasSeq!(\"icudt\", \"icuin\", \"icuio\", \"icutu\", \"icuuc\")"
+   },
+   {
+    "name" : "libFileName",
+    "kind" : "function",
+    "protection" : "package",
+    "line" : 16,
+    "char" : 28,
+    "deco" : "FAyaZQe",
+    "parameters" : [
+     {
+      "name" : "libName",
+      "deco" : "Aya"
+     }
+    ],
+    "endline" : 27,
+    "endchar" : 1
+   },
+   {
+    "name" : "icuBindings",
+    "kind" : "alias",
+    "protection" : "package",
+    "line" : 29,
+    "char" : 21,
+    "originalType" : "AliasSeq!(bindbc.icu.bindings.utypes, bindbc.icu.bindings.uenum, bindbc.icu.bindings.ucsdet)"
+   }
+  ]
+ },
+ {
+  "name" : "bindbc.icu.binddynamic",
+  "kind" : "module",
+  "file" : "/home/runner/work/bindbc-icu/bindbc-icu/src/bindbc/icu/binddynamic.d",
+  "comment" : " For dynamic link\n\n License: [BSL-1.0](http://boost.org/LICENSE_1_0.txt).\n",
+  "members" : [
+   {
+    "name" : "bindbc.loader",
+    "kind" : "import",
+    "line" : 10,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.traits",
+    "kind" : "import",
+    "line" : 11,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.meta",
+    "kind" : "import",
+    "line" : 12,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.string",
+    "kind" : "import",
+    "line" : 13,
+    "char" : 8,
+    "protection" : "private",
+    "selective" : [
+     "stripRight"
+    ]
+   },
+   {
+    "name" : "bindbc.icu.bindcommon",
+    "kind" : "import",
+    "line" : 14,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "bindbc.icu.bindings.utypes",
+    "kind" : "static import",
+    "file" : "/home/runner/work/bindbc-icu/bindbc-icu/src/bindbc/icu/binddynamic.d-mixin-17",
+    "line" : 17,
+    "char" : 15,
+    "protection" : "private"
+   },
+   {
+    "name" : "UBool",
+    "kind" : "alias",
+    "line" : 18,
+    "char" : 1,
+    "deco" : "b"
+   },
+   {
+    "name" : "UChar",
+    "kind" : "alias",
+    "line" : 19,
+    "char" : 1,
+    "deco" : "u"
+   },
+   {
+    "name" : "UChar32",
+    "kind" : "alias",
+    "line" : 20,
+    "char" : 1,
+    "deco" : "w"
+   },
+   {
+    "name" : "UDate",
+    "kind" : "alias",
+    "line" : 21,
+    "char" : 1,
+    "deco" : "d"
+   },
+   {
+    "name" : "U_MILLIS_PER_SECOND",
+    "kind" : "alias",
+    "line" : 22,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.U_MILLIS_PER_SECOND"
+   },
+   {
+    "name" : "U_MILLIS_PER_MINUTE",
+    "kind" : "alias",
+    "line" : 23,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.U_MILLIS_PER_MINUTE"
+   },
+   {
+    "name" : "U_MILLIS_PER_HOUR",
+    "kind" : "alias",
+    "line" : 24,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.U_MILLIS_PER_HOUR"
+   },
+   {
+    "name" : "U_MILLIS_PER_DAY",
+    "kind" : "alias",
+    "line" : 25,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.U_MILLIS_PER_DAY"
+   },
+   {
+    "name" : "U_DATE_MAX",
+    "kind" : "alias",
+    "line" : 26,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.U_DATE_MAX"
+   },
+   {
+    "name" : "U_DATE_MIN",
+    "kind" : "alias",
+    "line" : 27,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.U_DATE_MIN"
+   },
+   {
+    "name" : "UErrorCode",
+    "kind" : "alias",
+    "line" : 28,
+    "char" : 1,
+    "deco" : "E6bindbc3icu8bindings6utypes10UErrorCode",
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode"
+   },
+   {
+    "name" : "U_USING_FALLBACK_WARNING",
+    "kind" : "alias",
+    "line" : 29,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_USING_FALLBACK_WARNING"
+   },
+   {
+    "name" : "U_ERROR_WARNING_START",
+    "kind" : "alias",
+    "line" : 30,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_USING_FALLBACK_WARNING"
+   },
+   {
+    "name" : "U_USING_DEFAULT_WARNING",
+    "kind" : "alias",
+    "line" : 31,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_USING_DEFAULT_WARNING"
+   },
+   {
+    "name" : "U_SAFECLONE_ALLOCATED_WARNING",
+    "kind" : "alias",
+    "line" : 32,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_SAFECLONE_ALLOCATED_WARNING"
+   },
+   {
+    "name" : "U_STATE_OLD_WARNING",
+    "kind" : "alias",
+    "line" : 33,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_STATE_OLD_WARNING"
+   },
+   {
+    "name" : "U_STRING_NOT_TERMINATED_WARNING",
+    "kind" : "alias",
+    "line" : 34,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_STRING_NOT_TERMINATED_WARNING"
+   },
+   {
+    "name" : "U_SORT_KEY_TOO_SHORT_WARNING",
+    "kind" : "alias",
+    "line" : 35,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_SORT_KEY_TOO_SHORT_WARNING"
+   },
+   {
+    "name" : "U_AMBIGUOUS_ALIAS_WARNING",
+    "kind" : "alias",
+    "line" : 36,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_AMBIGUOUS_ALIAS_WARNING"
+   },
+   {
+    "name" : "U_DIFFERENT_UCA_VERSION",
+    "kind" : "alias",
+    "line" : 37,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_DIFFERENT_UCA_VERSION"
+   },
+   {
+    "name" : "U_PLUGIN_CHANGED_LEVEL_WARNING",
+    "kind" : "alias",
+    "line" : 38,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_PLUGIN_CHANGED_LEVEL_WARNING"
+   },
+   {
+    "name" : "U_ZERO_ERROR",
+    "kind" : "alias",
+    "line" : 39,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_ZERO_ERROR"
+   },
+   {
+    "name" : "U_ILLEGAL_ARGUMENT_ERROR",
+    "kind" : "alias",
+    "line" : 40,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_ILLEGAL_ARGUMENT_ERROR"
+   },
+   {
+    "name" : "U_MISSING_RESOURCE_ERROR",
+    "kind" : "alias",
+    "line" : 41,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MISSING_RESOURCE_ERROR"
+   },
+   {
+    "name" : "U_INVALID_FORMAT_ERROR",
+    "kind" : "alias",
+    "line" : 42,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_INVALID_FORMAT_ERROR"
+   },
+   {
+    "name" : "U_FILE_ACCESS_ERROR",
+    "kind" : "alias",
+    "line" : 43,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_FILE_ACCESS_ERROR"
+   },
+   {
+    "name" : "U_INTERNAL_PROGRAM_ERROR",
+    "kind" : "alias",
+    "line" : 44,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_INTERNAL_PROGRAM_ERROR"
+   },
+   {
+    "name" : "U_MESSAGE_PARSE_ERROR",
+    "kind" : "alias",
+    "line" : 45,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MESSAGE_PARSE_ERROR"
+   },
+   {
+    "name" : "U_MEMORY_ALLOCATION_ERROR",
+    "kind" : "alias",
+    "line" : 46,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MEMORY_ALLOCATION_ERROR"
+   },
+   {
+    "name" : "U_INDEX_OUTOFBOUNDS_ERROR",
+    "kind" : "alias",
+    "line" : 47,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_INDEX_OUTOFBOUNDS_ERROR"
+   },
+   {
+    "name" : "U_PARSE_ERROR",
+    "kind" : "alias",
+    "line" : 48,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_PARSE_ERROR"
+   },
+   {
+    "name" : "U_INVALID_CHAR_FOUND",
+    "kind" : "alias",
+    "line" : 49,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_INVALID_CHAR_FOUND"
+   },
+   {
+    "name" : "U_TRUNCATED_CHAR_FOUND",
+    "kind" : "alias",
+    "line" : 50,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_TRUNCATED_CHAR_FOUND"
+   },
+   {
+    "name" : "U_ILLEGAL_CHAR_FOUND",
+    "kind" : "alias",
+    "line" : 51,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_ILLEGAL_CHAR_FOUND"
+   },
+   {
+    "name" : "U_INVALID_TABLE_FORMAT",
+    "kind" : "alias",
+    "line" : 52,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_INVALID_TABLE_FORMAT"
+   },
+   {
+    "name" : "U_INVALID_TABLE_FILE",
+    "kind" : "alias",
+    "line" : 53,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_INVALID_TABLE_FILE"
+   },
+   {
+    "name" : "U_BUFFER_OVERFLOW_ERROR",
+    "kind" : "alias",
+    "line" : 54,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_BUFFER_OVERFLOW_ERROR"
+   },
+   {
+    "name" : "U_UNSUPPORTED_ERROR",
+    "kind" : "alias",
+    "line" : 55,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_UNSUPPORTED_ERROR"
+   },
+   {
+    "name" : "U_RESOURCE_TYPE_MISMATCH",
+    "kind" : "alias",
+    "line" : 56,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_RESOURCE_TYPE_MISMATCH"
+   },
+   {
+    "name" : "U_ILLEGAL_ESCAPE_SEQUENCE",
+    "kind" : "alias",
+    "line" : 57,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_ILLEGAL_ESCAPE_SEQUENCE"
+   },
+   {
+    "name" : "U_UNSUPPORTED_ESCAPE_SEQUENCE",
+    "kind" : "alias",
+    "line" : 58,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_UNSUPPORTED_ESCAPE_SEQUENCE"
+   },
+   {
+    "name" : "U_NO_SPACE_AVAILABLE",
+    "kind" : "alias",
+    "line" : 59,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_NO_SPACE_AVAILABLE"
+   },
+   {
+    "name" : "U_CE_NOT_FOUND_ERROR",
+    "kind" : "alias",
+    "line" : 60,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_CE_NOT_FOUND_ERROR"
+   },
+   {
+    "name" : "U_PRIMARY_TOO_LONG_ERROR",
+    "kind" : "alias",
+    "line" : 61,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_PRIMARY_TOO_LONG_ERROR"
+   },
+   {
+    "name" : "U_STATE_TOO_OLD_ERROR",
+    "kind" : "alias",
+    "line" : 62,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_STATE_TOO_OLD_ERROR"
+   },
+   {
+    "name" : "U_TOO_MANY_ALIASES_ERROR",
+    "kind" : "alias",
+    "line" : 63,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_TOO_MANY_ALIASES_ERROR"
+   },
+   {
+    "name" : "U_ENUM_OUT_OF_SYNC_ERROR",
+    "kind" : "alias",
+    "line" : 64,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_ENUM_OUT_OF_SYNC_ERROR"
+   },
+   {
+    "name" : "U_INVARIANT_CONVERSION_ERROR",
+    "kind" : "alias",
+    "line" : 65,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_INVARIANT_CONVERSION_ERROR"
+   },
+   {
+    "name" : "U_INVALID_STATE_ERROR",
+    "kind" : "alias",
+    "line" : 66,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_INVALID_STATE_ERROR"
+   },
+   {
+    "name" : "U_COLLATOR_VERSION_MISMATCH",
+    "kind" : "alias",
+    "line" : 67,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_COLLATOR_VERSION_MISMATCH"
+   },
+   {
+    "name" : "U_USELESS_COLLATOR_ERROR",
+    "kind" : "alias",
+    "line" : 68,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_USELESS_COLLATOR_ERROR"
+   },
+   {
+    "name" : "U_NO_WRITE_PERMISSION",
+    "kind" : "alias",
+    "line" : 69,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_NO_WRITE_PERMISSION"
+   },
+   {
+    "name" : "U_BAD_VARIABLE_DEFINITION",
+    "kind" : "alias",
+    "line" : 70,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_BAD_VARIABLE_DEFINITION"
+   },
+   {
+    "name" : "U_PARSE_ERROR_START",
+    "kind" : "alias",
+    "line" : 71,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_BAD_VARIABLE_DEFINITION"
+   },
+   {
+    "name" : "U_MALFORMED_RULE",
+    "kind" : "alias",
+    "line" : 72,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MALFORMED_RULE"
+   },
+   {
+    "name" : "U_MALFORMED_SET",
+    "kind" : "alias",
+    "line" : 73,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MALFORMED_SET"
+   },
+   {
+    "name" : "U_MALFORMED_SYMBOL_REFERENCE",
+    "kind" : "alias",
+    "line" : 74,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MALFORMED_SYMBOL_REFERENCE"
+   },
+   {
+    "name" : "U_MALFORMED_UNICODE_ESCAPE",
+    "kind" : "alias",
+    "line" : 75,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MALFORMED_UNICODE_ESCAPE"
+   },
+   {
+    "name" : "U_MALFORMED_VARIABLE_DEFINITION",
+    "kind" : "alias",
+    "line" : 76,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MALFORMED_VARIABLE_DEFINITION"
+   },
+   {
+    "name" : "U_MALFORMED_VARIABLE_REFERENCE",
+    "kind" : "alias",
+    "line" : 77,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MALFORMED_VARIABLE_REFERENCE"
+   },
+   {
+    "name" : "U_MISMATCHED_SEGMENT_DELIMITERS",
+    "kind" : "alias",
+    "line" : 78,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MISMATCHED_SEGMENT_DELIMITERS"
+   },
+   {
+    "name" : "U_MISPLACED_ANCHOR_START",
+    "kind" : "alias",
+    "line" : 79,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MISPLACED_ANCHOR_START"
+   },
+   {
+    "name" : "U_MISPLACED_CURSOR_OFFSET",
+    "kind" : "alias",
+    "line" : 80,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MISPLACED_CURSOR_OFFSET"
+   },
+   {
+    "name" : "U_MISPLACED_QUANTIFIER",
+    "kind" : "alias",
+    "line" : 81,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MISPLACED_QUANTIFIER"
+   },
+   {
+    "name" : "U_MISSING_OPERATOR",
+    "kind" : "alias",
+    "line" : 82,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MISSING_OPERATOR"
+   },
+   {
+    "name" : "U_MISSING_SEGMENT_CLOSE",
+    "kind" : "alias",
+    "line" : 83,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MISSING_SEGMENT_CLOSE"
+   },
+   {
+    "name" : "U_MULTIPLE_ANTE_CONTEXTS",
+    "kind" : "alias",
+    "line" : 84,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MULTIPLE_ANTE_CONTEXTS"
+   },
+   {
+    "name" : "U_MULTIPLE_CURSORS",
+    "kind" : "alias",
+    "line" : 85,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MULTIPLE_CURSORS"
+   },
+   {
+    "name" : "U_MULTIPLE_POST_CONTEXTS",
+    "kind" : "alias",
+    "line" : 86,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MULTIPLE_POST_CONTEXTS"
+   },
+   {
+    "name" : "U_TRAILING_BACKSLASH",
+    "kind" : "alias",
+    "line" : 87,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_TRAILING_BACKSLASH"
+   },
+   {
+    "name" : "U_UNDEFINED_SEGMENT_REFERENCE",
+    "kind" : "alias",
+    "line" : 88,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_UNDEFINED_SEGMENT_REFERENCE"
+   },
+   {
+    "name" : "U_UNDEFINED_VARIABLE",
+    "kind" : "alias",
+    "line" : 89,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_UNDEFINED_VARIABLE"
+   },
+   {
+    "name" : "U_UNQUOTED_SPECIAL",
+    "kind" : "alias",
+    "line" : 90,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_UNQUOTED_SPECIAL"
+   },
+   {
+    "name" : "U_UNTERMINATED_QUOTE",
+    "kind" : "alias",
+    "line" : 91,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_UNTERMINATED_QUOTE"
+   },
+   {
+    "name" : "U_RULE_MASK_ERROR",
+    "kind" : "alias",
+    "line" : 92,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_RULE_MASK_ERROR"
+   },
+   {
+    "name" : "U_MISPLACED_COMPOUND_FILTER",
+    "kind" : "alias",
+    "line" : 93,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MISPLACED_COMPOUND_FILTER"
+   },
+   {
+    "name" : "U_MULTIPLE_COMPOUND_FILTERS",
+    "kind" : "alias",
+    "line" : 94,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MULTIPLE_COMPOUND_FILTERS"
+   },
+   {
+    "name" : "U_INVALID_RBT_SYNTAX",
+    "kind" : "alias",
+    "line" : 95,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_INVALID_RBT_SYNTAX"
+   },
+   {
+    "name" : "U_INVALID_PROPERTY_PATTERN",
+    "kind" : "alias",
+    "line" : 96,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_INVALID_PROPERTY_PATTERN"
+   },
+   {
+    "name" : "U_MALFORMED_PRAGMA",
+    "kind" : "alias",
+    "line" : 97,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MALFORMED_PRAGMA"
+   },
+   {
+    "name" : "U_UNCLOSED_SEGMENT",
+    "kind" : "alias",
+    "line" : 98,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_UNCLOSED_SEGMENT"
+   },
+   {
+    "name" : "U_ILLEGAL_CHAR_IN_SEGMENT",
+    "kind" : "alias",
+    "line" : 99,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_ILLEGAL_CHAR_IN_SEGMENT"
+   },
+   {
+    "name" : "U_VARIABLE_RANGE_EXHAUSTED",
+    "kind" : "alias",
+    "line" : 100,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_VARIABLE_RANGE_EXHAUSTED"
+   },
+   {
+    "name" : "U_VARIABLE_RANGE_OVERLAP",
+    "kind" : "alias",
+    "line" : 101,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_VARIABLE_RANGE_OVERLAP"
+   },
+   {
+    "name" : "U_ILLEGAL_CHARACTER",
+    "kind" : "alias",
+    "line" : 102,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_ILLEGAL_CHARACTER"
+   },
+   {
+    "name" : "U_INTERNAL_TRANSLITERATOR_ERROR",
+    "kind" : "alias",
+    "line" : 103,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_INTERNAL_TRANSLITERATOR_ERROR"
+   },
+   {
+    "name" : "U_INVALID_ID",
+    "kind" : "alias",
+    "line" : 104,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_INVALID_ID"
+   },
+   {
+    "name" : "U_INVALID_FUNCTION",
+    "kind" : "alias",
+    "line" : 105,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_INVALID_FUNCTION"
+   },
+   {
+    "name" : "U_UNEXPECTED_TOKEN",
+    "kind" : "alias",
+    "line" : 106,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_UNEXPECTED_TOKEN"
+   },
+   {
+    "name" : "U_FMT_PARSE_ERROR_START",
+    "kind" : "alias",
+    "line" : 107,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_UNEXPECTED_TOKEN"
+   },
+   {
+    "name" : "U_MULTIPLE_DECIMAL_SEPARATORS",
+    "kind" : "alias",
+    "line" : 108,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MULTIPLE_DECIMAL_SEPARATORS"
+   },
+   {
+    "name" : "U_MULTIPLE_DECIMAL_SEPERATORS",
+    "kind" : "alias",
+    "line" : 109,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MULTIPLE_DECIMAL_SEPARATORS"
+   },
+   {
+    "name" : "U_MULTIPLE_EXPONENTIAL_SYMBOLS",
+    "kind" : "alias",
+    "line" : 110,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MULTIPLE_EXPONENTIAL_SYMBOLS"
+   },
+   {
+    "name" : "U_MALFORMED_EXPONENTIAL_PATTERN",
+    "kind" : "alias",
+    "line" : 111,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MALFORMED_EXPONENTIAL_PATTERN"
+   },
+   {
+    "name" : "U_MULTIPLE_PERCENT_SYMBOLS",
+    "kind" : "alias",
+    "line" : 112,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MULTIPLE_PERCENT_SYMBOLS"
+   },
+   {
+    "name" : "U_MULTIPLE_PERMILL_SYMBOLS",
+    "kind" : "alias",
+    "line" : 113,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MULTIPLE_PERMILL_SYMBOLS"
+   },
+   {
+    "name" : "U_MULTIPLE_PAD_SPECIFIERS",
+    "kind" : "alias",
+    "line" : 114,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MULTIPLE_PAD_SPECIFIERS"
+   },
+   {
+    "name" : "U_PATTERN_SYNTAX_ERROR",
+    "kind" : "alias",
+    "line" : 115,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_PATTERN_SYNTAX_ERROR"
+   },
+   {
+    "name" : "U_ILLEGAL_PAD_POSITION",
+    "kind" : "alias",
+    "line" : 116,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_ILLEGAL_PAD_POSITION"
+   },
+   {
+    "name" : "U_UNMATCHED_BRACES",
+    "kind" : "alias",
+    "line" : 117,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_UNMATCHED_BRACES"
+   },
+   {
+    "name" : "U_UNSUPPORTED_PROPERTY",
+    "kind" : "alias",
+    "line" : 118,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_UNSUPPORTED_PROPERTY"
+   },
+   {
+    "name" : "U_UNSUPPORTED_ATTRIBUTE",
+    "kind" : "alias",
+    "line" : 119,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_UNSUPPORTED_ATTRIBUTE"
+   },
+   {
+    "name" : "U_ARGUMENT_TYPE_MISMATCH",
+    "kind" : "alias",
+    "line" : 120,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_ARGUMENT_TYPE_MISMATCH"
+   },
+   {
+    "name" : "U_DUPLICATE_KEYWORD",
+    "kind" : "alias",
+    "line" : 121,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_DUPLICATE_KEYWORD"
+   },
+   {
+    "name" : "U_UNDEFINED_KEYWORD",
+    "kind" : "alias",
+    "line" : 122,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_UNDEFINED_KEYWORD"
+   },
+   {
+    "name" : "U_DEFAULT_KEYWORD_MISSING",
+    "kind" : "alias",
+    "line" : 123,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_DEFAULT_KEYWORD_MISSING"
+   },
+   {
+    "name" : "U_DECIMAL_NUMBER_SYNTAX_ERROR",
+    "kind" : "alias",
+    "line" : 124,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_DECIMAL_NUMBER_SYNTAX_ERROR"
+   },
+   {
+    "name" : "U_FORMAT_INEXACT_ERROR",
+    "kind" : "alias",
+    "line" : 125,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_FORMAT_INEXACT_ERROR"
+   },
+   {
+    "name" : "U_NUMBER_ARG_OUTOFBOUNDS_ERROR",
+    "kind" : "alias",
+    "line" : 126,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_NUMBER_ARG_OUTOFBOUNDS_ERROR"
+   },
+   {
+    "name" : "U_NUMBER_SKELETON_SYNTAX_ERROR",
+    "kind" : "alias",
+    "line" : 127,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_NUMBER_SKELETON_SYNTAX_ERROR"
+   },
+   {
+    "name" : "U_BRK_INTERNAL_ERROR",
+    "kind" : "alias",
+    "line" : 128,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_BRK_INTERNAL_ERROR"
+   },
+   {
+    "name" : "U_BRK_ERROR_START",
+    "kind" : "alias",
+    "line" : 129,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_BRK_INTERNAL_ERROR"
+   },
+   {
+    "name" : "U_BRK_HEX_DIGITS_EXPECTED",
+    "kind" : "alias",
+    "line" : 130,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_BRK_HEX_DIGITS_EXPECTED"
+   },
+   {
+    "name" : "U_BRK_SEMICOLON_EXPECTED",
+    "kind" : "alias",
+    "line" : 131,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_BRK_SEMICOLON_EXPECTED"
+   },
+   {
+    "name" : "U_BRK_RULE_SYNTAX",
+    "kind" : "alias",
+    "line" : 132,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_BRK_RULE_SYNTAX"
+   },
+   {
+    "name" : "U_BRK_UNCLOSED_SET",
+    "kind" : "alias",
+    "line" : 133,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_BRK_UNCLOSED_SET"
+   },
+   {
+    "name" : "U_BRK_ASSIGN_ERROR",
+    "kind" : "alias",
+    "line" : 134,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_BRK_ASSIGN_ERROR"
+   },
+   {
+    "name" : "U_BRK_VARIABLE_REDFINITION",
+    "kind" : "alias",
+    "line" : 135,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_BRK_VARIABLE_REDFINITION"
+   },
+   {
+    "name" : "U_BRK_MISMATCHED_PAREN",
+    "kind" : "alias",
+    "line" : 136,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_BRK_MISMATCHED_PAREN"
+   },
+   {
+    "name" : "U_BRK_NEW_LINE_IN_QUOTED_STRING",
+    "kind" : "alias",
+    "line" : 137,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_BRK_NEW_LINE_IN_QUOTED_STRING"
+   },
+   {
+    "name" : "U_BRK_UNDEFINED_VARIABLE",
+    "kind" : "alias",
+    "line" : 138,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_BRK_UNDEFINED_VARIABLE"
+   },
+   {
+    "name" : "U_BRK_INIT_ERROR",
+    "kind" : "alias",
+    "line" : 139,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_BRK_INIT_ERROR"
+   },
+   {
+    "name" : "U_BRK_RULE_EMPTY_SET",
+    "kind" : "alias",
+    "line" : 140,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_BRK_RULE_EMPTY_SET"
+   },
+   {
+    "name" : "U_BRK_UNRECOGNIZED_OPTION",
+    "kind" : "alias",
+    "line" : 141,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_BRK_UNRECOGNIZED_OPTION"
+   },
+   {
+    "name" : "U_BRK_MALFORMED_RULE_TAG",
+    "kind" : "alias",
+    "line" : 142,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_BRK_MALFORMED_RULE_TAG"
+   },
+   {
+    "name" : "U_REGEX_INTERNAL_ERROR",
+    "kind" : "alias",
+    "line" : 143,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_INTERNAL_ERROR"
+   },
+   {
+    "name" : "U_REGEX_ERROR_START",
+    "kind" : "alias",
+    "line" : 144,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_INTERNAL_ERROR"
+   },
+   {
+    "name" : "U_REGEX_RULE_SYNTAX",
+    "kind" : "alias",
+    "line" : 145,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_RULE_SYNTAX"
+   },
+   {
+    "name" : "U_REGEX_INVALID_STATE",
+    "kind" : "alias",
+    "line" : 146,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_INVALID_STATE"
+   },
+   {
+    "name" : "U_REGEX_BAD_ESCAPE_SEQUENCE",
+    "kind" : "alias",
+    "line" : 147,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_BAD_ESCAPE_SEQUENCE"
+   },
+   {
+    "name" : "U_REGEX_PROPERTY_SYNTAX",
+    "kind" : "alias",
+    "line" : 148,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_PROPERTY_SYNTAX"
+   },
+   {
+    "name" : "U_REGEX_UNIMPLEMENTED",
+    "kind" : "alias",
+    "line" : 149,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_UNIMPLEMENTED"
+   },
+   {
+    "name" : "U_REGEX_MISMATCHED_PAREN",
+    "kind" : "alias",
+    "line" : 150,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_MISMATCHED_PAREN"
+   },
+   {
+    "name" : "U_REGEX_NUMBER_TOO_BIG",
+    "kind" : "alias",
+    "line" : 151,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_NUMBER_TOO_BIG"
+   },
+   {
+    "name" : "U_REGEX_BAD_INTERVAL",
+    "kind" : "alias",
+    "line" : 152,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_BAD_INTERVAL"
+   },
+   {
+    "name" : "U_REGEX_MAX_LT_MIN",
+    "kind" : "alias",
+    "line" : 153,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_MAX_LT_MIN"
+   },
+   {
+    "name" : "U_REGEX_INVALID_BACK_REF",
+    "kind" : "alias",
+    "line" : 154,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_INVALID_BACK_REF"
+   },
+   {
+    "name" : "U_REGEX_INVALID_FLAG",
+    "kind" : "alias",
+    "line" : 155,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_INVALID_FLAG"
+   },
+   {
+    "name" : "U_REGEX_LOOK_BEHIND_LIMIT",
+    "kind" : "alias",
+    "line" : 156,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_LOOK_BEHIND_LIMIT"
+   },
+   {
+    "name" : "U_REGEX_SET_CONTAINS_STRING",
+    "kind" : "alias",
+    "line" : 157,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_SET_CONTAINS_STRING"
+   },
+   {
+    "name" : "U_REGEX_MISSING_CLOSE_BRACKET",
+    "kind" : "alias",
+    "line" : 158,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_MISSING_CLOSE_BRACKET"
+   },
+   {
+    "name" : "U_REGEX_INVALID_RANGE",
+    "kind" : "alias",
+    "line" : 159,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_INVALID_RANGE"
+   },
+   {
+    "name" : "U_REGEX_STACK_OVERFLOW",
+    "kind" : "alias",
+    "line" : 160,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_STACK_OVERFLOW"
+   },
+   {
+    "name" : "U_REGEX_TIME_OUT",
+    "kind" : "alias",
+    "line" : 161,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_TIME_OUT"
+   },
+   {
+    "name" : "U_REGEX_STOPPED_BY_CALLER",
+    "kind" : "alias",
+    "line" : 162,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_STOPPED_BY_CALLER"
+   },
+   {
+    "name" : "U_REGEX_PATTERN_TOO_BIG",
+    "kind" : "alias",
+    "line" : 163,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_PATTERN_TOO_BIG"
+   },
+   {
+    "name" : "U_REGEX_INVALID_CAPTURE_GROUP_NAME",
+    "kind" : "alias",
+    "line" : 164,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_INVALID_CAPTURE_GROUP_NAME"
+   },
+   {
+    "name" : "U_IDNA_PROHIBITED_ERROR",
+    "kind" : "alias",
+    "line" : 165,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_IDNA_PROHIBITED_ERROR"
+   },
+   {
+    "name" : "U_IDNA_ERROR_START",
+    "kind" : "alias",
+    "line" : 166,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_IDNA_PROHIBITED_ERROR"
+   },
+   {
+    "name" : "U_IDNA_UNASSIGNED_ERROR",
+    "kind" : "alias",
+    "line" : 167,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_IDNA_UNASSIGNED_ERROR"
+   },
+   {
+    "name" : "U_IDNA_CHECK_BIDI_ERROR",
+    "kind" : "alias",
+    "line" : 168,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_IDNA_CHECK_BIDI_ERROR"
+   },
+   {
+    "name" : "U_IDNA_STD3_ASCII_RULES_ERROR",
+    "kind" : "alias",
+    "line" : 169,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_IDNA_STD3_ASCII_RULES_ERROR"
+   },
+   {
+    "name" : "U_IDNA_ACE_PREFIX_ERROR",
+    "kind" : "alias",
+    "line" : 170,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_IDNA_ACE_PREFIX_ERROR"
+   },
+   {
+    "name" : "U_IDNA_VERIFICATION_ERROR",
+    "kind" : "alias",
+    "line" : 171,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_IDNA_VERIFICATION_ERROR"
+   },
+   {
+    "name" : "U_IDNA_LABEL_TOO_LONG_ERROR",
+    "kind" : "alias",
+    "line" : 172,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_IDNA_LABEL_TOO_LONG_ERROR"
+   },
+   {
+    "name" : "U_IDNA_ZERO_LENGTH_LABEL_ERROR",
+    "kind" : "alias",
+    "line" : 173,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_IDNA_ZERO_LENGTH_LABEL_ERROR"
+   },
+   {
+    "name" : "U_IDNA_DOMAIN_NAME_TOO_LONG_ERROR",
+    "kind" : "alias",
+    "line" : 174,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_IDNA_DOMAIN_NAME_TOO_LONG_ERROR"
+   },
+   {
+    "name" : "U_STRINGPREP_PROHIBITED_ERROR",
+    "kind" : "alias",
+    "line" : 175,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_IDNA_PROHIBITED_ERROR"
+   },
+   {
+    "name" : "U_STRINGPREP_UNASSIGNED_ERROR",
+    "kind" : "alias",
+    "line" : 176,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_IDNA_UNASSIGNED_ERROR"
+   },
+   {
+    "name" : "U_STRINGPREP_CHECK_BIDI_ERROR",
+    "kind" : "alias",
+    "line" : 177,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_IDNA_CHECK_BIDI_ERROR"
+   },
+   {
+    "name" : "U_PLUGIN_ERROR_START",
+    "kind" : "alias",
+    "line" : 178,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_PLUGIN_ERROR_START"
+   },
+   {
+    "name" : "U_PLUGIN_TOO_HIGH",
+    "kind" : "alias",
+    "line" : 179,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_PLUGIN_ERROR_START"
+   },
+   {
+    "name" : "U_PLUGIN_DIDNT_SET_LEVEL",
+    "kind" : "alias",
+    "line" : 180,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_PLUGIN_DIDNT_SET_LEVEL"
+   },
+   {
+    "name" : "U_SUCCESS",
+    "kind" : "alias",
+    "line" : 181,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.U_SUCCESS"
+   },
+   {
+    "name" : "U_FAILURE",
+    "kind" : "alias",
+    "line" : 182,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.U_FAILURE"
+   },
+   {
+    "name" : "u_errorName",
+    "kind" : "variable",
+    "line" : 183,
+    "char" : 52,
+    "deco" : "PUE6bindbc3icu8bindings6utypes10UErrorCodeZPxa",
+    "originalType" : "typeof(&bindbc.icu.bindings.utypes.u_errorName_67)"
+   },
+   {
+    "name" : "bindbc.icu.bindings.uenum",
+    "kind" : "static import",
+    "line" : 184,
+    "char" : 15,
+    "protection" : "private"
+   },
+   {
+    "name" : "StringEnumeration",
+    "kind" : "alias",
+    "line" : 185,
+    "char" : 1,
+    "deco" : "S6bindbc3icu8bindings5uenum17StringEnumeration",
+    "originalType" : "bindbc.icu.bindings.uenum.StringEnumeration"
+   },
+   {
+    "name" : "UEnumeration",
+    "kind" : "alias",
+    "line" : 186,
+    "char" : 1,
+    "deco" : "S6bindbc3icu8bindings5uenum12UEnumeration",
+    "originalType" : "bindbc.icu.bindings.uenum.UEnumeration"
+   },
+   {
+    "name" : "uenum_close",
+    "kind" : "variable",
+    "line" : 187,
+    "char" : 51,
+    "deco" : "PUPS6bindbc3icu8bindings5uenum12UEnumerationZv",
+    "originalType" : "typeof(&bindbc.icu.bindings.uenum.uenum_close_67)"
+   },
+   {
+    "name" : "uenum_count",
+    "kind" : "variable",
+    "line" : 188,
+    "char" : 51,
+    "deco" : "PUPS6bindbc3icu8bindings5uenum12UEnumerationPEQBqQBmQBl6utypes10UErrorCodeZi",
+    "originalType" : "typeof(&bindbc.icu.bindings.uenum.uenum_count_67)"
+   },
+   {
+    "name" : "uenum_unext",
+    "kind" : "variable",
+    "line" : 189,
+    "char" : 51,
+    "deco" : "PUPS6bindbc3icu8bindings5uenum12UEnumerationPiPEQBsQBoQBn6utypes10UErrorCodeZPxu",
+    "originalType" : "typeof(&bindbc.icu.bindings.uenum.uenum_unext_67)"
+   },
+   {
+    "name" : "uenum_next",
+    "kind" : "variable",
+    "line" : 190,
+    "char" : 50,
+    "deco" : "PUPS6bindbc3icu8bindings5uenum12UEnumerationPiPEQBsQBoQBn6utypes10UErrorCodeZPxa",
+    "originalType" : "typeof(&bindbc.icu.bindings.uenum.uenum_next_67)"
+   },
+   {
+    "name" : "uenum_reset",
+    "kind" : "variable",
+    "line" : 191,
+    "char" : 51,
+    "deco" : "PUPS6bindbc3icu8bindings5uenum12UEnumerationPEQBqQBmQBl6utypes10UErrorCodeZv",
+    "originalType" : "typeof(&bindbc.icu.bindings.uenum.uenum_reset_67)"
+   },
+   {
+    "name" : "uenum_openFromStringEnumeration",
+    "kind" : "variable",
+    "line" : 192,
+    "char" : 71,
+    "deco" : "PUPS6bindbc3icu8bindings5uenum17StringEnumerationPEQBvQBrQBq6utypes10UErrorCodeZPSQDaQCwQCvQCp12UEnumeration",
+    "originalType" : "typeof(&bindbc.icu.bindings.uenum.uenum_openFromStringEnumeration_67)"
+   },
+   {
+    "name" : "uenum_openUCharStringsEnumeration",
+    "kind" : "variable",
+    "line" : 193,
+    "char" : 73,
+    "deco" : "PUPxPuiPE6bindbc3icu8bindings6utypes10UErrorCodeZPSQBqQBmQBl5uenum12UEnumeration",
+    "originalType" : "typeof(&bindbc.icu.bindings.uenum.uenum_openUCharStringsEnumeration_67)"
+   },
+   {
+    "name" : "uenum_openCharStringsEnumeration",
+    "kind" : "variable",
+    "line" : 194,
+    "char" : 72,
+    "deco" : "PUPxPaiPE6bindbc3icu8bindings6utypes10UErrorCodeZPSQBqQBmQBl5uenum12UEnumeration",
+    "originalType" : "typeof(&bindbc.icu.bindings.uenum.uenum_openCharStringsEnumeration_67)"
+   },
+   {
+    "name" : "bindbc.icu.bindings.ucsdet",
+    "kind" : "static import",
+    "line" : 195,
+    "char" : 15,
+    "protection" : "private"
+   },
+   {
+    "name" : "UCharsetDetector",
+    "kind" : "alias",
+    "line" : 196,
+    "char" : 1,
+    "deco" : "S6bindbc3icu8bindings6ucsdet16UCharsetDetector",
+    "originalType" : "bindbc.icu.bindings.ucsdet.UCharsetDetector"
+   },
+   {
+    "name" : "UCharsetMatch",
+    "kind" : "alias",
+    "line" : 197,
+    "char" : 1,
+    "deco" : "S6bindbc3icu8bindings6ucsdet13UCharsetMatch",
+    "originalType" : "bindbc.icu.bindings.ucsdet.UCharsetMatch"
+   },
+   {
+    "name" : "ucsdet_open",
+    "kind" : "variable",
+    "line" : 198,
+    "char" : 52,
+    "deco" : "PUPE6bindbc3icu8bindings6utypes10UErrorCodeZPSQBqQBmQBl6ucsdet16UCharsetDetector",
+    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_open_67)"
+   },
+   {
+    "name" : "ucsdet_close",
+    "kind" : "variable",
+    "line" : 199,
+    "char" : 53,
+    "deco" : "PUPS6bindbc3icu8bindings6ucsdet16UCharsetDetectorZv",
+    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_close_67)"
+   },
+   {
+    "name" : "ucsdet_setText",
+    "kind" : "variable",
+    "line" : 200,
+    "char" : 55,
+    "deco" : "PUPS6bindbc3icu8bindings6ucsdet16UCharsetDetectorPxaiPEQBzQBvQBu6utypes10UErrorCodeZv",
+    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_setText_67)"
+   },
+   {
+    "name" : "ucsdet_setDeclaredEncoding",
+    "kind" : "variable",
+    "line" : 201,
+    "char" : 67,
+    "deco" : "PUPS6bindbc3icu8bindings6ucsdet16UCharsetDetectorPxaiPEQBzQBvQBu6utypes10UErrorCodeZv",
+    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_setDeclaredEncoding_67)"
+   },
+   {
+    "name" : "ucsdet_detect",
+    "kind" : "variable",
+    "line" : 202,
+    "char" : 54,
+    "deco" : "PUPS6bindbc3icu8bindings6ucsdet16UCharsetDetectorPEQBvQBrQBq6utypes10UErrorCodeZPxSQDbQCxQCwQCq13UCharsetMatch",
+    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_detect_67)"
+   },
+   {
+    "name" : "ucsdet_detectAll",
+    "kind" : "variable",
+    "line" : 203,
+    "char" : 57,
+    "deco" : "PUPS6bindbc3icu8bindings6ucsdet16UCharsetDetectorPiPEQBxQBtQBs6utypes10UErrorCodeZPPxSQDeQDaQCzQCt13UCharsetMatch",
+    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_detectAll_67)"
+   },
+   {
+    "name" : "ucsdet_getName",
+    "kind" : "variable",
+    "line" : 204,
+    "char" : 55,
+    "deco" : "PUPxS6bindbc3icu8bindings6ucsdet13UCharsetMatchPEQBsQBoQBn6utypes10UErrorCodeZPxa",
+    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_getName_67)"
+   },
+   {
+    "name" : "ucsdet_getConfidence",
+    "kind" : "variable",
+    "line" : 205,
+    "char" : 61,
+    "deco" : "PUPxS6bindbc3icu8bindings6ucsdet13UCharsetMatchPEQBsQBoQBn6utypes10UErrorCodeZi",
+    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_getConfidence_67)"
+   },
+   {
+    "name" : "ucsdet_getLanguage",
+    "kind" : "variable",
+    "line" : 206,
+    "char" : 59,
+    "deco" : "PUPxS6bindbc3icu8bindings6ucsdet13UCharsetMatchPEQBsQBoQBn6utypes10UErrorCodeZPxa",
+    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_getLanguage_67)"
+   },
+   {
+    "name" : "ucsdet_getUChars",
+    "kind" : "variable",
+    "line" : 207,
+    "char" : 57,
+    "deco" : "PUPxS6bindbc3icu8bindings6ucsdet13UCharsetMatchPuiPEQBvQBrQBq6utypes10UErrorCodeZi",
+    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_getUChars_67)"
+   },
+   {
+    "name" : "ucsdet_getAllDetectableCharsets",
+    "kind" : "variable",
+    "line" : 208,
+    "char" : 72,
+    "deco" : "PUPxS6bindbc3icu8bindings6ucsdet16UCharsetDetectorPEQBvQBrQBq6utypes10UErrorCodeZPSQDaQCwQCv5uenum12UEnumeration",
+    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_getAllDetectableCharsets_67)"
+   },
+   {
+    "name" : "ucsdet_isInputFilterEnabled",
+    "kind" : "variable",
+    "line" : 209,
+    "char" : 68,
+    "deco" : "PUPxS6bindbc3icu8bindings6ucsdet16UCharsetDetectorZb",
+    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_isInputFilterEnabled_67)"
+   },
+   {
+    "name" : "ucsdet_enableInputFilter",
+    "kind" : "variable",
+    "line" : 210,
+    "char" : 65,
+    "deco" : "PUPS6bindbc3icu8bindings6ucsdet16UCharsetDetectorbZb",
+    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_enableInputFilter_67)"
+   },
+   {
+    "name" : "lib_icudt",
+    "kind" : "variable",
+    "protection" : "private",
+    "file" : "/home/runner/work/bindbc-icu/bindbc-icu/src/bindbc/icu/binddynamic.d-mixin-66",
+    "line" : 66,
+    "char" : 29,
+    "storageClass" : [
+     "__gshared"
+    ],
+    "deco" : "S6bindbc6loader9sharedlib9SharedLib"
+   },
+   {
+    "name" : "lib_icuin",
+    "kind" : "variable",
+    "protection" : "private",
+    "line" : 67,
+    "char" : 29,
+    "storageClass" : [
+     "__gshared"
+    ],
+    "deco" : "S6bindbc6loader9sharedlib9SharedLib"
+   },
+   {
+    "name" : "lib_icuio",
+    "kind" : "variable",
+    "protection" : "private",
+    "line" : 68,
+    "char" : 29,
+    "storageClass" : [
+     "__gshared"
+    ],
+    "deco" : "S6bindbc6loader9sharedlib9SharedLib"
+   },
+   {
+    "name" : "lib_icutu",
+    "kind" : "variable",
+    "protection" : "private",
+    "line" : 69,
+    "char" : 29,
+    "storageClass" : [
+     "__gshared"
+    ],
+    "deco" : "S6bindbc6loader9sharedlib9SharedLib"
+   },
+   {
+    "name" : "lib_icuuc",
+    "kind" : "variable",
+    "protection" : "private",
+    "line" : 70,
+    "char" : 29,
+    "storageClass" : [
+     "__gshared"
+    ],
+    "deco" : "S6bindbc6loader9sharedlib9SharedLib"
+   },
+   {
+    "name" : "IcuSupport",
+    "kind" : "enum",
+    "comment" : "\n",
+    "file" : "/home/runner/work/bindbc-icu/bindbc-icu/src/bindbc/icu/binddynamic.d",
+    "line" : 76,
+    "char" : 1,
+    "baseDeco" : "i",
+    "members" : [
+     {
+      "name" : "noLibrary",
+      "kind" : "enum member",
+      "value" : "0",
+      "comment" : "\n",
+      "line" : 79,
+      "char" : 2
+     },
+     {
+      "name" : "badLibrary",
+      "kind" : "enum member",
+      "value" : "1",
+      "comment" : "\n",
+      "line" : 81,
+      "char" : 2
+     },
+     {
+      "name" : "icu",
+      "kind" : "enum member",
+      "value" : "2",
+      "comment" : "\n",
+      "line" : 83,
+      "char" : 2
+     }
+    ]
+   },
+   {
+    "name" : "loadIcu",
+    "kind" : "function",
+    "comment" : "\n",
+    "line" : 87,
+    "char" : 12,
+    "deco" : "FNbNiZE6bindbc3icu11binddynamic10IcuSupport",
+    "endline" : 132,
+    "endchar" : 1
+   },
+   {
+    "name" : "unloadIcu",
+    "kind" : "function",
+    "comment" : "\n",
+    "line" : 136,
+    "char" : 6,
+    "deco" : "FNbNiZv",
+    "endline" : 143,
+    "endchar" : 1
+   },
+   {
+    "name" : "__unittest_L145_C9",
+    "kind" : "function",
+    "line" : 145,
+    "char" : 9,
+    "storageClass" : [
+     "@system"
+    ],
+    "endline" : 150,
+    "endchar" : 1
+   }
+  ]
+ },
+ {
+  "name" : "bindbc.icu.bindings.ucsdet",
+  "kind" : "module",
+  "file" : "/home/runner/work/bindbc-icu/bindbc-icu/src/bindbc/icu/bindings/ucsdet.d",
+  "comment" : " ucsdet.h\n\n License: [BSL-1.0](http://boost.org/LICENSE_1_0.txt).\n",
+  "members" : [
+   {
+    "name" : "bindbc.icu.bindings.utypes",
+    "kind" : "import",
+    "line" : 9,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "bindbc.icu.bindings.uenum",
+    "kind" : "import",
+    "line" : 10,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "UCharsetDetector",
+    "kind" : "struct",
+    "comment" : "\n",
+    "line" : 15,
+    "char" : 1,
+    "members" : []
+   },
+   {
+    "name" : "UCharsetMatch",
+    "kind" : "struct",
+    "comment" : "\n",
+    "line" : 18,
+    "char" : 1,
+    "members" : []
+   },
+   {
+    "name" : "ucsdet_open_67",
+    "kind" : "function",
+    "comment" : "\n",
+    "line" : 21,
+    "char" : 19,
+    "linkage" : "c",
+    "deco" : "UPE6bindbc3icu8bindings6utypes10UErrorCodeZPSQBqQBmQBl6ucsdet16UCharsetDetector",
+    "parameters" : [
+     {
+      "name" : "status",
+      "deco" : "PE6bindbc3icu8bindings6utypes10UErrorCode"
+     }
+    ]
+   },
+   {
+    "name" : "ucsdet_close_67",
+    "kind" : "function",
+    "comment" : "\n",
+    "line" : 24,
+    "char" : 6,
+    "linkage" : "c",
+    "deco" : "UPS6bindbc3icu8bindings6ucsdet16UCharsetDetectorZv",
+    "parameters" : [
+     {
+      "name" : "ucsd",
+      "deco" : "PS6bindbc3icu8bindings6ucsdet16UCharsetDetector"
+     }
+    ]
+   },
+   {
+    "name" : "ucsdet_setText_67",
+    "kind" : "function",
+    "comment" : "\n",
+    "line" : 27,
+    "char" : 6,
+    "linkage" : "c",
+    "deco" : "UPS6bindbc3icu8bindings6ucsdet16UCharsetDetectorPxaiPEQBzQBvQBu6utypes10UErrorCodeZv",
+    "parameters" : [
+     {
+      "name" : "ucsd",
+      "deco" : "PS6bindbc3icu8bindings6ucsdet16UCharsetDetector"
+     },
+     {
+      "name" : "textIn",
+      "deco" : "Pxa"
+     },
+     {
+      "name" : "len",
+      "deco" : "i"
+     },
+     {
+      "name" : "status",
+      "deco" : "PE6bindbc3icu8bindings6utypes10UErrorCode"
+     }
+    ]
+   },
+   {
+    "name" : "ucsdet_setDeclaredEncoding_67",
+    "kind" : "function",
+    "comment" : "\n",
+    "line" : 30,
+    "char" : 6,
+    "linkage" : "c",
+    "deco" : "UPS6bindbc3icu8bindings6ucsdet16UCharsetDetectorPxaiPEQBzQBvQBu6utypes10UErrorCodeZv",
+    "parameters" : [
+     {
+      "name" : "ucsd",
+      "deco" : "PS6bindbc3icu8bindings6ucsdet16UCharsetDetector"
+     },
+     {
+      "name" : "encoding",
+      "deco" : "Pxa"
+     },
+     {
+      "name" : "length",
+      "deco" : "i"
+     },
+     {
+      "name" : "status",
+      "deco" : "PE6bindbc3icu8bindings6utypes10UErrorCode"
+     }
+    ]
+   },
+   {
+    "name" : "ucsdet_detect_67",
+    "kind" : "function",
+    "comment" : "\n",
+    "line" : 33,
+    "char" : 23,
+    "linkage" : "c",
+    "deco" : "UPS6bindbc3icu8bindings6ucsdet16UCharsetDetectorPEQBvQBrQBq6utypes10UErrorCodeZPxSQDbQCxQCwQCq13UCharsetMatch",
+    "parameters" : [
+     {
+      "name" : "ucsd",
+      "deco" : "PS6bindbc3icu8bindings6ucsdet16UCharsetDetector"
+     },
+     {
+      "name" : "status",
+      "deco" : "PE6bindbc3icu8bindings6utypes10UErrorCode"
+     }
+    ]
+   },
+   {
+    "name" : "ucsdet_detectAll_67",
+    "kind" : "function",
+    "comment" : "\n",
+    "line" : 36,
+    "char" : 24,
+    "linkage" : "c",
+    "deco" : "UPS6bindbc3icu8bindings6ucsdet16UCharsetDetectorPiPEQBxQBtQBs6utypes10UErrorCodeZPPxSQDeQDaQCzQCt13UCharsetMatch",
+    "parameters" : [
+     {
+      "name" : "ucsd",
+      "deco" : "PS6bindbc3icu8bindings6ucsdet16UCharsetDetector"
+     },
+     {
+      "name" : "matchesFound",
+      "deco" : "Pi"
+     },
+     {
+      "name" : "status",
+      "deco" : "PE6bindbc3icu8bindings6utypes10UErrorCode"
+     }
+    ]
+   },
+   {
+    "name" : "ucsdet_getName_67",
+    "kind" : "function",
+    "comment" : "\n",
+    "line" : 39,
+    "char" : 14,
+    "linkage" : "c",
+    "deco" : "UPxS6bindbc3icu8bindings6ucsdet13UCharsetMatchPEQBsQBoQBn6utypes10UErrorCodeZPxa",
+    "parameters" : [
+     {
+      "name" : "ucsm",
+      "deco" : "PxS6bindbc3icu8bindings6ucsdet13UCharsetMatch"
+     },
+     {
+      "name" : "status",
+      "deco" : "PE6bindbc3icu8bindings6utypes10UErrorCode"
+     }
+    ]
+   },
+   {
+    "name" : "ucsdet_getConfidence_67",
+    "kind" : "function",
+    "comment" : "\n",
+    "line" : 42,
+    "char" : 5,
+    "linkage" : "c",
+    "deco" : "UPxS6bindbc3icu8bindings6ucsdet13UCharsetMatchPEQBsQBoQBn6utypes10UErrorCodeZi",
+    "parameters" : [
+     {
+      "name" : "ucsm",
+      "deco" : "PxS6bindbc3icu8bindings6ucsdet13UCharsetMatch"
+     },
+     {
+      "name" : "status",
+      "deco" : "PE6bindbc3icu8bindings6utypes10UErrorCode"
+     }
+    ]
+   },
+   {
+    "name" : "ucsdet_getLanguage_67",
+    "kind" : "function",
+    "comment" : "\n",
+    "line" : 45,
+    "char" : 14,
+    "linkage" : "c",
+    "deco" : "UPxS6bindbc3icu8bindings6ucsdet13UCharsetMatchPEQBsQBoQBn6utypes10UErrorCodeZPxa",
+    "parameters" : [
+     {
+      "name" : "ucsm",
+      "deco" : "PxS6bindbc3icu8bindings6ucsdet13UCharsetMatch"
+     },
+     {
+      "name" : "status",
+      "deco" : "PE6bindbc3icu8bindings6utypes10UErrorCode"
+     }
+    ]
+   },
+   {
+    "name" : "ucsdet_getUChars_67",
+    "kind" : "function",
+    "comment" : "\n",
+    "line" : 48,
+    "char" : 5,
+    "linkage" : "c",
+    "deco" : "UPxS6bindbc3icu8bindings6ucsdet13UCharsetMatchPuiPEQBvQBrQBq6utypes10UErrorCodeZi",
+    "originalType" : "extern (C) int(const(UCharsetMatch)* ucsm, UChar* buf, int cap, UErrorCode* status)",
+    "parameters" : [
+     {
+      "name" : "ucsm",
+      "deco" : "PxS6bindbc3icu8bindings6ucsdet13UCharsetMatch"
+     },
+     {
+      "name" : "buf",
+      "deco" : "Pu"
+     },
+     {
+      "name" : "cap",
+      "deco" : "i"
+     },
+     {
+      "name" : "status",
+      "deco" : "PE6bindbc3icu8bindings6utypes10UErrorCode"
+     }
+    ]
+   },
+   {
+    "name" : "ucsdet_getAllDetectableCharsets_67",
+    "kind" : "function",
+    "comment" : "\n",
+    "line" : 51,
+    "char" : 15,
+    "linkage" : "c",
+    "deco" : "UPxS6bindbc3icu8bindings6ucsdet16UCharsetDetectorPEQBvQBrQBq6utypes10UErrorCodeZPSQDaQCwQCv5uenum12UEnumeration",
+    "parameters" : [
+     {
+      "name" : "ucsd",
+      "deco" : "PxS6bindbc3icu8bindings6ucsdet16UCharsetDetector"
+     },
+     {
+      "name" : "status",
+      "deco" : "PE6bindbc3icu8bindings6utypes10UErrorCode"
+     }
+    ]
+   },
+   {
+    "name" : "ucsdet_isInputFilterEnabled_67",
+    "kind" : "function",
+    "comment" : "\n",
+    "line" : 54,
+    "char" : 7,
+    "linkage" : "c",
+    "deco" : "UPxS6bindbc3icu8bindings6ucsdet16UCharsetDetectorZb",
+    "originalType" : "extern (C) UBool(const(UCharsetDetector)* ucsd)",
+    "parameters" : [
+     {
+      "name" : "ucsd",
+      "deco" : "PxS6bindbc3icu8bindings6ucsdet16UCharsetDetector"
+     }
+    ]
+   },
+   {
+    "name" : "ucsdet_enableInputFilter_67",
+    "kind" : "function",
+    "comment" : "\n",
+    "line" : 57,
+    "char" : 7,
+    "linkage" : "c",
+    "deco" : "UPS6bindbc3icu8bindings6ucsdet16UCharsetDetectorbZb",
+    "originalType" : "extern (C) UBool(UCharsetDetector* ucsd, UBool filter)",
+    "parameters" : [
+     {
+      "name" : "ucsd",
+      "deco" : "PS6bindbc3icu8bindings6ucsdet16UCharsetDetector"
+     },
+     {
+      "name" : "filter",
+      "deco" : "b"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "bindbc.icu.bindings.uenum",
+  "kind" : "module",
+  "file" : "/home/runner/work/bindbc-icu/bindbc-icu/src/bindbc/icu/bindings/uenum.d",
+  "comment" : " uenum.h\n\n License: [BSL-1.0](http://boost.org/LICENSE_1_0.txt).\n",
+  "members" : [
+   {
+    "name" : "bindbc.icu.bindings.utypes",
+    "kind" : "import",
+    "line" : 9,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "StringEnumeration",
+    "kind" : "struct",
+    "comment" : "\n",
+    "line" : 14,
+    "char" : 1,
+    "members" : []
+   },
+   {
+    "name" : "UEnumeration",
+    "kind" : "struct",
+    "comment" : "\n",
+    "line" : 17,
+    "char" : 1,
+    "members" : []
+   },
+   {
+    "name" : "uenum_close_67",
+    "kind" : "function",
+    "comment" : "\n",
+    "line" : 20,
+    "char" : 6,
+    "linkage" : "c",
+    "deco" : "UPS6bindbc3icu8bindings5uenum12UEnumerationZv",
+    "parameters" : [
+     {
+      "name" : "en",
+      "deco" : "PS6bindbc3icu8bindings5uenum12UEnumeration"
+     }
+    ]
+   },
+   {
+    "name" : "uenum_count_67",
+    "kind" : "function",
+    "comment" : "\n",
+    "line" : 23,
+    "char" : 5,
+    "linkage" : "c",
+    "deco" : "UPS6bindbc3icu8bindings5uenum12UEnumerationPEQBqQBmQBl6utypes10UErrorCodeZi",
+    "parameters" : [
+     {
+      "name" : "en",
+      "deco" : "PS6bindbc3icu8bindings5uenum12UEnumeration"
+     },
+     {
+      "name" : "status",
+      "deco" : "PE6bindbc3icu8bindings6utypes10UErrorCode"
+     }
+    ]
+   },
+   {
+    "name" : "uenum_unext_67",
+    "kind" : "function",
+    "comment" : "\n",
+    "line" : 26,
+    "char" : 15,
+    "linkage" : "c",
+    "deco" : "UPS6bindbc3icu8bindings5uenum12UEnumerationPiPEQBsQBoQBn6utypes10UErrorCodeZPxu",
+    "originalType" : "extern (C) const(UChar)*(UEnumeration* en, int* resultLength, UErrorCode* status)",
+    "parameters" : [
+     {
+      "name" : "en",
+      "deco" : "PS6bindbc3icu8bindings5uenum12UEnumeration"
+     },
+     {
+      "name" : "resultLength",
+      "deco" : "Pi"
+     },
+     {
+      "name" : "status",
+      "deco" : "PE6bindbc3icu8bindings6utypes10UErrorCode"
+     }
+    ]
+   },
+   {
+    "name" : "uenum_next_67",
+    "kind" : "function",
+    "comment" : "\n",
+    "line" : 29,
+    "char" : 14,
+    "linkage" : "c",
+    "deco" : "UPS6bindbc3icu8bindings5uenum12UEnumerationPiPEQBsQBoQBn6utypes10UErrorCodeZPxa",
+    "parameters" : [
+     {
+      "name" : "en",
+      "deco" : "PS6bindbc3icu8bindings5uenum12UEnumeration"
+     },
+     {
+      "name" : "resultLength",
+      "deco" : "Pi"
+     },
+     {
+      "name" : "status",
+      "deco" : "PE6bindbc3icu8bindings6utypes10UErrorCode"
+     }
+    ]
+   },
+   {
+    "name" : "uenum_reset_67",
+    "kind" : "function",
+    "comment" : "\n",
+    "line" : 32,
+    "char" : 6,
+    "linkage" : "c",
+    "deco" : "UPS6bindbc3icu8bindings5uenum12UEnumerationPEQBqQBmQBl6utypes10UErrorCodeZv",
+    "parameters" : [
+     {
+      "name" : "en",
+      "deco" : "PS6bindbc3icu8bindings5uenum12UEnumeration"
+     },
+     {
+      "name" : "status",
+      "deco" : "PE6bindbc3icu8bindings6utypes10UErrorCode"
+     }
+    ]
+   },
+   {
+    "name" : "uenum_openFromStringEnumeration_67",
+    "kind" : "function",
+    "comment" : "\n",
+    "line" : 35,
+    "char" : 15,
+    "linkage" : "c",
+    "deco" : "UPS6bindbc3icu8bindings5uenum17StringEnumerationPEQBvQBrQBq6utypes10UErrorCodeZPSQDaQCwQCvQCp12UEnumeration",
+    "parameters" : [
+     {
+      "name" : "adopted",
+      "deco" : "PS6bindbc3icu8bindings5uenum17StringEnumeration"
+     },
+     {
+      "name" : "ec",
+      "deco" : "PE6bindbc3icu8bindings6utypes10UErrorCode"
+     }
+    ]
+   },
+   {
+    "name" : "uenum_openUCharStringsEnumeration_67",
+    "kind" : "function",
+    "comment" : "\n",
+    "line" : 38,
+    "char" : 15,
+    "linkage" : "c",
+    "deco" : "UPxPuiPE6bindbc3icu8bindings6utypes10UErrorCodeZPSQBqQBmQBl5uenum12UEnumeration",
+    "originalType" : "@system extern (C) UEnumeration*(const(UChar*)* strings, int count, UErrorCode* ec)",
+    "parameters" : [
+     {
+      "name" : "strings",
+      "deco" : "PxPu"
+     },
+     {
+      "name" : "count",
+      "deco" : "i"
+     },
+     {
+      "name" : "ec",
+      "deco" : "PE6bindbc3icu8bindings6utypes10UErrorCode"
+     }
+    ]
+   },
+   {
+    "name" : "uenum_openCharStringsEnumeration_67",
+    "kind" : "function",
+    "comment" : "\n",
+    "line" : 41,
+    "char" : 15,
+    "linkage" : "c",
+    "deco" : "UPxPaiPE6bindbc3icu8bindings6utypes10UErrorCodeZPSQBqQBmQBl5uenum12UEnumeration",
+    "parameters" : [
+     {
+      "name" : "strings",
+      "deco" : "PxPa"
+     },
+     {
+      "name" : "count",
+      "deco" : "i"
+     },
+     {
+      "name" : "ec",
+      "deco" : "PE6bindbc3icu8bindings6utypes10UErrorCode"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "bindbc.icu.bindings.utypes",
+  "kind" : "module",
+  "file" : "/home/runner/work/bindbc-icu/bindbc-icu/src/bindbc/icu/bindings/utypes.d",
+  "comment" : " utypes.h\n\n License: [BSL-1.0](http://boost.org/LICENSE_1_0.txt).\n",
+  "members" : [
+   {
+    "name" : "UBool",
+    "kind" : "alias",
+    "comment" : "from umachine\n",
+    "line" : 12,
+    "char" : 1,
+    "deco" : "b"
+   },
+   {
+    "name" : "UChar",
+    "kind" : "alias",
+    "comment" : "from umachine\n",
+    "line" : 15,
+    "char" : 1,
+    "deco" : "u"
+   },
+   {
+    "name" : "UChar32",
+    "kind" : "alias",
+    "comment" : "from umachine\n",
+    "line" : 18,
+    "char" : 1,
+    "deco" : "w"
+   },
+   {
+    "name" : "UDate",
+    "kind" : "alias",
+    "comment" : "\n",
+    "line" : 21,
+    "char" : 1,
+    "deco" : "d"
+   },
+   {
+    "name" : "U_MILLIS_PER_SECOND",
+    "kind" : "variable",
+    "comment" : "\n",
+    "line" : 24,
+    "char" : 11,
+    "storageClass" : [
+     "enum"
+    ],
+    "linkage" : "c",
+    "deco" : "k",
+    "init" : "1000u"
+   },
+   {
+    "name" : "U_MILLIS_PER_MINUTE",
+    "kind" : "variable",
+    "comment" : "\n",
+    "line" : 26,
+    "char" : 11,
+    "storageClass" : [
+     "enum"
+    ],
+    "linkage" : "c",
+    "deco" : "k",
+    "init" : "60000u"
+   },
+   {
+    "name" : "U_MILLIS_PER_HOUR",
+    "kind" : "variable",
+    "comment" : "\n",
+    "line" : 28,
+    "char" : 11,
+    "storageClass" : [
+     "enum"
+    ],
+    "linkage" : "c",
+    "deco" : "k",
+    "init" : "3600000u"
+   },
+   {
+    "name" : "U_MILLIS_PER_DAY",
+    "kind" : "variable",
+    "comment" : "\n",
+    "line" : 30,
+    "char" : 11,
+    "storageClass" : [
+     "enum"
+    ],
+    "linkage" : "c",
+    "deco" : "k",
+    "init" : "86400000u"
+   },
+   {
+    "name" : "U_DATE_MAX",
+    "kind" : "variable",
+    "comment" : "\n",
+    "line" : 33,
+    "char" : 12,
+    "storageClass" : [
+     "enum"
+    ],
+    "linkage" : "c",
+    "deco" : "d",
+    "originalType" : "UDate",
+    "init" : "1.79769e+308"
+   },
+   {
+    "name" : "U_DATE_MIN",
+    "kind" : "variable",
+    "comment" : "\n",
+    "line" : 36,
+    "char" : 12,
+    "storageClass" : [
+     "enum"
+    ],
+    "linkage" : "c",
+    "deco" : "d",
+    "originalType" : "UDate",
+    "init" : "-1.79769e+308"
+   },
+   {
+    "name" : "UErrorCode",
+    "kind" : "enum",
+    "comment" : "\n",
+    "line" : 39,
+    "char" : 1,
+    "baseDeco" : "i",
+    "members" : [
+     {
+      "name" : "U_USING_FALLBACK_WARNING",
+      "kind" : "enum member",
+      "value" : "-128",
+      "comment" : "< A resource bundle lookup returned a fallback result (not an error)\n",
+      "line" : 41,
+      "char" : 2
+     },
+     {
+      "name" : "U_ERROR_WARNING_START",
+      "kind" : "enum member",
+      "value" : "-128",
+      "comment" : "< Start of information results (semantically successful)\n",
+      "line" : 43,
+      "char" : 2
+     },
+     {
+      "name" : "U_USING_DEFAULT_WARNING",
+      "kind" : "enum member",
+      "value" : "-127",
+      "comment" : "< A resource bundle lookup returned a result from the root locale (not an error)\n",
+      "line" : 45,
+      "char" : 2
+     },
+     {
+      "name" : "U_SAFECLONE_ALLOCATED_WARNING",
+      "kind" : "enum member",
+      "value" : "-126",
+      "comment" : "< A SafeClone operation required allocating memory (informational only)\n",
+      "line" : 47,
+      "char" : 2
+     },
+     {
+      "name" : "U_STATE_OLD_WARNING",
+      "kind" : "enum member",
+      "value" : "-125",
+      "comment" : "< ICU has to use compatibility layer to construct the service. Expect performance/memory usage degradation. Consider upgrading\n",
+      "line" : 49,
+      "char" : 2
+     },
+     {
+      "name" : "U_STRING_NOT_TERMINATED_WARNING",
+      "kind" : "enum member",
+      "value" : "-124",
+      "comment" : "< An output string could not be NUL-terminated because output length==destCapacity.\n",
+      "line" : 51,
+      "char" : 2
+     },
+     {
+      "name" : "U_SORT_KEY_TOO_SHORT_WARNING",
+      "kind" : "enum member",
+      "value" : "-123",
+      "comment" : "< Number of levels requested in getBound is higher than the number of levels in the sort key\n",
+      "line" : 53,
+      "char" : 2
+     },
+     {
+      "name" : "U_AMBIGUOUS_ALIAS_WARNING",
+      "kind" : "enum member",
+      "value" : "-122",
+      "comment" : "< This converter alias can go to different converter implementations\n",
+      "line" : 55,
+      "char" : 2
+     },
+     {
+      "name" : "U_DIFFERENT_UCA_VERSION",
+      "kind" : "enum member",
+      "value" : "-121",
+      "comment" : "< ucol_open encountered a mismatch between UCA version and collator image version, so the collator was constructed from rules. No impact to further function\n",
+      "line" : 57,
+      "char" : 2
+     },
+     {
+      "name" : "U_PLUGIN_CHANGED_LEVEL_WARNING",
+      "kind" : "enum member",
+      "value" : "-120",
+      "comment" : "< A plugin caused a level change. May not be an error, but later plugins may not load.\n",
+      "line" : 59,
+      "char" : 2
+     },
+     {
+      "name" : "U_ZERO_ERROR",
+      "kind" : "enum member",
+      "value" : "0",
+      "comment" : "< No error, no warning.\n",
+      "line" : 61,
+      "char" : 2
+     },
+     {
+      "name" : "U_ILLEGAL_ARGUMENT_ERROR",
+      "kind" : "enum member",
+      "value" : "1",
+      "comment" : "< Start of codes indicating failure\n",
+      "line" : 63,
+      "char" : 2
+     },
+     {
+      "name" : "U_MISSING_RESOURCE_ERROR",
+      "kind" : "enum member",
+      "value" : "2",
+      "comment" : "< The requested resource cannot be found\n",
+      "line" : 64,
+      "char" : 2
+     },
+     {
+      "name" : "U_INVALID_FORMAT_ERROR",
+      "kind" : "enum member",
+      "value" : "3",
+      "comment" : "< Data format is not what is expected\n",
+      "line" : 65,
+      "char" : 2
+     },
+     {
+      "name" : "U_FILE_ACCESS_ERROR",
+      "kind" : "enum member",
+      "value" : "4",
+      "comment" : "< The requested file cannot be found\n",
+      "line" : 66,
+      "char" : 2
+     },
+     {
+      "name" : "U_INTERNAL_PROGRAM_ERROR",
+      "kind" : "enum member",
+      "value" : "5",
+      "comment" : "< Indicates a bug in the library code\n",
+      "line" : 67,
+      "char" : 2
+     },
+     {
+      "name" : "U_MESSAGE_PARSE_ERROR",
+      "kind" : "enum member",
+      "value" : "6",
+      "comment" : "< Unable to parse a message (message format)\n",
+      "line" : 68,
+      "char" : 2
+     },
+     {
+      "name" : "U_MEMORY_ALLOCATION_ERROR",
+      "kind" : "enum member",
+      "value" : "7",
+      "comment" : "< Memory allocation error\n",
+      "line" : 69,
+      "char" : 2
+     },
+     {
+      "name" : "U_INDEX_OUTOFBOUNDS_ERROR",
+      "kind" : "enum member",
+      "value" : "8",
+      "comment" : "< Trying to access the index that is out of bounds\n",
+      "line" : 70,
+      "char" : 2
+     },
+     {
+      "name" : "U_PARSE_ERROR",
+      "kind" : "enum member",
+      "value" : "9",
+      "comment" : "< Equivalent to Java ParseException\n",
+      "line" : 71,
+      "char" : 2
+     },
+     {
+      "name" : "U_INVALID_CHAR_FOUND",
+      "kind" : "enum member",
+      "value" : "10",
+      "comment" : "< Character conversion: Unmappable input sequence. In other APIs: Invalid character.\n",
+      "line" : 72,
+      "char" : 2
+     },
+     {
+      "name" : "U_TRUNCATED_CHAR_FOUND",
+      "kind" : "enum member",
+      "value" : "11",
+      "comment" : "< Character conversion: Incomplete input sequence.\n",
+      "line" : 73,
+      "char" : 2
+     },
+     {
+      "name" : "U_ILLEGAL_CHAR_FOUND",
+      "kind" : "enum member",
+      "value" : "12",
+      "comment" : "< Character conversion: Illegal input sequence/combination of input units.\n",
+      "line" : 74,
+      "char" : 2
+     },
+     {
+      "name" : "U_INVALID_TABLE_FORMAT",
+      "kind" : "enum member",
+      "value" : "13",
+      "comment" : "< Conversion table file found, but corrupted\n",
+      "line" : 75,
+      "char" : 2
+     },
+     {
+      "name" : "U_INVALID_TABLE_FILE",
+      "kind" : "enum member",
+      "value" : "14",
+      "comment" : "< Conversion table file not found\n",
+      "line" : 76,
+      "char" : 2
+     },
+     {
+      "name" : "U_BUFFER_OVERFLOW_ERROR",
+      "kind" : "enum member",
+      "value" : "15",
+      "comment" : "< A result would not fit in the supplied buffer\n",
+      "line" : 77,
+      "char" : 2
+     },
+     {
+      "name" : "U_UNSUPPORTED_ERROR",
+      "kind" : "enum member",
+      "value" : "16",
+      "comment" : "< Requested operation not supported in current context\n",
+      "line" : 78,
+      "char" : 2
+     },
+     {
+      "name" : "U_RESOURCE_TYPE_MISMATCH",
+      "kind" : "enum member",
+      "value" : "17",
+      "comment" : "< an operation is requested over a resource that does not support it\n",
+      "line" : 79,
+      "char" : 2
+     },
+     {
+      "name" : "U_ILLEGAL_ESCAPE_SEQUENCE",
+      "kind" : "enum member",
+      "value" : "18",
+      "comment" : "< ISO-2022 illegal escape sequence\n",
+      "line" : 80,
+      "char" : 2
+     },
+     {
+      "name" : "U_UNSUPPORTED_ESCAPE_SEQUENCE",
+      "kind" : "enum member",
+      "value" : "19",
+      "comment" : "< ISO-2022 unsupported escape sequence\n",
+      "line" : 81,
+      "char" : 2
+     },
+     {
+      "name" : "U_NO_SPACE_AVAILABLE",
+      "kind" : "enum member",
+      "value" : "20",
+      "comment" : "< No space available for in-buffer expansion for Arabic shaping\n",
+      "line" : 82,
+      "char" : 2
+     },
+     {
+      "name" : "U_CE_NOT_FOUND_ERROR",
+      "kind" : "enum member",
+      "value" : "21",
+      "comment" : "< Currently used only while setting variable top, but can be used generally\n",
+      "line" : 83,
+      "char" : 2
+     },
+     {
+      "name" : "U_PRIMARY_TOO_LONG_ERROR",
+      "kind" : "enum member",
+      "value" : "22",
+      "comment" : "< User tried to set variable top to a primary that is longer than two bytes\n",
+      "line" : 84,
+      "char" : 2
+     },
+     {
+      "name" : "U_STATE_TOO_OLD_ERROR",
+      "kind" : "enum member",
+      "value" : "23",
+      "comment" : "< ICU cannot construct a service from this state, as it is no longer supported\n",
+      "line" : 85,
+      "char" : 2
+     },
+     {
+      "name" : "U_TOO_MANY_ALIASES_ERROR",
+      "kind" : "enum member",
+      "value" : "24",
+      "comment" : "< There are too many aliases in the path to the requested resource.\n\t\t\t\t\t\t\t\t\t\t\t It is very possible that a circular alias definition has occurred\n",
+      "line" : 86,
+      "char" : 2
+     },
+     {
+      "name" : "U_ENUM_OUT_OF_SYNC_ERROR",
+      "kind" : "enum member",
+      "value" : "25",
+      "comment" : "< UEnumeration out of sync with underlying collection\n",
+      "line" : 88,
+      "char" : 2
+     },
+     {
+      "name" : "U_INVARIANT_CONVERSION_ERROR",
+      "kind" : "enum member",
+      "value" : "26",
+      "comment" : "< Unable to convert a UChar* string to char* with the invariant converter.\n",
+      "line" : 89,
+      "char" : 2
+     },
+     {
+      "name" : "U_INVALID_STATE_ERROR",
+      "kind" : "enum member",
+      "value" : "27",
+      "comment" : "< Requested operation can not be completed with ICU in its current state\n",
+      "line" : 90,
+      "char" : 2
+     },
+     {
+      "name" : "U_COLLATOR_VERSION_MISMATCH",
+      "kind" : "enum member",
+      "value" : "28",
+      "comment" : "< Collator version is not compatible with the base version\n",
+      "line" : 91,
+      "char" : 2
+     },
+     {
+      "name" : "U_USELESS_COLLATOR_ERROR",
+      "kind" : "enum member",
+      "value" : "29",
+      "comment" : "< Collator is options only and no base is specified\n",
+      "line" : 92,
+      "char" : 2
+     },
+     {
+      "name" : "U_NO_WRITE_PERMISSION",
+      "kind" : "enum member",
+      "value" : "30",
+      "comment" : "< Attempt to modify read-only or constant data.\n",
+      "line" : 93,
+      "char" : 2
+     },
+     {
+      "name" : "U_BAD_VARIABLE_DEFINITION",
+      "kind" : "enum member",
+      "value" : "65536",
+      "comment" : "< Missing '$$' or duplicate variable name\n",
+      "line" : 97,
+      "char" : 2
+     },
+     {
+      "name" : "U_PARSE_ERROR_START",
+      "kind" : "enum member",
+      "value" : "65536",
+      "comment" : "< Start of Transliterator errors\n",
+      "line" : 98,
+      "char" : 2
+     },
+     {
+      "name" : "U_MALFORMED_RULE",
+      "kind" : "enum member",
+      "value" : "65537",
+      "comment" : "< Elements of a rule are misplaced\n",
+      "line" : 99,
+      "char" : 2
+     },
+     {
+      "name" : "U_MALFORMED_SET",
+      "kind" : "enum member",
+      "value" : "65538",
+      "comment" : "< A UnicodeSet pattern is invalid\n",
+      "line" : 100,
+      "char" : 2
+     },
+     {
+      "name" : "U_MALFORMED_SYMBOL_REFERENCE",
+      "kind" : "enum member",
+      "value" : "65539",
+      "comment" : "< UNUSED as of ICU 2.4\n",
+      "line" : 101,
+      "char" : 2
+     },
+     {
+      "name" : "U_MALFORMED_UNICODE_ESCAPE",
+      "kind" : "enum member",
+      "value" : "65540",
+      "comment" : "< A Unicode escape pattern is invalid\n",
+      "line" : 102,
+      "char" : 2
+     },
+     {
+      "name" : "U_MALFORMED_VARIABLE_DEFINITION",
+      "kind" : "enum member",
+      "value" : "65541",
+      "comment" : "< A variable definition is invalid\n",
+      "line" : 103,
+      "char" : 2
+     },
+     {
+      "name" : "U_MALFORMED_VARIABLE_REFERENCE",
+      "kind" : "enum member",
+      "value" : "65542",
+      "comment" : "< A variable reference is invalid\n",
+      "line" : 104,
+      "char" : 2
+     },
+     {
+      "name" : "U_MISMATCHED_SEGMENT_DELIMITERS",
+      "kind" : "enum member",
+      "value" : "65543",
+      "comment" : "< UNUSED as of ICU 2.4\n",
+      "line" : 105,
+      "char" : 2
+     },
+     {
+      "name" : "U_MISPLACED_ANCHOR_START",
+      "kind" : "enum member",
+      "value" : "65544",
+      "comment" : "< A start anchor appears at an illegal position\n",
+      "line" : 106,
+      "char" : 2
+     },
+     {
+      "name" : "U_MISPLACED_CURSOR_OFFSET",
+      "kind" : "enum member",
+      "value" : "65545",
+      "comment" : "< A cursor offset occurs at an illegal position\n",
+      "line" : 107,
+      "char" : 2
+     },
+     {
+      "name" : "U_MISPLACED_QUANTIFIER",
+      "kind" : "enum member",
+      "value" : "65546",
+      "comment" : "< A quantifier appears after a segment close delimiter\n",
+      "line" : 108,
+      "char" : 2
+     },
+     {
+      "name" : "U_MISSING_OPERATOR",
+      "kind" : "enum member",
+      "value" : "65547",
+      "comment" : "< A rule contains no operator\n",
+      "line" : 109,
+      "char" : 2
+     },
+     {
+      "name" : "U_MISSING_SEGMENT_CLOSE",
+      "kind" : "enum member",
+      "value" : "65548",
+      "comment" : "< UNUSED as of ICU 2.4\n",
+      "line" : 110,
+      "char" : 2
+     },
+     {
+      "name" : "U_MULTIPLE_ANTE_CONTEXTS",
+      "kind" : "enum member",
+      "value" : "65549",
+      "comment" : "< More than one ante context\n",
+      "line" : 111,
+      "char" : 2
+     },
+     {
+      "name" : "U_MULTIPLE_CURSORS",
+      "kind" : "enum member",
+      "value" : "65550",
+      "comment" : "< More than one cursor\n",
+      "line" : 112,
+      "char" : 2
+     },
+     {
+      "name" : "U_MULTIPLE_POST_CONTEXTS",
+      "kind" : "enum member",
+      "value" : "65551",
+      "comment" : "< More than one post context\n",
+      "line" : 113,
+      "char" : 2
+     },
+     {
+      "name" : "U_TRAILING_BACKSLASH",
+      "kind" : "enum member",
+      "value" : "65552",
+      "comment" : "< A dangling backslash\n",
+      "line" : 114,
+      "char" : 2
+     },
+     {
+      "name" : "U_UNDEFINED_SEGMENT_REFERENCE",
+      "kind" : "enum member",
+      "value" : "65553",
+      "comment" : "< A segment reference does not correspond to a defined segment\n",
+      "line" : 115,
+      "char" : 2
+     },
+     {
+      "name" : "U_UNDEFINED_VARIABLE",
+      "kind" : "enum member",
+      "value" : "65554",
+      "comment" : "< A variable reference does not correspond to a defined variable\n",
+      "line" : 116,
+      "char" : 2
+     },
+     {
+      "name" : "U_UNQUOTED_SPECIAL",
+      "kind" : "enum member",
+      "value" : "65555",
+      "comment" : "< A special character was not quoted or escaped\n",
+      "line" : 117,
+      "char" : 2
+     },
+     {
+      "name" : "U_UNTERMINATED_QUOTE",
+      "kind" : "enum member",
+      "value" : "65556",
+      "comment" : "< A closing single quote is missing\n",
+      "line" : 118,
+      "char" : 2
+     },
+     {
+      "name" : "U_RULE_MASK_ERROR",
+      "kind" : "enum member",
+      "value" : "65557",
+      "comment" : "< A rule is hidden by an earlier more general rule\n",
+      "line" : 119,
+      "char" : 2
+     },
+     {
+      "name" : "U_MISPLACED_COMPOUND_FILTER",
+      "kind" : "enum member",
+      "value" : "65558",
+      "comment" : "< A compound filter is in an invalid location\n",
+      "line" : 120,
+      "char" : 2
+     },
+     {
+      "name" : "U_MULTIPLE_COMPOUND_FILTERS",
+      "kind" : "enum member",
+      "value" : "65559",
+      "comment" : "< More than one compound filter\n",
+      "line" : 121,
+      "char" : 2
+     },
+     {
+      "name" : "U_INVALID_RBT_SYNTAX",
+      "kind" : "enum member",
+      "value" : "65560",
+      "comment" : "< A \"::id\" rule was passed to the RuleBasedTransliterator parser\n",
+      "line" : 122,
+      "char" : 2
+     },
+     {
+      "name" : "U_INVALID_PROPERTY_PATTERN",
+      "kind" : "enum member",
+      "value" : "65561",
+      "comment" : "< UNUSED as of ICU 2.4\n",
+      "line" : 123,
+      "char" : 2
+     },
+     {
+      "name" : "U_MALFORMED_PRAGMA",
+      "kind" : "enum member",
+      "value" : "65562",
+      "comment" : "< A 'use' pragma is invalid\n",
+      "line" : 124,
+      "char" : 2
+     },
+     {
+      "name" : "U_UNCLOSED_SEGMENT",
+      "kind" : "enum member",
+      "value" : "65563",
+      "comment" : "< A closing '\\)' is missing\n",
+      "line" : 125,
+      "char" : 2
+     },
+     {
+      "name" : "U_ILLEGAL_CHAR_IN_SEGMENT",
+      "kind" : "enum member",
+      "value" : "65564",
+      "comment" : "< UNUSED as of ICU 2.4\n",
+      "line" : 126,
+      "char" : 2
+     },
+     {
+      "name" : "U_VARIABLE_RANGE_EXHAUSTED",
+      "kind" : "enum member",
+      "value" : "65565",
+      "comment" : "< Too many stand-ins generated for the given variable range\n",
+      "line" : 127,
+      "char" : 2
+     },
+     {
+      "name" : "U_VARIABLE_RANGE_OVERLAP",
+      "kind" : "enum member",
+      "value" : "65566",
+      "comment" : "< The variable range overlaps characters used in rules\n",
+      "line" : 128,
+      "char" : 2
+     },
+     {
+      "name" : "U_ILLEGAL_CHARACTER",
+      "kind" : "enum member",
+      "value" : "65567",
+      "comment" : "< A special character is outside its allowed context\n",
+      "line" : 129,
+      "char" : 2
+     },
+     {
+      "name" : "U_INTERNAL_TRANSLITERATOR_ERROR",
+      "kind" : "enum member",
+      "value" : "65568",
+      "comment" : "< Internal transliterator system error\n",
+      "line" : 130,
+      "char" : 2
+     },
+     {
+      "name" : "U_INVALID_ID",
+      "kind" : "enum member",
+      "value" : "65569",
+      "comment" : "< A \"::id\" rule specifies an unknown transliterator\n",
+      "line" : 131,
+      "char" : 2
+     },
+     {
+      "name" : "U_INVALID_FUNCTION",
+      "kind" : "enum member",
+      "value" : "65570",
+      "comment" : "< A \"&fn()\" rule specifies an unknown transliterator\n",
+      "line" : 132,
+      "char" : 2
+     },
+     {
+      "name" : "U_UNEXPECTED_TOKEN",
+      "kind" : "enum member",
+      "value" : "65792",
+      "comment" : "< Syntax error in format pattern\n",
+      "line" : 136,
+      "char" : 2
+     },
+     {
+      "name" : "U_FMT_PARSE_ERROR_START",
+      "kind" : "enum member",
+      "value" : "65792",
+      "comment" : "< Start of format library errors\n",
+      "line" : 137,
+      "char" : 2
+     },
+     {
+      "name" : "U_MULTIPLE_DECIMAL_SEPARATORS",
+      "kind" : "enum member",
+      "value" : "65793",
+      "comment" : "< More than one decimal separator in number pattern\n",
+      "line" : 138,
+      "char" : 2
+     },
+     {
+      "name" : "U_MULTIPLE_DECIMAL_SEPERATORS",
+      "kind" : "enum member",
+      "value" : "65793",
+      "comment" : "< Typo: kept for backward compatibility. Use U_MULTIPLE_DECIMAL_SEPARATORS\n",
+      "line" : 139,
+      "char" : 2
+     },
+     {
+      "name" : "U_MULTIPLE_EXPONENTIAL_SYMBOLS",
+      "kind" : "enum member",
+      "value" : "65794",
+      "comment" : "< More than one exponent symbol in number pattern\n",
+      "line" : 140,
+      "char" : 2
+     },
+     {
+      "name" : "U_MALFORMED_EXPONENTIAL_PATTERN",
+      "kind" : "enum member",
+      "value" : "65795",
+      "comment" : "< Grouping symbol in exponent pattern\n",
+      "line" : 141,
+      "char" : 2
+     },
+     {
+      "name" : "U_MULTIPLE_PERCENT_SYMBOLS",
+      "kind" : "enum member",
+      "value" : "65796",
+      "comment" : "< More than one percent symbol in number pattern\n",
+      "line" : 142,
+      "char" : 2
+     },
+     {
+      "name" : "U_MULTIPLE_PERMILL_SYMBOLS",
+      "kind" : "enum member",
+      "value" : "65797",
+      "comment" : "< More than one permill symbol in number pattern\n",
+      "line" : 143,
+      "char" : 2
+     },
+     {
+      "name" : "U_MULTIPLE_PAD_SPECIFIERS",
+      "kind" : "enum member",
+      "value" : "65798",
+      "comment" : "< More than one pad symbol in number pattern\n",
+      "line" : 144,
+      "char" : 2
+     },
+     {
+      "name" : "U_PATTERN_SYNTAX_ERROR",
+      "kind" : "enum member",
+      "value" : "65799",
+      "comment" : "< Syntax error in format pattern\n",
+      "line" : 145,
+      "char" : 2
+     },
+     {
+      "name" : "U_ILLEGAL_PAD_POSITION",
+      "kind" : "enum member",
+      "value" : "65800",
+      "comment" : "< Pad symbol misplaced in number pattern\n",
+      "line" : 146,
+      "char" : 2
+     },
+     {
+      "name" : "U_UNMATCHED_BRACES",
+      "kind" : "enum member",
+      "value" : "65801",
+      "comment" : "< Braces do not match in message pattern\n",
+      "line" : 147,
+      "char" : 2
+     },
+     {
+      "name" : "U_UNSUPPORTED_PROPERTY",
+      "kind" : "enum member",
+      "value" : "65802",
+      "comment" : "< UNUSED as of ICU 2.4\n",
+      "line" : 148,
+      "char" : 2
+     },
+     {
+      "name" : "U_UNSUPPORTED_ATTRIBUTE",
+      "kind" : "enum member",
+      "value" : "65803",
+      "comment" : "< UNUSED as of ICU 2.4\n",
+      "line" : 149,
+      "char" : 2
+     },
+     {
+      "name" : "U_ARGUMENT_TYPE_MISMATCH",
+      "kind" : "enum member",
+      "value" : "65804",
+      "comment" : "< Argument name and argument index mismatch in MessageFormat functions\n",
+      "line" : 150,
+      "char" : 2
+     },
+     {
+      "name" : "U_DUPLICATE_KEYWORD",
+      "kind" : "enum member",
+      "value" : "65805",
+      "comment" : "< Duplicate keyword in PluralFormat\n",
+      "line" : 151,
+      "char" : 2
+     },
+     {
+      "name" : "U_UNDEFINED_KEYWORD",
+      "kind" : "enum member",
+      "value" : "65806",
+      "comment" : "< Undefined Plural keyword\n",
+      "line" : 152,
+      "char" : 2
+     },
+     {
+      "name" : "U_DEFAULT_KEYWORD_MISSING",
+      "kind" : "enum member",
+      "value" : "65807",
+      "comment" : "< Missing DEFAULT rule in plural rules\n",
+      "line" : 153,
+      "char" : 2
+     },
+     {
+      "name" : "U_DECIMAL_NUMBER_SYNTAX_ERROR",
+      "kind" : "enum member",
+      "value" : "65808",
+      "comment" : "< Decimal number syntax error\n",
+      "line" : 154,
+      "char" : 2
+     },
+     {
+      "name" : "U_FORMAT_INEXACT_ERROR",
+      "kind" : "enum member",
+      "value" : "65809",
+      "comment" : "< Cannot format a number exactly and rounding mode is ROUND_UNNECESSARY @stable ICU 4.8\n",
+      "line" : 155,
+      "char" : 2
+     },
+     {
+      "name" : "U_NUMBER_ARG_OUTOFBOUNDS_ERROR",
+      "kind" : "enum member",
+      "value" : "65810",
+      "comment" : "< The argument to a NumberFormatter helper method was out of bounds; the bounds are usually 0 to 999. @stable ICU 61\n",
+      "line" : 156,
+      "char" : 2
+     },
+     {
+      "name" : "U_NUMBER_SKELETON_SYNTAX_ERROR",
+      "kind" : "enum member",
+      "value" : "65811",
+      "comment" : "< The number skeleton passed to C++ NumberFormatter or C UNumberFormatter was invalid or contained a syntax error. @stable ICU 62\n",
+      "line" : 157,
+      "char" : 2
+     },
+     {
+      "name" : "U_BRK_INTERNAL_ERROR",
+      "kind" : "enum member",
+      "value" : "66048",
+      "comment" : "< An internal error (bug) was detected.\n",
+      "line" : 161,
+      "char" : 2
+     },
+     {
+      "name" : "U_BRK_ERROR_START",
+      "kind" : "enum member",
+      "value" : "66048",
+      "comment" : "< Start of codes indicating Break Iterator failures\n",
+      "line" : 162,
+      "char" : 2
+     },
+     {
+      "name" : "U_BRK_HEX_DIGITS_EXPECTED",
+      "kind" : "enum member",
+      "value" : "66049",
+      "comment" : "< Hex digits expected as part of a escaped char in a rule.\n",
+      "line" : 163,
+      "char" : 2
+     },
+     {
+      "name" : "U_BRK_SEMICOLON_EXPECTED",
+      "kind" : "enum member",
+      "value" : "66050",
+      "comment" : "< Missing ';' at the end of a RBBI rule.\n",
+      "line" : 164,
+      "char" : 2
+     },
+     {
+      "name" : "U_BRK_RULE_SYNTAX",
+      "kind" : "enum member",
+      "value" : "66051",
+      "comment" : "< Syntax error in RBBI rule.\n",
+      "line" : 165,
+      "char" : 2
+     },
+     {
+      "name" : "U_BRK_UNCLOSED_SET",
+      "kind" : "enum member",
+      "value" : "66052",
+      "comment" : "< UnicodeSet writing an RBBI rule missing a closing ']'.\n",
+      "line" : 166,
+      "char" : 2
+     },
+     {
+      "name" : "U_BRK_ASSIGN_ERROR",
+      "kind" : "enum member",
+      "value" : "66053",
+      "comment" : "< Syntax error in RBBI rule assignment statement.\n",
+      "line" : 167,
+      "char" : 2
+     },
+     {
+      "name" : "U_BRK_VARIABLE_REDFINITION",
+      "kind" : "enum member",
+      "value" : "66054",
+      "comment" : "< RBBI rule $Variable redefined.\n",
+      "line" : 168,
+      "char" : 2
+     },
+     {
+      "name" : "U_BRK_MISMATCHED_PAREN",
+      "kind" : "enum member",
+      "value" : "66055",
+      "comment" : "< Mis-matched parentheses in an RBBI rule.\n",
+      "line" : 169,
+      "char" : 2
+     },
+     {
+      "name" : "U_BRK_NEW_LINE_IN_QUOTED_STRING",
+      "kind" : "enum member",
+      "value" : "66056",
+      "comment" : "< Missing closing quote in an RBBI rule.\n",
+      "line" : 170,
+      "char" : 2
+     },
+     {
+      "name" : "U_BRK_UNDEFINED_VARIABLE",
+      "kind" : "enum member",
+      "value" : "66057",
+      "comment" : "< Use of an undefined $Variable in an RBBI rule.\n",
+      "line" : 171,
+      "char" : 2
+     },
+     {
+      "name" : "U_BRK_INIT_ERROR",
+      "kind" : "enum member",
+      "value" : "66058",
+      "comment" : "< Initialization failure.  Probable missing ICU Data.\n",
+      "line" : 172,
+      "char" : 2
+     },
+     {
+      "name" : "U_BRK_RULE_EMPTY_SET",
+      "kind" : "enum member",
+      "value" : "66059",
+      "comment" : "< Rule contains an empty Unicode Set.\n",
+      "line" : 173,
+      "char" : 2
+     },
+     {
+      "name" : "U_BRK_UNRECOGNIZED_OPTION",
+      "kind" : "enum member",
+      "value" : "66060",
+      "comment" : "< !!option in RBBI rules not recognized.\n",
+      "line" : 174,
+      "char" : 2
+     },
+     {
+      "name" : "U_BRK_MALFORMED_RULE_TAG",
+      "kind" : "enum member",
+      "value" : "66061",
+      "comment" : "< The {nnn} tag on a rule is malformed\n",
+      "line" : 175,
+      "char" : 2
+     },
+     {
+      "name" : "U_REGEX_INTERNAL_ERROR",
+      "kind" : "enum member",
+      "value" : "66304",
+      "comment" : "< An internal error (bug) was detected.\n",
+      "line" : 179,
+      "char" : 2
+     },
+     {
+      "name" : "U_REGEX_ERROR_START",
+      "kind" : "enum member",
+      "value" : "66304",
+      "comment" : "< Start of codes indicating Regexp failures\n",
+      "line" : 180,
+      "char" : 2
+     },
+     {
+      "name" : "U_REGEX_RULE_SYNTAX",
+      "kind" : "enum member",
+      "value" : "66305",
+      "comment" : "< Syntax error in regexp pattern.\n",
+      "line" : 181,
+      "char" : 2
+     },
+     {
+      "name" : "U_REGEX_INVALID_STATE",
+      "kind" : "enum member",
+      "value" : "66306",
+      "comment" : "< RegexMatcher in invalid state for requested operation\n",
+      "line" : 182,
+      "char" : 2
+     },
+     {
+      "name" : "U_REGEX_BAD_ESCAPE_SEQUENCE",
+      "kind" : "enum member",
+      "value" : "66307",
+      "comment" : "< Unrecognized backslash escape sequence in pattern\n",
+      "line" : 183,
+      "char" : 2
+     },
+     {
+      "name" : "U_REGEX_PROPERTY_SYNTAX",
+      "kind" : "enum member",
+      "value" : "66308",
+      "comment" : "< Incorrect Unicode property\n",
+      "line" : 184,
+      "char" : 2
+     },
+     {
+      "name" : "U_REGEX_UNIMPLEMENTED",
+      "kind" : "enum member",
+      "value" : "66309",
+      "comment" : "< Use of regexp feature that is not yet implemented.\n",
+      "line" : 185,
+      "char" : 2
+     },
+     {
+      "name" : "U_REGEX_MISMATCHED_PAREN",
+      "kind" : "enum member",
+      "value" : "66310",
+      "comment" : "< Incorrectly nested parentheses in regexp pattern.\n",
+      "line" : 186,
+      "char" : 2
+     },
+     {
+      "name" : "U_REGEX_NUMBER_TOO_BIG",
+      "kind" : "enum member",
+      "value" : "66311",
+      "comment" : "< Decimal number is too large.\n",
+      "line" : 187,
+      "char" : 2
+     },
+     {
+      "name" : "U_REGEX_BAD_INTERVAL",
+      "kind" : "enum member",
+      "value" : "66312",
+      "comment" : "< Error in {min,max} interval\n",
+      "line" : 188,
+      "char" : 2
+     },
+     {
+      "name" : "U_REGEX_MAX_LT_MIN",
+      "kind" : "enum member",
+      "value" : "66313",
+      "comment" : "< In {min,max}, max is less than min.\n",
+      "line" : 189,
+      "char" : 2
+     },
+     {
+      "name" : "U_REGEX_INVALID_BACK_REF",
+      "kind" : "enum member",
+      "value" : "66314",
+      "comment" : "< Back-reference to a non-existent capture group.\n",
+      "line" : 190,
+      "char" : 2
+     },
+     {
+      "name" : "U_REGEX_INVALID_FLAG",
+      "kind" : "enum member",
+      "value" : "66315",
+      "comment" : "< Invalid value for match mode flags.\n",
+      "line" : 191,
+      "char" : 2
+     },
+     {
+      "name" : "U_REGEX_LOOK_BEHIND_LIMIT",
+      "kind" : "enum member",
+      "value" : "66316",
+      "comment" : "< Look-Behind pattern matches must have a bounded maximum length.\n",
+      "line" : 192,
+      "char" : 2
+     },
+     {
+      "name" : "U_REGEX_SET_CONTAINS_STRING",
+      "kind" : "enum member",
+      "value" : "66317",
+      "comment" : "< Regexps cannot have UnicodeSets containing strings.\n",
+      "line" : 193,
+      "char" : 2
+     },
+     {
+      "name" : "U_REGEX_MISSING_CLOSE_BRACKET",
+      "kind" : "enum member",
+      "value" : "66319",
+      "comment" : "< Missing closing bracket on a bracket expression.\n",
+      "line" : 194,
+      "char" : 2
+     },
+     {
+      "name" : "U_REGEX_INVALID_RANGE",
+      "kind" : "enum member",
+      "value" : "66320",
+      "comment" : "< In a character range [x-y], x is greater than y.\n",
+      "line" : 195,
+      "char" : 2
+     },
+     {
+      "name" : "U_REGEX_STACK_OVERFLOW",
+      "kind" : "enum member",
+      "value" : "66321",
+      "comment" : "< Regular expression backtrack stack overflow.\n",
+      "line" : 196,
+      "char" : 2
+     },
+     {
+      "name" : "U_REGEX_TIME_OUT",
+      "kind" : "enum member",
+      "value" : "66322",
+      "comment" : "< Maximum allowed match time exceeded\n",
+      "line" : 197,
+      "char" : 2
+     },
+     {
+      "name" : "U_REGEX_STOPPED_BY_CALLER",
+      "kind" : "enum member",
+      "value" : "66323",
+      "comment" : "< Matching operation aborted by user callback fn.\n",
+      "line" : 198,
+      "char" : 2
+     },
+     {
+      "name" : "U_REGEX_PATTERN_TOO_BIG",
+      "kind" : "enum member",
+      "value" : "66324",
+      "comment" : "< Pattern exceeds limits on size or complexity. @stable ICU 55\n",
+      "line" : 199,
+      "char" : 2
+     },
+     {
+      "name" : "U_REGEX_INVALID_CAPTURE_GROUP_NAME",
+      "kind" : "enum member",
+      "value" : "66325",
+      "comment" : "< Invalid capture group name. @stable ICU 55\n",
+      "line" : 200,
+      "char" : 2
+     },
+     {
+      "name" : "U_IDNA_PROHIBITED_ERROR",
+      "kind" : "enum member",
+      "value" : "66560",
+      "line" : 204,
+      "char" : 2
+     },
+     {
+      "name" : "U_IDNA_ERROR_START",
+      "kind" : "enum member",
+      "value" : "66560",
+      "line" : 205,
+      "char" : 2
+     },
+     {
+      "name" : "U_IDNA_UNASSIGNED_ERROR",
+      "kind" : "enum member",
+      "value" : "66561",
+      "line" : 206,
+      "char" : 2
+     },
+     {
+      "name" : "U_IDNA_CHECK_BIDI_ERROR",
+      "kind" : "enum member",
+      "value" : "66562",
+      "line" : 207,
+      "char" : 2
+     },
+     {
+      "name" : "U_IDNA_STD3_ASCII_RULES_ERROR",
+      "kind" : "enum member",
+      "value" : "66563",
+      "line" : 208,
+      "char" : 2
+     },
+     {
+      "name" : "U_IDNA_ACE_PREFIX_ERROR",
+      "kind" : "enum member",
+      "value" : "66564",
+      "line" : 209,
+      "char" : 2
+     },
+     {
+      "name" : "U_IDNA_VERIFICATION_ERROR",
+      "kind" : "enum member",
+      "value" : "66565",
+      "line" : 210,
+      "char" : 2
+     },
+     {
+      "name" : "U_IDNA_LABEL_TOO_LONG_ERROR",
+      "kind" : "enum member",
+      "value" : "66566",
+      "line" : 211,
+      "char" : 2
+     },
+     {
+      "name" : "U_IDNA_ZERO_LENGTH_LABEL_ERROR",
+      "kind" : "enum member",
+      "value" : "66567",
+      "line" : 212,
+      "char" : 2
+     },
+     {
+      "name" : "U_IDNA_DOMAIN_NAME_TOO_LONG_ERROR",
+      "kind" : "enum member",
+      "value" : "66568",
+      "line" : 213,
+      "char" : 2
+     },
+     {
+      "name" : "U_STRINGPREP_PROHIBITED_ERROR",
+      "kind" : "enum member",
+      "value" : "66560",
+      "line" : 217,
+      "char" : 2
+     },
+     {
+      "name" : "U_STRINGPREP_UNASSIGNED_ERROR",
+      "kind" : "enum member",
+      "value" : "66561",
+      "line" : 218,
+      "char" : 2
+     },
+     {
+      "name" : "U_STRINGPREP_CHECK_BIDI_ERROR",
+      "kind" : "enum member",
+      "value" : "66562",
+      "line" : 219,
+      "char" : 2
+     },
+     {
+      "name" : "U_PLUGIN_ERROR_START",
+      "kind" : "enum member",
+      "value" : "66816",
+      "comment" : "< Start of codes indicating plugin failures\n",
+      "line" : 224,
+      "char" : 2
+     },
+     {
+      "name" : "U_PLUGIN_TOO_HIGH",
+      "kind" : "enum member",
+      "value" : "66816",
+      "comment" : "< The plugin's level is too high to be loaded right now.\n",
+      "line" : 225,
+      "char" : 2
+     },
+     {
+      "name" : "U_PLUGIN_DIDNT_SET_LEVEL",
+      "kind" : "enum member",
+      "value" : "66817",
+      "comment" : "< The plugin didn't call uplug_setPlugLevel in response to a QUERY\n",
+      "line" : 226,
+      "char" : 2
+     }
+    ]
+   },
+   {
+    "kind" : "template",
+    "comment" : "\n",
+    "line" : 230,
+    "char" : 33,
+    "name" : "U_SUCCESS",
+    "parameters" : [],
+    "members" : [
+     {
+      "name" : "U_SUCCESS",
+      "kind" : "function",
+      "line" : 230,
+      "char" : 33,
+      "type" : "UBool(UErrorCode code)",
+      "parameters" : [
+       {
+        "name" : "code",
+        "type" : "UErrorCode"
+       }
+      ],
+      "endline" : 230,
+      "endchar" : 104
+     }
+    ]
+   },
+   {
+    "kind" : "template",
+    "comment" : "\n",
+    "line" : 232,
+    "char" : 33,
+    "name" : "U_FAILURE",
+    "parameters" : [],
+    "members" : [
+     {
+      "name" : "U_FAILURE",
+      "kind" : "function",
+      "line" : 232,
+      "char" : 33,
+      "type" : "UBool(UErrorCode code)",
+      "parameters" : [
+       {
+        "name" : "code",
+        "type" : "UErrorCode"
+       }
+      ],
+      "endline" : 232,
+      "endchar" : 103
+     }
+    ]
+   },
+   {
+    "name" : "u_errorName_67",
+    "kind" : "function",
+    "comment" : "\n",
+    "line" : 235,
+    "char" : 14,
+    "linkage" : "c",
+    "deco" : "UE6bindbc3icu8bindings6utypes10UErrorCodeZPxa",
+    "parameters" : [
+     {
+      "name" : "code",
+      "deco" : "E6bindbc3icu8bindings6utypes10UErrorCode"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name" : "bindbc.icu.bindstatic",
+  "kind" : "module",
+  "file" : "/home/runner/work/bindbc-icu/bindbc-icu/src/bindbc/icu/bindstatic.d",
+  "comment" : " For static link\n\n License: [BSL-1.0](http://boost.org/LICENSE_1_0.txt).\n",
+  "members" : [
+   {
+    "name" : "std.meta",
+    "kind" : "import",
+    "line" : 10,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.traits",
+    "kind" : "import",
+    "line" : 11,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "std.string",
+    "kind" : "import",
+    "line" : 12,
+    "char" : 8,
+    "protection" : "private",
+    "selective" : [
+     "stripRight"
+    ]
+   },
+   {
+    "name" : "bindbc.icu.bindcommon",
+    "kind" : "import",
+    "line" : 13,
+    "char" : 8,
+    "protection" : "private"
+   },
+   {
+    "name" : "bindbc.icu.bindings.utypes",
+    "kind" : "static import",
+    "file" : "/home/runner/work/bindbc-icu/bindbc-icu/src/bindbc/icu/bindstatic.d-mixin-16",
+    "line" : 16,
+    "char" : 15,
+    "protection" : "private"
+   },
+   {
+    "name" : "UBool",
+    "kind" : "alias",
+    "line" : 17,
+    "char" : 1,
+    "deco" : "b"
+   },
+   {
+    "name" : "UChar",
+    "kind" : "alias",
+    "line" : 18,
+    "char" : 1,
+    "deco" : "u"
+   },
+   {
+    "name" : "UChar32",
+    "kind" : "alias",
+    "line" : 19,
+    "char" : 1,
+    "deco" : "w"
+   },
+   {
+    "name" : "UDate",
+    "kind" : "alias",
+    "line" : 20,
+    "char" : 1,
+    "deco" : "d"
+   },
+   {
+    "name" : "U_MILLIS_PER_SECOND",
+    "kind" : "alias",
+    "line" : 21,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.U_MILLIS_PER_SECOND"
+   },
+   {
+    "name" : "U_MILLIS_PER_MINUTE",
+    "kind" : "alias",
+    "line" : 22,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.U_MILLIS_PER_MINUTE"
+   },
+   {
+    "name" : "U_MILLIS_PER_HOUR",
+    "kind" : "alias",
+    "line" : 23,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.U_MILLIS_PER_HOUR"
+   },
+   {
+    "name" : "U_MILLIS_PER_DAY",
+    "kind" : "alias",
+    "line" : 24,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.U_MILLIS_PER_DAY"
+   },
+   {
+    "name" : "U_DATE_MAX",
+    "kind" : "alias",
+    "line" : 25,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.U_DATE_MAX"
+   },
+   {
+    "name" : "U_DATE_MIN",
+    "kind" : "alias",
+    "line" : 26,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.U_DATE_MIN"
+   },
+   {
+    "name" : "UErrorCode",
+    "kind" : "alias",
+    "line" : 27,
+    "char" : 1,
+    "deco" : "E6bindbc3icu8bindings6utypes10UErrorCode",
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode"
+   },
+   {
+    "name" : "U_USING_FALLBACK_WARNING",
+    "kind" : "alias",
+    "line" : 28,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_USING_FALLBACK_WARNING"
+   },
+   {
+    "name" : "U_ERROR_WARNING_START",
+    "kind" : "alias",
+    "line" : 29,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_USING_FALLBACK_WARNING"
+   },
+   {
+    "name" : "U_USING_DEFAULT_WARNING",
+    "kind" : "alias",
+    "line" : 30,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_USING_DEFAULT_WARNING"
+   },
+   {
+    "name" : "U_SAFECLONE_ALLOCATED_WARNING",
+    "kind" : "alias",
+    "line" : 31,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_SAFECLONE_ALLOCATED_WARNING"
+   },
+   {
+    "name" : "U_STATE_OLD_WARNING",
+    "kind" : "alias",
+    "line" : 32,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_STATE_OLD_WARNING"
+   },
+   {
+    "name" : "U_STRING_NOT_TERMINATED_WARNING",
+    "kind" : "alias",
+    "line" : 33,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_STRING_NOT_TERMINATED_WARNING"
+   },
+   {
+    "name" : "U_SORT_KEY_TOO_SHORT_WARNING",
+    "kind" : "alias",
+    "line" : 34,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_SORT_KEY_TOO_SHORT_WARNING"
+   },
+   {
+    "name" : "U_AMBIGUOUS_ALIAS_WARNING",
+    "kind" : "alias",
+    "line" : 35,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_AMBIGUOUS_ALIAS_WARNING"
+   },
+   {
+    "name" : "U_DIFFERENT_UCA_VERSION",
+    "kind" : "alias",
+    "line" : 36,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_DIFFERENT_UCA_VERSION"
+   },
+   {
+    "name" : "U_PLUGIN_CHANGED_LEVEL_WARNING",
+    "kind" : "alias",
+    "line" : 37,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_PLUGIN_CHANGED_LEVEL_WARNING"
+   },
+   {
+    "name" : "U_ZERO_ERROR",
+    "kind" : "alias",
+    "line" : 38,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_ZERO_ERROR"
+   },
+   {
+    "name" : "U_ILLEGAL_ARGUMENT_ERROR",
+    "kind" : "alias",
+    "line" : 39,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_ILLEGAL_ARGUMENT_ERROR"
+   },
+   {
+    "name" : "U_MISSING_RESOURCE_ERROR",
+    "kind" : "alias",
+    "line" : 40,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MISSING_RESOURCE_ERROR"
+   },
+   {
+    "name" : "U_INVALID_FORMAT_ERROR",
+    "kind" : "alias",
+    "line" : 41,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_INVALID_FORMAT_ERROR"
+   },
+   {
+    "name" : "U_FILE_ACCESS_ERROR",
+    "kind" : "alias",
+    "line" : 42,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_FILE_ACCESS_ERROR"
+   },
+   {
+    "name" : "U_INTERNAL_PROGRAM_ERROR",
+    "kind" : "alias",
+    "line" : 43,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_INTERNAL_PROGRAM_ERROR"
+   },
+   {
+    "name" : "U_MESSAGE_PARSE_ERROR",
+    "kind" : "alias",
+    "line" : 44,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MESSAGE_PARSE_ERROR"
+   },
+   {
+    "name" : "U_MEMORY_ALLOCATION_ERROR",
+    "kind" : "alias",
+    "line" : 45,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MEMORY_ALLOCATION_ERROR"
+   },
+   {
+    "name" : "U_INDEX_OUTOFBOUNDS_ERROR",
+    "kind" : "alias",
+    "line" : 46,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_INDEX_OUTOFBOUNDS_ERROR"
+   },
+   {
+    "name" : "U_PARSE_ERROR",
+    "kind" : "alias",
+    "line" : 47,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_PARSE_ERROR"
+   },
+   {
+    "name" : "U_INVALID_CHAR_FOUND",
+    "kind" : "alias",
+    "line" : 48,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_INVALID_CHAR_FOUND"
+   },
+   {
+    "name" : "U_TRUNCATED_CHAR_FOUND",
+    "kind" : "alias",
+    "line" : 49,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_TRUNCATED_CHAR_FOUND"
+   },
+   {
+    "name" : "U_ILLEGAL_CHAR_FOUND",
+    "kind" : "alias",
+    "line" : 50,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_ILLEGAL_CHAR_FOUND"
+   },
+   {
+    "name" : "U_INVALID_TABLE_FORMAT",
+    "kind" : "alias",
+    "line" : 51,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_INVALID_TABLE_FORMAT"
+   },
+   {
+    "name" : "U_INVALID_TABLE_FILE",
+    "kind" : "alias",
+    "line" : 52,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_INVALID_TABLE_FILE"
+   },
+   {
+    "name" : "U_BUFFER_OVERFLOW_ERROR",
+    "kind" : "alias",
+    "line" : 53,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_BUFFER_OVERFLOW_ERROR"
+   },
+   {
+    "name" : "U_UNSUPPORTED_ERROR",
+    "kind" : "alias",
+    "line" : 54,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_UNSUPPORTED_ERROR"
+   },
+   {
+    "name" : "U_RESOURCE_TYPE_MISMATCH",
+    "kind" : "alias",
+    "line" : 55,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_RESOURCE_TYPE_MISMATCH"
+   },
+   {
+    "name" : "U_ILLEGAL_ESCAPE_SEQUENCE",
+    "kind" : "alias",
+    "line" : 56,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_ILLEGAL_ESCAPE_SEQUENCE"
+   },
+   {
+    "name" : "U_UNSUPPORTED_ESCAPE_SEQUENCE",
+    "kind" : "alias",
+    "line" : 57,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_UNSUPPORTED_ESCAPE_SEQUENCE"
+   },
+   {
+    "name" : "U_NO_SPACE_AVAILABLE",
+    "kind" : "alias",
+    "line" : 58,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_NO_SPACE_AVAILABLE"
+   },
+   {
+    "name" : "U_CE_NOT_FOUND_ERROR",
+    "kind" : "alias",
+    "line" : 59,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_CE_NOT_FOUND_ERROR"
+   },
+   {
+    "name" : "U_PRIMARY_TOO_LONG_ERROR",
+    "kind" : "alias",
+    "line" : 60,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_PRIMARY_TOO_LONG_ERROR"
+   },
+   {
+    "name" : "U_STATE_TOO_OLD_ERROR",
+    "kind" : "alias",
+    "line" : 61,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_STATE_TOO_OLD_ERROR"
+   },
+   {
+    "name" : "U_TOO_MANY_ALIASES_ERROR",
+    "kind" : "alias",
+    "line" : 62,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_TOO_MANY_ALIASES_ERROR"
+   },
+   {
+    "name" : "U_ENUM_OUT_OF_SYNC_ERROR",
+    "kind" : "alias",
+    "line" : 63,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_ENUM_OUT_OF_SYNC_ERROR"
+   },
+   {
+    "name" : "U_INVARIANT_CONVERSION_ERROR",
+    "kind" : "alias",
+    "line" : 64,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_INVARIANT_CONVERSION_ERROR"
+   },
+   {
+    "name" : "U_INVALID_STATE_ERROR",
+    "kind" : "alias",
+    "line" : 65,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_INVALID_STATE_ERROR"
+   },
+   {
+    "name" : "U_COLLATOR_VERSION_MISMATCH",
+    "kind" : "alias",
+    "line" : 66,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_COLLATOR_VERSION_MISMATCH"
+   },
+   {
+    "name" : "U_USELESS_COLLATOR_ERROR",
+    "kind" : "alias",
+    "line" : 67,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_USELESS_COLLATOR_ERROR"
+   },
+   {
+    "name" : "U_NO_WRITE_PERMISSION",
+    "kind" : "alias",
+    "line" : 68,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_NO_WRITE_PERMISSION"
+   },
+   {
+    "name" : "U_BAD_VARIABLE_DEFINITION",
+    "kind" : "alias",
+    "line" : 69,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_BAD_VARIABLE_DEFINITION"
+   },
+   {
+    "name" : "U_PARSE_ERROR_START",
+    "kind" : "alias",
+    "line" : 70,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_BAD_VARIABLE_DEFINITION"
+   },
+   {
+    "name" : "U_MALFORMED_RULE",
+    "kind" : "alias",
+    "line" : 71,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MALFORMED_RULE"
+   },
+   {
+    "name" : "U_MALFORMED_SET",
+    "kind" : "alias",
+    "line" : 72,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MALFORMED_SET"
+   },
+   {
+    "name" : "U_MALFORMED_SYMBOL_REFERENCE",
+    "kind" : "alias",
+    "line" : 73,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MALFORMED_SYMBOL_REFERENCE"
+   },
+   {
+    "name" : "U_MALFORMED_UNICODE_ESCAPE",
+    "kind" : "alias",
+    "line" : 74,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MALFORMED_UNICODE_ESCAPE"
+   },
+   {
+    "name" : "U_MALFORMED_VARIABLE_DEFINITION",
+    "kind" : "alias",
+    "line" : 75,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MALFORMED_VARIABLE_DEFINITION"
+   },
+   {
+    "name" : "U_MALFORMED_VARIABLE_REFERENCE",
+    "kind" : "alias",
+    "line" : 76,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MALFORMED_VARIABLE_REFERENCE"
+   },
+   {
+    "name" : "U_MISMATCHED_SEGMENT_DELIMITERS",
+    "kind" : "alias",
+    "line" : 77,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MISMATCHED_SEGMENT_DELIMITERS"
+   },
+   {
+    "name" : "U_MISPLACED_ANCHOR_START",
+    "kind" : "alias",
+    "line" : 78,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MISPLACED_ANCHOR_START"
+   },
+   {
+    "name" : "U_MISPLACED_CURSOR_OFFSET",
+    "kind" : "alias",
+    "line" : 79,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MISPLACED_CURSOR_OFFSET"
+   },
+   {
+    "name" : "U_MISPLACED_QUANTIFIER",
+    "kind" : "alias",
+    "line" : 80,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MISPLACED_QUANTIFIER"
+   },
+   {
+    "name" : "U_MISSING_OPERATOR",
+    "kind" : "alias",
+    "line" : 81,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MISSING_OPERATOR"
+   },
+   {
+    "name" : "U_MISSING_SEGMENT_CLOSE",
+    "kind" : "alias",
+    "line" : 82,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MISSING_SEGMENT_CLOSE"
+   },
+   {
+    "name" : "U_MULTIPLE_ANTE_CONTEXTS",
+    "kind" : "alias",
+    "line" : 83,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MULTIPLE_ANTE_CONTEXTS"
+   },
+   {
+    "name" : "U_MULTIPLE_CURSORS",
+    "kind" : "alias",
+    "line" : 84,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MULTIPLE_CURSORS"
+   },
+   {
+    "name" : "U_MULTIPLE_POST_CONTEXTS",
+    "kind" : "alias",
+    "line" : 85,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MULTIPLE_POST_CONTEXTS"
+   },
+   {
+    "name" : "U_TRAILING_BACKSLASH",
+    "kind" : "alias",
+    "line" : 86,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_TRAILING_BACKSLASH"
+   },
+   {
+    "name" : "U_UNDEFINED_SEGMENT_REFERENCE",
+    "kind" : "alias",
+    "line" : 87,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_UNDEFINED_SEGMENT_REFERENCE"
+   },
+   {
+    "name" : "U_UNDEFINED_VARIABLE",
+    "kind" : "alias",
+    "line" : 88,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_UNDEFINED_VARIABLE"
+   },
+   {
+    "name" : "U_UNQUOTED_SPECIAL",
+    "kind" : "alias",
+    "line" : 89,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_UNQUOTED_SPECIAL"
+   },
+   {
+    "name" : "U_UNTERMINATED_QUOTE",
+    "kind" : "alias",
+    "line" : 90,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_UNTERMINATED_QUOTE"
+   },
+   {
+    "name" : "U_RULE_MASK_ERROR",
+    "kind" : "alias",
+    "line" : 91,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_RULE_MASK_ERROR"
+   },
+   {
+    "name" : "U_MISPLACED_COMPOUND_FILTER",
+    "kind" : "alias",
+    "line" : 92,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MISPLACED_COMPOUND_FILTER"
+   },
+   {
+    "name" : "U_MULTIPLE_COMPOUND_FILTERS",
+    "kind" : "alias",
+    "line" : 93,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MULTIPLE_COMPOUND_FILTERS"
+   },
+   {
+    "name" : "U_INVALID_RBT_SYNTAX",
+    "kind" : "alias",
+    "line" : 94,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_INVALID_RBT_SYNTAX"
+   },
+   {
+    "name" : "U_INVALID_PROPERTY_PATTERN",
+    "kind" : "alias",
+    "line" : 95,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_INVALID_PROPERTY_PATTERN"
+   },
+   {
+    "name" : "U_MALFORMED_PRAGMA",
+    "kind" : "alias",
+    "line" : 96,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MALFORMED_PRAGMA"
+   },
+   {
+    "name" : "U_UNCLOSED_SEGMENT",
+    "kind" : "alias",
+    "line" : 97,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_UNCLOSED_SEGMENT"
+   },
+   {
+    "name" : "U_ILLEGAL_CHAR_IN_SEGMENT",
+    "kind" : "alias",
+    "line" : 98,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_ILLEGAL_CHAR_IN_SEGMENT"
+   },
+   {
+    "name" : "U_VARIABLE_RANGE_EXHAUSTED",
+    "kind" : "alias",
+    "line" : 99,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_VARIABLE_RANGE_EXHAUSTED"
+   },
+   {
+    "name" : "U_VARIABLE_RANGE_OVERLAP",
+    "kind" : "alias",
+    "line" : 100,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_VARIABLE_RANGE_OVERLAP"
+   },
+   {
+    "name" : "U_ILLEGAL_CHARACTER",
+    "kind" : "alias",
+    "line" : 101,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_ILLEGAL_CHARACTER"
+   },
+   {
+    "name" : "U_INTERNAL_TRANSLITERATOR_ERROR",
+    "kind" : "alias",
+    "line" : 102,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_INTERNAL_TRANSLITERATOR_ERROR"
+   },
+   {
+    "name" : "U_INVALID_ID",
+    "kind" : "alias",
+    "line" : 103,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_INVALID_ID"
+   },
+   {
+    "name" : "U_INVALID_FUNCTION",
+    "kind" : "alias",
+    "line" : 104,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_INVALID_FUNCTION"
+   },
+   {
+    "name" : "U_UNEXPECTED_TOKEN",
+    "kind" : "alias",
+    "line" : 105,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_UNEXPECTED_TOKEN"
+   },
+   {
+    "name" : "U_FMT_PARSE_ERROR_START",
+    "kind" : "alias",
+    "line" : 106,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_UNEXPECTED_TOKEN"
+   },
+   {
+    "name" : "U_MULTIPLE_DECIMAL_SEPARATORS",
+    "kind" : "alias",
+    "line" : 107,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MULTIPLE_DECIMAL_SEPARATORS"
+   },
+   {
+    "name" : "U_MULTIPLE_DECIMAL_SEPERATORS",
+    "kind" : "alias",
+    "line" : 108,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MULTIPLE_DECIMAL_SEPARATORS"
+   },
+   {
+    "name" : "U_MULTIPLE_EXPONENTIAL_SYMBOLS",
+    "kind" : "alias",
+    "line" : 109,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MULTIPLE_EXPONENTIAL_SYMBOLS"
+   },
+   {
+    "name" : "U_MALFORMED_EXPONENTIAL_PATTERN",
+    "kind" : "alias",
+    "line" : 110,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MALFORMED_EXPONENTIAL_PATTERN"
+   },
+   {
+    "name" : "U_MULTIPLE_PERCENT_SYMBOLS",
+    "kind" : "alias",
+    "line" : 111,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MULTIPLE_PERCENT_SYMBOLS"
+   },
+   {
+    "name" : "U_MULTIPLE_PERMILL_SYMBOLS",
+    "kind" : "alias",
+    "line" : 112,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MULTIPLE_PERMILL_SYMBOLS"
+   },
+   {
+    "name" : "U_MULTIPLE_PAD_SPECIFIERS",
+    "kind" : "alias",
+    "line" : 113,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_MULTIPLE_PAD_SPECIFIERS"
+   },
+   {
+    "name" : "U_PATTERN_SYNTAX_ERROR",
+    "kind" : "alias",
+    "line" : 114,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_PATTERN_SYNTAX_ERROR"
+   },
+   {
+    "name" : "U_ILLEGAL_PAD_POSITION",
+    "kind" : "alias",
+    "line" : 115,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_ILLEGAL_PAD_POSITION"
+   },
+   {
+    "name" : "U_UNMATCHED_BRACES",
+    "kind" : "alias",
+    "line" : 116,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_UNMATCHED_BRACES"
+   },
+   {
+    "name" : "U_UNSUPPORTED_PROPERTY",
+    "kind" : "alias",
+    "line" : 117,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_UNSUPPORTED_PROPERTY"
+   },
+   {
+    "name" : "U_UNSUPPORTED_ATTRIBUTE",
+    "kind" : "alias",
+    "line" : 118,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_UNSUPPORTED_ATTRIBUTE"
+   },
+   {
+    "name" : "U_ARGUMENT_TYPE_MISMATCH",
+    "kind" : "alias",
+    "line" : 119,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_ARGUMENT_TYPE_MISMATCH"
+   },
+   {
+    "name" : "U_DUPLICATE_KEYWORD",
+    "kind" : "alias",
+    "line" : 120,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_DUPLICATE_KEYWORD"
+   },
+   {
+    "name" : "U_UNDEFINED_KEYWORD",
+    "kind" : "alias",
+    "line" : 121,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_UNDEFINED_KEYWORD"
+   },
+   {
+    "name" : "U_DEFAULT_KEYWORD_MISSING",
+    "kind" : "alias",
+    "line" : 122,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_DEFAULT_KEYWORD_MISSING"
+   },
+   {
+    "name" : "U_DECIMAL_NUMBER_SYNTAX_ERROR",
+    "kind" : "alias",
+    "line" : 123,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_DECIMAL_NUMBER_SYNTAX_ERROR"
+   },
+   {
+    "name" : "U_FORMAT_INEXACT_ERROR",
+    "kind" : "alias",
+    "line" : 124,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_FORMAT_INEXACT_ERROR"
+   },
+   {
+    "name" : "U_NUMBER_ARG_OUTOFBOUNDS_ERROR",
+    "kind" : "alias",
+    "line" : 125,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_NUMBER_ARG_OUTOFBOUNDS_ERROR"
+   },
+   {
+    "name" : "U_NUMBER_SKELETON_SYNTAX_ERROR",
+    "kind" : "alias",
+    "line" : 126,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_NUMBER_SKELETON_SYNTAX_ERROR"
+   },
+   {
+    "name" : "U_BRK_INTERNAL_ERROR",
+    "kind" : "alias",
+    "line" : 127,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_BRK_INTERNAL_ERROR"
+   },
+   {
+    "name" : "U_BRK_ERROR_START",
+    "kind" : "alias",
+    "line" : 128,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_BRK_INTERNAL_ERROR"
+   },
+   {
+    "name" : "U_BRK_HEX_DIGITS_EXPECTED",
+    "kind" : "alias",
+    "line" : 129,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_BRK_HEX_DIGITS_EXPECTED"
+   },
+   {
+    "name" : "U_BRK_SEMICOLON_EXPECTED",
+    "kind" : "alias",
+    "line" : 130,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_BRK_SEMICOLON_EXPECTED"
+   },
+   {
+    "name" : "U_BRK_RULE_SYNTAX",
+    "kind" : "alias",
+    "line" : 131,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_BRK_RULE_SYNTAX"
+   },
+   {
+    "name" : "U_BRK_UNCLOSED_SET",
+    "kind" : "alias",
+    "line" : 132,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_BRK_UNCLOSED_SET"
+   },
+   {
+    "name" : "U_BRK_ASSIGN_ERROR",
+    "kind" : "alias",
+    "line" : 133,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_BRK_ASSIGN_ERROR"
+   },
+   {
+    "name" : "U_BRK_VARIABLE_REDFINITION",
+    "kind" : "alias",
+    "line" : 134,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_BRK_VARIABLE_REDFINITION"
+   },
+   {
+    "name" : "U_BRK_MISMATCHED_PAREN",
+    "kind" : "alias",
+    "line" : 135,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_BRK_MISMATCHED_PAREN"
+   },
+   {
+    "name" : "U_BRK_NEW_LINE_IN_QUOTED_STRING",
+    "kind" : "alias",
+    "line" : 136,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_BRK_NEW_LINE_IN_QUOTED_STRING"
+   },
+   {
+    "name" : "U_BRK_UNDEFINED_VARIABLE",
+    "kind" : "alias",
+    "line" : 137,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_BRK_UNDEFINED_VARIABLE"
+   },
+   {
+    "name" : "U_BRK_INIT_ERROR",
+    "kind" : "alias",
+    "line" : 138,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_BRK_INIT_ERROR"
+   },
+   {
+    "name" : "U_BRK_RULE_EMPTY_SET",
+    "kind" : "alias",
+    "line" : 139,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_BRK_RULE_EMPTY_SET"
+   },
+   {
+    "name" : "U_BRK_UNRECOGNIZED_OPTION",
+    "kind" : "alias",
+    "line" : 140,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_BRK_UNRECOGNIZED_OPTION"
+   },
+   {
+    "name" : "U_BRK_MALFORMED_RULE_TAG",
+    "kind" : "alias",
+    "line" : 141,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_BRK_MALFORMED_RULE_TAG"
+   },
+   {
+    "name" : "U_REGEX_INTERNAL_ERROR",
+    "kind" : "alias",
+    "line" : 142,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_INTERNAL_ERROR"
+   },
+   {
+    "name" : "U_REGEX_ERROR_START",
+    "kind" : "alias",
+    "line" : 143,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_INTERNAL_ERROR"
+   },
+   {
+    "name" : "U_REGEX_RULE_SYNTAX",
+    "kind" : "alias",
+    "line" : 144,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_RULE_SYNTAX"
+   },
+   {
+    "name" : "U_REGEX_INVALID_STATE",
+    "kind" : "alias",
+    "line" : 145,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_INVALID_STATE"
+   },
+   {
+    "name" : "U_REGEX_BAD_ESCAPE_SEQUENCE",
+    "kind" : "alias",
+    "line" : 146,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_BAD_ESCAPE_SEQUENCE"
+   },
+   {
+    "name" : "U_REGEX_PROPERTY_SYNTAX",
+    "kind" : "alias",
+    "line" : 147,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_PROPERTY_SYNTAX"
+   },
+   {
+    "name" : "U_REGEX_UNIMPLEMENTED",
+    "kind" : "alias",
+    "line" : 148,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_UNIMPLEMENTED"
+   },
+   {
+    "name" : "U_REGEX_MISMATCHED_PAREN",
+    "kind" : "alias",
+    "line" : 149,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_MISMATCHED_PAREN"
+   },
+   {
+    "name" : "U_REGEX_NUMBER_TOO_BIG",
+    "kind" : "alias",
+    "line" : 150,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_NUMBER_TOO_BIG"
+   },
+   {
+    "name" : "U_REGEX_BAD_INTERVAL",
+    "kind" : "alias",
+    "line" : 151,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_BAD_INTERVAL"
+   },
+   {
+    "name" : "U_REGEX_MAX_LT_MIN",
+    "kind" : "alias",
+    "line" : 152,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_MAX_LT_MIN"
+   },
+   {
+    "name" : "U_REGEX_INVALID_BACK_REF",
+    "kind" : "alias",
+    "line" : 153,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_INVALID_BACK_REF"
+   },
+   {
+    "name" : "U_REGEX_INVALID_FLAG",
+    "kind" : "alias",
+    "line" : 154,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_INVALID_FLAG"
+   },
+   {
+    "name" : "U_REGEX_LOOK_BEHIND_LIMIT",
+    "kind" : "alias",
+    "line" : 155,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_LOOK_BEHIND_LIMIT"
+   },
+   {
+    "name" : "U_REGEX_SET_CONTAINS_STRING",
+    "kind" : "alias",
+    "line" : 156,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_SET_CONTAINS_STRING"
+   },
+   {
+    "name" : "U_REGEX_MISSING_CLOSE_BRACKET",
+    "kind" : "alias",
+    "line" : 157,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_MISSING_CLOSE_BRACKET"
+   },
+   {
+    "name" : "U_REGEX_INVALID_RANGE",
+    "kind" : "alias",
+    "line" : 158,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_INVALID_RANGE"
+   },
+   {
+    "name" : "U_REGEX_STACK_OVERFLOW",
+    "kind" : "alias",
+    "line" : 159,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_STACK_OVERFLOW"
+   },
+   {
+    "name" : "U_REGEX_TIME_OUT",
+    "kind" : "alias",
+    "line" : 160,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_TIME_OUT"
+   },
+   {
+    "name" : "U_REGEX_STOPPED_BY_CALLER",
+    "kind" : "alias",
+    "line" : 161,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_STOPPED_BY_CALLER"
+   },
+   {
+    "name" : "U_REGEX_PATTERN_TOO_BIG",
+    "kind" : "alias",
+    "line" : 162,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_PATTERN_TOO_BIG"
+   },
+   {
+    "name" : "U_REGEX_INVALID_CAPTURE_GROUP_NAME",
+    "kind" : "alias",
+    "line" : 163,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_REGEX_INVALID_CAPTURE_GROUP_NAME"
+   },
+   {
+    "name" : "U_IDNA_PROHIBITED_ERROR",
+    "kind" : "alias",
+    "line" : 164,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_IDNA_PROHIBITED_ERROR"
+   },
+   {
+    "name" : "U_IDNA_ERROR_START",
+    "kind" : "alias",
+    "line" : 165,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_IDNA_PROHIBITED_ERROR"
+   },
+   {
+    "name" : "U_IDNA_UNASSIGNED_ERROR",
+    "kind" : "alias",
+    "line" : 166,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_IDNA_UNASSIGNED_ERROR"
+   },
+   {
+    "name" : "U_IDNA_CHECK_BIDI_ERROR",
+    "kind" : "alias",
+    "line" : 167,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_IDNA_CHECK_BIDI_ERROR"
+   },
+   {
+    "name" : "U_IDNA_STD3_ASCII_RULES_ERROR",
+    "kind" : "alias",
+    "line" : 168,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_IDNA_STD3_ASCII_RULES_ERROR"
+   },
+   {
+    "name" : "U_IDNA_ACE_PREFIX_ERROR",
+    "kind" : "alias",
+    "line" : 169,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_IDNA_ACE_PREFIX_ERROR"
+   },
+   {
+    "name" : "U_IDNA_VERIFICATION_ERROR",
+    "kind" : "alias",
+    "line" : 170,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_IDNA_VERIFICATION_ERROR"
+   },
+   {
+    "name" : "U_IDNA_LABEL_TOO_LONG_ERROR",
+    "kind" : "alias",
+    "line" : 171,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_IDNA_LABEL_TOO_LONG_ERROR"
+   },
+   {
+    "name" : "U_IDNA_ZERO_LENGTH_LABEL_ERROR",
+    "kind" : "alias",
+    "line" : 172,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_IDNA_ZERO_LENGTH_LABEL_ERROR"
+   },
+   {
+    "name" : "U_IDNA_DOMAIN_NAME_TOO_LONG_ERROR",
+    "kind" : "alias",
+    "line" : 173,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_IDNA_DOMAIN_NAME_TOO_LONG_ERROR"
+   },
+   {
+    "name" : "U_STRINGPREP_PROHIBITED_ERROR",
+    "kind" : "alias",
+    "line" : 174,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_IDNA_PROHIBITED_ERROR"
+   },
+   {
+    "name" : "U_STRINGPREP_UNASSIGNED_ERROR",
+    "kind" : "alias",
+    "line" : 175,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_IDNA_UNASSIGNED_ERROR"
+   },
+   {
+    "name" : "U_STRINGPREP_CHECK_BIDI_ERROR",
+    "kind" : "alias",
+    "line" : 176,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_IDNA_CHECK_BIDI_ERROR"
+   },
+   {
+    "name" : "U_PLUGIN_ERROR_START",
+    "kind" : "alias",
+    "line" : 177,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_PLUGIN_ERROR_START"
+   },
+   {
+    "name" : "U_PLUGIN_TOO_HIGH",
+    "kind" : "alias",
+    "line" : 178,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_PLUGIN_ERROR_START"
+   },
+   {
+    "name" : "U_PLUGIN_DIDNT_SET_LEVEL",
+    "kind" : "alias",
+    "line" : 179,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.UErrorCode.U_PLUGIN_DIDNT_SET_LEVEL"
+   },
+   {
+    "name" : "U_SUCCESS",
+    "kind" : "alias",
+    "line" : 180,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.U_SUCCESS"
+   },
+   {
+    "name" : "U_FAILURE",
+    "kind" : "alias",
+    "line" : 181,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.U_FAILURE"
+   },
+   {
+    "name" : "u_errorName",
+    "kind" : "alias",
+    "line" : 182,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.utypes.u_errorName_67"
+   },
+   {
+    "name" : "bindbc.icu.bindings.uenum",
+    "kind" : "static import",
+    "line" : 183,
+    "char" : 15,
+    "protection" : "private"
+   },
+   {
+    "name" : "StringEnumeration",
+    "kind" : "alias",
+    "line" : 184,
+    "char" : 1,
+    "deco" : "S6bindbc3icu8bindings5uenum17StringEnumeration",
+    "originalType" : "bindbc.icu.bindings.uenum.StringEnumeration"
+   },
+   {
+    "name" : "UEnumeration",
+    "kind" : "alias",
+    "line" : 185,
+    "char" : 1,
+    "deco" : "S6bindbc3icu8bindings5uenum12UEnumeration",
+    "originalType" : "bindbc.icu.bindings.uenum.UEnumeration"
+   },
+   {
+    "name" : "uenum_close",
+    "kind" : "alias",
+    "line" : 186,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.uenum.uenum_close_67"
+   },
+   {
+    "name" : "uenum_count",
+    "kind" : "alias",
+    "line" : 187,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.uenum.uenum_count_67"
+   },
+   {
+    "name" : "uenum_unext",
+    "kind" : "alias",
+    "line" : 188,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.uenum.uenum_unext_67"
+   },
+   {
+    "name" : "uenum_next",
+    "kind" : "alias",
+    "line" : 189,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.uenum.uenum_next_67"
+   },
+   {
+    "name" : "uenum_reset",
+    "kind" : "alias",
+    "line" : 190,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.uenum.uenum_reset_67"
+   },
+   {
+    "name" : "uenum_openFromStringEnumeration",
+    "kind" : "alias",
+    "line" : 191,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.uenum.uenum_openFromStringEnumeration_67"
+   },
+   {
+    "name" : "uenum_openUCharStringsEnumeration",
+    "kind" : "alias",
+    "line" : 192,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.uenum.uenum_openUCharStringsEnumeration_67"
+   },
+   {
+    "name" : "uenum_openCharStringsEnumeration",
+    "kind" : "alias",
+    "line" : 193,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.uenum.uenum_openCharStringsEnumeration_67"
+   },
+   {
+    "name" : "bindbc.icu.bindings.ucsdet",
+    "kind" : "static import",
+    "line" : 194,
+    "char" : 15,
+    "protection" : "private"
+   },
+   {
+    "name" : "UCharsetDetector",
+    "kind" : "alias",
+    "line" : 195,
+    "char" : 1,
+    "deco" : "S6bindbc3icu8bindings6ucsdet16UCharsetDetector",
+    "originalType" : "bindbc.icu.bindings.ucsdet.UCharsetDetector"
+   },
+   {
+    "name" : "UCharsetMatch",
+    "kind" : "alias",
+    "line" : 196,
+    "char" : 1,
+    "deco" : "S6bindbc3icu8bindings6ucsdet13UCharsetMatch",
+    "originalType" : "bindbc.icu.bindings.ucsdet.UCharsetMatch"
+   },
+   {
+    "name" : "ucsdet_open",
+    "kind" : "alias",
+    "line" : 197,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_open_67"
+   },
+   {
+    "name" : "ucsdet_close",
+    "kind" : "alias",
+    "line" : 198,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_close_67"
+   },
+   {
+    "name" : "ucsdet_setText",
+    "kind" : "alias",
+    "line" : 199,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_setText_67"
+   },
+   {
+    "name" : "ucsdet_setDeclaredEncoding",
+    "kind" : "alias",
+    "line" : 200,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_setDeclaredEncoding_67"
+   },
+   {
+    "name" : "ucsdet_detect",
+    "kind" : "alias",
+    "line" : 201,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_detect_67"
+   },
+   {
+    "name" : "ucsdet_detectAll",
+    "kind" : "alias",
+    "line" : 202,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_detectAll_67"
+   },
+   {
+    "name" : "ucsdet_getName",
+    "kind" : "alias",
+    "line" : 203,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_getName_67"
+   },
+   {
+    "name" : "ucsdet_getConfidence",
+    "kind" : "alias",
+    "line" : 204,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_getConfidence_67"
+   },
+   {
+    "name" : "ucsdet_getLanguage",
+    "kind" : "alias",
+    "line" : 205,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_getLanguage_67"
+   },
+   {
+    "name" : "ucsdet_getUChars",
+    "kind" : "alias",
+    "line" : 206,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_getUChars_67"
+   },
+   {
+    "name" : "ucsdet_getAllDetectableCharsets",
+    "kind" : "alias",
+    "line" : 207,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_getAllDetectableCharsets_67"
+   },
+   {
+    "name" : "ucsdet_isInputFilterEnabled",
+    "kind" : "alias",
+    "line" : 208,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_isInputFilterEnabled_67"
+   },
+   {
+    "name" : "ucsdet_enableInputFilter",
+    "kind" : "alias",
+    "line" : 209,
+    "char" : 1,
+    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_enableInputFilter_67"
+   }
+  ]
+ }
+]
