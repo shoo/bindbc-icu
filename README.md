@@ -1,4 +1,12 @@
 # ICU(International Components for Unicode) for D
+[![status](https://github.com/shoo/bindbc-icu/workflows/status/badge.svg)](https://github.com/shoo/bindbc-icu/actions?query=workflow%3Astatus)
+[![master](https://github.com/shoo/bindbc-icu/workflows/master/badge.svg)](https://github.com/shoo/bindbc-icu/actions?query=workflow%3Amaster)
+[![dub](https://img.shields.io/dub/v/bindbc-icu.svg?cacheSeconds=3600)](https://code.dlang.org/packages/bindbc-icu)
+[![downloads](https://img.shields.io/dub/dt/gendoc.svg?cacheSeconds=3600)](https://code.dlang.org/packages/bindbc-icu)
+[![BSL-1.0](http://img.shields.io/badge/license-BSL--1.0-blue.svg?style=flat)](./LICENSE)
+[![codecov](https://codecov.io/gh/shoo/bindbc-icu/branch/master/graph/badge.svg)](https://codecov.io/gh/shoo/bindbc-icu)
+[![ICU-Version](http://img.shields.io/badge/icu%20version-67.1-green.svg?style=flat)](https://github.com/unicode-org/icu/releases/tag/release-67-1)
+
 This project provides dynamic and static bindings to the C API of ICU(International Components for Unicode). The bindings are `@nogc` and `nothrow` compatible and can be compiled for compatibility with <s>`-betterC`</s>.
 
 `-betterC` is is currently unsupported. It is blocked by [Issue18472](https://issues.dlang.org/show_bug.cgi?id=18472), which is caused by the metaprogramming we use internally.([A bounty is being placed on this issue.](https://www.flipcause.com/secure/cause_pdetails/NjU3MTQ=))
