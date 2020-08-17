@@ -1,0 +1,5 @@
+{
+	"name": "dynamic-build",
+	"dependencies": {"bindbc-icu": {"path": "../..", "version": "*"}},
+	"subConfigurations": {"bindbc-icu": "dynamic"}
+}

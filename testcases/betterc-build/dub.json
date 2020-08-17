@@ -1,0 +1,6 @@
+{
+	"name": "betterc-build",
+	"dependencies": {"bindbc-icu": {"path": "../..", "version": "*"}},
+	"subConfigurations": {"bindbc-loader": "yesBC"},
+	"x-dflags": ["-betterC"]
+}

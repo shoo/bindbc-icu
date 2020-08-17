@@ -1,0 +1,5 @@
+{
+	"name": "static-build",
+	"dependencies": {"bindbc-icu": {"path": "../..", "version": "*"}},
+	"subConfigurations": {"bindbc-icu": "static"}
+}

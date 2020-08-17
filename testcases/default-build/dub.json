@@ -1,0 +1,4 @@
+{
+	"name": "default-build",
+	"dependencies": {"bindbc-icu": {"path": "../..", "version": "*"}}
+}
