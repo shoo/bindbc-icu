@@ -10,6 +10,8 @@ import std.meta;
 import bindbc.icu.bindings.utypes;
 import bindbc.icu.bindings.uenum;
 import bindbc.icu.bindings.ucsdet;
+import bindbc.icu.bindings.ucnv;
+import bindbc.icu.bindings.ucnv_err;
 
 package(bindbc.icu) enum string icuVersion = "67";
 package(bindbc.icu) alias icuLibraries = AliasSeq!("icudt", "icuin", "icuio", "icutu", "icuuc");
@@ -29,6 +31,8 @@ package(bindbc.icu) string libFileName(string libName)
 package(bindbc.icu) alias icuBindings = AliasSeq!(
 	bindbc.icu.bindings.utypes,
 	bindbc.icu.bindings.uenum,
-	bindbc.icu.bindings.ucsdet,);
+	bindbc.icu.bindings.ucsdet,
+	bindbc.icu.bindings.ucnv,
+	bindbc.icu.bindings.ucnv_err,);
 
 
