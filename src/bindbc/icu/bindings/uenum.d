@@ -38,4 +38,4 @@ UEnumeration* uenum_openFromStringEnumeration_67(StringEnumeration* adopted, UEr
 UEnumeration* uenum_openUCharStringsEnumeration_67(const(UChar*)* strings, int count, UErrorCode* ec) @system;
 
 ///
-UEnumeration* uenum_openCharStringsEnumeration_67(const(char*)* strings, int count, UErrorCode* ec) @system;
+UEnumeration* uenum_openCharStringsEnumeration_67(const(Char*)* strings, int count, UErrorCode* ec) @system;

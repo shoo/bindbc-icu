@@ -11,6 +11,12 @@ extern (C):
 /// from umachine
 alias UBool = bool;
 
+/// C char(bindbc-icu original)
+/// UTF-8 -> D's char
+/// MBS -> C's char = Char
+/// ASCII -> both compatible = char
+alias Char = ubyte;
+
 /// from umachine
 alias UChar = wchar;
 

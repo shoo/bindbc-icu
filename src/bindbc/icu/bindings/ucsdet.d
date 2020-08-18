@@ -24,7 +24,7 @@ UCharsetDetector* ucsdet_open_67(UErrorCode* status) @system;
 void ucsdet_close_67(UCharsetDetector* ucsd) @system;
 
 ///
-void ucsdet_setText_67(UCharsetDetector* ucsd, const(char)* textIn, int len, UErrorCode* status);
+void ucsdet_setText_67(UCharsetDetector* ucsd, const(Char)* textIn, int len, UErrorCode* status);
 
 ///
 void ucsdet_setDeclaredEncoding_67(UCharsetDetector* ucsd, const(char)* encoding, int length, UErrorCode* status);
