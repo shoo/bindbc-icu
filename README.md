@@ -12,7 +12,8 @@ This project provides dynamic and static bindings to the C API of ICU(Internatio
 `-betterC` is is currently unsupported. It is blocked by [Issue18472](https://issues.dlang.org/show_bug.cgi?id=18472), which is caused by the metaprogramming we use internally.([A bounty is being placed on this issue.](https://www.flipcause.com/secure/cause_pdetails/NjU3MTQ=))
 
 # Usage
-[Document is here(ICU4C)](http://userguide.icu-project.org/)
+[Documents are here(ICU4C)](http://userguide.icu-project.org/)  
+[And bindbc-icu's API lists are here](https://shoo.github.io/bindbc-icu/)
 
 If you are using dub, you can add a dependency by describing it as follows:
 
@@ -22,7 +23,7 @@ If you are using dub, you can add a dependency by describing it as follows:
 }
 ```
 
-On Windows, the package includes binaries, so you can use it as is.
+On Windows, the package includes binaries, so you can use it as is.  
 On Linux or MacOS, the ICU must be installed. Be sure to specify the version of the ICU.
 
 ```sh
@@ -101,6 +102,15 @@ Inside the library, create the alias as following:
 UCharsetDetector* ucsdet_open_67(UErrorCode* status) @system;   // real symbol
 alias ucsdet_open = ucsdet_open_67;                             // usable alias
 ```
+
+# Support status
+
+|           | module |                     |
+|:---------:|:------:|:-------------------:|
+| ✅️       | ucsdet | Charset Detection   |
+| ✅️       | ucnv   | Charset conversion  |
+| ✖        | other  |                     |
+
 
 # Contributing
 This project accepts [Issue](https://github.com/shoo/bindbc-icu/issues) reports and [PullRequests](https://github.com/shoo/bindbc-icu/pulls).
