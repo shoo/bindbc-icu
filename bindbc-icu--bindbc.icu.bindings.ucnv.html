@@ -1,0 +1,532 @@
+
+<!DOCTYPE html>
+<html>    <head>        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" type="text/css" href="css/proj_docs.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/sidebar.js"></script>
+        <script type="text/javascript" src="js/listanchors.js"></script>
+        <title>bindbc.icu.bindings.ucnv</title>
+        
+        
+    </head>
+    <body>        
+        <div class="container">            
+<div class="sidebar-underbar"></div>
+<div class="sidebar">    <div class="head">        <h2>bindbc-icu</h2>
+        <p><span class="smallprint"><b>version:</b> ~master <span class="separator"><br></span>
+            </span>
+        </p>
+        <p><a href="index.html">overview</a></p>
+    </div>
+    
+    <ul>
+
+	
+	
+	
+		<li class="expand-container open"><a class='expand-toggle' href="#"><span >bindbc</span></a><ul>
+			
+	
+		<li class="expand-container open"><a title='bindbc-icu
+		' class='expand-toggle' href='#'><span >icu</span></a><ul><li><a title='bindbc-icu
+		' href="
+			bindbc-icu--bindbc.icu.html"><span >package</span></a></li>
+			
+
+	<li><a title="Common definitions for internal use." href="bindbc-icu--bindbc.icu.bindcommon.html"><span >bindcommon</span></a></li>
+
+
+
+	<li><a title="For dynamic link" href="bindbc-icu--bindbc.icu.binddynamic.html"><span >binddynamic</span></a></li>
+
+
+	
+	
+		<li class="expand-container open"><a class='expand-toggle' href="#"><span >bindings</span></a><ul>
+			
+
+	<li><a title="ucnv.h" href="bindbc-icu--bindbc.icu.bindings.ucnv.html"><span >ucnv</span></a></li>
+
+
+
+	<li><a title="ucnv_err.h" href="bindbc-icu--bindbc.icu.bindings.ucnv_err.html"><span >ucnv_err</span></a></li>
+
+
+
+	<li><a title="ucsdet.h" href="bindbc-icu--bindbc.icu.bindings.ucsdet.html"><span >ucsdet</span></a></li>
+
+
+
+	<li><a title="uenum.h" href="bindbc-icu--bindbc.icu.bindings.uenum.html"><span >uenum</span></a></li>
+
+
+
+	<li><a title="utypes.h" href="bindbc-icu--bindbc.icu.bindings.utypes.html"><span >utypes</span></a></li>
+
+
+		</ul></li>
+	
+
+
+
+
+
+	<li><a title="For static link" href="bindbc-icu--bindbc.icu.bindstatic.html"><span >bindstatic</span></a></li>
+
+</ul></li>
+	
+	
+
+
+
+
+		</ul></li>
+	
+
+
+
+
+</ul>
+</div>
+            <div class="content">                <h1>bindbc.icu.bindings.ucnv</h1>
+                
+                <div class="quickindex" id="quickindex"></div>
+                
+                <div class="ddoc_summary"><code class="ddoc_psymbol">ucnv</code>.h
+</div><div class="ddoc_license"><span class="ddoc_license_header">License:</span>
+ <a href="http://boost.org/LICENSE_1_0.txt">BSL-1.0</a>.</div>
+<dl class="ddoc_members"><div class="ddoc_module_members"><dt class="ddoc_decl"><div ><span class="def-anchor" id=".USet"></span><div class="quickindex" id="quickindex.USet"></div>struct <code class="ddoc_psymbol">USet</code>;
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType"></span><div class="quickindex" id="quickindex.UConverterType"></div>enum <code class="ddoc_psymbol">UConverterType</code>: <span class="ddoc_enum_basetype">int</span>;
+<br></div></dt>
+<dd>
+<dl class="ddoc_members"><div class="ddoc_enum_members"><dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_UNSUPPORTED_CONVERTER"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_UNSUPPORTED_CONVERTER"></div><code class="ddoc_psymbol">UCNV_UNSUPPORTED_CONVERTER</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_SBCS"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_SBCS"></div><code class="ddoc_psymbol">UCNV_SBCS</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_DBCS"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_DBCS"></div><code class="ddoc_psymbol">UCNV_DBCS</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_MBCS"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_MBCS"></div><code class="ddoc_psymbol">UCNV_MBCS</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_LATIN_1"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_LATIN_1"></div><code class="ddoc_psymbol">UCNV_LATIN_1</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_UTF8"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_UTF8"></div><code class="ddoc_psymbol">UCNV_UTF8</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_UTF16_BigEndian"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_UTF16_BigEndian"></div><code class="ddoc_psymbol">UCNV_UTF16_BigEndian</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_UTF16_LittleEndian"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_UTF16_LittleEndian"></div><code class="ddoc_psymbol">UCNV_UTF16_LittleEndian</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_UTF32_BigEndian"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_UTF32_BigEndian"></div><code class="ddoc_psymbol">UCNV_UTF32_BigEndian</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_UTF32_LittleEndian"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_UTF32_LittleEndian"></div><code class="ddoc_psymbol">UCNV_UTF32_LittleEndian</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_EBCDIC_STATEFUL"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_EBCDIC_STATEFUL"></div><code class="ddoc_psymbol">UCNV_EBCDIC_STATEFUL</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_ISO_2022"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_ISO_2022"></div><code class="ddoc_psymbol">UCNV_ISO_2022</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_LMBCS_1"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_LMBCS_1"></div><code class="ddoc_psymbol">UCNV_LMBCS_1</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_LMBCS_2"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_LMBCS_2"></div><code class="ddoc_psymbol">UCNV_LMBCS_2</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_LMBCS_3"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_LMBCS_3"></div><code class="ddoc_psymbol">UCNV_LMBCS_3</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_LMBCS_4"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_LMBCS_4"></div><code class="ddoc_psymbol">UCNV_LMBCS_4</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_LMBCS_5"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_LMBCS_5"></div><code class="ddoc_psymbol">UCNV_LMBCS_5</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_LMBCS_6"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_LMBCS_6"></div><code class="ddoc_psymbol">UCNV_LMBCS_6</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_LMBCS_8"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_LMBCS_8"></div><code class="ddoc_psymbol">UCNV_LMBCS_8</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_LMBCS_11"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_LMBCS_11"></div><code class="ddoc_psymbol">UCNV_LMBCS_11</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_LMBCS_16"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_LMBCS_16"></div><code class="ddoc_psymbol">UCNV_LMBCS_16</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_LMBCS_17"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_LMBCS_17"></div><code class="ddoc_psymbol">UCNV_LMBCS_17</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_LMBCS_18"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_LMBCS_18"></div><code class="ddoc_psymbol">UCNV_LMBCS_18</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_LMBCS_19"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_LMBCS_19"></div><code class="ddoc_psymbol">UCNV_LMBCS_19</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_LMBCS_LAST"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_LMBCS_LAST"></div><code class="ddoc_psymbol">UCNV_LMBCS_LAST</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_HZ"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_HZ"></div><code class="ddoc_psymbol">UCNV_HZ</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_SCSU"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_SCSU"></div><code class="ddoc_psymbol">UCNV_SCSU</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_ISCII"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_ISCII"></div><code class="ddoc_psymbol">UCNV_ISCII</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_US_ASCII"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_US_ASCII"></div><code class="ddoc_psymbol">UCNV_US_ASCII</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_UTF7"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_UTF7"></div><code class="ddoc_psymbol">UCNV_UTF7</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_BOCU1"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_BOCU1"></div><code class="ddoc_psymbol">UCNV_BOCU1</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_UTF16"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_UTF16"></div><code class="ddoc_psymbol">UCNV_UTF16</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_UTF32"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_UTF32"></div><code class="ddoc_psymbol">UCNV_UTF32</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_CESU8"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_CESU8"></div><code class="ddoc_psymbol">UCNV_CESU8</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_IMAP_MAILBOX"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_IMAP_MAILBOX"></div><code class="ddoc_psymbol">UCNV_IMAP_MAILBOX</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_COMPOUND_TEXT"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_COMPOUND_TEXT"></div><code class="ddoc_psymbol">UCNV_COMPOUND_TEXT</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterType.UCNV_NUMBER_OF_SUPPORTED_CONVERTER_TYPES"></span><div class="quickindex" id="quickindex.UConverterType.UCNV_NUMBER_OF_SUPPORTED_CONVERTER_TYPES"></div><code class="ddoc_psymbol">UCNV_NUMBER_OF_SUPPORTED_CONVERTER_TYPES</code><br></div></dt>
+<dd>
+</dd>
+</div></dl>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterPlatform"></span><div class="quickindex" id="quickindex.UConverterPlatform"></div>enum <code class="ddoc_psymbol">UConverterPlatform</code>: <span class="ddoc_enum_basetype">int</span>;
+<br></div></dt>
+<dd>
+<dl class="ddoc_members"><div class="ddoc_enum_members"><dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterPlatform.UCNV_UNKNOWN"></span><div class="quickindex" id="quickindex.UConverterPlatform.UCNV_UNKNOWN"></div><code class="ddoc_psymbol">UCNV_UNKNOWN</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterPlatform.UCNV_IBM"></span><div class="quickindex" id="quickindex.UConverterPlatform.UCNV_IBM"></div><code class="ddoc_psymbol">UCNV_IBM</code><br></div></dt>
+<dd>
+</dd>
+</div></dl>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterToUCallback"></span><div class="quickindex" id="quickindex.UConverterToUCallback"></div>alias <code class="ddoc_psymbol">UConverterToUCallback</code> = extern (C) void function(const(void)* context, UConverterToUnicodeArgs* args, const(ubyte)* codeUnits, int length, UConverterCallbackReason reason, UErrorCode* pErrorCode);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterFromUCallback"></span><div class="quickindex" id="quickindex.UConverterFromUCallback"></div>alias <code class="ddoc_psymbol">UConverterFromUCallback</code> = extern (C) void function(const(void)* context, UConverterFromUnicodeArgs* args, const(wchar)* codeUnits, int length, dchar codePoint, UConverterCallbackReason reason, UErrorCode* pErrorCode);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UCNV_OPTION_SEP_CHAR"></span><div class="quickindex" id="quickindex.UCNV_OPTION_SEP_CHAR"></div>enum char <code class="ddoc_psymbol">UCNV_OPTION_SEP_CHAR</code>;
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UCNV_OPTION_SEP_STRING"></span><div class="quickindex" id="quickindex.UCNV_OPTION_SEP_STRING"></div>enum string <code class="ddoc_psymbol">UCNV_OPTION_SEP_STRING</code>;
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UCNV_VALUE_SEP_CHAR"></span><div class="quickindex" id="quickindex.UCNV_VALUE_SEP_CHAR"></div>enum char <code class="ddoc_psymbol">UCNV_VALUE_SEP_CHAR</code>;
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UCNV_VALUE_SEP_STRING"></span><div class="quickindex" id="quickindex.UCNV_VALUE_SEP_STRING"></div>enum string <code class="ddoc_psymbol">UCNV_VALUE_SEP_STRING</code>;
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UCNV_LOCALE_OPTION_STRING"></span><div class="quickindex" id="quickindex.UCNV_LOCALE_OPTION_STRING"></div>enum string <code class="ddoc_psymbol">UCNV_LOCALE_OPTION_STRING</code>;
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UCNV_VERSION_OPTION_STRING"></span><div class="quickindex" id="quickindex.UCNV_VERSION_OPTION_STRING"></div>enum string <code class="ddoc_psymbol">UCNV_VERSION_OPTION_STRING</code>;
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UCNV_SWAP_LFNL_OPTION_STRING"></span><div class="quickindex" id="quickindex.UCNV_SWAP_LFNL_OPTION_STRING"></div>enum string <code class="ddoc_psymbol">UCNV_SWAP_LFNL_OPTION_STRING</code>;
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_compareNames_67"></span><div class="quickindex" id="quickindex.ucnv_compareNames_67"></div>int <code class="ddoc_psymbol">ucnv_compareNames_67</code>(const(char)* <span class="ddoc_param">name1</span>, const(char)* <span class="ddoc_param">name2</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_open_67"></span><div class="quickindex" id="quickindex.ucnv_open_67"></div>@system UConverter* <code class="ddoc_psymbol">ucnv_open_67</code>(const(char)* <span class="ddoc_param">converterName</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_openU_67"></span><div class="quickindex" id="quickindex.ucnv_openU_67"></div>@system UConverter* <code class="ddoc_psymbol">ucnv_openU_67</code>(const(char)* <span class="ddoc_param">name</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_openCCSID_67"></span><div class="quickindex" id="quickindex.ucnv_openCCSID_67"></div>@system UConverter* <code class="ddoc_psymbol">ucnv_openCCSID_67</code>(int <span class="ddoc_param">codepage</span>, UConverterPlatform <span class="ddoc_param">platform</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_openPackage_67"></span><div class="quickindex" id="quickindex.ucnv_openPackage_67"></div>@system UConverter* <code class="ddoc_psymbol">ucnv_openPackage_67</code>(const(char)* <span class="ddoc_param">packageName</span>, const(char)* <span class="ddoc_param">converterName</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_safeClone_67"></span><div class="quickindex" id="quickindex.ucnv_safeClone_67"></div>@system UConverter* <code class="ddoc_psymbol">ucnv_safeClone_67</code>(const(UConverter)* <span class="ddoc_param">cnv</span>, void* <span class="ddoc_param">stackBuffer</span>, int* <span class="ddoc_param">pBufferSize</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".U_CNV_SAFECLONE_BUFFERSIZE"></span><div class="quickindex" id="quickindex.U_CNV_SAFECLONE_BUFFERSIZE"></div>enum int <code class="ddoc_psymbol">U_CNV_SAFECLONE_BUFFERSIZE</code>;
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_close_67"></span><div class="quickindex" id="quickindex.ucnv_close_67"></div>@system void <code class="ddoc_psymbol">ucnv_close_67</code>(UConverter* <span class="ddoc_param">converter</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_getSubstChars_67"></span><div class="quickindex" id="quickindex.ucnv_getSubstChars_67"></div>void <code class="ddoc_psymbol">ucnv_getSubstChars_67</code>(const(UConverter)* <span class="ddoc_param">converter</span>, Char* <span class="ddoc_param">subChars</span>, byte* <span class="ddoc_param">len</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_setSubstChars_67"></span><div class="quickindex" id="quickindex.ucnv_setSubstChars_67"></div>void <code class="ddoc_psymbol">ucnv_setSubstChars_67</code>(UConverter* <span class="ddoc_param">converter</span>, const(Char)* <span class="ddoc_param">subChars</span>, byte <span class="ddoc_param">len</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_setSubstString_67"></span><div class="quickindex" id="quickindex.ucnv_setSubstString_67"></div>void <code class="ddoc_psymbol">ucnv_setSubstString_67</code>(UConverter* <span class="ddoc_param">cnv</span>, const(UChar)* <span class="ddoc_param">s</span>, int <span class="ddoc_param">length</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_getInvalidChars_67"></span><div class="quickindex" id="quickindex.ucnv_getInvalidChars_67"></div>void <code class="ddoc_psymbol">ucnv_getInvalidChars_67</code>(const(UConverter)* <span class="ddoc_param">converter</span>, Char* <span class="ddoc_param">errBytes</span>, byte* <span class="ddoc_param">len</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_getInvalidUChars_67"></span><div class="quickindex" id="quickindex.ucnv_getInvalidUChars_67"></div>void <code class="ddoc_psymbol">ucnv_getInvalidUChars_67</code>(const(UConverter)* <span class="ddoc_param">converter</span>, UChar* <span class="ddoc_param">errUChars</span>, byte* <span class="ddoc_param">len</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_reset_67"></span><div class="quickindex" id="quickindex.ucnv_reset_67"></div>void <code class="ddoc_psymbol">ucnv_reset_67</code>(UConverter* <span class="ddoc_param">converter</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_resetToUnicode_67"></span><div class="quickindex" id="quickindex.ucnv_resetToUnicode_67"></div>void <code class="ddoc_psymbol">ucnv_resetToUnicode_67</code>(UConverter* <span class="ddoc_param">converter</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_resetFromUnicode_67"></span><div class="quickindex" id="quickindex.ucnv_resetFromUnicode_67"></div>void <code class="ddoc_psymbol">ucnv_resetFromUnicode_67</code>(UConverter* <span class="ddoc_param">converter</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_getMaxCharSize_67"></span><div class="quickindex" id="quickindex.ucnv_getMaxCharSize_67"></div>byte <code class="ddoc_psymbol">ucnv_getMaxCharSize_67</code>(const(UConverter)* <span class="ddoc_param">converter</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UCNV_GET_MAX_BYTES_FOR_STRING"></span><div class="quickindex" id="quickindex.UCNV_GET_MAX_BYTES_FOR_STRING"></div>int <code class="ddoc_psymbol">UCNV_GET_MAX_BYTES_FOR_STRING</code><span class="ddoc_template_param_list" title="Template parameter list">()</span>(int <span class="ddoc_param">length</span>, int <span class="ddoc_param">maxCharSize</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_getMinCharSize_67"></span><div class="quickindex" id="quickindex.ucnv_getMinCharSize_67"></div>byte <code class="ddoc_psymbol">ucnv_getMinCharSize_67</code>(const(UConverter)* <span class="ddoc_param">converter</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_getDisplayName_67"></span><div class="quickindex" id="quickindex.ucnv_getDisplayName_67"></div>int <code class="ddoc_psymbol">ucnv_getDisplayName_67</code>(const(UConverter)* <span class="ddoc_param">converter</span>, const(char)* <span class="ddoc_param">displayLocale</span>, UChar* <span class="ddoc_param">displayName</span>, int <span class="ddoc_param">displayNameCapacity</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_getName_67"></span><div class="quickindex" id="quickindex.ucnv_getName_67"></div>const(char)* <code class="ddoc_psymbol">ucnv_getName_67</code>(const(UConverter)* <span class="ddoc_param">converter</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_getCCSID_67"></span><div class="quickindex" id="quickindex.ucnv_getCCSID_67"></div>int <code class="ddoc_psymbol">ucnv_getCCSID_67</code>(const(UConverter)* <span class="ddoc_param">converter</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_getPlatform_67"></span><div class="quickindex" id="quickindex.ucnv_getPlatform_67"></div>UConverterPlatform <code class="ddoc_psymbol">ucnv_getPlatform_67</code>(const(UConverter)* <span class="ddoc_param">converter</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_getType_67"></span><div class="quickindex" id="quickindex.ucnv_getType_67"></div>UConverterType <code class="ddoc_psymbol">ucnv_getType_67</code>(const(UConverter)* <span class="ddoc_param">converter</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_getStarters_67"></span><div class="quickindex" id="quickindex.ucnv_getStarters_67"></div>void <code class="ddoc_psymbol">ucnv_getStarters_67</code>(const(UConverter)* <span class="ddoc_param">converter</span>, ref UBool[256] <span class="ddoc_param">starters</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterUnicodeSet"></span><div class="quickindex" id="quickindex.UConverterUnicodeSet"></div>enum <code class="ddoc_psymbol">UConverterUnicodeSet</code>: <span class="ddoc_enum_basetype">int</span>;
+<br></div></dt>
+<dd>
+<dl class="ddoc_members"><div class="ddoc_enum_members"><dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterUnicodeSet.UCNV_ROUNDTRIP_SET"></span><div class="quickindex" id="quickindex.UConverterUnicodeSet.UCNV_ROUNDTRIP_SET"></div><code class="ddoc_psymbol">UCNV_ROUNDTRIP_SET</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverterUnicodeSet.UCNV_ROUNDTRIP_AND_FALLBACK_SET"></span><div class="quickindex" id="quickindex.UConverterUnicodeSet.UCNV_ROUNDTRIP_AND_FALLBACK_SET"></div><code class="ddoc_psymbol">UCNV_ROUNDTRIP_AND_FALLBACK_SET</code><br></div></dt>
+<dd>
+</dd>
+</div></dl>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_getUnicodeSet_67"></span><div class="quickindex" id="quickindex.ucnv_getUnicodeSet_67"></div>void <code class="ddoc_psymbol">ucnv_getUnicodeSet_67</code>(const(UConverter)* <span class="ddoc_param">cnv</span>, USet* <span class="ddoc_param">setFillIn</span>, UConverterUnicodeSet <span class="ddoc_param">whichSet</span>, UErrorCode* <span class="ddoc_param">pErrorCode</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_getToUCallBack_67"></span><div class="quickindex" id="quickindex.ucnv_getToUCallBack_67"></div>void <code class="ddoc_psymbol">ucnv_getToUCallBack_67</code>(const(UConverter)* <span class="ddoc_param">converter</span>, UConverterToUCallback* <span class="ddoc_param">action</span>, const(void*)* <span class="ddoc_param">context</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_getFromUCallBack_67"></span><div class="quickindex" id="quickindex.ucnv_getFromUCallBack_67"></div>void <code class="ddoc_psymbol">ucnv_getFromUCallBack_67</code>(const(UConverter)* <span class="ddoc_param">converter</span>, UConverterFromUCallback* <span class="ddoc_param">action</span>, const(void*)* <span class="ddoc_param">context</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_setToUCallBack_67"></span><div class="quickindex" id="quickindex.ucnv_setToUCallBack_67"></div>void <code class="ddoc_psymbol">ucnv_setToUCallBack_67</code>(UConverter* <span class="ddoc_param">converter</span>, UConverterToUCallback <span class="ddoc_param">newAction</span>, const(void)* <span class="ddoc_param">newContext</span>, UConverterToUCallback* <span class="ddoc_param">oldAction</span>, const(void*)* <span class="ddoc_param">oldContext</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_setFromUCallBack_67"></span><div class="quickindex" id="quickindex.ucnv_setFromUCallBack_67"></div>void <code class="ddoc_psymbol">ucnv_setFromUCallBack_67</code>(UConverter* <span class="ddoc_param">converter</span>, UConverterFromUCallback <span class="ddoc_param">newAction</span>, const(void)* <span class="ddoc_param">newContext</span>, UConverterFromUCallback* <span class="ddoc_param">oldAction</span>, const(void*)* <span class="ddoc_param">oldContext</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_fromUnicode_67"></span><div class="quickindex" id="quickindex.ucnv_fromUnicode_67"></div>void <code class="ddoc_psymbol">ucnv_fromUnicode_67</code>(UConverter* <span class="ddoc_param">converter</span>, Char** <span class="ddoc_param">target</span>, const(Char)* <span class="ddoc_param">targetLimit</span>, const(UChar*)* <span class="ddoc_param">source</span>, const(UChar)* <span class="ddoc_param">sourceLimit</span>, int* <span class="ddoc_param">offsets</span>, UBool <span class="ddoc_param">flush</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_toUnicode_67"></span><div class="quickindex" id="quickindex.ucnv_toUnicode_67"></div>void <code class="ddoc_psymbol">ucnv_toUnicode_67</code>(UConverter* <span class="ddoc_param">converter</span>, UChar** <span class="ddoc_param">target</span>, const(UChar)* <span class="ddoc_param">targetLimit</span>, const(Char*)* <span class="ddoc_param">source</span>, const(Char)* <span class="ddoc_param">sourceLimit</span>, int* <span class="ddoc_param">offsets</span>, UBool <span class="ddoc_param">flush</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_fromUChars_67"></span><div class="quickindex" id="quickindex.ucnv_fromUChars_67"></div>int <code class="ddoc_psymbol">ucnv_fromUChars_67</code>(UConverter* <span class="ddoc_param">cnv</span>, Char* <span class="ddoc_param">dest</span>, int <span class="ddoc_param">destCapacity</span>, const(UChar)* <span class="ddoc_param">src</span>, int <span class="ddoc_param">srcLength</span>, UErrorCode* <span class="ddoc_param">pErrorCode</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_toUChars_67"></span><div class="quickindex" id="quickindex.ucnv_toUChars_67"></div>int <code class="ddoc_psymbol">ucnv_toUChars_67</code>(UConverter* <span class="ddoc_param">cnv</span>, UChar* <span class="ddoc_param">dest</span>, int <span class="ddoc_param">destCapacity</span>, const(Char)* <span class="ddoc_param">src</span>, int <span class="ddoc_param">srcLength</span>, UErrorCode* <span class="ddoc_param">pErrorCode</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_getNextUChar_67"></span><div class="quickindex" id="quickindex.ucnv_getNextUChar_67"></div>UChar32 <code class="ddoc_psymbol">ucnv_getNextUChar_67</code>(UConverter* <span class="ddoc_param">converter</span>, const(Char*)* <span class="ddoc_param">source</span>, const(Char)* <span class="ddoc_param">sourceLimit</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_convertEx_67"></span><div class="quickindex" id="quickindex.ucnv_convertEx_67"></div>void <code class="ddoc_psymbol">ucnv_convertEx_67</code>(UConverter* <span class="ddoc_param">targetCnv</span>, UConverter* <span class="ddoc_param">sourceCnv</span>, Char** <span class="ddoc_param">target</span>, const(Char)* <span class="ddoc_param">targetLimit</span>, const(Char*)* <span class="ddoc_param">source</span>, const(Char)* <span class="ddoc_param">sourceLimit</span>, UChar* <span class="ddoc_param">pivotStart</span>, UChar** <span class="ddoc_param">pivotSource</span>, UChar** <span class="ddoc_param">pivotTarget</span>, const(UChar)* <span class="ddoc_param">pivotLimit</span>, UBool <span class="ddoc_param">reset</span>, UBool <span class="ddoc_param">flush</span>, UErrorCode* <span class="ddoc_param">pErrorCode</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_convert_67"></span><div class="quickindex" id="quickindex.ucnv_convert_67"></div>int <code class="ddoc_psymbol">ucnv_convert_67</code>(const(char)* <span class="ddoc_param">toConverterName</span>, const(char)* <span class="ddoc_param">fromConverterName</span>, Char* <span class="ddoc_param">target</span>, int <span class="ddoc_param">targetCapacity</span>, const(Char)* <span class="ddoc_param">source</span>, int <span class="ddoc_param">sourceLength</span>, UErrorCode* <span class="ddoc_param">pErrorCode</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_toAlgorithmic_67"></span><div class="quickindex" id="quickindex.ucnv_toAlgorithmic_67"></div>int <code class="ddoc_psymbol">ucnv_toAlgorithmic_67</code>(UConverterType <span class="ddoc_param">algorithmicType</span>, UConverter* <span class="ddoc_param">cnv</span>, Char* <span class="ddoc_param">target</span>, int <span class="ddoc_param">targetCapacity</span>, const(Char)* <span class="ddoc_param">source</span>, int <span class="ddoc_param">sourceLength</span>, UErrorCode* <span class="ddoc_param">pErrorCode</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_fromAlgorithmic_67"></span><div class="quickindex" id="quickindex.ucnv_fromAlgorithmic_67"></div>int <code class="ddoc_psymbol">ucnv_fromAlgorithmic_67</code>(UConverter* <span class="ddoc_param">cnv</span>, UConverterType <span class="ddoc_param">algorithmicType</span>, Char* <span class="ddoc_param">target</span>, int <span class="ddoc_param">targetCapacity</span>, const(Char)* <span class="ddoc_param">source</span>, int <span class="ddoc_param">sourceLength</span>, UErrorCode* <span class="ddoc_param">pErrorCode</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_flushCache_67"></span><div class="quickindex" id="quickindex.ucnv_flushCache_67"></div>int <code class="ddoc_psymbol">ucnv_flushCache_67</code>();
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_countAvailable_67"></span><div class="quickindex" id="quickindex.ucnv_countAvailable_67"></div>int <code class="ddoc_psymbol">ucnv_countAvailable_67</code>();
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_getAvailableName_67"></span><div class="quickindex" id="quickindex.ucnv_getAvailableName_67"></div>const(char)* <code class="ddoc_psymbol">ucnv_getAvailableName_67</code>(int <span class="ddoc_param">n</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_openAllNames_67"></span><div class="quickindex" id="quickindex.ucnv_openAllNames_67"></div>@system UEnumeration* <code class="ddoc_psymbol">ucnv_openAllNames_67</code>(UErrorCode* <span class="ddoc_param">pErrorCode</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_countAliases_67"></span><div class="quickindex" id="quickindex.ucnv_countAliases_67"></div>ushort <code class="ddoc_psymbol">ucnv_countAliases_67</code>(const(char)* <span class="ddoc_param">alias_</span>, UErrorCode* <span class="ddoc_param">pErrorCode</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_getAlias_67"></span><div class="quickindex" id="quickindex.ucnv_getAlias_67"></div>const(char)* <code class="ddoc_psymbol">ucnv_getAlias_67</code>(const(char)* <span class="ddoc_param">alias_</span>, ushort <span class="ddoc_param">n</span>, UErrorCode* <span class="ddoc_param">pErrorCode</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_getAliases_67"></span><div class="quickindex" id="quickindex.ucnv_getAliases_67"></div>void <code class="ddoc_psymbol">ucnv_getAliases_67</code>(const(char)* <span class="ddoc_param">alias_</span>, const(char*)* <span class="ddoc_param">aliases</span>, UErrorCode* <span class="ddoc_param">pErrorCode</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_openStandardNames_67"></span><div class="quickindex" id="quickindex.ucnv_openStandardNames_67"></div>@system UEnumeration* <code class="ddoc_psymbol">ucnv_openStandardNames_67</code>(const(char)* <span class="ddoc_param">convName</span>, const(char)* <span class="ddoc_param">standard</span>, UErrorCode* <span class="ddoc_param">pErrorCode</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_countStandards_67"></span><div class="quickindex" id="quickindex.ucnv_countStandards_67"></div>ushort <code class="ddoc_psymbol">ucnv_countStandards_67</code>();
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_getStandard_67"></span><div class="quickindex" id="quickindex.ucnv_getStandard_67"></div>const(char)* <code class="ddoc_psymbol">ucnv_getStandard_67</code>(ushort <span class="ddoc_param">n</span>, UErrorCode* <span class="ddoc_param">pErrorCode</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_getStandardName_67"></span><div class="quickindex" id="quickindex.ucnv_getStandardName_67"></div>const(char)* <code class="ddoc_psymbol">ucnv_getStandardName_67</code>(const(char)* <span class="ddoc_param">name</span>, const(char)* <span class="ddoc_param">standard</span>, UErrorCode* <span class="ddoc_param">pErrorCode</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_getCanonicalName_67"></span><div class="quickindex" id="quickindex.ucnv_getCanonicalName_67"></div>const(char)* <code class="ddoc_psymbol">ucnv_getCanonicalName_67</code>(const(char)* <span class="ddoc_param">alias_</span>, const(char)* <span class="ddoc_param">standard</span>, UErrorCode* <span class="ddoc_param">pErrorCode</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_getDefaultName_67"></span><div class="quickindex" id="quickindex.ucnv_getDefaultName_67"></div>const(char)* <code class="ddoc_psymbol">ucnv_getDefaultName_67</code>();
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_setDefaultName_67"></span><div class="quickindex" id="quickindex.ucnv_setDefaultName_67"></div>void <code class="ddoc_psymbol">ucnv_setDefaultName_67</code>(const(char)* <span class="ddoc_param">name</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_fixFileSeparator_67"></span><div class="quickindex" id="quickindex.ucnv_fixFileSeparator_67"></div>void <code class="ddoc_psymbol">ucnv_fixFileSeparator_67</code>(const(UConverter)* <span class="ddoc_param">cnv</span>, UChar* <span class="ddoc_param">source</span>, int <span class="ddoc_param">sourceLen</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_isAmbiguous_67"></span><div class="quickindex" id="quickindex.ucnv_isAmbiguous_67"></div>UBool <code class="ddoc_psymbol">ucnv_isAmbiguous_67</code>(const(UConverter)* <span class="ddoc_param">cnv</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_setFallback_67"></span><div class="quickindex" id="quickindex.ucnv_setFallback_67"></div>void <code class="ddoc_psymbol">ucnv_setFallback_67</code>(UConverter* <span class="ddoc_param">cnv</span>, UBool <span class="ddoc_param">usesFallback</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_usesFallback_67"></span><div class="quickindex" id="quickindex.ucnv_usesFallback_67"></div>UBool <code class="ddoc_psymbol">ucnv_usesFallback_67</code>(const(UConverter)* <span class="ddoc_param">cnv</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_detectUnicodeSignature_67"></span><div class="quickindex" id="quickindex.ucnv_detectUnicodeSignature_67"></div>const(char)* <code class="ddoc_psymbol">ucnv_detectUnicodeSignature_67</code>(const(Char)* <span class="ddoc_param">source</span>, int <span class="ddoc_param">sourceLength</span>, int* <span class="ddoc_param">signatureLength</span>, UErrorCode* <span class="ddoc_param">pErrorCode</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_fromUCountPending_67"></span><div class="quickindex" id="quickindex.ucnv_fromUCountPending_67"></div>int <code class="ddoc_psymbol">ucnv_fromUCountPending_67</code>(const(UConverter)* <span class="ddoc_param">cnv</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_toUCountPending_67"></span><div class="quickindex" id="quickindex.ucnv_toUCountPending_67"></div>int <code class="ddoc_psymbol">ucnv_toUCountPending_67</code>(const(UConverter)* <span class="ddoc_param">cnv</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ucnv_isFixedWidth_67"></span><div class="quickindex" id="quickindex.ucnv_isFixedWidth_67"></div>UBool <code class="ddoc_psymbol">ucnv_isFixedWidth_67</code>(UConverter* <span class="ddoc_param">cnv</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+</div></dl>
+
+                
+            </div>
+        </div>
+        
+        <script type="text/javascript">jQuery(document).ready(listanchors);</script>
+        
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+     </body>
+</html>
