@@ -10,7 +10,7 @@ int main()
 	scope (exit)
 		ucsdet_close(detector);
 	
-	auto textbuf = cast(char[])std.file.read("../.testresources/utf-8.txt");
+	auto textbuf = cast(Char[])std.file.read("../.testresources/utf-8.txt");
 	
 	ucsdet_setText(detector, textbuf.ptr, cast(int)textbuf.length, &status);
 	enforce(U_SUCCESS(status));
@@ -21,7 +21,7 @@ int main()
 	string[] results;
 	foreach (i; 0..found)
 	{
-		auto confidence = ucsdet_getConfidence(matchers[i], &status);
+		immutable confidence = ucsdet_getConfidence(matchers[i], &status);
 		enforce(U_SUCCESS(status));
 		
 		if (confidence < 10)
@@ -41,7 +41,7 @@ int main()
 ///
 string toStringFromAscii(in char* s)
 {
-	import core.stdc.string;
+	import core.stdc.string: strlen;
 	auto len = strlen(s);
 	// ASCII only == UTF-8
 	return s[0..len].idup;
