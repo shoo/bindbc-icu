@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Compiling ICU
         run: |
-          git clone -b release-68-2 --depth 1 --single-branch https://github.com/unicode-org/icu.git
+          git clone -b release-69-1 --depth 1 --single-branch https://github.com/unicode-org/icu.git
           cd icu/icu4c/source
           ./runConfigureICU MacOSX --disable-samples --disable-tests --with-data-packaging=library --prefix=$(pwd)/install
           make -j4 && make install
@@ -29,7 +29,7 @@ jobs:
     steps:
       - name: Compiling ICU
         run: |
-          git clone -b release-68-2 --depth 1 --single-branch https://github.com/unicode-org/icu.git
+          git clone -b release-69-1 --depth 1 --single-branch https://github.com/unicode-org/icu.git
           cd icu/icu4c/source
           ./runConfigureICU Linux --disable-samples --disable-tests --with-data-packaging=library --prefix=$(pwd)/install
           make -j4 && make install
@@ -50,7 +50,7 @@ jobs:
           sudo bash -c 'echo "deb http://cz.archive.ubuntu.com/ubuntu eoan main universe" >> /etc/apt/sources.list'
           sudo apt update
           sudo apt install -y gcc-multilib g++-multilib libicu-le-hb0:i386 libicu-le-hb-dev:i386
-          git clone -b release-68-2 --depth 1 --single-branch https://github.com/unicode-org/icu.git
+          git clone -b release-69-1 --depth 1 --single-branch https://github.com/unicode-org/icu.git
           cd icu/icu4c/source
           ./runConfigureICU Linux --disable-samples --disable-tests --with-data-packaging=library --with-library-bits=32 --prefix=$(pwd)/install
           make -j4 && make install
