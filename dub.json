@@ -17,11 +17,11 @@
 			"libs-windows-x86_mscoff-dmd": ["$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icudt", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icuin", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icuio", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icutu", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icuuc"],
 			"libs-windows-x86-ldc": ["$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icudt", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icuin", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icuio", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icutu", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icuuc"],
 			"libs-windows-x86_64": ["$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_64/icudt", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_64/icuin", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_64/icuio", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_64/icutu", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_64/icuuc"],
-			"copyFiles-windows-x86": ["bin/windows-x86/icudt67.dll", "bin/windows-x86/icuin67.dll", "bin/windows-x86/icuio67.dll", "bin/windows-x86/icutu67.dll", "bin/windows-x86/icuuc67.dll"],
-			"copyFiles-windows-x86_64": ["bin/windows-x86_64/icudt67.dll", "bin/windows-x86_64/icuin67.dll", "bin/windows-x86_64/icuio67.dll", "bin/windows-x86_64/icutu67.dll", "bin/windows-x86_64/icuuc67.dll"],
+			"copyFiles-windows-x86": ["bin/windows-x86/icudt68.dll", "bin/windows-x86/icuin68.dll", "bin/windows-x86/icuio68.dll", "bin/windows-x86/icutu68.dll", "bin/windows-x86/icuuc68.dll"],
+			"copyFiles-windows-x86_64": ["bin/windows-x86_64/icudt68.dll", "bin/windows-x86_64/icuin68.dll", "bin/windows-x86_64/icuio68.dll", "bin/windows-x86_64/icutu68.dll", "bin/windows-x86_64/icuuc68.dll"],
 			"lflags-linux": ["-L./lib", "-L$BINDBC_ICU_PACKAGE_DIR/lib", "-L$BINDBC_ICU_PACKAGE_DIR/libs/linux-x86_64", "-L/usr/local/lib"],
 			"lflags-osx":   ["-L./lib", "-L$BINDBC_ICU_PACKAGE_DIR/lib", "-L$BINDBC_ICU_PACKAGE_DIR/libs/osx-x86_64",   "-L/usr/local/lib"],
-			"libs-linux":   [":libicudata.so.67", ":libicui18n.so.67", ":libicuio.so.67", ":libicutu.so.67", ":libicuuc.so.67"],
+			"libs-linux":   [":libicudata.so.68", ":libicui18n.so.68", ":libicuio.so.68", ":libicutu.so.68", ":libicuuc.so.68"],
 			"libs-osx":     ["icudata", "icui18n", "icuio", "icutu", "icuuc"]
 		},
 		{
@@ -32,11 +32,11 @@
 			"libs-windows-x86_mscoff-dmd": ["$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icudt", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icuin", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icuio", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icutu", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icuuc"],
 			"libs-windows-x86-ldc": ["$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icudt", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icuin", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icuio", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icutu", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icuuc"],
 			"libs-windows-x86_64": ["$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_64/icudt", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_64/icuin", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_64/icuio", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_64/icutu", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_64/icuuc"],
-			"copyFiles-windows-x86": ["bin/windows-x86/icudt67.dll", "bin/windows-x86/icuin67.dll", "bin/windows-x86/icuio67.dll", "bin/windows-x86/icutu67.dll", "bin/windows-x86/icuuc67.dll"],
-			"copyFiles-windows-x86_64": ["bin/windows-x86_64/icudt67.dll", "bin/windows-x86_64/icuin67.dll", "bin/windows-x86_64/icuio67.dll", "bin/windows-x86_64/icutu67.dll", "bin/windows-x86_64/icuuc67.dll"],
+			"copyFiles-windows-x86": ["bin/windows-x86/icudt68.dll", "bin/windows-x86/icuin68.dll", "bin/windows-x86/icuio68.dll", "bin/windows-x86/icutu68.dll", "bin/windows-x86/icuuc68.dll"],
+			"copyFiles-windows-x86_64": ["bin/windows-x86_64/icudt68.dll", "bin/windows-x86_64/icuin68.dll", "bin/windows-x86_64/icuio68.dll", "bin/windows-x86_64/icutu68.dll", "bin/windows-x86_64/icuuc68.dll"],
 			"lflags-linux": ["-L./lib", "-L$BINDBC_ICU_PACKAGE_DIR/lib", "-L$BINDBC_ICU_PACKAGE_DIR/libs/linux-x86_64", "-L/usr/local/lib"],
 			"lflags-osx":   ["-L./lib", "-L$BINDBC_ICU_PACKAGE_DIR/lib", "-L$BINDBC_ICU_PACKAGE_DIR/libs/osx-x86_64",   "-L/usr/local/lib"],
-			"libs-linux":   [":libicudata.so.67", ":libicui18n.so.67", ":libicuio.so.67", ":libicutu.so.67", ":libicuuc.so.67"],
+			"libs-linux":   [":libicudata.so.68", ":libicui18n.so.68", ":libicuio.so.68", ":libicutu.so.68", ":libicuuc.so.68"],
 			"libs-osx":     ["icudata", "icui18n", "icuio", "icutu", "icuuc"]
 		},
 		{
@@ -48,8 +48,8 @@
 			"name": "dynamic",
 			"targetType": "library",
 			"versions": ["BindBC_ICU_Dynamic"],
-			"copyFiles-windows-x86": ["bin/windows-x86/icudt67.dll", "bin/windows-x86/icuin67.dll", "bin/windows-x86/icuio67.dll", "bin/windows-x86/icutu67.dll", "bin/windows-x86/icuuc67.dll"],
-			"copyFiles-windows-x86_64": ["bin/windows-x86_64/icudt67.dll", "bin/windows-x86_64/icuin67.dll", "bin/windows-x86_64/icuio67.dll", "bin/windows-x86_64/icutu67.dll", "bin/windows-x86_64/icuuc67.dll"]
+			"copyFiles-windows-x86": ["bin/windows-x86/icudt68.dll", "bin/windows-x86/icuin68.dll", "bin/windows-x86/icuio68.dll", "bin/windows-x86/icutu68.dll", "bin/windows-x86/icuuc68.dll"],
+			"copyFiles-windows-x86_64": ["bin/windows-x86_64/icudt68.dll", "bin/windows-x86_64/icuin68.dll", "bin/windows-x86_64/icuio68.dll", "bin/windows-x86_64/icutu68.dll", "bin/windows-x86_64/icuuc68.dll"]
 		},
 		{
 			"name": "dynamic-nolib",
@@ -65,11 +65,11 @@
 			"libs-windows-x86_mscoff-dmd": ["$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icudt", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icuin", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icuio", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icutu", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icuuc"],
 			"libs-windows-x86-ldc": ["$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icudt", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icuin", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icuio", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icutu", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icuuc"],
 			"libs-windows-x86_64": ["$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_64/icudt", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_64/icuin", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_64/icuio", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_64/icutu", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_64/icuuc"],
-			"copyFiles-windows-x86": ["bin/windows-x86/icudt67.dll", "bin/windows-x86/icuin67.dll", "bin/windows-x86/icuio67.dll", "bin/windows-x86/icutu67.dll", "bin/windows-x86/icuuc67.dll"],
-			"copyFiles-windows-x86_64": ["bin/windows-x86_64/icudt67.dll", "bin/windows-x86_64/icuin67.dll", "bin/windows-x86_64/icuio67.dll", "bin/windows-x86_64/icutu67.dll", "bin/windows-x86_64/icuuc67.dll"],
+			"copyFiles-windows-x86": ["bin/windows-x86/icudt68.dll", "bin/windows-x86/icuin68.dll", "bin/windows-x86/icuio68.dll", "bin/windows-x86/icutu68.dll", "bin/windows-x86/icuuc68.dll"],
+			"copyFiles-windows-x86_64": ["bin/windows-x86_64/icudt68.dll", "bin/windows-x86_64/icuin68.dll", "bin/windows-x86_64/icuio68.dll", "bin/windows-x86_64/icutu68.dll", "bin/windows-x86_64/icuuc68.dll"],
 			"lflags-linux": ["-L./lib", "-L$BINDBC_ICU_PACKAGE_DIR/lib", "-L$BINDBC_ICU_PACKAGE_DIR/libs/linux-x86_64", "-L/usr/local/lib"],
 			"lflags-osx":   ["-L./lib", "-L$BINDBC_ICU_PACKAGE_DIR/lib", "-L$BINDBC_ICU_PACKAGE_DIR/libs/osx-x86_64",   "-L/usr/local/lib"],
-			"libs-linux":   [":libicudata.so.67", ":libicui18n.so.67", ":libicuio.so.67", ":libicutu.so.67", ":libicuuc.so.67"],
+			"libs-linux":   [":libicudata.so.68", ":libicui18n.so.68", ":libicuio.so.68", ":libicutu.so.68", ":libicuuc.so.68"],
 			"libs-osx":     ["icudata", "icui18n", "icuio", "icutu", "icuuc"]
 		},
 		{
@@ -81,11 +81,11 @@
 			"libs-windows-x86_mscoff-dmd": ["$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icudt", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icuin", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icuio", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icutu", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icuuc"],
 			"libs-windows-x86-ldc": ["$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icudt", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icuin", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icuio", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icutu", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_mscoff/icuuc"],
 			"libs-windows-x86_64": ["$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_64/icudt", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_64/icuin", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_64/icuio", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_64/icutu", "$BINDBC_ICU_PACKAGE_DIR/libs/windows-x86_64/icuuc"],
-			"copyFiles-windows-x86": ["bin/windows-x86/icudt67.dll", "bin/windows-x86/icuin67.dll", "bin/windows-x86/icuio67.dll", "bin/windows-x86/icutu67.dll", "bin/windows-x86/icuuc67.dll"],
-			"copyFiles-windows-x86_64": ["bin/windows-x86_64/icudt67.dll", "bin/windows-x86_64/icuin67.dll", "bin/windows-x86_64/icuio67.dll", "bin/windows-x86_64/icutu67.dll", "bin/windows-x86_64/icuuc67.dll"],
+			"copyFiles-windows-x86": ["bin/windows-x86/icudt68.dll", "bin/windows-x86/icuin68.dll", "bin/windows-x86/icuio68.dll", "bin/windows-x86/icutu68.dll", "bin/windows-x86/icuuc68.dll"],
+			"copyFiles-windows-x86_64": ["bin/windows-x86_64/icudt68.dll", "bin/windows-x86_64/icuin68.dll", "bin/windows-x86_64/icuio68.dll", "bin/windows-x86_64/icutu68.dll", "bin/windows-x86_64/icuuc68.dll"],
 			"lflags-linux": ["-L./lib", "-L$BINDBC_ICU_PACKAGE_DIR/lib", "-L$BINDBC_ICU_PACKAGE_DIR/libs/linux-x86_64", "-L/usr/local/lib"],
 			"lflags-osx":   ["-L./lib", "-L$BINDBC_ICU_PACKAGE_DIR/lib", "-L$BINDBC_ICU_PACKAGE_DIR/libs/osx-x86_64",   "-L/usr/local/lib"],
-			"libs-linux":   [":libicudata.so.67", ":libicui18n.so.67", ":libicuio.so.67", ":libicutu.so.67", ":libicuuc.so.67"],
+			"libs-linux":   [":libicudata.so.68", ":libicui18n.so.68", ":libicuio.so.68", ":libicutu.so.68", ":libicuuc.so.68"],
 			"libs-osx":     ["icudata", "icui18n", "icuio", "icutu", "icuuc"]
 		}
 	]

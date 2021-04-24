@@ -5,7 +5,7 @@
 [![downloads](https://img.shields.io/dub/dt/bindbc-icu.svg?cacheSeconds=3600)](https://code.dlang.org/packages/bindbc-icu)
 [![BSL-1.0](http://img.shields.io/badge/license-BSL--1.0-blue.svg?style=flat)](./LICENSE)
 [![codecov](https://codecov.io/gh/shoo/bindbc-icu/branch/master/graph/badge.svg)](https://codecov.io/gh/shoo/bindbc-icu)
-[![ICU-Version](http://img.shields.io/badge/icu%20version-67.1-green.svg?style=flat)](https://github.com/unicode-org/icu/releases/tag/release-67-1)
+[![ICU-Version](http://img.shields.io/badge/icu%20version-68.2-green.svg?style=flat)](https://github.com/unicode-org/icu/releases/tag/release-68-2)
 
 This project provides dynamic and static bindings to the C API of ICU(International Components for Unicode). The bindings are `@nogc` and `nothrow` compatible and can be compiled for compatibility with <s>`-betterC`</s>.
 
@@ -33,7 +33,7 @@ apt install libicu-dev=67.1-3
 If the required version is not provided by the package manager, you will need to build it from source code.
 
 ```sh
-git clone -b release-67-1 --depth 1 --single-branch https://github.com/unicode-org/icu.git
+git clone -b release-68-2 --depth 1 --single-branch https://github.com/unicode-org/icu.git
 cd icu/icu4c/source
 ./runConfigureICU Linux --disable-samples --disable-tests --with-data-packaging=library
 make -j2
@@ -71,8 +71,8 @@ In particular, ICU functions are characterized by a versioned function name (sym
 Inside the library, create the alias as following:
 
 ```d
-UCharsetDetector* ucsdet_open_67(UErrorCode* status) @system;   // real symbol
-typeof(&ucsdet_open_67) ucsdet_open;                            // usable function pointer from dynamic link libraries
+UCharsetDetector* ucsdet_open_68(UErrorCode* status) @system;   // real symbol
+typeof(&ucsdet_open_68) ucsdet_open;                            // usable function pointer from dynamic link libraries
 ```
 
 ## Static link
@@ -99,8 +99,8 @@ In particular, ICU functions are characterized by a versioned function name (sym
 Inside the library, create the alias as following:
 
 ```d
-UCharsetDetector* ucsdet_open_67(UErrorCode* status) @system;   // real symbol
-alias ucsdet_open = ucsdet_open_67;                             // usable alias
+UCharsetDetector* ucsdet_open_68(UErrorCode* status) @system;   // real symbol
+alias ucsdet_open = ucsdet_open_68;                             // usable alias
 ```
 
 # Support status

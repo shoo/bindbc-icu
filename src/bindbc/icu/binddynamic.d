@@ -18,8 +18,9 @@ mixin((){
 	///
 	string ret;
 	static foreach (mod; icuBindings)
-	{
 		ret ~= `static import ` ~ fullyQualifiedName!mod ~ ";\n";
+	static foreach (mod; icuBindings)
+	{
 		static foreach (member; __traits(allMembers, mod))
 		{
 			static if (is(__traits(getMember, mod, member) == struct))
