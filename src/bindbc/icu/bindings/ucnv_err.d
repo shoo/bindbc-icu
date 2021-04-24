@@ -10,6 +10,7 @@ import bindbc.icu.bindings.utypes;
 
 extern (C):
 
+///
 struct UConverter {}
 
 ///
@@ -91,33 +92,33 @@ struct UConverterToUnicodeArgs
 }
 
 ///
-void UCNV_FROM_U_CALLBACK_STOP_67(const(void)* context, UConverterFromUnicodeArgs* fromUArgs, const(UChar)* codeUnits,
+void UCNV_FROM_U_CALLBACK_STOP_68(const(void)* context, UConverterFromUnicodeArgs* fromUArgs, const(UChar)* codeUnits,
 	int length, UChar32 codePoint, UConverterCallbackReason reason, UErrorCode* err);
 
 ///
-void UCNV_TO_U_CALLBACK_STOP_67(const(void)* context, UConverterToUnicodeArgs* toUArgs, const(char)* codeUnits,
+void UCNV_TO_U_CALLBACK_STOP_68(const(void)* context, UConverterToUnicodeArgs* toUArgs, const(char)* codeUnits,
 	int length, UConverterCallbackReason reason, UErrorCode* err);
 
 ///
-void UCNV_FROM_U_CALLBACK_SKIP_67(const(void)* context, UConverterFromUnicodeArgs* fromUArgs, const(UChar)* codeUnits,
+void UCNV_FROM_U_CALLBACK_SKIP_68(const(void)* context, UConverterFromUnicodeArgs* fromUArgs, const(UChar)* codeUnits,
 	int length, UChar32 codePoint, UConverterCallbackReason reason, UErrorCode* err);
 
 ///
-void UCNV_FROM_U_CALLBACK_SUBSTITUTE_67(const(void)* context, UConverterFromUnicodeArgs* fromUArgs,
+void UCNV_FROM_U_CALLBACK_SUBSTITUTE_68(const(void)* context, UConverterFromUnicodeArgs* fromUArgs,
 	const(UChar)* codeUnits, int length, UChar32 codePoint, UConverterCallbackReason reason, UErrorCode* err);
 
 ///
-void UCNV_FROM_U_CALLBACK_ESCAPE_67(const(void)* context, UConverterFromUnicodeArgs* fromUArgs, const(UChar)* codeUnits,
+void UCNV_FROM_U_CALLBACK_ESCAPE_68(const(void)* context, UConverterFromUnicodeArgs* fromUArgs, const(UChar)* codeUnits,
 	int length, UChar32 codePoint, UConverterCallbackReason reason, UErrorCode* err);
 
 ///
-void UCNV_TO_U_CALLBACK_SKIP_67(const(void)* context, UConverterToUnicodeArgs* toUArgs, const(char)* codeUnits,
+void UCNV_TO_U_CALLBACK_SKIP_68(const(void)* context, UConverterToUnicodeArgs* toUArgs, const(char)* codeUnits,
 	int length, UConverterCallbackReason reason, UErrorCode* err);
 
 ///
-void UCNV_TO_U_CALLBACK_SUBSTITUTE_67(const(void)* context, UConverterToUnicodeArgs* toUArgs, const(char)* codeUnits,
+void UCNV_TO_U_CALLBACK_SUBSTITUTE_68(const(void)* context, UConverterToUnicodeArgs* toUArgs, const(char)* codeUnits,
 	int length, UConverterCallbackReason reason, UErrorCode* err);
 
 ///
-void UCNV_TO_U_CALLBACK_ESCAPE_67(const(void)* context, UConverterToUnicodeArgs* toUArgs, const(char)* codeUnits,
+void UCNV_TO_U_CALLBACK_ESCAPE_68(const(void)* context, UConverterToUnicodeArgs* toUArgs, const(char)* codeUnits,
 	int length, UConverterCallbackReason reason, UErrorCode* err);

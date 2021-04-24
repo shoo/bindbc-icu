@@ -166,13 +166,7 @@ void unitTest(string[] exDubOpts = null)
 		mkdirRecurse(covdir);
 	env["COVERAGE_DIR"]   = covdir.absolutePath();
 	env["COVERAGE_MERGE"] = "true";
-	// Win64の場合はlibcurl.dllの64bit版を使うため、dmdのbin64にパスを通す
-	if (config.os == "windows" && config.targetArch == "x86_64" && config.hostCompiler == "dmd")
-	{
-		auto bin64dir = searchDCompiler().dirName.buildPath("../bin64");
-		if (bin64dir.exists && bin64dir.isDir)
-			env.setPaths([bin64dir] ~ getPaths());
-	}
+	env.addCurlPath();
 	writeln("#######################################");
 	writeln("## Unit Test                         ##");
 	writeln("#######################################");
@@ -198,13 +192,7 @@ void unitTest(string[] exDubOpts = null)
 void generateDocument()
 {
 	string[string] env;
-	// Win64の場合はlibcurl.dllの64bit版を使うため、dmdのbin64にパスを通す
-	if (config.os == "windows" && config.targetArch == "x86_64" && config.hostCompiler == "dmd")
-	{
-		auto bin64dir = searchDCompiler().dirName.buildPath("../bin64");
-		if (bin64dir.exists && bin64dir.isDir)
-			env.setPaths([bin64dir] ~ getPaths());
-	}
+	env.addCurlPath();
 	exec(["dub", "run", Defines.documentGenerator, "-y",
 		"--",
 		"-a=x86_64", "-b=release", "-c=default"], null, env);
@@ -225,15 +213,8 @@ void createReleaseBuild(string[] exDubOpts = null)
 ///
 void integrationTest(string[] exDubOpts = null)
 {
-	string[string] env = [null: null];
-	env.clear();
-	// Win64の場合はlibcurl.dllの64bit版を使うため、dmdのbin64にパスを通す
-	if (config.os == "windows" && config.targetArch == "x86_64" && config.hostCompiler == "dmd")
-	{
-		auto bin64dir = searchDCompiler().dirName.buildPath("../bin64");
-		if (bin64dir.exists && bin64dir.isDir)
-			env.setPaths([bin64dir] ~ getPaths());
-	}
+	string[string] env;
+	env.addCurlPath();
 	auto covdir = config.scriptDir.buildNormalizedPath("../.cov").absolutePath();
 	if (!covdir.exists)
 		mkdirRecurse(covdir);
@@ -683,6 +664,23 @@ string searchPath(string name, string[] dirs = null)
 			return bin;
 	}
 	return name;
+}
+
+///
+void addCurlPath(ref string[string] env)
+{
+	if (config.os == "windows" && config.arch == "x86_64")
+	{
+		auto bin64dir = searchDCompiler().dirName.buildNormalizedPath("../bin64");
+		if (bin64dir.exists && bin64dir.isDir)
+			env["Path"] = bin64dir ~ ";" ~ environment.get("Path").chomp(";");
+	}
+	else if (config.os == "windows" && config.arch == "x86")
+	{
+		auto bin32dir = searchDCompiler().dirName.buildNormalizedPath("../bin");
+		if (bin32dir.exists && bin32dir.isDir)
+			env["Path"] = bin32dir ~ ";" ~ environment.get("Path").chomp(";");
+	}
 }
 
 ///
