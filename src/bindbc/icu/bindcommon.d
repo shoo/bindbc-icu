@@ -13,7 +13,7 @@ import bindbc.icu.bindings.ucsdet;
 import bindbc.icu.bindings.ucnv;
 import bindbc.icu.bindings.ucnv_err;
 
-package(bindbc.icu) enum string icuVersion = "68";
+package(bindbc.icu) enum string icuVersion = "69";
 package(bindbc.icu) alias icuLibraries = AliasSeq!("icudt", "icuin", "icuio", "icutu", "icuuc");
 package(bindbc.icu) string libFileName(string libName)
 {
