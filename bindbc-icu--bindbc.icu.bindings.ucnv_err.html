@@ -96,7 +96,11 @@
                 <div class="ddoc_summary"><code class="ddoc_psymbol">ucnv_err</code>.h
 </div><div class="ddoc_license"><span class="ddoc_license_header">License:</span>
  <a href="http://boost.org/LICENSE_1_0.txt">BSL-1.0</a>.</div>
-<dl class="ddoc_members"><div class="ddoc_module_members"><dt class="ddoc_decl"><div ><span class="def-anchor" id=".UCNV_SUB_STOP_ON_ILLEGAL"></span><div class="quickindex" id="quickindex.UCNV_SUB_STOP_ON_ILLEGAL"></div>enum string <code class="ddoc_psymbol">UCNV_SUB_STOP_ON_ILLEGAL</code>;
+<dl class="ddoc_members"><div class="ddoc_module_members"><dt class="ddoc_decl"><div ><span class="def-anchor" id=".UConverter"></span><div class="quickindex" id="quickindex.UConverter"></div>struct <code class="ddoc_psymbol">UConverter</code>;
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UCNV_SUB_STOP_ON_ILLEGAL"></span><div class="quickindex" id="quickindex.UCNV_SUB_STOP_ON_ILLEGAL"></div>enum string <code class="ddoc_psymbol">UCNV_SUB_STOP_ON_ILLEGAL</code>;
 <br></div></dt>
 <dd>
 </dd>
@@ -229,35 +233,35 @@
 </dd>
 </div></dl>
 </dd>
-<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UCNV_FROM_U_CALLBACK_STOP_67"></span><div class="quickindex" id="quickindex.UCNV_FROM_U_CALLBACK_STOP_67"></div>void <code class="ddoc_psymbol">UCNV_FROM_U_CALLBACK_STOP_67</code>(const(void)* <span class="ddoc_param">context</span>, UConverterFromUnicodeArgs* <span class="ddoc_param">fromUArgs</span>, const(UChar)* <span class="ddoc_param">codeUnits</span>, int <span class="ddoc_param">length</span>, UChar32 <span class="ddoc_param">codePoint</span>, UConverterCallbackReason <span class="ddoc_param">reason</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UCNV_FROM_U_CALLBACK_STOP_68"></span><div class="quickindex" id="quickindex.UCNV_FROM_U_CALLBACK_STOP_68"></div>void <code class="ddoc_psymbol">UCNV_FROM_U_CALLBACK_STOP_68</code>(const(void)* <span class="ddoc_param">context</span>, UConverterFromUnicodeArgs* <span class="ddoc_param">fromUArgs</span>, const(UChar)* <span class="ddoc_param">codeUnits</span>, int <span class="ddoc_param">length</span>, UChar32 <span class="ddoc_param">codePoint</span>, UConverterCallbackReason <span class="ddoc_param">reason</span>, UErrorCode* <span class="ddoc_param">err</span>);
 <br></div></dt>
 <dd>
 </dd>
-<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UCNV_TO_U_CALLBACK_STOP_67"></span><div class="quickindex" id="quickindex.UCNV_TO_U_CALLBACK_STOP_67"></div>void <code class="ddoc_psymbol">UCNV_TO_U_CALLBACK_STOP_67</code>(const(void)* <span class="ddoc_param">context</span>, UConverterToUnicodeArgs* <span class="ddoc_param">toUArgs</span>, const(char)* <span class="ddoc_param">codeUnits</span>, int <span class="ddoc_param">length</span>, UConverterCallbackReason <span class="ddoc_param">reason</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UCNV_TO_U_CALLBACK_STOP_68"></span><div class="quickindex" id="quickindex.UCNV_TO_U_CALLBACK_STOP_68"></div>void <code class="ddoc_psymbol">UCNV_TO_U_CALLBACK_STOP_68</code>(const(void)* <span class="ddoc_param">context</span>, UConverterToUnicodeArgs* <span class="ddoc_param">toUArgs</span>, const(char)* <span class="ddoc_param">codeUnits</span>, int <span class="ddoc_param">length</span>, UConverterCallbackReason <span class="ddoc_param">reason</span>, UErrorCode* <span class="ddoc_param">err</span>);
 <br></div></dt>
 <dd>
 </dd>
-<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UCNV_FROM_U_CALLBACK_SKIP_67"></span><div class="quickindex" id="quickindex.UCNV_FROM_U_CALLBACK_SKIP_67"></div>void <code class="ddoc_psymbol">UCNV_FROM_U_CALLBACK_SKIP_67</code>(const(void)* <span class="ddoc_param">context</span>, UConverterFromUnicodeArgs* <span class="ddoc_param">fromUArgs</span>, const(UChar)* <span class="ddoc_param">codeUnits</span>, int <span class="ddoc_param">length</span>, UChar32 <span class="ddoc_param">codePoint</span>, UConverterCallbackReason <span class="ddoc_param">reason</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UCNV_FROM_U_CALLBACK_SKIP_68"></span><div class="quickindex" id="quickindex.UCNV_FROM_U_CALLBACK_SKIP_68"></div>void <code class="ddoc_psymbol">UCNV_FROM_U_CALLBACK_SKIP_68</code>(const(void)* <span class="ddoc_param">context</span>, UConverterFromUnicodeArgs* <span class="ddoc_param">fromUArgs</span>, const(UChar)* <span class="ddoc_param">codeUnits</span>, int <span class="ddoc_param">length</span>, UChar32 <span class="ddoc_param">codePoint</span>, UConverterCallbackReason <span class="ddoc_param">reason</span>, UErrorCode* <span class="ddoc_param">err</span>);
 <br></div></dt>
 <dd>
 </dd>
-<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UCNV_FROM_U_CALLBACK_SUBSTITUTE_67"></span><div class="quickindex" id="quickindex.UCNV_FROM_U_CALLBACK_SUBSTITUTE_67"></div>void <code class="ddoc_psymbol">UCNV_FROM_U_CALLBACK_SUBSTITUTE_67</code>(const(void)* <span class="ddoc_param">context</span>, UConverterFromUnicodeArgs* <span class="ddoc_param">fromUArgs</span>, const(UChar)* <span class="ddoc_param">codeUnits</span>, int <span class="ddoc_param">length</span>, UChar32 <span class="ddoc_param">codePoint</span>, UConverterCallbackReason <span class="ddoc_param">reason</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UCNV_FROM_U_CALLBACK_SUBSTITUTE_68"></span><div class="quickindex" id="quickindex.UCNV_FROM_U_CALLBACK_SUBSTITUTE_68"></div>void <code class="ddoc_psymbol">UCNV_FROM_U_CALLBACK_SUBSTITUTE_68</code>(const(void)* <span class="ddoc_param">context</span>, UConverterFromUnicodeArgs* <span class="ddoc_param">fromUArgs</span>, const(UChar)* <span class="ddoc_param">codeUnits</span>, int <span class="ddoc_param">length</span>, UChar32 <span class="ddoc_param">codePoint</span>, UConverterCallbackReason <span class="ddoc_param">reason</span>, UErrorCode* <span class="ddoc_param">err</span>);
 <br></div></dt>
 <dd>
 </dd>
-<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UCNV_FROM_U_CALLBACK_ESCAPE_67"></span><div class="quickindex" id="quickindex.UCNV_FROM_U_CALLBACK_ESCAPE_67"></div>void <code class="ddoc_psymbol">UCNV_FROM_U_CALLBACK_ESCAPE_67</code>(const(void)* <span class="ddoc_param">context</span>, UConverterFromUnicodeArgs* <span class="ddoc_param">fromUArgs</span>, const(UChar)* <span class="ddoc_param">codeUnits</span>, int <span class="ddoc_param">length</span>, UChar32 <span class="ddoc_param">codePoint</span>, UConverterCallbackReason <span class="ddoc_param">reason</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UCNV_FROM_U_CALLBACK_ESCAPE_68"></span><div class="quickindex" id="quickindex.UCNV_FROM_U_CALLBACK_ESCAPE_68"></div>void <code class="ddoc_psymbol">UCNV_FROM_U_CALLBACK_ESCAPE_68</code>(const(void)* <span class="ddoc_param">context</span>, UConverterFromUnicodeArgs* <span class="ddoc_param">fromUArgs</span>, const(UChar)* <span class="ddoc_param">codeUnits</span>, int <span class="ddoc_param">length</span>, UChar32 <span class="ddoc_param">codePoint</span>, UConverterCallbackReason <span class="ddoc_param">reason</span>, UErrorCode* <span class="ddoc_param">err</span>);
 <br></div></dt>
 <dd>
 </dd>
-<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UCNV_TO_U_CALLBACK_SKIP_67"></span><div class="quickindex" id="quickindex.UCNV_TO_U_CALLBACK_SKIP_67"></div>void <code class="ddoc_psymbol">UCNV_TO_U_CALLBACK_SKIP_67</code>(const(void)* <span class="ddoc_param">context</span>, UConverterToUnicodeArgs* <span class="ddoc_param">toUArgs</span>, const(char)* <span class="ddoc_param">codeUnits</span>, int <span class="ddoc_param">length</span>, UConverterCallbackReason <span class="ddoc_param">reason</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UCNV_TO_U_CALLBACK_SKIP_68"></span><div class="quickindex" id="quickindex.UCNV_TO_U_CALLBACK_SKIP_68"></div>void <code class="ddoc_psymbol">UCNV_TO_U_CALLBACK_SKIP_68</code>(const(void)* <span class="ddoc_param">context</span>, UConverterToUnicodeArgs* <span class="ddoc_param">toUArgs</span>, const(char)* <span class="ddoc_param">codeUnits</span>, int <span class="ddoc_param">length</span>, UConverterCallbackReason <span class="ddoc_param">reason</span>, UErrorCode* <span class="ddoc_param">err</span>);
 <br></div></dt>
 <dd>
 </dd>
-<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UCNV_TO_U_CALLBACK_SUBSTITUTE_67"></span><div class="quickindex" id="quickindex.UCNV_TO_U_CALLBACK_SUBSTITUTE_67"></div>void <code class="ddoc_psymbol">UCNV_TO_U_CALLBACK_SUBSTITUTE_67</code>(const(void)* <span class="ddoc_param">context</span>, UConverterToUnicodeArgs* <span class="ddoc_param">toUArgs</span>, const(char)* <span class="ddoc_param">codeUnits</span>, int <span class="ddoc_param">length</span>, UConverterCallbackReason <span class="ddoc_param">reason</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UCNV_TO_U_CALLBACK_SUBSTITUTE_68"></span><div class="quickindex" id="quickindex.UCNV_TO_U_CALLBACK_SUBSTITUTE_68"></div>void <code class="ddoc_psymbol">UCNV_TO_U_CALLBACK_SUBSTITUTE_68</code>(const(void)* <span class="ddoc_param">context</span>, UConverterToUnicodeArgs* <span class="ddoc_param">toUArgs</span>, const(char)* <span class="ddoc_param">codeUnits</span>, int <span class="ddoc_param">length</span>, UConverterCallbackReason <span class="ddoc_param">reason</span>, UErrorCode* <span class="ddoc_param">err</span>);
 <br></div></dt>
 <dd>
 </dd>
-<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UCNV_TO_U_CALLBACK_ESCAPE_67"></span><div class="quickindex" id="quickindex.UCNV_TO_U_CALLBACK_ESCAPE_67"></div>void <code class="ddoc_psymbol">UCNV_TO_U_CALLBACK_ESCAPE_67</code>(const(void)* <span class="ddoc_param">context</span>, UConverterToUnicodeArgs* <span class="ddoc_param">toUArgs</span>, const(char)* <span class="ddoc_param">codeUnits</span>, int <span class="ddoc_param">length</span>, UConverterCallbackReason <span class="ddoc_param">reason</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UCNV_TO_U_CALLBACK_ESCAPE_68"></span><div class="quickindex" id="quickindex.UCNV_TO_U_CALLBACK_ESCAPE_68"></div>void <code class="ddoc_psymbol">UCNV_TO_U_CALLBACK_ESCAPE_68</code>(const(void)* <span class="ddoc_param">context</span>, UConverterToUnicodeArgs* <span class="ddoc_param">toUArgs</span>, const(char)* <span class="ddoc_param">codeUnits</span>, int <span class="ddoc_param">length</span>, UConverterCallbackReason <span class="ddoc_param">reason</span>, UErrorCode* <span class="ddoc_param">err</span>);
 <br></div></dt>
 <dd>
 </dd>
