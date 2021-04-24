@@ -72,7 +72,7 @@
      "enum"
     ],
     "deco" : "Aya",
-    "init" : "\"68\""
+    "init" : "\"69\""
    },
    {
     "name" : "icuLibraries",
@@ -1524,7 +1524,7 @@
     "line" : 188,
     "char" : 52,
     "deco" : "PUE6bindbc3icu8bindings6utypes10UErrorCodeZPxa",
-    "originalType" : "typeof(&bindbc.icu.bindings.utypes.u_errorName_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.utypes.u_errorName_69)"
    },
    {
     "name" : "StringEnumeration",
@@ -1551,7 +1551,7 @@
     "line" : 191,
     "char" : 51,
     "deco" : "PUPS6bindbc3icu8bindings5uenum12UEnumerationZv",
-    "originalType" : "typeof(&bindbc.icu.bindings.uenum.uenum_close_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.uenum.uenum_close_69)"
    },
    {
     "name" : "uenum_count",
@@ -1560,7 +1560,7 @@
     "line" : 192,
     "char" : 51,
     "deco" : "PUPS6bindbc3icu8bindings5uenum12UEnumerationPEQBqQBmQBl6utypes10UErrorCodeZi",
-    "originalType" : "typeof(&bindbc.icu.bindings.uenum.uenum_count_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.uenum.uenum_count_69)"
    },
    {
     "name" : "uenum_unext",
@@ -1569,7 +1569,7 @@
     "line" : 193,
     "char" : 51,
     "deco" : "PUPS6bindbc3icu8bindings5uenum12UEnumerationPiPEQBsQBoQBn6utypes10UErrorCodeZPxu",
-    "originalType" : "typeof(&bindbc.icu.bindings.uenum.uenum_unext_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.uenum.uenum_unext_69)"
    },
    {
     "name" : "uenum_next",
@@ -1578,7 +1578,7 @@
     "line" : 194,
     "char" : 50,
     "deco" : "PUPS6bindbc3icu8bindings5uenum12UEnumerationPiPEQBsQBoQBn6utypes10UErrorCodeZPxa",
-    "originalType" : "typeof(&bindbc.icu.bindings.uenum.uenum_next_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.uenum.uenum_next_69)"
    },
    {
     "name" : "uenum_reset",
@@ -1587,7 +1587,7 @@
     "line" : 195,
     "char" : 51,
     "deco" : "PUPS6bindbc3icu8bindings5uenum12UEnumerationPEQBqQBmQBl6utypes10UErrorCodeZv",
-    "originalType" : "typeof(&bindbc.icu.bindings.uenum.uenum_reset_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.uenum.uenum_reset_69)"
    },
    {
     "name" : "uenum_openFromStringEnumeration",
@@ -1596,7 +1596,7 @@
     "line" : 196,
     "char" : 71,
     "deco" : "PUPS6bindbc3icu8bindings5uenum17StringEnumerationPEQBvQBrQBq6utypes10UErrorCodeZPSQDaQCwQCvQCp12UEnumeration",
-    "originalType" : "typeof(&bindbc.icu.bindings.uenum.uenum_openFromStringEnumeration_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.uenum.uenum_openFromStringEnumeration_69)"
    },
    {
     "name" : "uenum_openUCharStringsEnumeration",
@@ -1605,7 +1605,7 @@
     "line" : 197,
     "char" : 73,
     "deco" : "PUPxPuiPE6bindbc3icu8bindings6utypes10UErrorCodeZPSQBqQBmQBl5uenum12UEnumeration",
-    "originalType" : "typeof(&bindbc.icu.bindings.uenum.uenum_openUCharStringsEnumeration_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.uenum.uenum_openUCharStringsEnumeration_69)"
    },
    {
     "name" : "uenum_openCharStringsEnumeration",
@@ -1614,7 +1614,7 @@
     "line" : 198,
     "char" : 72,
     "deco" : "PUPxPhiPE6bindbc3icu8bindings6utypes10UErrorCodeZPSQBqQBmQBl5uenum12UEnumeration",
-    "originalType" : "typeof(&bindbc.icu.bindings.uenum.uenum_openCharStringsEnumeration_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.uenum.uenum_openCharStringsEnumeration_69)"
    },
    {
     "name" : "UCharsetDetector",
@@ -1641,7 +1641,7 @@
     "line" : 201,
     "char" : 52,
     "deco" : "PUPE6bindbc3icu8bindings6utypes10UErrorCodeZPSQBqQBmQBl6ucsdet16UCharsetDetector",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_open_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_open_69)"
    },
    {
     "name" : "ucsdet_close",
@@ -1650,7 +1650,7 @@
     "line" : 202,
     "char" : 53,
     "deco" : "PUPS6bindbc3icu8bindings6ucsdet16UCharsetDetectorZv",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_close_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_close_69)"
    },
    {
     "name" : "ucsdet_setText",
@@ -1659,7 +1659,7 @@
     "line" : 203,
     "char" : 55,
     "deco" : "PUPS6bindbc3icu8bindings6ucsdet16UCharsetDetectorPxhiPEQBzQBvQBu6utypes10UErrorCodeZv",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_setText_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_setText_69)"
    },
    {
     "name" : "ucsdet_setDeclaredEncoding",
@@ -1668,7 +1668,7 @@
     "line" : 204,
     "char" : 67,
     "deco" : "PUPS6bindbc3icu8bindings6ucsdet16UCharsetDetectorPxaiPEQBzQBvQBu6utypes10UErrorCodeZv",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_setDeclaredEncoding_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_setDeclaredEncoding_69)"
    },
    {
     "name" : "ucsdet_detect",
@@ -1677,7 +1677,7 @@
     "line" : 205,
     "char" : 54,
     "deco" : "PUPS6bindbc3icu8bindings6ucsdet16UCharsetDetectorPEQBvQBrQBq6utypes10UErrorCodeZPxSQDbQCxQCwQCq13UCharsetMatch",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_detect_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_detect_69)"
    },
    {
     "name" : "ucsdet_detectAll",
@@ -1686,7 +1686,7 @@
     "line" : 206,
     "char" : 57,
     "deco" : "PUPS6bindbc3icu8bindings6ucsdet16UCharsetDetectorPiPEQBxQBtQBs6utypes10UErrorCodeZPPxSQDeQDaQCzQCt13UCharsetMatch",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_detectAll_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_detectAll_69)"
    },
    {
     "name" : "ucsdet_getName",
@@ -1695,7 +1695,7 @@
     "line" : 207,
     "char" : 55,
     "deco" : "PUPxS6bindbc3icu8bindings6ucsdet13UCharsetMatchPEQBsQBoQBn6utypes10UErrorCodeZPxa",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_getName_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_getName_69)"
    },
    {
     "name" : "ucsdet_getConfidence",
@@ -1704,7 +1704,7 @@
     "line" : 208,
     "char" : 61,
     "deco" : "PUPxS6bindbc3icu8bindings6ucsdet13UCharsetMatchPEQBsQBoQBn6utypes10UErrorCodeZi",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_getConfidence_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_getConfidence_69)"
    },
    {
     "name" : "ucsdet_getLanguage",
@@ -1713,7 +1713,7 @@
     "line" : 209,
     "char" : 59,
     "deco" : "PUPxS6bindbc3icu8bindings6ucsdet13UCharsetMatchPEQBsQBoQBn6utypes10UErrorCodeZPxa",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_getLanguage_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_getLanguage_69)"
    },
    {
     "name" : "ucsdet_getUChars",
@@ -1722,7 +1722,7 @@
     "line" : 210,
     "char" : 57,
     "deco" : "PUPxS6bindbc3icu8bindings6ucsdet13UCharsetMatchPuiPEQBvQBrQBq6utypes10UErrorCodeZi",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_getUChars_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_getUChars_69)"
    },
    {
     "name" : "ucsdet_getAllDetectableCharsets",
@@ -1731,7 +1731,7 @@
     "line" : 211,
     "char" : 72,
     "deco" : "PUPxS6bindbc3icu8bindings6ucsdet16UCharsetDetectorPEQBvQBrQBq6utypes10UErrorCodeZPSQDaQCwQCv5uenum12UEnumeration",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_getAllDetectableCharsets_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_getAllDetectableCharsets_69)"
    },
    {
     "name" : "ucsdet_isInputFilterEnabled",
@@ -1740,7 +1740,7 @@
     "line" : 212,
     "char" : 68,
     "deco" : "PUPxS6bindbc3icu8bindings6ucsdet16UCharsetDetectorZb",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_isInputFilterEnabled_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_isInputFilterEnabled_69)"
    },
    {
     "name" : "ucsdet_enableInputFilter",
@@ -1749,7 +1749,7 @@
     "line" : 213,
     "char" : 65,
     "deco" : "PUPS6bindbc3icu8bindings6ucsdet16UCharsetDetectorbZb",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_enableInputFilter_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucsdet.ucsdet_enableInputFilter_69)"
    },
    {
     "name" : "USet",
@@ -2171,7 +2171,7 @@
     "line" : 265,
     "char" : 56,
     "deco" : "PUPxaQdZi",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_compareNames_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_compareNames_69)"
    },
    {
     "name" : "ucnv_open",
@@ -2180,7 +2180,7 @@
     "line" : 266,
     "char" : 48,
     "deco" : "PUPxaPE6bindbc3icu8bindings6utypes10UErrorCodeZPSQBqQBmQBl8ucnv_err10UConverter",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_open_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_open_69)"
    },
    {
     "name" : "ucnv_openU",
@@ -2189,7 +2189,7 @@
     "line" : 267,
     "char" : 49,
     "deco" : "PUPxaPE6bindbc3icu8bindings6utypes10UErrorCodeZPSQBqQBmQBl8ucnv_err10UConverter",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_openU_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_openU_69)"
    },
    {
     "name" : "ucnv_openCCSID",
@@ -2198,7 +2198,7 @@
     "line" : 268,
     "char" : 53,
     "deco" : "PUiE6bindbc3icu8bindings4ucnv18UConverterPlatformPEQBvQBrQBq6utypes10UErrorCodeZPSQDaQCwQCv8ucnv_err10UConverter",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_openCCSID_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_openCCSID_69)"
    },
    {
     "name" : "ucnv_openPackage",
@@ -2207,7 +2207,7 @@
     "line" : 269,
     "char" : 55,
     "deco" : "PUPxaQdPE6bindbc3icu8bindings6utypes10UErrorCodeZPSQBqQBmQBl8ucnv_err10UConverter",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_openPackage_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_openPackage_69)"
    },
    {
     "name" : "ucnv_safeClone",
@@ -2216,7 +2216,7 @@
     "line" : 270,
     "char" : 53,
     "deco" : "PUPxS6bindbc3icu8bindings8ucnv_err10UConverterPvPiPEQBvQBrQBq6utypes10UErrorCodeZPSQDaQCwQCvQCpQCj",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_safeClone_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_safeClone_69)"
    },
    {
     "name" : "U_CNV_SAFECLONE_BUFFERSIZE",
@@ -2233,7 +2233,7 @@
     "line" : 272,
     "char" : 49,
     "deco" : "PUPS6bindbc3icu8bindings8ucnv_err10UConverterZv",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_close_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_close_69)"
    },
    {
     "name" : "ucnv_getSubstChars",
@@ -2242,7 +2242,7 @@
     "line" : 273,
     "char" : 57,
     "deco" : "PUPxS6bindbc3icu8bindings8ucnv_err10UConverterPhPgPEQBvQBrQBq6utypes10UErrorCodeZv",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getSubstChars_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getSubstChars_69)"
    },
    {
     "name" : "ucnv_setSubstChars",
@@ -2251,7 +2251,7 @@
     "line" : 274,
     "char" : 57,
     "deco" : "PUPS6bindbc3icu8bindings8ucnv_err10UConverterPxhgPEQBvQBrQBq6utypes10UErrorCodeZv",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_setSubstChars_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_setSubstChars_69)"
    },
    {
     "name" : "ucnv_setSubstString",
@@ -2260,7 +2260,7 @@
     "line" : 275,
     "char" : 58,
     "deco" : "PUPS6bindbc3icu8bindings8ucnv_err10UConverterPxuiPEQBvQBrQBq6utypes10UErrorCodeZv",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_setSubstString_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_setSubstString_69)"
    },
    {
     "name" : "ucnv_getInvalidChars",
@@ -2269,7 +2269,7 @@
     "line" : 276,
     "char" : 59,
     "deco" : "PUPxS6bindbc3icu8bindings8ucnv_err10UConverterPhPgPEQBvQBrQBq6utypes10UErrorCodeZv",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getInvalidChars_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getInvalidChars_69)"
    },
    {
     "name" : "ucnv_getInvalidUChars",
@@ -2278,7 +2278,7 @@
     "line" : 277,
     "char" : 60,
     "deco" : "PUPxS6bindbc3icu8bindings8ucnv_err10UConverterPuPgPEQBvQBrQBq6utypes10UErrorCodeZv",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getInvalidUChars_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getInvalidUChars_69)"
    },
    {
     "name" : "ucnv_reset",
@@ -2287,7 +2287,7 @@
     "line" : 278,
     "char" : 49,
     "deco" : "PUPS6bindbc3icu8bindings8ucnv_err10UConverterZv",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_reset_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_reset_69)"
    },
    {
     "name" : "ucnv_resetToUnicode",
@@ -2296,7 +2296,7 @@
     "line" : 279,
     "char" : 58,
     "deco" : "PUPS6bindbc3icu8bindings8ucnv_err10UConverterZv",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_resetToUnicode_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_resetToUnicode_69)"
    },
    {
     "name" : "ucnv_resetFromUnicode",
@@ -2305,7 +2305,7 @@
     "line" : 280,
     "char" : 60,
     "deco" : "PUPS6bindbc3icu8bindings8ucnv_err10UConverterZv",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_resetFromUnicode_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_resetFromUnicode_69)"
    },
    {
     "name" : "ucnv_getMaxCharSize",
@@ -2314,7 +2314,7 @@
     "line" : 281,
     "char" : 58,
     "deco" : "PUPxS6bindbc3icu8bindings8ucnv_err10UConverterZg",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getMaxCharSize_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getMaxCharSize_69)"
    },
    {
     "name" : "UCNV_GET_MAX_BYTES_FOR_STRING",
@@ -2331,7 +2331,7 @@
     "line" : 283,
     "char" : 58,
     "deco" : "PUPxS6bindbc3icu8bindings8ucnv_err10UConverterZg",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getMinCharSize_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getMinCharSize_69)"
    },
    {
     "name" : "ucnv_getDisplayName",
@@ -2340,7 +2340,7 @@
     "line" : 284,
     "char" : 58,
     "deco" : "PUPxS6bindbc3icu8bindings8ucnv_err10UConverterPxaPuiPEQBxQBtQBs6utypes10UErrorCodeZi",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getDisplayName_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getDisplayName_69)"
    },
    {
     "name" : "ucnv_getName",
@@ -2349,7 +2349,7 @@
     "line" : 285,
     "char" : 51,
     "deco" : "PUPxS6bindbc3icu8bindings8ucnv_err10UConverterPEQBrQBnQBm6utypes10UErrorCodeZPxa",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getName_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getName_69)"
    },
    {
     "name" : "ucnv_getCCSID",
@@ -2358,7 +2358,7 @@
     "line" : 286,
     "char" : 52,
     "deco" : "PUPxS6bindbc3icu8bindings8ucnv_err10UConverterPEQBrQBnQBm6utypes10UErrorCodeZi",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getCCSID_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getCCSID_69)"
    },
    {
     "name" : "ucnv_getPlatform",
@@ -2367,7 +2367,7 @@
     "line" : 287,
     "char" : 55,
     "deco" : "PUPxS6bindbc3icu8bindings8ucnv_err10UConverterPEQBrQBnQBm6utypes10UErrorCodeZEQCvQCrQCq4ucnv18UConverterPlatform",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getPlatform_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getPlatform_69)"
    },
    {
     "name" : "ucnv_getType",
@@ -2376,7 +2376,7 @@
     "line" : 288,
     "char" : 51,
     "deco" : "PUPxS6bindbc3icu8bindings8ucnv_err10UConverterZEQBrQBnQBm4ucnv14UConverterType",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getType_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getType_69)"
    },
    {
     "name" : "ucnv_getStarters",
@@ -2385,7 +2385,7 @@
     "line" : 289,
     "char" : 55,
     "deco" : "PUPxS6bindbc3icu8bindings8ucnv_err10UConverterKG256bPEQBxQBtQBs6utypes10UErrorCodeZv",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getStarters_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getStarters_69)"
    },
    {
     "name" : "UConverterUnicodeSet",
@@ -2419,7 +2419,7 @@
     "line" : 293,
     "char" : 57,
     "deco" : "PUPxS6bindbc3icu8bindings8ucnv_err10UConverterPSQBrQBnQBm4ucnv4USetEQClQChQCgQu20UConverterUnicodeSetPEQDuQDqQDp6utypes10UErrorCodeZv",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getUnicodeSet_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getUnicodeSet_69)"
    },
    {
     "name" : "ucnv_getToUCallBack",
@@ -2428,7 +2428,7 @@
     "line" : 294,
     "char" : 58,
     "deco" : "PUPxS6bindbc3icu8bindings8ucnv_err10UConverterPPUPxvPSQBxQBtQBsQBm23UConverterToUnicodeArgsPxhiEQDnQDjQDiQDc24UConverterCallbackReasonPEQFbQExQEw6utypes10UErrorCodeZvPxPvZv",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getToUCallBack_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getToUCallBack_69)"
    },
    {
     "name" : "ucnv_getFromUCallBack",
@@ -2437,7 +2437,7 @@
     "line" : 295,
     "char" : 60,
     "deco" : "PUPxS6bindbc3icu8bindings8ucnv_err10UConverterPPUPxvPSQBxQBtQBsQBm25UConverterFromUnicodeArgsPxuiwEQDqQDmQDlQDf24UConverterCallbackReasonPEQFeQFaQEz6utypes10UErrorCodeZvPxPvZv",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getFromUCallBack_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getFromUCallBack_69)"
    },
    {
     "name" : "ucnv_setToUCallBack",
@@ -2446,7 +2446,7 @@
     "line" : 296,
     "char" : 58,
     "deco" : "PUPS6bindbc3icu8bindings8ucnv_err10UConverterPUPxvPSQBwQBsQBrQBl23UConverterToUnicodeArgsPxhiEQDmQDiQDhQDb24UConverterCallbackReasonPEQFaQEwQEv6utypes10UErrorCodeZvQEnPQEtPxPvQBrZv",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_setToUCallBack_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_setToUCallBack_69)"
    },
    {
     "name" : "ucnv_setFromUCallBack",
@@ -2455,7 +2455,7 @@
     "line" : 297,
     "char" : 60,
     "deco" : "PUPS6bindbc3icu8bindings8ucnv_err10UConverterPUPxvPSQBwQBsQBrQBl25UConverterFromUnicodeArgsPxuiwEQDpQDlQDkQDe24UConverterCallbackReasonPEQFdQEzQEy6utypes10UErrorCodeZvQEqPQEwPxPvQBrZv",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_setFromUCallBack_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_setFromUCallBack_69)"
    },
    {
     "name" : "ucnv_fromUnicode",
@@ -2464,7 +2464,7 @@
     "line" : 298,
     "char" : 55,
     "deco" : "PUPS6bindbc3icu8bindings8ucnv_err10UConverterPPhPxhPxPuPxuPibPEQChQCdQCc6utypes10UErrorCodeZv",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_fromUnicode_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_fromUnicode_69)"
    },
    {
     "name" : "ucnv_toUnicode",
@@ -2473,7 +2473,7 @@
     "line" : 299,
     "char" : 53,
     "deco" : "PUPS6bindbc3icu8bindings8ucnv_err10UConverterPPuPxuPxPhPxhPibPEQChQCdQCc6utypes10UErrorCodeZv",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_toUnicode_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_toUnicode_69)"
    },
    {
     "name" : "ucnv_fromUChars",
@@ -2482,7 +2482,7 @@
     "line" : 300,
     "char" : 54,
     "deco" : "PUPS6bindbc3icu8bindings8ucnv_err10UConverterPhiPxuiPEQByQBuQBt6utypes10UErrorCodeZi",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_fromUChars_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_fromUChars_69)"
    },
    {
     "name" : "ucnv_toUChars",
@@ -2491,7 +2491,7 @@
     "line" : 301,
     "char" : 52,
     "deco" : "PUPS6bindbc3icu8bindings8ucnv_err10UConverterPuiPxhiPEQByQBuQBt6utypes10UErrorCodeZi",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_toUChars_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_toUChars_69)"
    },
    {
     "name" : "ucnv_getNextUChar",
@@ -2500,7 +2500,7 @@
     "line" : 302,
     "char" : 56,
     "deco" : "PUPS6bindbc3icu8bindings8ucnv_err10UConverterPxPhPxhPEQByQBuQBt6utypes10UErrorCodeZw",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getNextUChar_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getNextUChar_69)"
    },
    {
     "name" : "ucnv_convertEx",
@@ -2509,7 +2509,7 @@
     "line" : 303,
     "char" : 53,
     "deco" : "PUPS6bindbc3icu8bindings8ucnv_err10UConverterQBrPPhPxhPxPhQhPuPQdQdPxubbPEQCsQCoQCn6utypes10UErrorCodeZv",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_convertEx_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_convertEx_69)"
    },
    {
     "name" : "ucnv_convert",
@@ -2518,7 +2518,7 @@
     "line" : 304,
     "char" : 51,
     "deco" : "PUPxaQdPhiPxhiPE6bindbc3icu8bindings6utypes10UErrorCodeZi",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_convert_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_convert_69)"
    },
    {
     "name" : "ucnv_toAlgorithmic",
@@ -2527,7 +2527,7 @@
     "line" : 305,
     "char" : 57,
     "deco" : "PUE6bindbc3icu8bindings4ucnv14UConverterTypePSQBrQBnQBm8ucnv_err10UConverterPhiPxhiPEQDeQDaQCz6utypes10UErrorCodeZi",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_toAlgorithmic_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_toAlgorithmic_69)"
    },
    {
     "name" : "ucnv_fromAlgorithmic",
@@ -2536,7 +2536,7 @@
     "line" : 306,
     "char" : 59,
     "deco" : "PUPS6bindbc3icu8bindings8ucnv_err10UConverterEQBqQBmQBl4ucnv14UConverterTypePhiPxhiPEQDdQCzQCy6utypes10UErrorCodeZi",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_fromAlgorithmic_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_fromAlgorithmic_69)"
    },
    {
     "name" : "ucnv_flushCache",
@@ -2545,7 +2545,7 @@
     "line" : 307,
     "char" : 54,
     "deco" : "PUZi",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_flushCache_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_flushCache_69)"
    },
    {
     "name" : "ucnv_countAvailable",
@@ -2554,7 +2554,7 @@
     "line" : 308,
     "char" : 58,
     "deco" : "PUZi",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_countAvailable_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_countAvailable_69)"
    },
    {
     "name" : "ucnv_getAvailableName",
@@ -2563,7 +2563,7 @@
     "line" : 309,
     "char" : 60,
     "deco" : "PUiZPxa",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getAvailableName_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getAvailableName_69)"
    },
    {
     "name" : "ucnv_openAllNames",
@@ -2572,7 +2572,7 @@
     "line" : 310,
     "char" : 56,
     "deco" : "PUPE6bindbc3icu8bindings6utypes10UErrorCodeZPSQBqQBmQBl5uenum12UEnumeration",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_openAllNames_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_openAllNames_69)"
    },
    {
     "name" : "ucnv_countAliases",
@@ -2581,7 +2581,7 @@
     "line" : 311,
     "char" : 56,
     "deco" : "PUPxaPE6bindbc3icu8bindings6utypes10UErrorCodeZt",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_countAliases_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_countAliases_69)"
    },
    {
     "name" : "ucnv_getAlias",
@@ -2590,7 +2590,7 @@
     "line" : 312,
     "char" : 52,
     "deco" : "PUPxatPE6bindbc3icu8bindings6utypes10UErrorCodeZQBu",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getAlias_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getAlias_69)"
    },
    {
     "name" : "ucnv_getAliases",
@@ -2599,7 +2599,7 @@
     "line" : 313,
     "char" : 54,
     "deco" : "PUPxaPxPaPE6bindbc3icu8bindings6utypes10UErrorCodeZv",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getAliases_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getAliases_69)"
    },
    {
     "name" : "ucnv_openStandardNames",
@@ -2608,7 +2608,7 @@
     "line" : 314,
     "char" : 61,
     "deco" : "PUPxaQdPE6bindbc3icu8bindings6utypes10UErrorCodeZPSQBqQBmQBl5uenum12UEnumeration",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_openStandardNames_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_openStandardNames_69)"
    },
    {
     "name" : "ucnv_countStandards",
@@ -2617,7 +2617,7 @@
     "line" : 315,
     "char" : 58,
     "deco" : "PUZt",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_countStandards_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_countStandards_69)"
    },
    {
     "name" : "ucnv_getStandard",
@@ -2626,7 +2626,7 @@
     "line" : 316,
     "char" : 55,
     "deco" : "PUtPE6bindbc3icu8bindings6utypes10UErrorCodeZPxa",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getStandard_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getStandard_69)"
    },
    {
     "name" : "ucnv_getStandardName",
@@ -2635,7 +2635,7 @@
     "line" : 317,
     "char" : 59,
     "deco" : "PUPxaQdPE6bindbc3icu8bindings6utypes10UErrorCodeZQBv",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getStandardName_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getStandardName_69)"
    },
    {
     "name" : "ucnv_getCanonicalName",
@@ -2644,7 +2644,7 @@
     "line" : 318,
     "char" : 60,
     "deco" : "PUPxaQdPE6bindbc3icu8bindings6utypes10UErrorCodeZQBv",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getCanonicalName_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getCanonicalName_69)"
    },
    {
     "name" : "ucnv_getDefaultName",
@@ -2653,7 +2653,7 @@
     "line" : 319,
     "char" : 58,
     "deco" : "PUZPxa",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getDefaultName_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_getDefaultName_69)"
    },
    {
     "name" : "ucnv_setDefaultName",
@@ -2662,7 +2662,7 @@
     "line" : 320,
     "char" : 58,
     "deco" : "PUPxaZv",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_setDefaultName_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_setDefaultName_69)"
    },
    {
     "name" : "ucnv_fixFileSeparator",
@@ -2671,7 +2671,7 @@
     "line" : 321,
     "char" : 60,
     "deco" : "PUPxS6bindbc3icu8bindings8ucnv_err10UConverterPuiZv",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_fixFileSeparator_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_fixFileSeparator_69)"
    },
    {
     "name" : "ucnv_isAmbiguous",
@@ -2680,7 +2680,7 @@
     "line" : 322,
     "char" : 55,
     "deco" : "PUPxS6bindbc3icu8bindings8ucnv_err10UConverterZb",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_isAmbiguous_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_isAmbiguous_69)"
    },
    {
     "name" : "ucnv_setFallback",
@@ -2689,7 +2689,7 @@
     "line" : 323,
     "char" : 55,
     "deco" : "PUPS6bindbc3icu8bindings8ucnv_err10UConverterbZv",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_setFallback_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_setFallback_69)"
    },
    {
     "name" : "ucnv_usesFallback",
@@ -2698,7 +2698,7 @@
     "line" : 324,
     "char" : 56,
     "deco" : "PUPxS6bindbc3icu8bindings8ucnv_err10UConverterZb",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_usesFallback_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_usesFallback_69)"
    },
    {
     "name" : "ucnv_detectUnicodeSignature",
@@ -2707,7 +2707,7 @@
     "line" : 325,
     "char" : 66,
     "deco" : "PUPxhiPiPE6bindbc3icu8bindings6utypes10UErrorCodeZPxa",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_detectUnicodeSignature_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_detectUnicodeSignature_69)"
    },
    {
     "name" : "ucnv_fromUCountPending",
@@ -2716,7 +2716,7 @@
     "line" : 326,
     "char" : 61,
     "deco" : "PUPxS6bindbc3icu8bindings8ucnv_err10UConverterPEQBrQBnQBm6utypes10UErrorCodeZi",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_fromUCountPending_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_fromUCountPending_69)"
    },
    {
     "name" : "ucnv_toUCountPending",
@@ -2725,7 +2725,7 @@
     "line" : 327,
     "char" : 59,
     "deco" : "PUPxS6bindbc3icu8bindings8ucnv_err10UConverterPEQBrQBnQBm6utypes10UErrorCodeZi",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_toUCountPending_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_toUCountPending_69)"
    },
    {
     "name" : "ucnv_isFixedWidth",
@@ -2734,7 +2734,7 @@
     "line" : 328,
     "char" : 56,
     "deco" : "PUPS6bindbc3icu8bindings8ucnv_err10UConverterPEQBrQBnQBm6utypes10UErrorCodeZb",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_isFixedWidth_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv.ucnv_isFixedWidth_69)"
    },
    {
     "name" : "UConverter",
@@ -2899,7 +2899,7 @@
     "line" : 348,
     "char" : 68,
     "deco" : "PUPxvPS6bindbc3icu8bindings8ucnv_err25UConverterFromUnicodeArgsPxuiwEQCkQCgQCfQBz24UConverterCallbackReasonPEQDyQDuQDt6utypes10UErrorCodeZv",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv_err.UCNV_FROM_U_CALLBACK_STOP_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv_err.UCNV_FROM_U_CALLBACK_STOP_69)"
    },
    {
     "name" : "UCNV_TO_U_CALLBACK_STOP",
@@ -2908,7 +2908,7 @@
     "line" : 349,
     "char" : 66,
     "deco" : "PUPxvPS6bindbc3icu8bindings8ucnv_err23UConverterToUnicodeArgsPxaiEQChQCdQCcQBw24UConverterCallbackReasonPEQDvQDrQDq6utypes10UErrorCodeZv",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv_err.UCNV_TO_U_CALLBACK_STOP_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv_err.UCNV_TO_U_CALLBACK_STOP_69)"
    },
    {
     "name" : "UCNV_FROM_U_CALLBACK_SKIP",
@@ -2917,7 +2917,7 @@
     "line" : 350,
     "char" : 68,
     "deco" : "PUPxvPS6bindbc3icu8bindings8ucnv_err25UConverterFromUnicodeArgsPxuiwEQCkQCgQCfQBz24UConverterCallbackReasonPEQDyQDuQDt6utypes10UErrorCodeZv",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv_err.UCNV_FROM_U_CALLBACK_SKIP_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv_err.UCNV_FROM_U_CALLBACK_SKIP_69)"
    },
    {
     "name" : "UCNV_FROM_U_CALLBACK_SUBSTITUTE",
@@ -2926,7 +2926,7 @@
     "line" : 351,
     "char" : 74,
     "deco" : "PUPxvPS6bindbc3icu8bindings8ucnv_err25UConverterFromUnicodeArgsPxuiwEQCkQCgQCfQBz24UConverterCallbackReasonPEQDyQDuQDt6utypes10UErrorCodeZv",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv_err.UCNV_FROM_U_CALLBACK_SUBSTITUTE_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv_err.UCNV_FROM_U_CALLBACK_SUBSTITUTE_69)"
    },
    {
     "name" : "UCNV_FROM_U_CALLBACK_ESCAPE",
@@ -2935,7 +2935,7 @@
     "line" : 352,
     "char" : 70,
     "deco" : "PUPxvPS6bindbc3icu8bindings8ucnv_err25UConverterFromUnicodeArgsPxuiwEQCkQCgQCfQBz24UConverterCallbackReasonPEQDyQDuQDt6utypes10UErrorCodeZv",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv_err.UCNV_FROM_U_CALLBACK_ESCAPE_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv_err.UCNV_FROM_U_CALLBACK_ESCAPE_69)"
    },
    {
     "name" : "UCNV_TO_U_CALLBACK_SKIP",
@@ -2944,7 +2944,7 @@
     "line" : 353,
     "char" : 66,
     "deco" : "PUPxvPS6bindbc3icu8bindings8ucnv_err23UConverterToUnicodeArgsPxaiEQChQCdQCcQBw24UConverterCallbackReasonPEQDvQDrQDq6utypes10UErrorCodeZv",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv_err.UCNV_TO_U_CALLBACK_SKIP_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv_err.UCNV_TO_U_CALLBACK_SKIP_69)"
    },
    {
     "name" : "UCNV_TO_U_CALLBACK_SUBSTITUTE",
@@ -2953,7 +2953,7 @@
     "line" : 354,
     "char" : 72,
     "deco" : "PUPxvPS6bindbc3icu8bindings8ucnv_err23UConverterToUnicodeArgsPxaiEQChQCdQCcQBw24UConverterCallbackReasonPEQDvQDrQDq6utypes10UErrorCodeZv",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv_err.UCNV_TO_U_CALLBACK_SUBSTITUTE_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv_err.UCNV_TO_U_CALLBACK_SUBSTITUTE_69)"
    },
    {
     "name" : "UCNV_TO_U_CALLBACK_ESCAPE",
@@ -2962,7 +2962,7 @@
     "line" : 355,
     "char" : 68,
     "deco" : "PUPxvPS6bindbc3icu8bindings8ucnv_err23UConverterToUnicodeArgsPxaiEQChQCdQCcQBw24UConverterCallbackReasonPEQDvQDrQDq6utypes10UErrorCodeZv",
-    "originalType" : "typeof(&bindbc.icu.bindings.ucnv_err.UCNV_TO_U_CALLBACK_ESCAPE_68)"
+    "originalType" : "typeof(&bindbc.icu.bindings.ucnv_err.UCNV_TO_U_CALLBACK_ESCAPE_69)"
    },
    {
     "name" : "lib_icudt",
@@ -3623,7 +3623,7 @@
     "init" : "\",swaplfnl\""
    },
    {
-    "name" : "ucnv_compareNames_68",
+    "name" : "ucnv_compareNames_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -3643,7 +3643,7 @@
     ]
    },
    {
-    "name" : "ucnv_open_68",
+    "name" : "ucnv_open_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -3663,7 +3663,7 @@
     ]
    },
    {
-    "name" : "ucnv_openU_68",
+    "name" : "ucnv_openU_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -3683,7 +3683,7 @@
     ]
    },
    {
-    "name" : "ucnv_openCCSID_68",
+    "name" : "ucnv_openCCSID_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -3707,7 +3707,7 @@
     ]
    },
    {
-    "name" : "ucnv_openPackage_68",
+    "name" : "ucnv_openPackage_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -3731,7 +3731,7 @@
     ]
    },
    {
-    "name" : "ucnv_safeClone_68",
+    "name" : "ucnv_safeClone_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -3773,7 +3773,7 @@
     "init" : "1024"
    },
    {
-    "name" : "ucnv_close_68",
+    "name" : "ucnv_close_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -3789,7 +3789,7 @@
     ]
    },
    {
-    "name" : "ucnv_getSubstChars_68",
+    "name" : "ucnv_getSubstChars_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -3818,7 +3818,7 @@
     ]
    },
    {
-    "name" : "ucnv_setSubstChars_68",
+    "name" : "ucnv_setSubstChars_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -3847,7 +3847,7 @@
     ]
    },
    {
-    "name" : "ucnv_setSubstString_68",
+    "name" : "ucnv_setSubstString_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -3876,7 +3876,7 @@
     ]
    },
    {
-    "name" : "ucnv_getInvalidChars_68",
+    "name" : "ucnv_getInvalidChars_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -3905,7 +3905,7 @@
     ]
    },
    {
-    "name" : "ucnv_getInvalidUChars_68",
+    "name" : "ucnv_getInvalidUChars_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -3934,7 +3934,7 @@
     ]
    },
    {
-    "name" : "ucnv_reset_68",
+    "name" : "ucnv_reset_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -3950,7 +3950,7 @@
     ]
    },
    {
-    "name" : "ucnv_resetToUnicode_68",
+    "name" : "ucnv_resetToUnicode_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -3966,7 +3966,7 @@
     ]
    },
    {
-    "name" : "ucnv_resetFromUnicode_68",
+    "name" : "ucnv_resetFromUnicode_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -3982,7 +3982,7 @@
     ]
    },
    {
-    "name" : "ucnv_getMaxCharSize_68",
+    "name" : "ucnv_getMaxCharSize_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -4028,7 +4028,7 @@
     ]
    },
    {
-    "name" : "ucnv_getMinCharSize_68",
+    "name" : "ucnv_getMinCharSize_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -4044,7 +4044,7 @@
     ]
    },
    {
-    "name" : "ucnv_getDisplayName_68",
+    "name" : "ucnv_getDisplayName_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -4077,7 +4077,7 @@
     ]
    },
    {
-    "name" : "ucnv_getName_68",
+    "name" : "ucnv_getName_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -4097,7 +4097,7 @@
     ]
    },
    {
-    "name" : "ucnv_getCCSID_68",
+    "name" : "ucnv_getCCSID_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -4117,7 +4117,7 @@
     ]
    },
    {
-    "name" : "ucnv_getPlatform_68",
+    "name" : "ucnv_getPlatform_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -4137,7 +4137,7 @@
     ]
    },
    {
-    "name" : "ucnv_getType_68",
+    "name" : "ucnv_getType_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -4153,7 +4153,7 @@
     ]
    },
    {
-    "name" : "ucnv_getStarters_68",
+    "name" : "ucnv_getStarters_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -4210,7 +4210,7 @@
     ]
    },
    {
-    "name" : "ucnv_getUnicodeSet_68",
+    "name" : "ucnv_getUnicodeSet_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -4238,7 +4238,7 @@
     ]
    },
    {
-    "name" : "ucnv_getToUCallBack_68",
+    "name" : "ucnv_getToUCallBack_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -4263,7 +4263,7 @@
     ]
    },
    {
-    "name" : "ucnv_getFromUCallBack_68",
+    "name" : "ucnv_getFromUCallBack_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -4288,7 +4288,7 @@
     ]
    },
    {
-    "name" : "ucnv_setToUCallBack_68",
+    "name" : "ucnv_setToUCallBack_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -4325,7 +4325,7 @@
     ]
    },
    {
-    "name" : "ucnv_setFromUCallBack_68",
+    "name" : "ucnv_setFromUCallBack_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -4362,7 +4362,7 @@
     ]
    },
    {
-    "name" : "ucnv_fromUnicode_68",
+    "name" : "ucnv_fromUnicode_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -4407,7 +4407,7 @@
     ]
    },
    {
-    "name" : "ucnv_toUnicode_68",
+    "name" : "ucnv_toUnicode_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -4452,7 +4452,7 @@
     ]
    },
    {
-    "name" : "ucnv_fromUChars_68",
+    "name" : "ucnv_fromUChars_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -4489,7 +4489,7 @@
     ]
    },
    {
-    "name" : "ucnv_toUChars_68",
+    "name" : "ucnv_toUChars_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -4526,7 +4526,7 @@
     ]
    },
    {
-    "name" : "ucnv_getNextUChar_68",
+    "name" : "ucnv_getNextUChar_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -4555,7 +4555,7 @@
     ]
    },
    {
-    "name" : "ucnv_convertEx_68",
+    "name" : "ucnv_convertEx_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -4620,7 +4620,7 @@
     ]
    },
    {
-    "name" : "ucnv_convert_68",
+    "name" : "ucnv_convert_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -4661,7 +4661,7 @@
     ]
    },
    {
-    "name" : "ucnv_toAlgorithmic_68",
+    "name" : "ucnv_toAlgorithmic_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -4702,7 +4702,7 @@
     ]
    },
    {
-    "name" : "ucnv_fromAlgorithmic_68",
+    "name" : "ucnv_fromAlgorithmic_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -4743,7 +4743,7 @@
     ]
    },
    {
-    "name" : "ucnv_flushCache_68",
+    "name" : "ucnv_flushCache_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -4753,7 +4753,7 @@
     "deco" : "UZi"
    },
    {
-    "name" : "ucnv_countAvailable_68",
+    "name" : "ucnv_countAvailable_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -4763,7 +4763,7 @@
     "deco" : "UZi"
    },
    {
-    "name" : "ucnv_getAvailableName_68",
+    "name" : "ucnv_getAvailableName_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -4779,7 +4779,7 @@
     ]
    },
    {
-    "name" : "ucnv_openAllNames_68",
+    "name" : "ucnv_openAllNames_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -4795,7 +4795,7 @@
     ]
    },
    {
-    "name" : "ucnv_countAliases_68",
+    "name" : "ucnv_countAliases_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -4815,7 +4815,7 @@
     ]
    },
    {
-    "name" : "ucnv_getAlias_68",
+    "name" : "ucnv_getAlias_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -4839,7 +4839,7 @@
     ]
    },
    {
-    "name" : "ucnv_getAliases_68",
+    "name" : "ucnv_getAliases_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -4863,7 +4863,7 @@
     ]
    },
    {
-    "name" : "ucnv_openStandardNames_68",
+    "name" : "ucnv_openStandardNames_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -4887,7 +4887,7 @@
     ]
    },
    {
-    "name" : "ucnv_countStandards_68",
+    "name" : "ucnv_countStandards_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -4897,7 +4897,7 @@
     "deco" : "UZt"
    },
    {
-    "name" : "ucnv_getStandard_68",
+    "name" : "ucnv_getStandard_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -4917,7 +4917,7 @@
     ]
    },
    {
-    "name" : "ucnv_getStandardName_68",
+    "name" : "ucnv_getStandardName_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -4941,7 +4941,7 @@
     ]
    },
    {
-    "name" : "ucnv_getCanonicalName_68",
+    "name" : "ucnv_getCanonicalName_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -4965,7 +4965,7 @@
     ]
    },
    {
-    "name" : "ucnv_getDefaultName_68",
+    "name" : "ucnv_getDefaultName_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -4975,7 +4975,7 @@
     "deco" : "UZPxa"
    },
    {
-    "name" : "ucnv_setDefaultName_68",
+    "name" : "ucnv_setDefaultName_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -4991,7 +4991,7 @@
     ]
    },
    {
-    "name" : "ucnv_fixFileSeparator_68",
+    "name" : "ucnv_fixFileSeparator_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -5016,7 +5016,7 @@
     ]
    },
    {
-    "name" : "ucnv_isAmbiguous_68",
+    "name" : "ucnv_isAmbiguous_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -5033,7 +5033,7 @@
     ]
    },
    {
-    "name" : "ucnv_setFallback_68",
+    "name" : "ucnv_setFallback_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -5054,7 +5054,7 @@
     ]
    },
    {
-    "name" : "ucnv_usesFallback_68",
+    "name" : "ucnv_usesFallback_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -5071,7 +5071,7 @@
     ]
    },
    {
-    "name" : "ucnv_detectUnicodeSignature_68",
+    "name" : "ucnv_detectUnicodeSignature_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -5100,7 +5100,7 @@
     ]
    },
    {
-    "name" : "ucnv_fromUCountPending_68",
+    "name" : "ucnv_fromUCountPending_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -5120,7 +5120,7 @@
     ]
    },
    {
-    "name" : "ucnv_toUCountPending_68",
+    "name" : "ucnv_toUCountPending_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -5140,7 +5140,7 @@
     ]
    },
    {
-    "name" : "ucnv_isFixedWidth_68",
+    "name" : "ucnv_isFixedWidth_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -5578,7 +5578,7 @@
     ]
    },
    {
-    "name" : "UCNV_FROM_U_CALLBACK_STOP_68",
+    "name" : "UCNV_FROM_U_CALLBACK_STOP_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -5619,7 +5619,7 @@
     ]
    },
    {
-    "name" : "UCNV_TO_U_CALLBACK_STOP_68",
+    "name" : "UCNV_TO_U_CALLBACK_STOP_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -5655,7 +5655,7 @@
     ]
    },
    {
-    "name" : "UCNV_FROM_U_CALLBACK_SKIP_68",
+    "name" : "UCNV_FROM_U_CALLBACK_SKIP_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -5696,7 +5696,7 @@
     ]
    },
    {
-    "name" : "UCNV_FROM_U_CALLBACK_SUBSTITUTE_68",
+    "name" : "UCNV_FROM_U_CALLBACK_SUBSTITUTE_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -5737,7 +5737,7 @@
     ]
    },
    {
-    "name" : "UCNV_FROM_U_CALLBACK_ESCAPE_68",
+    "name" : "UCNV_FROM_U_CALLBACK_ESCAPE_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -5778,7 +5778,7 @@
     ]
    },
    {
-    "name" : "UCNV_TO_U_CALLBACK_SKIP_68",
+    "name" : "UCNV_TO_U_CALLBACK_SKIP_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -5814,7 +5814,7 @@
     ]
    },
    {
-    "name" : "UCNV_TO_U_CALLBACK_SUBSTITUTE_68",
+    "name" : "UCNV_TO_U_CALLBACK_SUBSTITUTE_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -5850,7 +5850,7 @@
     ]
    },
    {
-    "name" : "UCNV_TO_U_CALLBACK_ESCAPE_68",
+    "name" : "UCNV_TO_U_CALLBACK_ESCAPE_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -5926,7 +5926,7 @@
     "members" : []
    },
    {
-    "name" : "ucsdet_open_68",
+    "name" : "ucsdet_open_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -5942,7 +5942,7 @@
     ]
    },
    {
-    "name" : "ucsdet_close_68",
+    "name" : "ucsdet_close_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -5958,7 +5958,7 @@
     ]
    },
    {
-    "name" : "ucsdet_setText_68",
+    "name" : "ucsdet_setText_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -5987,7 +5987,7 @@
     ]
    },
    {
-    "name" : "ucsdet_setDeclaredEncoding_68",
+    "name" : "ucsdet_setDeclaredEncoding_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -6015,7 +6015,7 @@
     ]
    },
    {
-    "name" : "ucsdet_detect_68",
+    "name" : "ucsdet_detect_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -6035,7 +6035,7 @@
     ]
    },
    {
-    "name" : "ucsdet_detectAll_68",
+    "name" : "ucsdet_detectAll_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -6059,7 +6059,7 @@
     ]
    },
    {
-    "name" : "ucsdet_getName_68",
+    "name" : "ucsdet_getName_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -6079,7 +6079,7 @@
     ]
    },
    {
-    "name" : "ucsdet_getConfidence_68",
+    "name" : "ucsdet_getConfidence_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -6099,7 +6099,7 @@
     ]
    },
    {
-    "name" : "ucsdet_getLanguage_68",
+    "name" : "ucsdet_getLanguage_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -6119,7 +6119,7 @@
     ]
    },
    {
-    "name" : "ucsdet_getUChars_68",
+    "name" : "ucsdet_getUChars_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -6148,7 +6148,7 @@
     ]
    },
    {
-    "name" : "ucsdet_getAllDetectableCharsets_68",
+    "name" : "ucsdet_getAllDetectableCharsets_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -6168,7 +6168,7 @@
     ]
    },
    {
-    "name" : "ucsdet_isInputFilterEnabled_68",
+    "name" : "ucsdet_isInputFilterEnabled_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -6185,7 +6185,7 @@
     ]
    },
    {
-    "name" : "ucsdet_enableInputFilter_68",
+    "name" : "ucsdet_enableInputFilter_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -6239,7 +6239,7 @@
     "members" : []
    },
    {
-    "name" : "uenum_close_68",
+    "name" : "uenum_close_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -6255,7 +6255,7 @@
     ]
    },
    {
-    "name" : "uenum_count_68",
+    "name" : "uenum_count_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -6275,7 +6275,7 @@
     ]
    },
    {
-    "name" : "uenum_unext_68",
+    "name" : "uenum_unext_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -6300,7 +6300,7 @@
     ]
    },
    {
-    "name" : "uenum_next_68",
+    "name" : "uenum_next_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -6324,7 +6324,7 @@
     ]
    },
    {
-    "name" : "uenum_reset_68",
+    "name" : "uenum_reset_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -6344,7 +6344,7 @@
     ]
    },
    {
-    "name" : "uenum_openFromStringEnumeration_68",
+    "name" : "uenum_openFromStringEnumeration_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -6364,7 +6364,7 @@
     ]
    },
    {
-    "name" : "uenum_openUCharStringsEnumeration_68",
+    "name" : "uenum_openUCharStringsEnumeration_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -6389,7 +6389,7 @@
     ]
    },
    {
-    "name" : "uenum_openCharStringsEnumeration_68",
+    "name" : "uenum_openCharStringsEnumeration_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -7971,7 +7971,7 @@
     ]
    },
    {
-    "name" : "u_errorName_68",
+    "name" : "u_errorName_69",
     "kind" : "function",
     "protection" : "public",
     "comment" : "\n",
@@ -9396,7 +9396,7 @@
     "protection" : "public",
     "line" : 187,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.utypes.u_errorName_68"
+    "originalType" : "bindbc.icu.bindings.utypes.u_errorName_69"
    },
    {
     "name" : "StringEnumeration",
@@ -9422,7 +9422,7 @@
     "protection" : "public",
     "line" : 190,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.uenum.uenum_close_68"
+    "originalType" : "bindbc.icu.bindings.uenum.uenum_close_69"
    },
    {
     "name" : "uenum_count",
@@ -9430,7 +9430,7 @@
     "protection" : "public",
     "line" : 191,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.uenum.uenum_count_68"
+    "originalType" : "bindbc.icu.bindings.uenum.uenum_count_69"
    },
    {
     "name" : "uenum_unext",
@@ -9438,7 +9438,7 @@
     "protection" : "public",
     "line" : 192,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.uenum.uenum_unext_68"
+    "originalType" : "bindbc.icu.bindings.uenum.uenum_unext_69"
    },
    {
     "name" : "uenum_next",
@@ -9446,7 +9446,7 @@
     "protection" : "public",
     "line" : 193,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.uenum.uenum_next_68"
+    "originalType" : "bindbc.icu.bindings.uenum.uenum_next_69"
    },
    {
     "name" : "uenum_reset",
@@ -9454,7 +9454,7 @@
     "protection" : "public",
     "line" : 194,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.uenum.uenum_reset_68"
+    "originalType" : "bindbc.icu.bindings.uenum.uenum_reset_69"
    },
    {
     "name" : "uenum_openFromStringEnumeration",
@@ -9462,7 +9462,7 @@
     "protection" : "public",
     "line" : 195,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.uenum.uenum_openFromStringEnumeration_68"
+    "originalType" : "bindbc.icu.bindings.uenum.uenum_openFromStringEnumeration_69"
    },
    {
     "name" : "uenum_openUCharStringsEnumeration",
@@ -9470,7 +9470,7 @@
     "protection" : "public",
     "line" : 196,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.uenum.uenum_openUCharStringsEnumeration_68"
+    "originalType" : "bindbc.icu.bindings.uenum.uenum_openUCharStringsEnumeration_69"
    },
    {
     "name" : "uenum_openCharStringsEnumeration",
@@ -9478,7 +9478,7 @@
     "protection" : "public",
     "line" : 197,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.uenum.uenum_openCharStringsEnumeration_68"
+    "originalType" : "bindbc.icu.bindings.uenum.uenum_openCharStringsEnumeration_69"
    },
    {
     "name" : "UCharsetDetector",
@@ -9504,7 +9504,7 @@
     "protection" : "public",
     "line" : 200,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_open_68"
+    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_open_69"
    },
    {
     "name" : "ucsdet_close",
@@ -9512,7 +9512,7 @@
     "protection" : "public",
     "line" : 201,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_close_68"
+    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_close_69"
    },
    {
     "name" : "ucsdet_setText",
@@ -9520,7 +9520,7 @@
     "protection" : "public",
     "line" : 202,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_setText_68"
+    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_setText_69"
    },
    {
     "name" : "ucsdet_setDeclaredEncoding",
@@ -9528,7 +9528,7 @@
     "protection" : "public",
     "line" : 203,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_setDeclaredEncoding_68"
+    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_setDeclaredEncoding_69"
    },
    {
     "name" : "ucsdet_detect",
@@ -9536,7 +9536,7 @@
     "protection" : "public",
     "line" : 204,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_detect_68"
+    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_detect_69"
    },
    {
     "name" : "ucsdet_detectAll",
@@ -9544,7 +9544,7 @@
     "protection" : "public",
     "line" : 205,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_detectAll_68"
+    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_detectAll_69"
    },
    {
     "name" : "ucsdet_getName",
@@ -9552,7 +9552,7 @@
     "protection" : "public",
     "line" : 206,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_getName_68"
+    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_getName_69"
    },
    {
     "name" : "ucsdet_getConfidence",
@@ -9560,7 +9560,7 @@
     "protection" : "public",
     "line" : 207,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_getConfidence_68"
+    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_getConfidence_69"
    },
    {
     "name" : "ucsdet_getLanguage",
@@ -9568,7 +9568,7 @@
     "protection" : "public",
     "line" : 208,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_getLanguage_68"
+    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_getLanguage_69"
    },
    {
     "name" : "ucsdet_getUChars",
@@ -9576,7 +9576,7 @@
     "protection" : "public",
     "line" : 209,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_getUChars_68"
+    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_getUChars_69"
    },
    {
     "name" : "ucsdet_getAllDetectableCharsets",
@@ -9584,7 +9584,7 @@
     "protection" : "public",
     "line" : 210,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_getAllDetectableCharsets_68"
+    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_getAllDetectableCharsets_69"
    },
    {
     "name" : "ucsdet_isInputFilterEnabled",
@@ -9592,7 +9592,7 @@
     "protection" : "public",
     "line" : 211,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_isInputFilterEnabled_68"
+    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_isInputFilterEnabled_69"
    },
    {
     "name" : "ucsdet_enableInputFilter",
@@ -9600,7 +9600,7 @@
     "protection" : "public",
     "line" : 212,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_enableInputFilter_68"
+    "originalType" : "bindbc.icu.bindings.ucsdet.ucsdet_enableInputFilter_69"
    },
    {
     "name" : "USet",
@@ -10021,7 +10021,7 @@
     "protection" : "public",
     "line" : 264,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_compareNames_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_compareNames_69"
    },
    {
     "name" : "ucnv_open",
@@ -10029,7 +10029,7 @@
     "protection" : "public",
     "line" : 265,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_open_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_open_69"
    },
    {
     "name" : "ucnv_openU",
@@ -10037,7 +10037,7 @@
     "protection" : "public",
     "line" : 266,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_openU_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_openU_69"
    },
    {
     "name" : "ucnv_openCCSID",
@@ -10045,7 +10045,7 @@
     "protection" : "public",
     "line" : 267,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_openCCSID_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_openCCSID_69"
    },
    {
     "name" : "ucnv_openPackage",
@@ -10053,7 +10053,7 @@
     "protection" : "public",
     "line" : 268,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_openPackage_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_openPackage_69"
    },
    {
     "name" : "ucnv_safeClone",
@@ -10061,7 +10061,7 @@
     "protection" : "public",
     "line" : 269,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_safeClone_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_safeClone_69"
    },
    {
     "name" : "U_CNV_SAFECLONE_BUFFERSIZE",
@@ -10077,7 +10077,7 @@
     "protection" : "public",
     "line" : 271,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_close_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_close_69"
    },
    {
     "name" : "ucnv_getSubstChars",
@@ -10085,7 +10085,7 @@
     "protection" : "public",
     "line" : 272,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getSubstChars_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getSubstChars_69"
    },
    {
     "name" : "ucnv_setSubstChars",
@@ -10093,7 +10093,7 @@
     "protection" : "public",
     "line" : 273,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_setSubstChars_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_setSubstChars_69"
    },
    {
     "name" : "ucnv_setSubstString",
@@ -10101,7 +10101,7 @@
     "protection" : "public",
     "line" : 274,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_setSubstString_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_setSubstString_69"
    },
    {
     "name" : "ucnv_getInvalidChars",
@@ -10109,7 +10109,7 @@
     "protection" : "public",
     "line" : 275,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getInvalidChars_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getInvalidChars_69"
    },
    {
     "name" : "ucnv_getInvalidUChars",
@@ -10117,7 +10117,7 @@
     "protection" : "public",
     "line" : 276,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getInvalidUChars_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getInvalidUChars_69"
    },
    {
     "name" : "ucnv_reset",
@@ -10125,7 +10125,7 @@
     "protection" : "public",
     "line" : 277,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_reset_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_reset_69"
    },
    {
     "name" : "ucnv_resetToUnicode",
@@ -10133,7 +10133,7 @@
     "protection" : "public",
     "line" : 278,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_resetToUnicode_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_resetToUnicode_69"
    },
    {
     "name" : "ucnv_resetFromUnicode",
@@ -10141,7 +10141,7 @@
     "protection" : "public",
     "line" : 279,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_resetFromUnicode_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_resetFromUnicode_69"
    },
    {
     "name" : "ucnv_getMaxCharSize",
@@ -10149,7 +10149,7 @@
     "protection" : "public",
     "line" : 280,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getMaxCharSize_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getMaxCharSize_69"
    },
    {
     "name" : "UCNV_GET_MAX_BYTES_FOR_STRING",
@@ -10165,7 +10165,7 @@
     "protection" : "public",
     "line" : 282,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getMinCharSize_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getMinCharSize_69"
    },
    {
     "name" : "ucnv_getDisplayName",
@@ -10173,7 +10173,7 @@
     "protection" : "public",
     "line" : 283,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getDisplayName_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getDisplayName_69"
    },
    {
     "name" : "ucnv_getName",
@@ -10181,7 +10181,7 @@
     "protection" : "public",
     "line" : 284,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getName_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getName_69"
    },
    {
     "name" : "ucnv_getCCSID",
@@ -10189,7 +10189,7 @@
     "protection" : "public",
     "line" : 285,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getCCSID_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getCCSID_69"
    },
    {
     "name" : "ucnv_getPlatform",
@@ -10197,7 +10197,7 @@
     "protection" : "public",
     "line" : 286,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getPlatform_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getPlatform_69"
    },
    {
     "name" : "ucnv_getType",
@@ -10205,7 +10205,7 @@
     "protection" : "public",
     "line" : 287,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getType_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getType_69"
    },
    {
     "name" : "ucnv_getStarters",
@@ -10213,7 +10213,7 @@
     "protection" : "public",
     "line" : 288,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getStarters_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getStarters_69"
    },
    {
     "name" : "UConverterUnicodeSet",
@@ -10246,7 +10246,7 @@
     "protection" : "public",
     "line" : 292,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getUnicodeSet_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getUnicodeSet_69"
    },
    {
     "name" : "ucnv_getToUCallBack",
@@ -10254,7 +10254,7 @@
     "protection" : "public",
     "line" : 293,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getToUCallBack_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getToUCallBack_69"
    },
    {
     "name" : "ucnv_getFromUCallBack",
@@ -10262,7 +10262,7 @@
     "protection" : "public",
     "line" : 294,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getFromUCallBack_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getFromUCallBack_69"
    },
    {
     "name" : "ucnv_setToUCallBack",
@@ -10270,7 +10270,7 @@
     "protection" : "public",
     "line" : 295,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_setToUCallBack_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_setToUCallBack_69"
    },
    {
     "name" : "ucnv_setFromUCallBack",
@@ -10278,7 +10278,7 @@
     "protection" : "public",
     "line" : 296,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_setFromUCallBack_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_setFromUCallBack_69"
    },
    {
     "name" : "ucnv_fromUnicode",
@@ -10286,7 +10286,7 @@
     "protection" : "public",
     "line" : 297,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_fromUnicode_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_fromUnicode_69"
    },
    {
     "name" : "ucnv_toUnicode",
@@ -10294,7 +10294,7 @@
     "protection" : "public",
     "line" : 298,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_toUnicode_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_toUnicode_69"
    },
    {
     "name" : "ucnv_fromUChars",
@@ -10302,7 +10302,7 @@
     "protection" : "public",
     "line" : 299,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_fromUChars_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_fromUChars_69"
    },
    {
     "name" : "ucnv_toUChars",
@@ -10310,7 +10310,7 @@
     "protection" : "public",
     "line" : 300,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_toUChars_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_toUChars_69"
    },
    {
     "name" : "ucnv_getNextUChar",
@@ -10318,7 +10318,7 @@
     "protection" : "public",
     "line" : 301,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getNextUChar_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getNextUChar_69"
    },
    {
     "name" : "ucnv_convertEx",
@@ -10326,7 +10326,7 @@
     "protection" : "public",
     "line" : 302,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_convertEx_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_convertEx_69"
    },
    {
     "name" : "ucnv_convert",
@@ -10334,7 +10334,7 @@
     "protection" : "public",
     "line" : 303,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_convert_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_convert_69"
    },
    {
     "name" : "ucnv_toAlgorithmic",
@@ -10342,7 +10342,7 @@
     "protection" : "public",
     "line" : 304,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_toAlgorithmic_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_toAlgorithmic_69"
    },
    {
     "name" : "ucnv_fromAlgorithmic",
@@ -10350,7 +10350,7 @@
     "protection" : "public",
     "line" : 305,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_fromAlgorithmic_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_fromAlgorithmic_69"
    },
    {
     "name" : "ucnv_flushCache",
@@ -10358,7 +10358,7 @@
     "protection" : "public",
     "line" : 306,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_flushCache_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_flushCache_69"
    },
    {
     "name" : "ucnv_countAvailable",
@@ -10366,7 +10366,7 @@
     "protection" : "public",
     "line" : 307,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_countAvailable_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_countAvailable_69"
    },
    {
     "name" : "ucnv_getAvailableName",
@@ -10374,7 +10374,7 @@
     "protection" : "public",
     "line" : 308,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getAvailableName_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getAvailableName_69"
    },
    {
     "name" : "ucnv_openAllNames",
@@ -10382,7 +10382,7 @@
     "protection" : "public",
     "line" : 309,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_openAllNames_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_openAllNames_69"
    },
    {
     "name" : "ucnv_countAliases",
@@ -10390,7 +10390,7 @@
     "protection" : "public",
     "line" : 310,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_countAliases_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_countAliases_69"
    },
    {
     "name" : "ucnv_getAlias",
@@ -10398,7 +10398,7 @@
     "protection" : "public",
     "line" : 311,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getAlias_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getAlias_69"
    },
    {
     "name" : "ucnv_getAliases",
@@ -10406,7 +10406,7 @@
     "protection" : "public",
     "line" : 312,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getAliases_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getAliases_69"
    },
    {
     "name" : "ucnv_openStandardNames",
@@ -10414,7 +10414,7 @@
     "protection" : "public",
     "line" : 313,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_openStandardNames_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_openStandardNames_69"
    },
    {
     "name" : "ucnv_countStandards",
@@ -10422,7 +10422,7 @@
     "protection" : "public",
     "line" : 314,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_countStandards_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_countStandards_69"
    },
    {
     "name" : "ucnv_getStandard",
@@ -10430,7 +10430,7 @@
     "protection" : "public",
     "line" : 315,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getStandard_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getStandard_69"
    },
    {
     "name" : "ucnv_getStandardName",
@@ -10438,7 +10438,7 @@
     "protection" : "public",
     "line" : 316,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getStandardName_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getStandardName_69"
    },
    {
     "name" : "ucnv_getCanonicalName",
@@ -10446,7 +10446,7 @@
     "protection" : "public",
     "line" : 317,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getCanonicalName_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getCanonicalName_69"
    },
    {
     "name" : "ucnv_getDefaultName",
@@ -10454,7 +10454,7 @@
     "protection" : "public",
     "line" : 318,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getDefaultName_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_getDefaultName_69"
    },
    {
     "name" : "ucnv_setDefaultName",
@@ -10462,7 +10462,7 @@
     "protection" : "public",
     "line" : 319,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_setDefaultName_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_setDefaultName_69"
    },
    {
     "name" : "ucnv_fixFileSeparator",
@@ -10470,7 +10470,7 @@
     "protection" : "public",
     "line" : 320,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_fixFileSeparator_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_fixFileSeparator_69"
    },
    {
     "name" : "ucnv_isAmbiguous",
@@ -10478,7 +10478,7 @@
     "protection" : "public",
     "line" : 321,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_isAmbiguous_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_isAmbiguous_69"
    },
    {
     "name" : "ucnv_setFallback",
@@ -10486,7 +10486,7 @@
     "protection" : "public",
     "line" : 322,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_setFallback_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_setFallback_69"
    },
    {
     "name" : "ucnv_usesFallback",
@@ -10494,7 +10494,7 @@
     "protection" : "public",
     "line" : 323,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_usesFallback_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_usesFallback_69"
    },
    {
     "name" : "ucnv_detectUnicodeSignature",
@@ -10502,7 +10502,7 @@
     "protection" : "public",
     "line" : 324,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_detectUnicodeSignature_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_detectUnicodeSignature_69"
    },
    {
     "name" : "ucnv_fromUCountPending",
@@ -10510,7 +10510,7 @@
     "protection" : "public",
     "line" : 325,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_fromUCountPending_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_fromUCountPending_69"
    },
    {
     "name" : "ucnv_toUCountPending",
@@ -10518,7 +10518,7 @@
     "protection" : "public",
     "line" : 326,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_toUCountPending_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_toUCountPending_69"
    },
    {
     "name" : "ucnv_isFixedWidth",
@@ -10526,7 +10526,7 @@
     "protection" : "public",
     "line" : 327,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_isFixedWidth_68"
+    "originalType" : "bindbc.icu.bindings.ucnv.ucnv_isFixedWidth_69"
    },
    {
     "name" : "UConverter",
@@ -10690,7 +10690,7 @@
     "protection" : "public",
     "line" : 347,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv_err.UCNV_FROM_U_CALLBACK_STOP_68"
+    "originalType" : "bindbc.icu.bindings.ucnv_err.UCNV_FROM_U_CALLBACK_STOP_69"
    },
    {
     "name" : "UCNV_TO_U_CALLBACK_STOP",
@@ -10698,7 +10698,7 @@
     "protection" : "public",
     "line" : 348,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv_err.UCNV_TO_U_CALLBACK_STOP_68"
+    "originalType" : "bindbc.icu.bindings.ucnv_err.UCNV_TO_U_CALLBACK_STOP_69"
    },
    {
     "name" : "UCNV_FROM_U_CALLBACK_SKIP",
@@ -10706,7 +10706,7 @@
     "protection" : "public",
     "line" : 349,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv_err.UCNV_FROM_U_CALLBACK_SKIP_68"
+    "originalType" : "bindbc.icu.bindings.ucnv_err.UCNV_FROM_U_CALLBACK_SKIP_69"
    },
    {
     "name" : "UCNV_FROM_U_CALLBACK_SUBSTITUTE",
@@ -10714,7 +10714,7 @@
     "protection" : "public",
     "line" : 350,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv_err.UCNV_FROM_U_CALLBACK_SUBSTITUTE_68"
+    "originalType" : "bindbc.icu.bindings.ucnv_err.UCNV_FROM_U_CALLBACK_SUBSTITUTE_69"
    },
    {
     "name" : "UCNV_FROM_U_CALLBACK_ESCAPE",
@@ -10722,7 +10722,7 @@
     "protection" : "public",
     "line" : 351,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv_err.UCNV_FROM_U_CALLBACK_ESCAPE_68"
+    "originalType" : "bindbc.icu.bindings.ucnv_err.UCNV_FROM_U_CALLBACK_ESCAPE_69"
    },
    {
     "name" : "UCNV_TO_U_CALLBACK_SKIP",
@@ -10730,7 +10730,7 @@
     "protection" : "public",
     "line" : 352,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv_err.UCNV_TO_U_CALLBACK_SKIP_68"
+    "originalType" : "bindbc.icu.bindings.ucnv_err.UCNV_TO_U_CALLBACK_SKIP_69"
    },
    {
     "name" : "UCNV_TO_U_CALLBACK_SUBSTITUTE",
@@ -10738,7 +10738,7 @@
     "protection" : "public",
     "line" : 353,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv_err.UCNV_TO_U_CALLBACK_SUBSTITUTE_68"
+    "originalType" : "bindbc.icu.bindings.ucnv_err.UCNV_TO_U_CALLBACK_SUBSTITUTE_69"
    },
    {
     "name" : "UCNV_TO_U_CALLBACK_ESCAPE",
@@ -10746,7 +10746,7 @@
     "protection" : "public",
     "line" : 354,
     "char" : 1,
-    "originalType" : "bindbc.icu.bindings.ucnv_err.UCNV_TO_U_CALLBACK_ESCAPE_68"
+    "originalType" : "bindbc.icu.bindings.ucnv_err.UCNV_TO_U_CALLBACK_ESCAPE_69"
    }
   ]
  }
