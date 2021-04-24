@@ -47,7 +47,7 @@ jobs:
       - name: Compiling ICU
         run: |
           sudo dpkg --add-architecture i386
-          sudo bash -c 'echo "deb http://cz.archive.ubuntu.com/ubuntu eoan main universe" >> /etc/apt/sources.list'
+          sudo bash -c 'echo "deb http://cz.archive.ubuntu.com/ubuntu bionic main universe" >> /etc/apt/sources.list'
           sudo apt update
           sudo apt install -y gcc-multilib g++-multilib libicu-le-hb0:i386 libicu-le-hb-dev:i386
           git clone -b release-68-2 --depth 1 --single-branch https://github.com/unicode-org/icu.git
@@ -255,7 +255,7 @@ jobs:
       - name: Install gcc-multilib
         run: |
           sudo dpkg --add-architecture i386
-          sudo bash -c 'echo "deb http://cz.archive.ubuntu.com/ubuntu eoan main universe" >> /etc/apt/sources.list'
+          sudo bash -c 'echo "deb http://cz.archive.ubuntu.com/ubuntu bionic main universe" >> /etc/apt/sources.list'
           sudo apt update
           sudo apt install gcc-multilib g++-multilib libicu-le-hb0:i386 libicu-le-hb-dev:i386
       - name: Run unit tests
