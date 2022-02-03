@@ -75,6 +75,22 @@ const(char)* toAsciiCstr(in char[] s)
 	return (*((&s[0]) + s.length) == '\0') ? s.ptr : (s ~ '\0').ptr;
 }
 
+void testUloc()
+{
+	char[16] language;
+	UErrorCode err;
+	int len;
+
+	len = uloc_getLanguage("ja_JP", language.ptr, language.length, &err);
+	enforce(err == UErrorCode.init);
+	enforce(language[0 .. len] == "ja", language[0 .. len]);
+
+	auto iso3 = uloc_getISO3Language("ja");
+	enforce(toStringFromAscii(iso3) == "jpn");
+
+	enforce(uloc_getCharacterOrientation(ULOC_JAPANESE, &err) == ULayoutType.LTR);
+	enforce(uloc_getCharacterOrientation("ar", &err) == ULayoutType.RTL);
+}
 
 int main()
 {
@@ -85,5 +101,7 @@ int main()
 	auto charset = guess(textbuf);
 	auto utfbuf  = convToUtf8(textbuf, charset);
 	utfbuf.canFind("ほんとうに人間はいいものかしら。ほんとうに人間はいいものかしら").enforce();
+
+	testUloc();
 	return 0;
 }
