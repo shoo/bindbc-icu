@@ -1,0 +1,265 @@
+/*******************************************************************************
+ * uformattable.h
+ * 
+ * C API: UFormattable is a thin wrapper for primitive types used for formatting and parsing.
+ * 
+ * License:
+ * COPYRIGHT AND PERMISSION NOTICE (ICU 58 and later)
+ * 
+ * Copyright © 1991-2020 Unicode, Inc. All rights reserved.
+ * Distributed under the Terms of Use in https://www.unicode.org/copyright.html.
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining
+ * a copy of the Unicode data files and any associated documentation
+ * (the "Data Files") or Unicode software and any associated documentation
+ * (the "Software") to deal in the Data Files or Software
+ * without restriction, including without limitation the rights to use,
+ * copy, modify, merge, publish, distribute, and/or sell copies of
+ * the Data Files or Software, and to permit persons to whom the Data Files
+ * or Software are furnished to do so, provided that either
+ * (a) this copyright and permission notice appear with all copies
+ * of the Data Files or Software, or
+ * (b) this copyright and permission notice appear in associated
+ * Documentation.
+ * 
+ * THE DATA FILES AND SOFTWARE ARE PROVIDED "AS IS", WITHOUT WARRANTY OF
+ * ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+ * WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT OF THIRD PARTY RIGHTS.
+ * IN NO EVENT SHALL THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS
+ * NOTICE BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL INDIRECT OR CONSEQUENTIAL
+ * DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE,
+ * DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THE DATA FILES OR SOFTWARE.
+ * 
+ * Except as contained in this notice, the name of a copyright holder
+ * shall not be used in advertising or otherwise to promote the sale,
+ * use or other dealings in these Data Files or Software without prior
+ * written authorization of the copyright holder.
+ *
+ * This is a C interface to the icu::Formattable class. Static functions on this class convert
+ * to and from this interface (via reinterpret_cast).  Note that Formattables (and thus UFormattables)
+ * are mutable, and many operations (even getters) may actually modify the internal state. For this
+ * reason, UFormattables are not thread safe, and should not be shared between threads.
+ *
+ * See {@link unum_parseToUFormattable} for example code.
+ */
+@("icuin")
+module bindbc.icu.bindings.uformattable;
+
+import bindbc.icu.bindings.utypes;
+
+extern (C):
+
+version (UCONFIG_NO_FORMATTING)
+{
+}
+else:
+
+/**
+ * Enum designating the type of a UFormattable instance.
+ * Practically, this indicates which of the getters would return without conversion
+ * or error.
+ * @see icu::Formattable::Type
+ * @stable ICU 52
+ */
+enum UFormattableType
+{
+	UFMT_DATE = 0, /// ufmt_getDate() will return without conversion. @see ufmt_getDate
+	UFMT_DOUBLE, /// ufmt_getDouble() will return without conversion.  @see ufmt_getDouble
+	UFMT_LONG, /// ufmt_getLong() will return without conversion. @see ufmt_getLong 
+	UFMT_STRING, /// ufmt_getUChars() will return without conversion.  @see ufmt_getUChars
+	UFMT_ARRAY, /// ufmt_countArray() and ufmt_getArray() will return the value.  @see ufmt_getArrayItemByIndex 
+	UFMT_INT64, /// ufmt_getInt64() will return without conversion. @see ufmt_getInt64 
+	UFMT_OBJECT, /// ufmt_getObject() will return without conversion.  @see ufmt_getObject
+}
+
+/**
+ * Opaque type representing various types of data which may be used for formatting
+ * and parsing operations.
+ * @see icu::Formattable
+ * @stable ICU 52
+ */
+alias UFormattable = void*;
+
+/**
+ * Initialize a UFormattable, to type UNUM_LONG, value 0
+ * may return error if memory allocation failed.
+ * parameter status error code.
+ * See {@link unum_parseToUFormattable} for example code.
+ * @stable ICU 52
+ * @return the new UFormattable
+ * @see ufmt_close
+ * @see icu::Formattable::Formattable()
+ */
+UFormattable* ufmt_open_69(UErrorCode* status);
+
+/**
+ * Cleanup any additional memory allocated by this UFormattable.
+ * @param fmt the formatter
+ * @stable ICU 52
+ * @see ufmt_open
+ */
+void ufmt_close_69(UFormattable* fmt);
+
+/**
+ * Return the type of this object
+ * @param fmt the UFormattable object
+ * @param status status code - U_ILLEGAL_ARGUMENT_ERROR is returned if the UFormattable contains data not supported by
+ * the API
+ * @return the value as a UFormattableType
+ * @see ufmt_isNumeric
+ * @see icu::Formattable::getType() const
+ * @stable ICU 52
+ */
+UFormattableType ufmt_getType_69(const(UFormattable)* fmt, UErrorCode* status);
+
+/**
+ * Return whether the object is numeric.
+ * @param fmt the UFormattable object
+ * @return true if the object is a double, int32, or int64 value, else false.
+ * @see ufmt_getType
+ * @see icu::Formattable::isNumeric() const
+ * @stable ICU 52
+ */
+UBool ufmt_isNumeric_69(const(UFormattable)* fmt);
+
+/**
+ * Gets the UDate value of this object.  If the type is not of type UFMT_DATE,
+ * status is set to U_INVALID_FORMAT_ERROR and the return value is
+ * undefined.
+ * @param fmt the UFormattable object
+ * @param status the error code - any conversion or format errors
+ * @return the value
+ * @stable ICU 52
+ * @see icu::Formattable::getDate(UErrorCode&) const
+ */
+UDate ufmt_getDate_69(const(UFormattable)* fmt, UErrorCode* status);
+
+/**
+ * Gets the double value of this object. If the type is not a UFMT_DOUBLE, or
+ * if there are additional significant digits than fit in a double type,
+ * a conversion is performed with  possible loss of precision.
+ * If the type is UFMT_OBJECT and the
+ * object is a Measure, then the result of
+ * getNumber().getDouble(status) is returned.  If this object is
+ * neither a numeric type nor a Measure, then 0 is returned and
+ * the status is set to U_INVALID_FORMAT_ERROR.
+ * @param fmt the UFormattable object
+ * @param status the error code - any conversion or format errors
+ * @return the value
+ * @stable ICU 52
+ * @see icu::Formattable::getDouble(UErrorCode&) const
+ */
+double ufmt_getDouble_69(UFormattable* fmt, UErrorCode* status);
+
+/**
+ * Gets the int32 value of this object. If the magnitude is too
+ * large to fit in an int, then the maximum or minimum int value,
+ * as appropriate, is returned and the status is set to
+ * U_INVALID_FORMAT_ERROR.  If this object is of type UFMT_INT64 and
+ * it fits within an int, then no precision is lost.  If it is of
+ * type kDouble or kDecimalNumber, then a conversion is performed, with
+ * truncation of any fractional part.  If the type is UFMT_OBJECT and
+ * the object is a Measure, then the result of
+ * getNumber().getLong(status) is returned.  If this object is
+ * neither a numeric type nor a Measure, then 0 is returned and
+ * the status is set to U_INVALID_FORMAT_ERROR.
+ * @param fmt the UFormattable object
+ * @param status the error code - any conversion or format errors
+ * @return the value
+ * @stable ICU 52
+ * @see icu::Formattable::getLong(UErrorCode&) const
+ */
+int ufmt_getLong_69(UFormattable* fmt, UErrorCode* status);
+
+/**
+ * Gets the int64 value of this object. If this object is of a numeric
+ * type and the magnitude is too large to fit in an int64, then
+ * the maximum or minimum int64 value, as appropriate, is returned
+ * and the status is set to U_INVALID_FORMAT_ERROR.  If the
+ * magnitude fits in an int64, then a casting conversion is
+ * performed, with truncation of any fractional part.  If the type
+ * is UFMT_OBJECT and the object is a Measure, then the result of
+ * getNumber().getDouble(status) is returned.  If this object is
+ * neither a numeric type nor a Measure, then 0 is returned and
+ * the status is set to U_INVALID_FORMAT_ERROR.
+ * @param fmt the UFormattable object
+ * @param status the error code - any conversion or format errors
+ * @return the value
+ * @stable ICU 52
+ * @see icu::Formattable::getInt64(UErrorCode&) const
+ */
+long ufmt_getInt64_69(UFormattable* fmt, UErrorCode* status);
+
+/**
+ * Returns a pointer to the UObject contained within this
+ * formattable (as a const void*), or NULL if this object
+ * is not of type UFMT_OBJECT.
+ * @param fmt the UFormattable object
+ * @param status the error code - any conversion or format errors
+ * @return the value as a const void*. It is a polymorphic C++ object.
+ * @stable ICU 52
+ * @see icu::Formattable::getObject() const
+ */
+const(void)* ufmt_getObject_69(const(UFormattable)* fmt, UErrorCode* status);
+
+/**
+ * Gets the string value of this object as a UChar string. If the type is not a
+ * string, status is set to U_INVALID_FORMAT_ERROR and a NULL pointer is returned.
+ * This function is not thread safe and may modify the UFormattable if need be to terminate the string.
+ * The returned pointer is not valid if any other functions are called on this UFormattable, or if the UFormattable is closed.
+ * @param fmt the UFormattable object
+ * @param status the error code - any conversion or format errors
+ * @param len if non null, contains the string length on return
+ * @return the null terminated string value - must not be referenced after any other functions are called on this UFormattable.
+ * @stable ICU 52
+ * @see icu::Formattable::getString(UnicodeString&)const
+ */
+const(UChar)* ufmt_getUChars_69(UFormattable* fmt, int* len, UErrorCode* status);
+
+/**
+ * Get the number of array objects contained, if an array type UFMT_ARRAY
+ * @param fmt the UFormattable object
+ * @param status the error code - any conversion or format errors. U_ILLEGAL_ARGUMENT_ERROR if not an array type.
+ * @return the number of array objects or undefined if not an array type
+ * @stable ICU 52
+ * @see ufmt_getArrayItemByIndex
+ */
+int ufmt_getArrayLength_69(const(UFormattable)* fmt, UErrorCode* status);
+
+/**
+ * Get the specified value from the array of UFormattables. Invalid if the object is not an array type UFMT_ARRAY
+ * @param fmt the UFormattable object
+ * @param n the number of the array to return (0 based).
+ * @param status the error code - any conversion or format errors. Returns an error if n is out of bounds.
+ * @return the nth array value, only valid while the containing UFormattable is valid. NULL if not an array.
+ * @stable ICU 52
+ * @see icu::Formattable::getArray(int&, UErrorCode&) const
+ */
+UFormattable* ufmt_getArrayItemByIndex_69(UFormattable* fmt, int n, UErrorCode* status);
+
+/**
+ * Returns a numeric string representation of the number contained within this
+ * formattable, or NULL if this object does not contain numeric type.
+ * For values obtained by parsing, the returned decimal number retains
+ * the full precision and range of the original input, unconstrained by
+ * the limits of a double floating point or a 64 bit int.
+ *
+ * This function is not thread safe, and therefore is not declared const,
+ * even though it is logically const.
+ * The resulting buffer is owned by the UFormattable and is invalid if any other functions are
+ * called on the UFormattable.
+ *
+ * Possible errors include U_MEMORY_ALLOCATION_ERROR, and
+ * U_INVALID_STATE if the formattable object has not been set to
+ * a numeric type.
+ * @param fmt the UFormattable object
+ * @param len if non-null, on exit contains the string length (not including the terminating null)
+ * @param status the error code
+ * @return the character buffer as a NULL terminated string, which is owned by the object and must not be accessed if any other functions are called on this object.
+ * @stable ICU 52
+ * @see icu::Formattable::getDecimalNumber(UErrorCode&)
+ */
+const(char)* ufmt_getDecNumChars_69(UFormattable* fmt, int* len, UErrorCode* status);

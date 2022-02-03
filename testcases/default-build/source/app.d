@@ -112,6 +112,21 @@ void testUcurr()
 	}
 }
 
+void testUformattable()
+{
+	UErrorCode err;
+	auto v = ufmt_open(&err);
+	enforce(err == UErrorCode.init, err.to!string);
+	scope (exit)
+		ufmt_close(v);
+
+	enforce(ufmt_getType(v, &err) == UFormattableType.UFMT_LONG);
+	enforce(err == UErrorCode.init, err.to!string);
+	enforce(ufmt_isNumeric(v));
+	enforce(ufmt_getLong(v, &err) == 0);
+	enforce(err == UErrorCode.init, err.to!string);
+}
+
 int main()
 {
 	enforce(loadIcu() == IcuSupport.icu);
@@ -124,6 +139,7 @@ int main()
 
 	testUloc();
 	testUcurr();
+	testUformattable();
 
 	return 0;
 }
