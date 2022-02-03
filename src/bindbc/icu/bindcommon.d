@@ -7,6 +7,7 @@ module bindbc.icu.bindcommon;
 
 import std.meta;
 
+import bindbc.icu.bindings.parseerr;
 import bindbc.icu.bindings.ucnv;
 import bindbc.icu.bindings.ucnv_err;
 import bindbc.icu.bindings.ucsdet;
@@ -39,6 +40,8 @@ package(bindbc.icu) alias icuBindings = AliasSeq!(
 	bindbc.icu.bindings.ucurr,
 	bindbc.icu.bindings.ucsdet,
 	bindbc.icu.bindings.ucnv,
-	bindbc.icu.bindings.ucnv_err,);
+	bindbc.icu.bindings.ucnv_err,
+	bindbc.icu.bindings.parseerr,
+);
 
 
