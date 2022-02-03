@@ -18,6 +18,7 @@ import bindbc.icu.bindings.ufieldpositer;
 import bindbc.icu.bindings.uformattable;
 import bindbc.icu.bindings.uloc;
 import bindbc.icu.bindings.umisc;
+import bindbc.icu.bindings.unum;
 import bindbc.icu.bindings.utypes;
 
 package(bindbc.icu) enum string icuVersion = "69";
@@ -37,6 +38,7 @@ package(bindbc.icu) string libFileName(string libName)
 
 package(bindbc.icu) alias icuBindings = AliasSeq!(
 	bindbc.icu.bindings.utypes,
+	bindbc.icu.bindings.unum,
 	bindbc.icu.bindings.umisc,
 	bindbc.icu.bindings.uloc,
 	bindbc.icu.bindings.ufieldpositer,

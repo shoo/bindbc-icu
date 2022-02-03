@@ -82,7 +82,7 @@ void testUloc()
 	int len;
 
 	len = uloc_getLanguage("ja_JP", language.ptr, language.length, &err);
-	enforce(err == UErrorCode.init);
+	enforce(U_SUCCESS(err));
 	enforce(language[0 .. len] == "ja", language[0 .. len]);
 
 	auto iso3 = uloc_getISO3Language("ja");
@@ -101,13 +101,13 @@ void testUcurr()
 	static immutable wstring[] expectedCurrencies = ["PAB", "USD"];
 
 	int currencyCount = ucurr_countCurrencies("es_PA", date, &err);
-	enforce(err == UErrorCode.init, err.to!string);
+	enforce(U_SUCCESS(err), err.to!string);
 	enforce(currencyCount == 2, currencyCount.to!string);
 
 	foreach (i; 0 .. currencyCount)
 	{
 		len = ucurr_forLocaleAndDate("es_PA", date, i + 1, curr.ptr, curr.length, &err);
-		enforce(err == UErrorCode.init);
+		enforce(U_SUCCESS(err));
 		enforce(expectedCurrencies[i] == curr[0 .. len]);
 	}
 }
@@ -116,20 +116,74 @@ void testUformattable()
 {
 	UErrorCode err;
 	auto v = ufmt_open(&err);
-	enforce(err == UErrorCode.init, err.to!string);
+	enforce(U_SUCCESS(err), err.to!string);
 	scope (exit)
 		ufmt_close(v);
 
 	enforce(ufmt_getType(v, &err) == UFormattableType.UFMT_LONG);
-	enforce(err == UErrorCode.init, err.to!string);
+	enforce(U_SUCCESS(err), err.to!string);
 	enforce(ufmt_isNumeric(v));
 	enforce(ufmt_getLong(v, &err) == 0);
-	enforce(err == UErrorCode.init, err.to!string);
+	enforce(U_SUCCESS(err), err.to!string);
+}
+
+void testUnum()
+{
+	struct Test
+	{
+		string locale;
+		wstring currency;
+		wstring expectedPos;
+		wstring expectedNeg;
+	}
+
+	UParseError parseError;
+	UErrorCode err;
+
+	wchar[64] bufferPos;
+	wchar[64] bufferNeg;
+	UFieldPosition position;
+
+	double pos = 12345.6789;
+	double neg = -12345.6789;
+
+	static foreach (test; [
+		Test("es_PA", "PAB\0"w, "B/.\u00a012,345.68", "-B/.\u00a012,345.68"),
+		Test("ja_JP", "JPY\0"w, "￥12,346", "-￥12,346"),
+		Test("de_DE", "EUR\0"w, "12.345,68\u00a0€", "-12.345,68\u00a0€"),
+		Test("nl_NL", "EUR\0"w, "€\u00a012.345,68", "€\u00a0-12.345,68"),
+		Test("en_UK", "GBP\0"w, "£12,345.68", "-£12,345.68"),
+		Test("da_DK", "DKK\0"w, "12.345,68\u00a0kr.", "-12.345,68\u00a0kr."),
+		Test("en_UK", "USD\0"w, "$12,345.68", "-$12,345.68"),
+		Test("en_US", "USD\0"w, "$12,345.68", "-$12,345.68"),
+		Test("fr_CH", "EUR\0"w, "12\u202f345.68\u00a0€", "-12\u202f345.68\u00a0€"),
+	])
+	{{
+		auto fmt = unum_open(UNumberFormatStyle.UNUM_CURRENCY, null, 0, test.locale, &parseError, &err);
+		enforce(fmt);
+		scope (exit)
+			unum_close(fmt);
+		enforce(U_SUCCESS(err), err.to!string);
+
+		int lenPos = unum_formatDoubleCurrency(fmt, pos, test.currency.dup.ptr, bufferPos.ptr, bufferPos.length, &position, &err);
+		enforce(U_SUCCESS(err), err.to!string);
+		int lenNeg = unum_formatDoubleCurrency(fmt, neg, test.currency.dup.ptr, bufferNeg.ptr, bufferNeg.length, &position, &err);
+		enforce(U_SUCCESS(err), err.to!string);
+
+		enforce(bufferPos[0 .. lenPos] == test.expectedPos, text(bufferPos[0 .. lenPos], " != ", test.expectedPos));
+		enforce(bufferNeg[0 .. lenNeg] == test.expectedNeg, text(bufferNeg[0 .. lenNeg], " != ", test.expectedNeg));
+	}}
 }
 
 int main()
 {
-	enforce(loadIcu() == IcuSupport.icu);
+	if (loadIcu() != IcuSupport.icu)
+	{
+		import bindbc.loader;
+		foreach (error; bindbc.loader.errors)
+			printf("%s\t%s\n", error.error, error.message);
+		throw new Exception("ICU not loaded correctly");
+	}
 	scope (exit)
 		unloadIcu();
 	auto textbuf = cast(Char[])std.file.read("../.testresources/sjis.txt");
@@ -140,6 +194,7 @@ int main()
 	testUloc();
 	testUcurr();
 	testUformattable();
+	testUnum();
 
 	return 0;
 }
