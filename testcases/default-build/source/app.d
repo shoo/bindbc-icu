@@ -92,6 +92,26 @@ void testUloc()
 	enforce(uloc_getCharacterOrientation("ar", &err) == ULayoutType.RTL);
 }
 
+void testUcurr()
+{
+	UChar[16] curr;
+	UErrorCode err;
+	int len;
+	UDate date = SysTime(DateTime(2020, 1, 1, 12, 0, 0), UTC()).toUnixTime!long * 1000.0;
+	static immutable wstring[] expectedCurrencies = ["PAB", "USD"];
+
+	int currencyCount = ucurr_countCurrencies("es_PA", date, &err);
+	enforce(err == UErrorCode.init, err.to!string);
+	enforce(currencyCount == 2, currencyCount.to!string);
+
+	foreach (i; 0 .. currencyCount)
+	{
+		len = ucurr_forLocaleAndDate("es_PA", date, i + 1, curr.ptr, curr.length, &err);
+		enforce(err == UErrorCode.init);
+		enforce(expectedCurrencies[i] == curr[0 .. len]);
+	}
+}
+
 int main()
 {
 	enforce(loadIcu() == IcuSupport.icu);
@@ -103,5 +123,7 @@ int main()
 	utfbuf.canFind("ほんとうに人間はいいものかしら。ほんとうに人間はいいものかしら").enforce();
 
 	testUloc();
+	testUcurr();
+
 	return 0;
 }
