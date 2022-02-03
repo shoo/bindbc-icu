@@ -12,6 +12,7 @@ import bindbc.icu.bindings.ucnv;
 import bindbc.icu.bindings.ucnv_err;
 import bindbc.icu.bindings.ucsdet;
 import bindbc.icu.bindings.ucurr;
+import bindbc.icu.bindings.udisplaycontext;
 import bindbc.icu.bindings.uenum;
 import bindbc.icu.bindings.uformattable;
 import bindbc.icu.bindings.uloc;
@@ -40,6 +41,7 @@ package(bindbc.icu) alias icuBindings = AliasSeq!(
 	bindbc.icu.bindings.uformattable,
 	bindbc.icu.bindings.uenum,
 	bindbc.icu.bindings.ucurr,
+	bindbc.icu.bindings.udisplaycontext,
 	bindbc.icu.bindings.ucsdet,
 	bindbc.icu.bindings.ucnv,
 	bindbc.icu.bindings.ucnv_err,
