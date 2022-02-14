@@ -366,11 +366,6 @@ enum UCurrencySpacing
 	UNUM_CURRENCY_SURROUNDING_MATCH,
 	/** @stable ICU 4.8 */
 	UNUM_CURRENCY_INSERT,
-
-	/**
-	 * One more than the highest normal UCurrencySpacing value.
-	 */
-	deprecated("ICU 58 The numeric value may change over time, see ICU ticket #12420.") UNUM_CURRENCY_SPACING_COUNT
 }
 
 /**
