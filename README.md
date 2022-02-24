@@ -12,7 +12,7 @@ This project provides dynamic and static bindings to the C API of ICU(Internatio
 `-betterC` is is currently unsupported. It is blocked by [Issue18472](https://issues.dlang.org/show_bug.cgi?id=18472), which is caused by the metaprogramming we use internally.([A bounty is being placed on this issue.](https://www.flipcause.com/secure/cause_pdetails/NjU3MTQ=))
 
 # Usage
-[Documents are here(ICU4C)](http://userguide.icu-project.org/)  
+[Documents are here (ICU4C)](https://unicode-org.github.io/icu/userguide/)  
 [And bindbc-icu's API lists are here](https://shoo.github.io/bindbc-icu/)
 
 If you are using dub, you can add a dependency by describing it as follows:
