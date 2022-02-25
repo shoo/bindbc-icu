@@ -105,11 +105,19 @@ alias ucsdet_open = ucsdet_open_69;                             // usable alias
 
 # Support status
 
-|           | module |                     |
-|:---------:|:------:|:-------------------:|
-| ✅️       | ucsdet | Charset Detection   |
-| ✅️       | ucnv   | Charset conversion  |
-| ✖        | other  |                     |
+|           | module     |                         |
+|:---------:|------------|-------------------------|
+| ✅️        | ucsdet     | Charset Detection       |
+| ✅️        | ucnv       | Charset conversion      |
+| ✅️        | uloc       | Locale information      |
+| ✅️        | ucurr      | Currency information    |
+| ✅️        | parseerr   | Parse Error Information |
+| ✅️        | uformattable | Primitive types for formatting and parsing |
+| ✅️        | udisplaycontext | Display context types (enum values) |
+| ✅️        | ufieldpositer | Field Position Iterator for use with format APIs |
+| ✅️        | unum       | Compatibility APIs for number formatting |
+| ✅️        | umisc      | Miscellaneous types     |
+| ✖         | other      |                         |
 
 
 # Contributing

@@ -5,13 +5,21 @@
  */
 module bindbc.icu.bindcommon;
 
-
 import std.meta;
-import bindbc.icu.bindings.utypes;
-import bindbc.icu.bindings.uenum;
-import bindbc.icu.bindings.ucsdet;
+
+import bindbc.icu.bindings.parseerr;
 import bindbc.icu.bindings.ucnv;
 import bindbc.icu.bindings.ucnv_err;
+import bindbc.icu.bindings.ucsdet;
+import bindbc.icu.bindings.ucurr;
+import bindbc.icu.bindings.udisplaycontext;
+import bindbc.icu.bindings.uenum;
+import bindbc.icu.bindings.ufieldpositer;
+import bindbc.icu.bindings.uformattable;
+import bindbc.icu.bindings.uloc;
+import bindbc.icu.bindings.umisc;
+import bindbc.icu.bindings.unum;
+import bindbc.icu.bindings.utypes;
 
 package(bindbc.icu) enum string icuVersion = "69";
 package(bindbc.icu) alias icuLibraries = AliasSeq!("icudt", "icuin", "icuio", "icutu", "icuuc");
@@ -30,9 +38,18 @@ package(bindbc.icu) string libFileName(string libName)
 
 package(bindbc.icu) alias icuBindings = AliasSeq!(
 	bindbc.icu.bindings.utypes,
+	bindbc.icu.bindings.unum,
+	bindbc.icu.bindings.umisc,
+	bindbc.icu.bindings.uloc,
+	bindbc.icu.bindings.ufieldpositer,
+	bindbc.icu.bindings.uformattable,
 	bindbc.icu.bindings.uenum,
+	bindbc.icu.bindings.ucurr,
+	bindbc.icu.bindings.udisplaycontext,
 	bindbc.icu.bindings.ucsdet,
 	bindbc.icu.bindings.ucnv,
-	bindbc.icu.bindings.ucnv_err,);
+	bindbc.icu.bindings.ucnv_err,
+	bindbc.icu.bindings.parseerr,
+);
 
 
