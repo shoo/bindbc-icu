@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html>    <head>        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" type="text/css" href="css/proj_docs.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/sidebar.js"></script>
+        <script type="text/javascript" src="js/listanchors.js"></script>
+        <title>bindbc.icu.bindings.uformattable</title>
+        
+        
+    </head>
+    <body>        
+        <div class="container">            
+<div class="sidebar-underbar"></div>
+<div class="sidebar">    <div class="head">        <h2>bindbc-icu</h2>
+        <p><span class="smallprint"><b>version:</b> ~master <span class="separator"><br></span>
+            </span>
+        </p>
+        <p><a href="index.html">overview</a></p>
+    </div>
+    
+    <ul>
+
+	
+	
+	
+		<li class="expand-container open"><a class='expand-toggle' href="#"><span >bindbc</span></a><ul>
+			
+	
+		<li class="expand-container open"><a title='bindbc-icu
+		' class='expand-toggle' href='#'><span >icu</span></a><ul><li><a title='bindbc-icu
+		' href="
+			bindbc-icu--bindbc.icu.html"><span >package</span></a></li>
+			
+
+	<li><a title="Common definitions for internal use." href="bindbc-icu--bindbc.icu.bindcommon.html"><span >bindcommon</span></a></li>
+
+
+
+	<li><a title="For dynamic link" href="bindbc-icu--bindbc.icu.binddynamic.html"><span >binddynamic</span></a></li>
+
+
+	
+	
+		<li class="expand-container open"><a class='expand-toggle' href="#"><span >bindings</span></a><ul>
+			
+
+	<li><a title="parseerr.h" href="bindbc-icu--bindbc.icu.bindings.parseerr.html"><span >parseerr</span></a></li>
+
+
+
+	<li><a title="ucnv.h" href="bindbc-icu--bindbc.icu.bindings.ucnv.html"><span >ucnv</span></a></li>
+
+
+
+	<li><a title="ucnv_err.h" href="bindbc-icu--bindbc.icu.bindings.ucnv_err.html"><span >ucnv_err</span></a></li>
+
+
+
+	<li><a title="ucsdet.h" href="bindbc-icu--bindbc.icu.bindings.ucsdet.html"><span >ucsdet</span></a></li>
+
+
+
+	<li><a title="ucurr.h" href="bindbc-icu--bindbc.icu.bindings.ucurr.html"><span >ucurr</span></a></li>
+
+
+
+	<li><a title="udisplaycontext.h" href="bindbc-icu--bindbc.icu.bindings.udisplaycontext.html"><span >udisplaycontext</span></a></li>
+
+
+
+	<li><a title="uenum.h" href="bindbc-icu--bindbc.icu.bindings.uenum.html"><span >uenum</span></a></li>
+
+
+
+	<li><a title="ufieldpositer.h" href="bindbc-icu--bindbc.icu.bindings.ufieldpositer.html"><span >ufieldpositer</span></a></li>
+
+
+
+	<li><a title="uformattable.h" href="bindbc-icu--bindbc.icu.bindings.uformattable.html"><span >uformattable</span></a></li>
+
+
+
+	<li><a title="uloc.h" href="bindbc-icu--bindbc.icu.bindings.uloc.html"><span >uloc</span></a></li>
+
+
+
+	<li><a title="umisc.h" href="bindbc-icu--bindbc.icu.bindings.umisc.html"><span >umisc</span></a></li>
+
+
+
+	<li><a title="unum.h" href="bindbc-icu--bindbc.icu.bindings.unum.html"><span >unum</span></a></li>
+
+
+
+	<li><a title="utypes.h" href="bindbc-icu--bindbc.icu.bindings.utypes.html"><span >utypes</span></a></li>
+
+
+		</ul></li>
+	
+
+
+
+
+
+	<li><a title="For static link" href="bindbc-icu--bindbc.icu.bindstatic.html"><span >bindstatic</span></a></li>
+
+</ul></li>
+	
+	
+
+
+
+
+		</ul></li>
+	
+
+
+
+
+</ul>
+</div>
+            <div class="content">                <h1>bindbc.icu.bindings.uformattable</h1>
+                
+                <div class="quickindex" id="quickindex"></div>
+                
+                <div class="ddoc_summary"><code class="ddoc_psymbol">uformattable</code>.h
+</div><div class="ddoc_description">C API: UFormattable is a thin wrapper for primitive types used for formatting and parsing.
+
+</div>
+<div class="ddoc_license"><span class="ddoc_license_header">License:</span>
+ <a href="http://boost.org/LICENSE_1_0.txt">BSL-1.0</a>.
+
+</div>
+<div class="ddoc_section_nonstandard"><span class="ddoc_section_nonstandard_header">Documentation:</span>
+<a href="https://unicode-org.github.io/icu-docs/apidoc/dev/icu4c/uformattable_8h.html">https://unicode-org.github.io/icu-docs/apidoc/dev/icu4c/uformattable_8h.html</a></div>
+<dl class="ddoc_members"><div class="ddoc_module_members"><dt class="ddoc_decl"><div ><span class="def-anchor" id=".UFormattableType"></span><div class="quickindex" id="quickindex.UFormattableType"></div>enum <code class="ddoc_psymbol">UFormattableType</code>: <span class="ddoc_enum_basetype">int</span>;
+<br></div></dt>
+<dd>
+<dl class="ddoc_members"><div class="ddoc_enum_members"><dt class="ddoc_decl"><div ><span class="def-anchor" id=".UFormattableType.UFMT_DATE"></span><div class="quickindex" id="quickindex.UFormattableType.UFMT_DATE"></div><code class="ddoc_psymbol">UFMT_DATE</code><br></div></dt>
+<dd><div class="ddoc_summary"><a href="#.ufmt_getDate"><code class="d_inlinecode donthyphenate notranslate">ufmt_getDate</code></a> will return without conversion</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UFormattableType.UFMT_DOUBLE"></span><div class="quickindex" id="quickindex.UFormattableType.UFMT_DOUBLE"></div><code class="ddoc_psymbol">UFMT_DOUBLE</code><br></div></dt>
+<dd><div class="ddoc_summary"><a href="#.ufmt_getDouble"><code class="d_inlinecode donthyphenate notranslate">ufmt_getDouble</code></a> will return without conversion</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UFormattableType.UFMT_LONG"></span><div class="quickindex" id="quickindex.UFormattableType.UFMT_LONG"></div><code class="ddoc_psymbol">UFMT_LONG</code><br></div></dt>
+<dd><div class="ddoc_summary"><a href="#.ufmt_getLong"><code class="d_inlinecode donthyphenate notranslate">ufmt_getLong</code></a> will return without conversion</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UFormattableType.UFMT_STRING"></span><div class="quickindex" id="quickindex.UFormattableType.UFMT_STRING"></div><code class="ddoc_psymbol">UFMT_STRING</code><br></div></dt>
+<dd><div class="ddoc_summary"><a href="#.ufmt_getUChars"><code class="d_inlinecode donthyphenate notranslate">ufmt_getUChars</code></a> will return without conversion</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UFormattableType.UFMT_ARRAY"></span><div class="quickindex" id="quickindex.UFormattableType.UFMT_ARRAY"></div><code class="ddoc_psymbol">UFMT_ARRAY</code><br></div></dt>
+<dd><div class="ddoc_summary"><a href="#.ufmt_countArray"><code class="d_inlinecode donthyphenate notranslate">ufmt_countArray</code></a> and <a href="#.ufmt_getArray"><code class="d_inlinecode donthyphenate notranslate">ufmt_getArray</code></a> will return the value. See also: <a href="#.ufmt_getArrayItemByIndex"><code class="d_inlinecode donthyphenate notranslate">ufmt_getArrayItemByIndex</code></a></div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UFormattableType.UFMT_INT64"></span><div class="quickindex" id="quickindex.UFormattableType.UFMT_INT64"></div><code class="ddoc_psymbol">UFMT_INT64</code><br></div></dt>
+<dd><div class="ddoc_summary"><a href="#.ufmt_getInt64"><code class="d_inlinecode donthyphenate notranslate">ufmt_getInt64</code></a> will return without conversion</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UFormattableType.UFMT_OBJECT"></span><div class="quickindex" id="quickindex.UFormattableType.UFMT_OBJECT"></div><code class="ddoc_psymbol">UFMT_OBJECT</code><br></div></dt>
+<dd><div class="ddoc_summary"><a href="#.ufmt_getObject"><code class="d_inlinecode donthyphenate notranslate">ufmt_getObject</code></a> will return without conversion</div></dd>
+</div></dl>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UFormattable"></span><div class="quickindex" id="quickindex.UFormattable"></div>alias <code class="ddoc_psymbol">UFormattable</code> = void*;
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ufmt_open_69"></span><div class="quickindex" id="quickindex.ufmt_open_69"></div>UFormattable* <code class="ddoc_psymbol">ufmt_open_69</code>(UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ufmt_close_69"></span><div class="quickindex" id="quickindex.ufmt_close_69"></div>void <code class="ddoc_psymbol">ufmt_close_69</code>(UFormattable* <span class="ddoc_param">fmt</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ufmt_getType_69"></span><div class="quickindex" id="quickindex.ufmt_getType_69"></div>UFormattableType <code class="ddoc_psymbol">ufmt_getType_69</code>(const(UFormattable)* <span class="ddoc_param">fmt</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ufmt_isNumeric_69"></span><div class="quickindex" id="quickindex.ufmt_isNumeric_69"></div>UBool <code class="ddoc_psymbol">ufmt_isNumeric_69</code>(const(UFormattable)* <span class="ddoc_param">fmt</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ufmt_getDate_69"></span><div class="quickindex" id="quickindex.ufmt_getDate_69"></div>UDate <code class="ddoc_psymbol">ufmt_getDate_69</code>(const(UFormattable)* <span class="ddoc_param">fmt</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ufmt_getDouble_69"></span><div class="quickindex" id="quickindex.ufmt_getDouble_69"></div>double <code class="ddoc_psymbol">ufmt_getDouble_69</code>(UFormattable* <span class="ddoc_param">fmt</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ufmt_getLong_69"></span><div class="quickindex" id="quickindex.ufmt_getLong_69"></div>int <code class="ddoc_psymbol">ufmt_getLong_69</code>(UFormattable* <span class="ddoc_param">fmt</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ufmt_getInt64_69"></span><div class="quickindex" id="quickindex.ufmt_getInt64_69"></div>long <code class="ddoc_psymbol">ufmt_getInt64_69</code>(UFormattable* <span class="ddoc_param">fmt</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ufmt_getObject_69"></span><div class="quickindex" id="quickindex.ufmt_getObject_69"></div>const(void)* <code class="ddoc_psymbol">ufmt_getObject_69</code>(const(UFormattable)* <span class="ddoc_param">fmt</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ufmt_getUChars_69"></span><div class="quickindex" id="quickindex.ufmt_getUChars_69"></div>const(UChar)* <code class="ddoc_psymbol">ufmt_getUChars_69</code>(UFormattable* <span class="ddoc_param">fmt</span>, int* <span class="ddoc_param">len</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ufmt_getArrayLength_69"></span><div class="quickindex" id="quickindex.ufmt_getArrayLength_69"></div>int <code class="ddoc_psymbol">ufmt_getArrayLength_69</code>(const(UFormattable)* <span class="ddoc_param">fmt</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ufmt_getArrayItemByIndex_69"></span><div class="quickindex" id="quickindex.ufmt_getArrayItemByIndex_69"></div>UFormattable* <code class="ddoc_psymbol">ufmt_getArrayItemByIndex_69</code>(UFormattable* <span class="ddoc_param">fmt</span>, int <span class="ddoc_param">n</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ufmt_getDecNumChars_69"></span><div class="quickindex" id="quickindex.ufmt_getDecNumChars_69"></div>const(char)* <code class="ddoc_psymbol">ufmt_getDecNumChars_69</code>(UFormattable* <span class="ddoc_param">fmt</span>, int* <span class="ddoc_param">len</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+</div></dl>
+
+                
+            </div>
+        </div>
+        
+        <script type="text/javascript">jQuery(document).ready(listanchors);</script>
+        
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+     </body>
+</html>

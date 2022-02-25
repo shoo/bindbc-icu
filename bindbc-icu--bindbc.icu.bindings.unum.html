@@ -1,0 +1,681 @@
+
+<!DOCTYPE html>
+<html>    <head>        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" type="text/css" href="css/proj_docs.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/sidebar.js"></script>
+        <script type="text/javascript" src="js/listanchors.js"></script>
+        <title>bindbc.icu.bindings.unum</title>
+        
+        
+    </head>
+    <body>        
+        <div class="container">            
+<div class="sidebar-underbar"></div>
+<div class="sidebar">    <div class="head">        <h2>bindbc-icu</h2>
+        <p><span class="smallprint"><b>version:</b> ~master <span class="separator"><br></span>
+            </span>
+        </p>
+        <p><a href="index.html">overview</a></p>
+    </div>
+    
+    <ul>
+
+	
+	
+	
+		<li class="expand-container open"><a class='expand-toggle' href="#"><span >bindbc</span></a><ul>
+			
+	
+		<li class="expand-container open"><a title='bindbc-icu
+		' class='expand-toggle' href='#'><span >icu</span></a><ul><li><a title='bindbc-icu
+		' href="
+			bindbc-icu--bindbc.icu.html"><span >package</span></a></li>
+			
+
+	<li><a title="Common definitions for internal use." href="bindbc-icu--bindbc.icu.bindcommon.html"><span >bindcommon</span></a></li>
+
+
+
+	<li><a title="For dynamic link" href="bindbc-icu--bindbc.icu.binddynamic.html"><span >binddynamic</span></a></li>
+
+
+	
+	
+		<li class="expand-container open"><a class='expand-toggle' href="#"><span >bindings</span></a><ul>
+			
+
+	<li><a title="parseerr.h" href="bindbc-icu--bindbc.icu.bindings.parseerr.html"><span >parseerr</span></a></li>
+
+
+
+	<li><a title="ucnv.h" href="bindbc-icu--bindbc.icu.bindings.ucnv.html"><span >ucnv</span></a></li>
+
+
+
+	<li><a title="ucnv_err.h" href="bindbc-icu--bindbc.icu.bindings.ucnv_err.html"><span >ucnv_err</span></a></li>
+
+
+
+	<li><a title="ucsdet.h" href="bindbc-icu--bindbc.icu.bindings.ucsdet.html"><span >ucsdet</span></a></li>
+
+
+
+	<li><a title="ucurr.h" href="bindbc-icu--bindbc.icu.bindings.ucurr.html"><span >ucurr</span></a></li>
+
+
+
+	<li><a title="udisplaycontext.h" href="bindbc-icu--bindbc.icu.bindings.udisplaycontext.html"><span >udisplaycontext</span></a></li>
+
+
+
+	<li><a title="uenum.h" href="bindbc-icu--bindbc.icu.bindings.uenum.html"><span >uenum</span></a></li>
+
+
+
+	<li><a title="ufieldpositer.h" href="bindbc-icu--bindbc.icu.bindings.ufieldpositer.html"><span >ufieldpositer</span></a></li>
+
+
+
+	<li><a title="uformattable.h" href="bindbc-icu--bindbc.icu.bindings.uformattable.html"><span >uformattable</span></a></li>
+
+
+
+	<li><a title="uloc.h" href="bindbc-icu--bindbc.icu.bindings.uloc.html"><span >uloc</span></a></li>
+
+
+
+	<li><a title="umisc.h" href="bindbc-icu--bindbc.icu.bindings.umisc.html"><span >umisc</span></a></li>
+
+
+
+	<li><a title="unum.h" href="bindbc-icu--bindbc.icu.bindings.unum.html"><span >unum</span></a></li>
+
+
+
+	<li><a title="utypes.h" href="bindbc-icu--bindbc.icu.bindings.utypes.html"><span >utypes</span></a></li>
+
+
+		</ul></li>
+	
+
+
+
+
+
+	<li><a title="For static link" href="bindbc-icu--bindbc.icu.bindstatic.html"><span >bindstatic</span></a></li>
+
+</ul></li>
+	
+	
+
+
+
+
+		</ul></li>
+	
+
+
+
+
+</ul>
+</div>
+            <div class="content">                <h1>bindbc.icu.bindings.unum</h1>
+                
+                <div class="quickindex" id="quickindex"></div>
+                
+                <div class="ddoc_summary"><code class="ddoc_psymbol">unum</code>.h
+</div><div class="ddoc_description">C API: Compatibility APIs for number formatting.
+
+</div>
+<div class="ddoc_license"><span class="ddoc_license_header">License:</span>
+ <a href="http://boost.org/LICENSE_1_0.txt">BSL-1.0</a>.
+
+</div>
+<div class="ddoc_section_nonstandard"><span class="ddoc_section_nonstandard_header">Documentation:</span>
+<a href="https://unicode-org.github.io/icu-docs/apidoc/dev/icu4c/unum_8h.html">https://unicode-org.github.io/icu-docs/apidoc/dev/icu4c/unum_8h.html</a></div>
+<dl class="ddoc_members"><div class="ddoc_module_members"><dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormat"></span><div class="quickindex" id="quickindex.UNumberFormat"></div>alias <code class="ddoc_psymbol">UNumberFormat</code> = void*;
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatStyle"></span><div class="quickindex" id="quickindex.UNumberFormatStyle"></div>enum <code class="ddoc_psymbol">UNumberFormatStyle</code>: <span class="ddoc_enum_basetype">int</span>;
+<br></div></dt>
+<dd>
+<dl class="ddoc_members"><div class="ddoc_enum_members"><dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatStyle.UNUM_PATTERN_DECIMAL"></span><div class="quickindex" id="quickindex.UNumberFormatStyle.UNUM_PATTERN_DECIMAL"></div><code class="ddoc_psymbol">UNUM_PATTERN_DECIMAL</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatStyle.UNUM_DECIMAL"></span><div class="quickindex" id="quickindex.UNumberFormatStyle.UNUM_DECIMAL"></div><code class="ddoc_psymbol">UNUM_DECIMAL</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatStyle.UNUM_CURRENCY"></span><div class="quickindex" id="quickindex.UNumberFormatStyle.UNUM_CURRENCY"></div><code class="ddoc_psymbol">UNUM_CURRENCY</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatStyle.UNUM_PERCENT"></span><div class="quickindex" id="quickindex.UNumberFormatStyle.UNUM_PERCENT"></div><code class="ddoc_psymbol">UNUM_PERCENT</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatStyle.UNUM_SCIENTIFIC"></span><div class="quickindex" id="quickindex.UNumberFormatStyle.UNUM_SCIENTIFIC"></div><code class="ddoc_psymbol">UNUM_SCIENTIFIC</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatStyle.UNUM_SPELLOUT"></span><div class="quickindex" id="quickindex.UNumberFormatStyle.UNUM_SPELLOUT"></div><code class="ddoc_psymbol">UNUM_SPELLOUT</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatStyle.UNUM_ORDINAL"></span><div class="quickindex" id="quickindex.UNumberFormatStyle.UNUM_ORDINAL"></div><code class="ddoc_psymbol">UNUM_ORDINAL</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatStyle.UNUM_DURATION"></span><div class="quickindex" id="quickindex.UNumberFormatStyle.UNUM_DURATION"></div><code class="ddoc_psymbol">UNUM_DURATION</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatStyle.UNUM_NUMBERING_SYSTEM"></span><div class="quickindex" id="quickindex.UNumberFormatStyle.UNUM_NUMBERING_SYSTEM"></div><code class="ddoc_psymbol">UNUM_NUMBERING_SYSTEM</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatStyle.UNUM_PATTERN_RULEBASED"></span><div class="quickindex" id="quickindex.UNumberFormatStyle.UNUM_PATTERN_RULEBASED"></div><code class="ddoc_psymbol">UNUM_PATTERN_RULEBASED</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatStyle.UNUM_CURRENCY_ISO"></span><div class="quickindex" id="quickindex.UNumberFormatStyle.UNUM_CURRENCY_ISO"></div><code class="ddoc_psymbol">UNUM_CURRENCY_ISO</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatStyle.UNUM_CURRENCY_PLURAL"></span><div class="quickindex" id="quickindex.UNumberFormatStyle.UNUM_CURRENCY_PLURAL"></div><code class="ddoc_psymbol">UNUM_CURRENCY_PLURAL</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatStyle.UNUM_CURRENCY_ACCOUNTING"></span><div class="quickindex" id="quickindex.UNumberFormatStyle.UNUM_CURRENCY_ACCOUNTING"></div><code class="ddoc_psymbol">UNUM_CURRENCY_ACCOUNTING</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatStyle.UNUM_CASH_CURRENCY"></span><div class="quickindex" id="quickindex.UNumberFormatStyle.UNUM_CASH_CURRENCY"></div><code class="ddoc_psymbol">UNUM_CASH_CURRENCY</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatStyle.UNUM_DECIMAL_COMPACT_SHORT"></span><div class="quickindex" id="quickindex.UNumberFormatStyle.UNUM_DECIMAL_COMPACT_SHORT"></div><code class="ddoc_psymbol">UNUM_DECIMAL_COMPACT_SHORT</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatStyle.UNUM_DECIMAL_COMPACT_LONG"></span><div class="quickindex" id="quickindex.UNumberFormatStyle.UNUM_DECIMAL_COMPACT_LONG"></div><code class="ddoc_psymbol">UNUM_DECIMAL_COMPACT_LONG</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatStyle.UNUM_CURRENCY_STANDARD"></span><div class="quickindex" id="quickindex.UNumberFormatStyle.UNUM_CURRENCY_STANDARD"></div><code class="ddoc_psymbol">UNUM_CURRENCY_STANDARD</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatStyle.UNUM_DEFAULT"></span><div class="quickindex" id="quickindex.UNumberFormatStyle.UNUM_DEFAULT"></div><code class="ddoc_psymbol">UNUM_DEFAULT</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatStyle.UNUM_IGNORE"></span><div class="quickindex" id="quickindex.UNumberFormatStyle.UNUM_IGNORE"></div><code class="ddoc_psymbol">UNUM_IGNORE</code><br></div></dt>
+<dd>
+</dd>
+</div></dl>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatRoundingMode"></span><div class="quickindex" id="quickindex.UNumberFormatRoundingMode"></div>enum <code class="ddoc_psymbol">UNumberFormatRoundingMode</code>: <span class="ddoc_enum_basetype">int</span>;
+<br></div></dt>
+<dd>
+<dl class="ddoc_members"><div class="ddoc_enum_members"><dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatRoundingMode.UNUM_ROUND_CEILING"></span><div class="quickindex" id="quickindex.UNumberFormatRoundingMode.UNUM_ROUND_CEILING"></div><code class="ddoc_psymbol">UNUM_ROUND_CEILING</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatRoundingMode.UNUM_ROUND_FLOOR"></span><div class="quickindex" id="quickindex.UNumberFormatRoundingMode.UNUM_ROUND_FLOOR"></div><code class="ddoc_psymbol">UNUM_ROUND_FLOOR</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatRoundingMode.UNUM_ROUND_DOWN"></span><div class="quickindex" id="quickindex.UNumberFormatRoundingMode.UNUM_ROUND_DOWN"></div><code class="ddoc_psymbol">UNUM_ROUND_DOWN</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatRoundingMode.UNUM_ROUND_UP"></span><div class="quickindex" id="quickindex.UNumberFormatRoundingMode.UNUM_ROUND_UP"></div><code class="ddoc_psymbol">UNUM_ROUND_UP</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatRoundingMode.UNUM_ROUND_HALFEVEN"></span><div class="quickindex" id="quickindex.UNumberFormatRoundingMode.UNUM_ROUND_HALFEVEN"></div><code class="ddoc_psymbol">UNUM_ROUND_HALFEVEN</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatRoundingMode.UNUM_ROUND_HALFDOWN"></span><div class="quickindex" id="quickindex.UNumberFormatRoundingMode.UNUM_ROUND_HALFDOWN"></div><code class="ddoc_psymbol">UNUM_ROUND_HALFDOWN</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatRoundingMode.UNUM_ROUND_HALFUP"></span><div class="quickindex" id="quickindex.UNumberFormatRoundingMode.UNUM_ROUND_HALFUP"></div><code class="ddoc_psymbol">UNUM_ROUND_HALFUP</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatRoundingMode.UNUM_ROUND_UNNECESSARY"></span><div class="quickindex" id="quickindex.UNumberFormatRoundingMode.UNUM_ROUND_UNNECESSARY"></div><code class="ddoc_psymbol">UNUM_ROUND_UNNECESSARY</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatRoundingMode.UNUM_ROUND_HALF_ODD"></span><div class="quickindex" id="quickindex.UNumberFormatRoundingMode.UNUM_ROUND_HALF_ODD"></div><code class="ddoc_psymbol">UNUM_ROUND_HALF_ODD</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatRoundingMode.UNUM_ROUND_HALF_CEILING"></span><div class="quickindex" id="quickindex.UNumberFormatRoundingMode.UNUM_ROUND_HALF_CEILING"></div><code class="ddoc_psymbol">UNUM_ROUND_HALF_CEILING</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatRoundingMode.UNUM_ROUND_HALF_FLOOR"></span><div class="quickindex" id="quickindex.UNumberFormatRoundingMode.UNUM_ROUND_HALF_FLOOR"></div><code class="ddoc_psymbol">UNUM_ROUND_HALF_FLOOR</code><br></div></dt>
+<dd>
+</dd>
+</div></dl>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatPadPosition"></span><div class="quickindex" id="quickindex.UNumberFormatPadPosition"></div>enum <code class="ddoc_psymbol">UNumberFormatPadPosition</code>: <span class="ddoc_enum_basetype">int</span>;
+<br></div></dt>
+<dd>
+<dl class="ddoc_members"><div class="ddoc_enum_members"><dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatPadPosition.UNUM_PAD_BEFORE_PREFIX"></span><div class="quickindex" id="quickindex.UNumberFormatPadPosition.UNUM_PAD_BEFORE_PREFIX"></div><code class="ddoc_psymbol">UNUM_PAD_BEFORE_PREFIX</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatPadPosition.UNUM_PAD_AFTER_PREFIX"></span><div class="quickindex" id="quickindex.UNumberFormatPadPosition.UNUM_PAD_AFTER_PREFIX"></div><code class="ddoc_psymbol">UNUM_PAD_AFTER_PREFIX</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatPadPosition.UNUM_PAD_BEFORE_SUFFIX"></span><div class="quickindex" id="quickindex.UNumberFormatPadPosition.UNUM_PAD_BEFORE_SUFFIX"></div><code class="ddoc_psymbol">UNUM_PAD_BEFORE_SUFFIX</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatPadPosition.UNUM_PAD_AFTER_SUFFIX"></span><div class="quickindex" id="quickindex.UNumberFormatPadPosition.UNUM_PAD_AFTER_SUFFIX"></div><code class="ddoc_psymbol">UNUM_PAD_AFTER_SUFFIX</code><br></div></dt>
+<dd>
+</dd>
+</div></dl>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberCompactStyle"></span><div class="quickindex" id="quickindex.UNumberCompactStyle"></div>enum <code class="ddoc_psymbol">UNumberCompactStyle</code>: <span class="ddoc_enum_basetype">int</span>;
+<br></div></dt>
+<dd>
+<dl class="ddoc_members"><div class="ddoc_enum_members"><dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberCompactStyle.UNUM_SHORT"></span><div class="quickindex" id="quickindex.UNumberCompactStyle.UNUM_SHORT"></div><code class="ddoc_psymbol">UNUM_SHORT</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberCompactStyle.UNUM_LONG"></span><div class="quickindex" id="quickindex.UNumberCompactStyle.UNUM_LONG"></div><code class="ddoc_psymbol">UNUM_LONG</code><br></div></dt>
+<dd>
+</dd>
+</div></dl>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UCurrencySpacing"></span><div class="quickindex" id="quickindex.UCurrencySpacing"></div>enum <code class="ddoc_psymbol">UCurrencySpacing</code>: <span class="ddoc_enum_basetype">int</span>;
+<br></div></dt>
+<dd>
+<dl class="ddoc_members"><div class="ddoc_enum_members"><dt class="ddoc_decl"><div ><span class="def-anchor" id=".UCurrencySpacing.UNUM_CURRENCY_MATCH"></span><div class="quickindex" id="quickindex.UCurrencySpacing.UNUM_CURRENCY_MATCH"></div><code class="ddoc_psymbol">UNUM_CURRENCY_MATCH</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UCurrencySpacing.UNUM_CURRENCY_SURROUNDING_MATCH"></span><div class="quickindex" id="quickindex.UCurrencySpacing.UNUM_CURRENCY_SURROUNDING_MATCH"></div><code class="ddoc_psymbol">UNUM_CURRENCY_SURROUNDING_MATCH</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UCurrencySpacing.UNUM_CURRENCY_INSERT"></span><div class="quickindex" id="quickindex.UCurrencySpacing.UNUM_CURRENCY_INSERT"></div><code class="ddoc_psymbol">UNUM_CURRENCY_INSERT</code><br></div></dt>
+<dd>
+</dd>
+</div></dl>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatFields"></span><div class="quickindex" id="quickindex.UNumberFormatFields"></div>enum <code class="ddoc_psymbol">UNumberFormatFields</code>: <span class="ddoc_enum_basetype">int</span>;
+<br></div></dt>
+<dd>
+<dl class="ddoc_members"><div class="ddoc_enum_members"><dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatFields.UNUM_INTEGER_FIELD"></span><div class="quickindex" id="quickindex.UNumberFormatFields.UNUM_INTEGER_FIELD"></div><code class="ddoc_psymbol">UNUM_INTEGER_FIELD</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatFields.UNUM_FRACTION_FIELD"></span><div class="quickindex" id="quickindex.UNumberFormatFields.UNUM_FRACTION_FIELD"></div><code class="ddoc_psymbol">UNUM_FRACTION_FIELD</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatFields.UNUM_DECIMAL_SEPARATOR_FIELD"></span><div class="quickindex" id="quickindex.UNumberFormatFields.UNUM_DECIMAL_SEPARATOR_FIELD"></div><code class="ddoc_psymbol">UNUM_DECIMAL_SEPARATOR_FIELD</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatFields.UNUM_EXPONENT_SYMBOL_FIELD"></span><div class="quickindex" id="quickindex.UNumberFormatFields.UNUM_EXPONENT_SYMBOL_FIELD"></div><code class="ddoc_psymbol">UNUM_EXPONENT_SYMBOL_FIELD</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatFields.UNUM_EXPONENT_SIGN_FIELD"></span><div class="quickindex" id="quickindex.UNumberFormatFields.UNUM_EXPONENT_SIGN_FIELD"></div><code class="ddoc_psymbol">UNUM_EXPONENT_SIGN_FIELD</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatFields.UNUM_EXPONENT_FIELD"></span><div class="quickindex" id="quickindex.UNumberFormatFields.UNUM_EXPONENT_FIELD"></div><code class="ddoc_psymbol">UNUM_EXPONENT_FIELD</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatFields.UNUM_GROUPING_SEPARATOR_FIELD"></span><div class="quickindex" id="quickindex.UNumberFormatFields.UNUM_GROUPING_SEPARATOR_FIELD"></div><code class="ddoc_psymbol">UNUM_GROUPING_SEPARATOR_FIELD</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatFields.UNUM_CURRENCY_FIELD"></span><div class="quickindex" id="quickindex.UNumberFormatFields.UNUM_CURRENCY_FIELD"></div><code class="ddoc_psymbol">UNUM_CURRENCY_FIELD</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatFields.UNUM_PERCENT_FIELD"></span><div class="quickindex" id="quickindex.UNumberFormatFields.UNUM_PERCENT_FIELD"></div><code class="ddoc_psymbol">UNUM_PERCENT_FIELD</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatFields.UNUM_PERMILL_FIELD"></span><div class="quickindex" id="quickindex.UNumberFormatFields.UNUM_PERMILL_FIELD"></div><code class="ddoc_psymbol">UNUM_PERMILL_FIELD</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatFields.UNUM_SIGN_FIELD"></span><div class="quickindex" id="quickindex.UNumberFormatFields.UNUM_SIGN_FIELD"></div><code class="ddoc_psymbol">UNUM_SIGN_FIELD</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatFields.UNUM_MEASURE_UNIT_FIELD"></span><div class="quickindex" id="quickindex.UNumberFormatFields.UNUM_MEASURE_UNIT_FIELD"></div><code class="ddoc_psymbol">UNUM_MEASURE_UNIT_FIELD</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatFields.UNUM_COMPACT_FIELD"></span><div class="quickindex" id="quickindex.UNumberFormatFields.UNUM_COMPACT_FIELD"></div><code class="ddoc_psymbol">UNUM_COMPACT_FIELD</code><br></div></dt>
+<dd>
+</dd>
+</div></dl>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatMinimumGroupingDigits"></span><div class="quickindex" id="quickindex.UNumberFormatMinimumGroupingDigits"></div>enum <code class="ddoc_psymbol">UNumberFormatMinimumGroupingDigits</code>: <span class="ddoc_enum_basetype">int</span>;
+<br></div></dt>
+<dd>
+<dl class="ddoc_members"><div class="ddoc_enum_members"><dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatMinimumGroupingDigits.UNUM_MINIMUM_GROUPING_DIGITS_AUTO"></span><div class="quickindex" id="quickindex.UNumberFormatMinimumGroupingDigits.UNUM_MINIMUM_GROUPING_DIGITS_AUTO"></div><code class="ddoc_psymbol">UNUM_MINIMUM_GROUPING_DIGITS_AUTO</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatMinimumGroupingDigits.UNUM_MINIMUM_GROUPING_DIGITS_MIN2"></span><div class="quickindex" id="quickindex.UNumberFormatMinimumGroupingDigits.UNUM_MINIMUM_GROUPING_DIGITS_MIN2"></div><code class="ddoc_psymbol">UNUM_MINIMUM_GROUPING_DIGITS_MIN2</code><br></div></dt>
+<dd>
+</dd>
+</div></dl>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".unum_open_69"></span><div class="quickindex" id="quickindex.unum_open_69"></div>UNumberFormat* <code class="ddoc_psymbol">unum_open_69</code>(UNumberFormatStyle <span class="ddoc_param">style</span>, const(UChar)* <span class="ddoc_param">pattern</span>, int <span class="ddoc_param">patternLength</span>, const(char)* <span class="ddoc_param">locale</span>, UParseError* <span class="ddoc_param">parseErr</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".unum_close_69"></span><div class="quickindex" id="quickindex.unum_close_69"></div>void <code class="ddoc_psymbol">unum_close_69</code>(UNumberFormat* <span class="ddoc_param">fmt</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".unum_clone_69"></span><div class="quickindex" id="quickindex.unum_clone_69"></div>UNumberFormat* <code class="ddoc_psymbol">unum_clone_69</code>(const(UNumberFormat)* <span class="ddoc_param">fmt</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".unum_format_69"></span><div class="quickindex" id="quickindex.unum_format_69"></div>int <code class="ddoc_psymbol">unum_format_69</code>(const(UNumberFormat)* <span class="ddoc_param">fmt</span>, int <span class="ddoc_param">number</span>, UChar* <span class="ddoc_param">result</span>, int <span class="ddoc_param">resultLength</span>, UFieldPosition* <span class="ddoc_param">pos</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".unum_formatInt64_69"></span><div class="quickindex" id="quickindex.unum_formatInt64_69"></div>int <code class="ddoc_psymbol">unum_formatInt64_69</code>(const(UNumberFormat)* <span class="ddoc_param">fmt</span>, long <span class="ddoc_param">number</span>, UChar* <span class="ddoc_param">result</span>, int <span class="ddoc_param">resultLength</span>, UFieldPosition* <span class="ddoc_param">pos</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".unum_formatDouble_69"></span><div class="quickindex" id="quickindex.unum_formatDouble_69"></div>int <code class="ddoc_psymbol">unum_formatDouble_69</code>(const(UNumberFormat)* <span class="ddoc_param">fmt</span>, double <span class="ddoc_param">number</span>, UChar* <span class="ddoc_param">result</span>, int <span class="ddoc_param">resultLength</span>, UFieldPosition* <span class="ddoc_param">pos</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".unum_formatDoubleForFields_69"></span><div class="quickindex" id="quickindex.unum_formatDoubleForFields_69"></div>int <code class="ddoc_psymbol">unum_formatDoubleForFields_69</code>(const(UNumberFormat)* <span class="ddoc_param">format</span>, double <span class="ddoc_param">number</span>, UChar* <span class="ddoc_param">result</span>, int <span class="ddoc_param">resultLength</span>, UFieldPositionIterator* <span class="ddoc_param">fpositer</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".unum_formatDecimal_69"></span><div class="quickindex" id="quickindex.unum_formatDecimal_69"></div>int <code class="ddoc_psymbol">unum_formatDecimal_69</code>(const(UNumberFormat)* <span class="ddoc_param">fmt</span>, const(char)* <span class="ddoc_param">number</span>, int <span class="ddoc_param">length</span>, UChar* <span class="ddoc_param">result</span>, int <span class="ddoc_param">resultLength</span>, UFieldPosition* <span class="ddoc_param">pos</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".unum_formatDoubleCurrency_69"></span><div class="quickindex" id="quickindex.unum_formatDoubleCurrency_69"></div>int <code class="ddoc_psymbol">unum_formatDoubleCurrency_69</code>(const(UNumberFormat)* <span class="ddoc_param">fmt</span>, double <span class="ddoc_param">number</span>, UChar* <span class="ddoc_param">currency</span>, UChar* <span class="ddoc_param">result</span>, int <span class="ddoc_param">resultLength</span>, UFieldPosition* <span class="ddoc_param">pos</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".unum_formatUFormattable_69"></span><div class="quickindex" id="quickindex.unum_formatUFormattable_69"></div>int <code class="ddoc_psymbol">unum_formatUFormattable_69</code>(const(UNumberFormat)* <span class="ddoc_param">fmt</span>, const(UFormattable)* <span class="ddoc_param">number</span>, UChar* <span class="ddoc_param">result</span>, int <span class="ddoc_param">resultLength</span>, UFieldPosition* <span class="ddoc_param">pos</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".unum_parse_69"></span><div class="quickindex" id="quickindex.unum_parse_69"></div>int <code class="ddoc_psymbol">unum_parse_69</code>(const(UNumberFormat)* <span class="ddoc_param">fmt</span>, const(UChar)* <span class="ddoc_param">text</span>, int <span class="ddoc_param">textLength</span>, int* <span class="ddoc_param">parsePos</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".unum_parseInt64_69"></span><div class="quickindex" id="quickindex.unum_parseInt64_69"></div>long <code class="ddoc_psymbol">unum_parseInt64_69</code>(const(UNumberFormat)* <span class="ddoc_param">fmt</span>, const(UChar)* <span class="ddoc_param">text</span>, int <span class="ddoc_param">textLength</span>, int* <span class="ddoc_param">parsePos</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".unum_parseDouble_69"></span><div class="quickindex" id="quickindex.unum_parseDouble_69"></div>double <code class="ddoc_psymbol">unum_parseDouble_69</code>(const(UNumberFormat)* <span class="ddoc_param">fmt</span>, const(UChar)* <span class="ddoc_param">text</span>, int <span class="ddoc_param">textLength</span>, int* <span class="ddoc_param">parsePos</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".unum_parseDecimal_69"></span><div class="quickindex" id="quickindex.unum_parseDecimal_69"></div>int <code class="ddoc_psymbol">unum_parseDecimal_69</code>(const(UNumberFormat)* <span class="ddoc_param">fmt</span>, const(UChar)* <span class="ddoc_param">text</span>, int <span class="ddoc_param">textLength</span>, int* <span class="ddoc_param">parsePos</span>, char* <span class="ddoc_param">outBuf</span>, int <span class="ddoc_param">outBufLength</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".unum_parseDoubleCurrency_69"></span><div class="quickindex" id="quickindex.unum_parseDoubleCurrency_69"></div>double <code class="ddoc_psymbol">unum_parseDoubleCurrency_69</code>(const(UNumberFormat)* <span class="ddoc_param">fmt</span>, const(UChar)* <span class="ddoc_param">text</span>, int <span class="ddoc_param">textLength</span>, int* <span class="ddoc_param">parsePos</span>, UChar* <span class="ddoc_param">currency</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".unum_parseToUFormattable_69"></span><div class="quickindex" id="quickindex.unum_parseToUFormattable_69"></div>UFormattable* <code class="ddoc_psymbol">unum_parseToUFormattable_69</code>(const(UNumberFormat)* <span class="ddoc_param">fmt</span>, UFormattable* <span class="ddoc_param">result</span>, const(UChar)* <span class="ddoc_param">text</span>, int <span class="ddoc_param">textLength</span>, int* <span class="ddoc_param">parsePos</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".unum_applyPattern_69"></span><div class="quickindex" id="quickindex.unum_applyPattern_69"></div>void <code class="ddoc_psymbol">unum_applyPattern_69</code>(UNumberFormat* <span class="ddoc_param">format</span>, UBool <span class="ddoc_param">localized</span>, const(UChar)* <span class="ddoc_param">pattern</span>, int <span class="ddoc_param">patternLength</span>, UParseError* <span class="ddoc_param">parseError</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".unum_getAvailable_69"></span><div class="quickindex" id="quickindex.unum_getAvailable_69"></div>const(char)* <code class="ddoc_psymbol">unum_getAvailable_69</code>(int <span class="ddoc_param">localeIndex</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".unum_countAvailable_69"></span><div class="quickindex" id="quickindex.unum_countAvailable_69"></div>int <code class="ddoc_psymbol">unum_countAvailable_69</code>();
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatAttribute"></span><div class="quickindex" id="quickindex.UNumberFormatAttribute"></div>enum <code class="ddoc_psymbol">UNumberFormatAttribute</code>: <span class="ddoc_enum_basetype">int</span>;
+<br></div></dt>
+<dd>
+<dl class="ddoc_members"><div class="ddoc_enum_members"><dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatAttribute.UNUM_PARSE_INT_ONLY"></span><div class="quickindex" id="quickindex.UNumberFormatAttribute.UNUM_PARSE_INT_ONLY"></div><code class="ddoc_psymbol">UNUM_PARSE_INT_ONLY</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatAttribute.UNUM_GROUPING_USED"></span><div class="quickindex" id="quickindex.UNumberFormatAttribute.UNUM_GROUPING_USED"></div><code class="ddoc_psymbol">UNUM_GROUPING_USED</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatAttribute.UNUM_DECIMAL_ALWAYS_SHOWN"></span><div class="quickindex" id="quickindex.UNumberFormatAttribute.UNUM_DECIMAL_ALWAYS_SHOWN"></div><code class="ddoc_psymbol">UNUM_DECIMAL_ALWAYS_SHOWN</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatAttribute.UNUM_MAX_INTEGER_DIGITS"></span><div class="quickindex" id="quickindex.UNumberFormatAttribute.UNUM_MAX_INTEGER_DIGITS"></div><code class="ddoc_psymbol">UNUM_MAX_INTEGER_DIGITS</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatAttribute.UNUM_MIN_INTEGER_DIGITS"></span><div class="quickindex" id="quickindex.UNumberFormatAttribute.UNUM_MIN_INTEGER_DIGITS"></div><code class="ddoc_psymbol">UNUM_MIN_INTEGER_DIGITS</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatAttribute.UNUM_INTEGER_DIGITS"></span><div class="quickindex" id="quickindex.UNumberFormatAttribute.UNUM_INTEGER_DIGITS"></div><code class="ddoc_psymbol">UNUM_INTEGER_DIGITS</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatAttribute.UNUM_MAX_FRACTION_DIGITS"></span><div class="quickindex" id="quickindex.UNumberFormatAttribute.UNUM_MAX_FRACTION_DIGITS"></div><code class="ddoc_psymbol">UNUM_MAX_FRACTION_DIGITS</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatAttribute.UNUM_MIN_FRACTION_DIGITS"></span><div class="quickindex" id="quickindex.UNumberFormatAttribute.UNUM_MIN_FRACTION_DIGITS"></div><code class="ddoc_psymbol">UNUM_MIN_FRACTION_DIGITS</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatAttribute.UNUM_FRACTION_DIGITS"></span><div class="quickindex" id="quickindex.UNumberFormatAttribute.UNUM_FRACTION_DIGITS"></div><code class="ddoc_psymbol">UNUM_FRACTION_DIGITS</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatAttribute.UNUM_MULTIPLIER"></span><div class="quickindex" id="quickindex.UNumberFormatAttribute.UNUM_MULTIPLIER"></div><code class="ddoc_psymbol">UNUM_MULTIPLIER</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatAttribute.UNUM_GROUPING_SIZE"></span><div class="quickindex" id="quickindex.UNumberFormatAttribute.UNUM_GROUPING_SIZE"></div><code class="ddoc_psymbol">UNUM_GROUPING_SIZE</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatAttribute.UNUM_ROUNDING_MODE"></span><div class="quickindex" id="quickindex.UNumberFormatAttribute.UNUM_ROUNDING_MODE"></div><code class="ddoc_psymbol">UNUM_ROUNDING_MODE</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatAttribute.UNUM_ROUNDING_INCREMENT"></span><div class="quickindex" id="quickindex.UNumberFormatAttribute.UNUM_ROUNDING_INCREMENT"></div><code class="ddoc_psymbol">UNUM_ROUNDING_INCREMENT</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatAttribute.UNUM_FORMAT_WIDTH"></span><div class="quickindex" id="quickindex.UNumberFormatAttribute.UNUM_FORMAT_WIDTH"></div><code class="ddoc_psymbol">UNUM_FORMAT_WIDTH</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatAttribute.UNUM_PADDING_POSITION"></span><div class="quickindex" id="quickindex.UNumberFormatAttribute.UNUM_PADDING_POSITION"></div><code class="ddoc_psymbol">UNUM_PADDING_POSITION</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatAttribute.UNUM_SECONDARY_GROUPING_SIZE"></span><div class="quickindex" id="quickindex.UNumberFormatAttribute.UNUM_SECONDARY_GROUPING_SIZE"></div><code class="ddoc_psymbol">UNUM_SECONDARY_GROUPING_SIZE</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatAttribute.UNUM_SIGNIFICANT_DIGITS_USED"></span><div class="quickindex" id="quickindex.UNumberFormatAttribute.UNUM_SIGNIFICANT_DIGITS_USED"></div><code class="ddoc_psymbol">UNUM_SIGNIFICANT_DIGITS_USED</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatAttribute.UNUM_MIN_SIGNIFICANT_DIGITS"></span><div class="quickindex" id="quickindex.UNumberFormatAttribute.UNUM_MIN_SIGNIFICANT_DIGITS"></div><code class="ddoc_psymbol">UNUM_MIN_SIGNIFICANT_DIGITS</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatAttribute.UNUM_MAX_SIGNIFICANT_DIGITS"></span><div class="quickindex" id="quickindex.UNumberFormatAttribute.UNUM_MAX_SIGNIFICANT_DIGITS"></div><code class="ddoc_psymbol">UNUM_MAX_SIGNIFICANT_DIGITS</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatAttribute.UNUM_LENIENT_PARSE"></span><div class="quickindex" id="quickindex.UNumberFormatAttribute.UNUM_LENIENT_PARSE"></div><code class="ddoc_psymbol">UNUM_LENIENT_PARSE</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatAttribute.UNUM_SCALE"></span><div class="quickindex" id="quickindex.UNumberFormatAttribute.UNUM_SCALE"></div><code class="ddoc_psymbol">UNUM_SCALE</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatAttribute.UNUM_MINIMUM_GROUPING_DIGITS"></span><div class="quickindex" id="quickindex.UNumberFormatAttribute.UNUM_MINIMUM_GROUPING_DIGITS"></div><code class="ddoc_psymbol">UNUM_MINIMUM_GROUPING_DIGITS</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatAttribute.UNUM_CURRENCY_USAGE"></span><div class="quickindex" id="quickindex.UNumberFormatAttribute.UNUM_CURRENCY_USAGE"></div><code class="ddoc_psymbol">UNUM_CURRENCY_USAGE</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatAttribute.UNUM_FORMAT_FAIL_IF_MORE_THAN_MAX_DIGITS"></span><div class="quickindex" id="quickindex.UNumberFormatAttribute.UNUM_FORMAT_FAIL_IF_MORE_THAN_MAX_DIGITS"></div><code class="ddoc_psymbol">UNUM_FORMAT_FAIL_IF_MORE_THAN_MAX_DIGITS</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatAttribute.UNUM_PARSE_NO_EXPONENT"></span><div class="quickindex" id="quickindex.UNumberFormatAttribute.UNUM_PARSE_NO_EXPONENT"></div><code class="ddoc_psymbol">UNUM_PARSE_NO_EXPONENT</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatAttribute.UNUM_PARSE_DECIMAL_MARK_REQUIRED"></span><div class="quickindex" id="quickindex.UNumberFormatAttribute.UNUM_PARSE_DECIMAL_MARK_REQUIRED"></div><code class="ddoc_psymbol">UNUM_PARSE_DECIMAL_MARK_REQUIRED</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatAttribute.UNUM_PARSE_CASE_SENSITIVE"></span><div class="quickindex" id="quickindex.UNumberFormatAttribute.UNUM_PARSE_CASE_SENSITIVE"></div><code class="ddoc_psymbol">UNUM_PARSE_CASE_SENSITIVE</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatAttribute.UNUM_SIGN_ALWAYS_SHOWN"></span><div class="quickindex" id="quickindex.UNumberFormatAttribute.UNUM_SIGN_ALWAYS_SHOWN"></div><code class="ddoc_psymbol">UNUM_SIGN_ALWAYS_SHOWN</code><br></div></dt>
+<dd>
+</dd>
+</div></dl>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".unum_getAttribute_69"></span><div class="quickindex" id="quickindex.unum_getAttribute_69"></div>int <code class="ddoc_psymbol">unum_getAttribute_69</code>(const(UNumberFormat)* <span class="ddoc_param">fmt</span>, UNumberFormatAttribute <span class="ddoc_param">attr</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".unum_setAttribute_69"></span><div class="quickindex" id="quickindex.unum_setAttribute_69"></div>void <code class="ddoc_psymbol">unum_setAttribute_69</code>(UNumberFormat* <span class="ddoc_param">fmt</span>, UNumberFormatAttribute <span class="ddoc_param">attr</span>, int <span class="ddoc_param">newValue</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".unum_getDoubleAttribute_69"></span><div class="quickindex" id="quickindex.unum_getDoubleAttribute_69"></div>double <code class="ddoc_psymbol">unum_getDoubleAttribute_69</code>(const(UNumberFormat)* <span class="ddoc_param">fmt</span>, UNumberFormatAttribute <span class="ddoc_param">attr</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".unum_setDoubleAttribute_69"></span><div class="quickindex" id="quickindex.unum_setDoubleAttribute_69"></div>void <code class="ddoc_psymbol">unum_setDoubleAttribute_69</code>(UNumberFormat* <span class="ddoc_param">fmt</span>, UNumberFormatAttribute <span class="ddoc_param">attr</span>, double <span class="ddoc_param">newValue</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatTextAttribute"></span><div class="quickindex" id="quickindex.UNumberFormatTextAttribute"></div>enum <code class="ddoc_psymbol">UNumberFormatTextAttribute</code>: <span class="ddoc_enum_basetype">int</span>;
+<br></div></dt>
+<dd>
+<dl class="ddoc_members"><div class="ddoc_enum_members"><dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatTextAttribute.UNUM_POSITIVE_PREFIX"></span><div class="quickindex" id="quickindex.UNumberFormatTextAttribute.UNUM_POSITIVE_PREFIX"></div><code class="ddoc_psymbol">UNUM_POSITIVE_PREFIX</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatTextAttribute.UNUM_POSITIVE_SUFFIX"></span><div class="quickindex" id="quickindex.UNumberFormatTextAttribute.UNUM_POSITIVE_SUFFIX"></div><code class="ddoc_psymbol">UNUM_POSITIVE_SUFFIX</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatTextAttribute.UNUM_NEGATIVE_PREFIX"></span><div class="quickindex" id="quickindex.UNumberFormatTextAttribute.UNUM_NEGATIVE_PREFIX"></div><code class="ddoc_psymbol">UNUM_NEGATIVE_PREFIX</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatTextAttribute.UNUM_NEGATIVE_SUFFIX"></span><div class="quickindex" id="quickindex.UNumberFormatTextAttribute.UNUM_NEGATIVE_SUFFIX"></div><code class="ddoc_psymbol">UNUM_NEGATIVE_SUFFIX</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatTextAttribute.UNUM_PADDING_CHARACTER"></span><div class="quickindex" id="quickindex.UNumberFormatTextAttribute.UNUM_PADDING_CHARACTER"></div><code class="ddoc_psymbol">UNUM_PADDING_CHARACTER</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatTextAttribute.UNUM_CURRENCY_CODE"></span><div class="quickindex" id="quickindex.UNumberFormatTextAttribute.UNUM_CURRENCY_CODE"></div><code class="ddoc_psymbol">UNUM_CURRENCY_CODE</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatTextAttribute.UNUM_DEFAULT_RULESET"></span><div class="quickindex" id="quickindex.UNumberFormatTextAttribute.UNUM_DEFAULT_RULESET"></div><code class="ddoc_psymbol">UNUM_DEFAULT_RULESET</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatTextAttribute.UNUM_PUBLIC_RULESETS"></span><div class="quickindex" id="quickindex.UNumberFormatTextAttribute.UNUM_PUBLIC_RULESETS"></div><code class="ddoc_psymbol">UNUM_PUBLIC_RULESETS</code><br></div></dt>
+<dd>
+</dd>
+</div></dl>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".unum_getTextAttribute_69"></span><div class="quickindex" id="quickindex.unum_getTextAttribute_69"></div>int <code class="ddoc_psymbol">unum_getTextAttribute_69</code>(const(UNumberFormat)* <span class="ddoc_param">fmt</span>, UNumberFormatTextAttribute <span class="ddoc_param">tag</span>, UChar* <span class="ddoc_param">result</span>, int <span class="ddoc_param">resultLength</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".unum_setTextAttribute_69"></span><div class="quickindex" id="quickindex.unum_setTextAttribute_69"></div>void <code class="ddoc_psymbol">unum_setTextAttribute_69</code>(UNumberFormat* <span class="ddoc_param">fmt</span>, UNumberFormatTextAttribute <span class="ddoc_param">tag</span>, const(UChar)* <span class="ddoc_param">newValue</span>, int <span class="ddoc_param">newValueLength</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".unum_toPattern_69"></span><div class="quickindex" id="quickindex.unum_toPattern_69"></div>int <code class="ddoc_psymbol">unum_toPattern_69</code>(const(UNumberFormat)* <span class="ddoc_param">fmt</span>, UBool <span class="ddoc_param">isPatternLocalized</span>, UChar* <span class="ddoc_param">result</span>, int <span class="ddoc_param">resultLength</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatSymbol"></span><div class="quickindex" id="quickindex.UNumberFormatSymbol"></div>enum <code class="ddoc_psymbol">UNumberFormatSymbol</code>: <span class="ddoc_enum_basetype">int</span>;
+<br></div></dt>
+<dd>
+<dl class="ddoc_members"><div class="ddoc_enum_members"><dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatSymbol.UNUM_DECIMAL_SEPARATOR_SYMBOL"></span><div class="quickindex" id="quickindex.UNumberFormatSymbol.UNUM_DECIMAL_SEPARATOR_SYMBOL"></div><code class="ddoc_psymbol">UNUM_DECIMAL_SEPARATOR_SYMBOL</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatSymbol.UNUM_GROUPING_SEPARATOR_SYMBOL"></span><div class="quickindex" id="quickindex.UNumberFormatSymbol.UNUM_GROUPING_SEPARATOR_SYMBOL"></div><code class="ddoc_psymbol">UNUM_GROUPING_SEPARATOR_SYMBOL</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatSymbol.UNUM_PATTERN_SEPARATOR_SYMBOL"></span><div class="quickindex" id="quickindex.UNumberFormatSymbol.UNUM_PATTERN_SEPARATOR_SYMBOL"></div><code class="ddoc_psymbol">UNUM_PATTERN_SEPARATOR_SYMBOL</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatSymbol.UNUM_PERCENT_SYMBOL"></span><div class="quickindex" id="quickindex.UNumberFormatSymbol.UNUM_PERCENT_SYMBOL"></div><code class="ddoc_psymbol">UNUM_PERCENT_SYMBOL</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatSymbol.UNUM_ZERO_DIGIT_SYMBOL"></span><div class="quickindex" id="quickindex.UNumberFormatSymbol.UNUM_ZERO_DIGIT_SYMBOL"></div><code class="ddoc_psymbol">UNUM_ZERO_DIGIT_SYMBOL</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatSymbol.UNUM_DIGIT_SYMBOL"></span><div class="quickindex" id="quickindex.UNumberFormatSymbol.UNUM_DIGIT_SYMBOL"></div><code class="ddoc_psymbol">UNUM_DIGIT_SYMBOL</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatSymbol.UNUM_MINUS_SIGN_SYMBOL"></span><div class="quickindex" id="quickindex.UNumberFormatSymbol.UNUM_MINUS_SIGN_SYMBOL"></div><code class="ddoc_psymbol">UNUM_MINUS_SIGN_SYMBOL</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatSymbol.UNUM_PLUS_SIGN_SYMBOL"></span><div class="quickindex" id="quickindex.UNumberFormatSymbol.UNUM_PLUS_SIGN_SYMBOL"></div><code class="ddoc_psymbol">UNUM_PLUS_SIGN_SYMBOL</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatSymbol.UNUM_CURRENCY_SYMBOL"></span><div class="quickindex" id="quickindex.UNumberFormatSymbol.UNUM_CURRENCY_SYMBOL"></div><code class="ddoc_psymbol">UNUM_CURRENCY_SYMBOL</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatSymbol.UNUM_INTL_CURRENCY_SYMBOL"></span><div class="quickindex" id="quickindex.UNumberFormatSymbol.UNUM_INTL_CURRENCY_SYMBOL"></div><code class="ddoc_psymbol">UNUM_INTL_CURRENCY_SYMBOL</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatSymbol.UNUM_MONETARY_SEPARATOR_SYMBOL"></span><div class="quickindex" id="quickindex.UNumberFormatSymbol.UNUM_MONETARY_SEPARATOR_SYMBOL"></div><code class="ddoc_psymbol">UNUM_MONETARY_SEPARATOR_SYMBOL</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatSymbol.UNUM_EXPONENTIAL_SYMBOL"></span><div class="quickindex" id="quickindex.UNumberFormatSymbol.UNUM_EXPONENTIAL_SYMBOL"></div><code class="ddoc_psymbol">UNUM_EXPONENTIAL_SYMBOL</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatSymbol.UNUM_PERMILL_SYMBOL"></span><div class="quickindex" id="quickindex.UNumberFormatSymbol.UNUM_PERMILL_SYMBOL"></div><code class="ddoc_psymbol">UNUM_PERMILL_SYMBOL</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatSymbol.UNUM_PAD_ESCAPE_SYMBOL"></span><div class="quickindex" id="quickindex.UNumberFormatSymbol.UNUM_PAD_ESCAPE_SYMBOL"></div><code class="ddoc_psymbol">UNUM_PAD_ESCAPE_SYMBOL</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatSymbol.UNUM_INFINITY_SYMBOL"></span><div class="quickindex" id="quickindex.UNumberFormatSymbol.UNUM_INFINITY_SYMBOL"></div><code class="ddoc_psymbol">UNUM_INFINITY_SYMBOL</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatSymbol.UNUM_NAN_SYMBOL"></span><div class="quickindex" id="quickindex.UNumberFormatSymbol.UNUM_NAN_SYMBOL"></div><code class="ddoc_psymbol">UNUM_NAN_SYMBOL</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatSymbol.UNUM_SIGNIFICANT_DIGIT_SYMBOL"></span><div class="quickindex" id="quickindex.UNumberFormatSymbol.UNUM_SIGNIFICANT_DIGIT_SYMBOL"></div><code class="ddoc_psymbol">UNUM_SIGNIFICANT_DIGIT_SYMBOL</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatSymbol.UNUM_MONETARY_GROUPING_SEPARATOR_SYMBOL"></span><div class="quickindex" id="quickindex.UNumberFormatSymbol.UNUM_MONETARY_GROUPING_SEPARATOR_SYMBOL"></div><code class="ddoc_psymbol">UNUM_MONETARY_GROUPING_SEPARATOR_SYMBOL</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatSymbol.UNUM_ONE_DIGIT_SYMBOL"></span><div class="quickindex" id="quickindex.UNumberFormatSymbol.UNUM_ONE_DIGIT_SYMBOL"></div><code class="ddoc_psymbol">UNUM_ONE_DIGIT_SYMBOL</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatSymbol.UNUM_TWO_DIGIT_SYMBOL"></span><div class="quickindex" id="quickindex.UNumberFormatSymbol.UNUM_TWO_DIGIT_SYMBOL"></div><code class="ddoc_psymbol">UNUM_TWO_DIGIT_SYMBOL</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatSymbol.UNUM_THREE_DIGIT_SYMBOL"></span><div class="quickindex" id="quickindex.UNumberFormatSymbol.UNUM_THREE_DIGIT_SYMBOL"></div><code class="ddoc_psymbol">UNUM_THREE_DIGIT_SYMBOL</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatSymbol.UNUM_FOUR_DIGIT_SYMBOL"></span><div class="quickindex" id="quickindex.UNumberFormatSymbol.UNUM_FOUR_DIGIT_SYMBOL"></div><code class="ddoc_psymbol">UNUM_FOUR_DIGIT_SYMBOL</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatSymbol.UNUM_FIVE_DIGIT_SYMBOL"></span><div class="quickindex" id="quickindex.UNumberFormatSymbol.UNUM_FIVE_DIGIT_SYMBOL"></div><code class="ddoc_psymbol">UNUM_FIVE_DIGIT_SYMBOL</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatSymbol.UNUM_SIX_DIGIT_SYMBOL"></span><div class="quickindex" id="quickindex.UNumberFormatSymbol.UNUM_SIX_DIGIT_SYMBOL"></div><code class="ddoc_psymbol">UNUM_SIX_DIGIT_SYMBOL</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatSymbol.UNUM_SEVEN_DIGIT_SYMBOL"></span><div class="quickindex" id="quickindex.UNumberFormatSymbol.UNUM_SEVEN_DIGIT_SYMBOL"></div><code class="ddoc_psymbol">UNUM_SEVEN_DIGIT_SYMBOL</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatSymbol.UNUM_EIGHT_DIGIT_SYMBOL"></span><div class="quickindex" id="quickindex.UNumberFormatSymbol.UNUM_EIGHT_DIGIT_SYMBOL"></div><code class="ddoc_psymbol">UNUM_EIGHT_DIGIT_SYMBOL</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatSymbol.UNUM_NINE_DIGIT_SYMBOL"></span><div class="quickindex" id="quickindex.UNumberFormatSymbol.UNUM_NINE_DIGIT_SYMBOL"></div><code class="ddoc_psymbol">UNUM_NINE_DIGIT_SYMBOL</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UNumberFormatSymbol.UNUM_EXPONENT_MULTIPLICATION_SYMBOL"></span><div class="quickindex" id="quickindex.UNumberFormatSymbol.UNUM_EXPONENT_MULTIPLICATION_SYMBOL"></div><code class="ddoc_psymbol">UNUM_EXPONENT_MULTIPLICATION_SYMBOL</code><br></div></dt>
+<dd>
+</dd>
+</div></dl>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".unum_getSymbol_69"></span><div class="quickindex" id="quickindex.unum_getSymbol_69"></div>int <code class="ddoc_psymbol">unum_getSymbol_69</code>(const(UNumberFormat)* <span class="ddoc_param">fmt</span>, UNumberFormatSymbol <span class="ddoc_param">symbol</span>, UChar* <span class="ddoc_param">buffer</span>, int <span class="ddoc_param">size</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".unum_setSymbol_69"></span><div class="quickindex" id="quickindex.unum_setSymbol_69"></div>void <code class="ddoc_psymbol">unum_setSymbol_69</code>(UNumberFormat* <span class="ddoc_param">fmt</span>, UNumberFormatSymbol <span class="ddoc_param">symbol</span>, const(UChar)* <span class="ddoc_param">value</span>, int <span class="ddoc_param">length</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".unum_getLocaleByType_69"></span><div class="quickindex" id="quickindex.unum_getLocaleByType_69"></div>const(char)* <code class="ddoc_psymbol">unum_getLocaleByType_69</code>(const(UNumberFormat)* <span class="ddoc_param">fmt</span>, ULocDataLocaleType <span class="ddoc_param">type</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".unum_setContext_69"></span><div class="quickindex" id="quickindex.unum_setContext_69"></div>void <code class="ddoc_psymbol">unum_setContext_69</code>(UNumberFormat* <span class="ddoc_param">fmt</span>, UDisplayContext <span class="ddoc_param">value</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".unum_getContext_69"></span><div class="quickindex" id="quickindex.unum_getContext_69"></div>UDisplayContext <code class="ddoc_psymbol">unum_getContext_69</code>(const(UNumberFormat)* <span class="ddoc_param">fmt</span>, UDisplayContextType <span class="ddoc_param">type</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+</div></dl>
+
+                
+            </div>
+        </div>
+        
+        <script type="text/javascript">jQuery(document).ready(listanchors);</script>
+        
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+     </body>
+</html>

@@ -6,7 +6,7 @@
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <script type="text/javascript" src="js/sidebar.js"></script>
         <script type="text/javascript" src="js/listanchors.js"></script>
-        <title>bindbc.icu</title>
+        <title>bindbc.icu.bindings.parseerr</title>
         
         
     </head>
@@ -121,16 +121,44 @@
 
 </ul>
 </div>
-            <div class="content">                <h1>bindbc.icu</h1>
+            <div class="content">                <h1>bindbc.icu.bindings.parseerr</h1>
                 
                 <div class="quickindex" id="quickindex"></div>
                 
-                <div class="ddoc_summary">bindbc-<code class="ddoc_psymbol">icu</code>
-</div><div class="ddoc_license"><span class="ddoc_license_header">License:</span>
- <a href="http://boost.org/LICENSE_1_0.txt">BSL-1.0</a>.</div>
-<dl class="ddoc_members"><div class="ddoc_module_members"><dt class="ddoc_decl"><div ><span class="def-anchor" id=".bindbc.icu.binddynamic"></span><div class="quickindex" id="quickindex.bindbc.icu.binddynamic"></div>public import <code class="ddoc_psymbol">bindbc.icu.binddynamic</code>;
+                <div class="ddoc_summary"><code class="ddoc_psymbol">parseerr</code>.h
+</div><div class="ddoc_description">C API: Parse Error Information
+
+</div>
+<div class="ddoc_license"><span class="ddoc_license_header">License:</span>
+ <a href="http://boost.org/LICENSE_1_0.txt">BSL-1.0</a>.
+
+</div>
+<div class="ddoc_section_nonstandard"><span class="ddoc_section_nonstandard_header">Documentation:</span>
+<a href="https://unicode-org.github.io/icu-docs/apidoc/dev/icu4c/parseerr_8h.html">https://unicode-org.github.io/icu-docs/apidoc/dev/icu4c/parseerr_8h.html</a></div>
+<dl class="ddoc_members"><div class="ddoc_module_members"><dt class="ddoc_decl"><div ><span class="def-anchor" id=".U_PARSE_CONTEXT_LEN"></span><div class="quickindex" id="quickindex.U_PARSE_CONTEXT_LEN"></div>enum int <code class="ddoc_psymbol">U_PARSE_CONTEXT_LEN</code>;
 <br></div></dt>
 <dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UParseError"></span><div class="quickindex" id="quickindex.UParseError"></div>struct <code class="ddoc_psymbol">UParseError</code>;
+<br></div></dt>
+<dd>
+<dl class="ddoc_members"><div class="ddoc_struct_members"><dt class="ddoc_decl"><div ><span class="def-anchor" id=".UParseError.line"></span><div class="quickindex" id="quickindex.UParseError.line"></div>int <code class="ddoc_psymbol">line</code>;
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UParseError.offset"></span><div class="quickindex" id="quickindex.UParseError.offset"></div>int <code class="ddoc_psymbol">offset</code>;
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UParseError.preContext"></span><div class="quickindex" id="quickindex.UParseError.preContext"></div>UChar[U_PARSE_CONTEXT_LEN] <code class="ddoc_psymbol">preContext</code>;
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UParseError.postContext"></span><div class="quickindex" id="quickindex.UParseError.postContext"></div>UChar[U_PARSE_CONTEXT_LEN] <code class="ddoc_psymbol">postContext</code>;
+<br></div></dt>
+<dd>
+</dd>
+</div></dl>
 </dd>
 </div></dl>
 

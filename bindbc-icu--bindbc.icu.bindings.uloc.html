@@ -1,0 +1,455 @@
+
+<!DOCTYPE html>
+<html>    <head>        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" type="text/css" href="css/proj_docs.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/sidebar.js"></script>
+        <script type="text/javascript" src="js/listanchors.js"></script>
+        <title>bindbc.icu.bindings.uloc</title>
+        
+        
+    </head>
+    <body>        
+        <div class="container">            
+<div class="sidebar-underbar"></div>
+<div class="sidebar">    <div class="head">        <h2>bindbc-icu</h2>
+        <p><span class="smallprint"><b>version:</b> ~master <span class="separator"><br></span>
+            </span>
+        </p>
+        <p><a href="index.html">overview</a></p>
+    </div>
+    
+    <ul>
+
+	
+	
+	
+		<li class="expand-container open"><a class='expand-toggle' href="#"><span >bindbc</span></a><ul>
+			
+	
+		<li class="expand-container open"><a title='bindbc-icu
+		' class='expand-toggle' href='#'><span >icu</span></a><ul><li><a title='bindbc-icu
+		' href="
+			bindbc-icu--bindbc.icu.html"><span >package</span></a></li>
+			
+
+	<li><a title="Common definitions for internal use." href="bindbc-icu--bindbc.icu.bindcommon.html"><span >bindcommon</span></a></li>
+
+
+
+	<li><a title="For dynamic link" href="bindbc-icu--bindbc.icu.binddynamic.html"><span >binddynamic</span></a></li>
+
+
+	
+	
+		<li class="expand-container open"><a class='expand-toggle' href="#"><span >bindings</span></a><ul>
+			
+
+	<li><a title="parseerr.h" href="bindbc-icu--bindbc.icu.bindings.parseerr.html"><span >parseerr</span></a></li>
+
+
+
+	<li><a title="ucnv.h" href="bindbc-icu--bindbc.icu.bindings.ucnv.html"><span >ucnv</span></a></li>
+
+
+
+	<li><a title="ucnv_err.h" href="bindbc-icu--bindbc.icu.bindings.ucnv_err.html"><span >ucnv_err</span></a></li>
+
+
+
+	<li><a title="ucsdet.h" href="bindbc-icu--bindbc.icu.bindings.ucsdet.html"><span >ucsdet</span></a></li>
+
+
+
+	<li><a title="ucurr.h" href="bindbc-icu--bindbc.icu.bindings.ucurr.html"><span >ucurr</span></a></li>
+
+
+
+	<li><a title="udisplaycontext.h" href="bindbc-icu--bindbc.icu.bindings.udisplaycontext.html"><span >udisplaycontext</span></a></li>
+
+
+
+	<li><a title="uenum.h" href="bindbc-icu--bindbc.icu.bindings.uenum.html"><span >uenum</span></a></li>
+
+
+
+	<li><a title="ufieldpositer.h" href="bindbc-icu--bindbc.icu.bindings.ufieldpositer.html"><span >ufieldpositer</span></a></li>
+
+
+
+	<li><a title="uformattable.h" href="bindbc-icu--bindbc.icu.bindings.uformattable.html"><span >uformattable</span></a></li>
+
+
+
+	<li><a title="uloc.h" href="bindbc-icu--bindbc.icu.bindings.uloc.html"><span >uloc</span></a></li>
+
+
+
+	<li><a title="umisc.h" href="bindbc-icu--bindbc.icu.bindings.umisc.html"><span >umisc</span></a></li>
+
+
+
+	<li><a title="unum.h" href="bindbc-icu--bindbc.icu.bindings.unum.html"><span >unum</span></a></li>
+
+
+
+	<li><a title="utypes.h" href="bindbc-icu--bindbc.icu.bindings.utypes.html"><span >utypes</span></a></li>
+
+
+		</ul></li>
+	
+
+
+
+
+
+	<li><a title="For static link" href="bindbc-icu--bindbc.icu.bindstatic.html"><span >bindstatic</span></a></li>
+
+</ul></li>
+	
+	
+
+
+
+
+		</ul></li>
+	
+
+
+
+
+</ul>
+</div>
+            <div class="content">                <h1>bindbc.icu.bindings.uloc</h1>
+                
+                <div class="quickindex" id="quickindex"></div>
+                
+                <div class="ddoc_summary"><code class="ddoc_psymbol">uloc</code>.h
+</div><div class="ddoc_description">C API: Locale
+
+</div>
+<div class="ddoc_license"><span class="ddoc_license_header">License:</span>
+ <a href="http://boost.org/LICENSE_1_0.txt">BSL-1.0</a>.
+
+</div>
+<div class="ddoc_section_nonstandard"><span class="ddoc_section_nonstandard_header">Documentation:</span>
+<a href="https://unicode-org.github.io/icu-docs/apidoc/dev/icu4c/uloc_8h.html">https://unicode-org.github.io/icu-docs/apidoc/dev/icu4c/uloc_8h.html</a></div>
+<dl class="ddoc_members"><div class="ddoc_module_members"><dt class="ddoc_decl"><div ><span class="def-anchor" id=".ULOC_CHINESE"></span><div class="quickindex" id="quickindex.ULOC_CHINESE"></div>enum string <code class="ddoc_psymbol">ULOC_CHINESE</code>;
+<br>
+<span class="def-anchor" id=".ULOC_ENGLISH"></span><div class="quickindex" id="quickindex.ULOC_ENGLISH"></div>enum string <code class="ddoc_psymbol">ULOC_ENGLISH</code>;
+<br>
+<span class="def-anchor" id=".ULOC_FRENCH"></span><div class="quickindex" id="quickindex.ULOC_FRENCH"></div>enum string <code class="ddoc_psymbol">ULOC_FRENCH</code>;
+<br>
+<span class="def-anchor" id=".ULOC_GERMAN"></span><div class="quickindex" id="quickindex.ULOC_GERMAN"></div>enum string <code class="ddoc_psymbol">ULOC_GERMAN</code>;
+<br>
+<span class="def-anchor" id=".ULOC_ITALIAN"></span><div class="quickindex" id="quickindex.ULOC_ITALIAN"></div>enum string <code class="ddoc_psymbol">ULOC_ITALIAN</code>;
+<br>
+<span class="def-anchor" id=".ULOC_JAPANESE"></span><div class="quickindex" id="quickindex.ULOC_JAPANESE"></div>enum string <code class="ddoc_psymbol">ULOC_JAPANESE</code>;
+<br>
+<span class="def-anchor" id=".ULOC_KOREAN"></span><div class="quickindex" id="quickindex.ULOC_KOREAN"></div>enum string <code class="ddoc_psymbol">ULOC_KOREAN</code>;
+<br>
+<span class="def-anchor" id=".ULOC_SIMPLIFIED_CHINESE"></span><div class="quickindex" id="quickindex.ULOC_SIMPLIFIED_CHINESE"></div>enum string <code class="ddoc_psymbol">ULOC_SIMPLIFIED_CHINESE</code>;
+<br>
+<span class="def-anchor" id=".ULOC_TRADITIONAL_CHINESE"></span><div class="quickindex" id="quickindex.ULOC_TRADITIONAL_CHINESE"></div>enum string <code class="ddoc_psymbol">ULOC_TRADITIONAL_CHINESE</code>;
+<br></div></dt>
+<dd><div class="ddoc_summary">Common language constants</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ULOC_CANADA"></span><div class="quickindex" id="quickindex.ULOC_CANADA"></div>enum string <code class="ddoc_psymbol">ULOC_CANADA</code>;
+<br>
+<span class="def-anchor" id=".ULOC_CANADA_FRENCH"></span><div class="quickindex" id="quickindex.ULOC_CANADA_FRENCH"></div>enum string <code class="ddoc_psymbol">ULOC_CANADA_FRENCH</code>;
+<br>
+<span class="def-anchor" id=".ULOC_CHINA"></span><div class="quickindex" id="quickindex.ULOC_CHINA"></div>enum string <code class="ddoc_psymbol">ULOC_CHINA</code>;
+<br>
+<span class="def-anchor" id=".ULOC_PRC"></span><div class="quickindex" id="quickindex.ULOC_PRC"></div>enum string <code class="ddoc_psymbol">ULOC_PRC</code>;
+<br>
+<span class="def-anchor" id=".ULOC_FRANCE"></span><div class="quickindex" id="quickindex.ULOC_FRANCE"></div>enum string <code class="ddoc_psymbol">ULOC_FRANCE</code>;
+<br>
+<span class="def-anchor" id=".ULOC_GERMANY"></span><div class="quickindex" id="quickindex.ULOC_GERMANY"></div>enum string <code class="ddoc_psymbol">ULOC_GERMANY</code>;
+<br>
+<span class="def-anchor" id=".ULOC_ITALY"></span><div class="quickindex" id="quickindex.ULOC_ITALY"></div>enum string <code class="ddoc_psymbol">ULOC_ITALY</code>;
+<br>
+<span class="def-anchor" id=".ULOC_JAPAN"></span><div class="quickindex" id="quickindex.ULOC_JAPAN"></div>enum string <code class="ddoc_psymbol">ULOC_JAPAN</code>;
+<br>
+<span class="def-anchor" id=".ULOC_KOREA"></span><div class="quickindex" id="quickindex.ULOC_KOREA"></div>enum string <code class="ddoc_psymbol">ULOC_KOREA</code>;
+<br>
+<span class="def-anchor" id=".ULOC_TAIWAN"></span><div class="quickindex" id="quickindex.ULOC_TAIWAN"></div>enum string <code class="ddoc_psymbol">ULOC_TAIWAN</code>;
+<br>
+<span class="def-anchor" id=".ULOC_UK"></span><div class="quickindex" id="quickindex.ULOC_UK"></div>enum string <code class="ddoc_psymbol">ULOC_UK</code>;
+<br>
+<span class="def-anchor" id=".ULOC_US"></span><div class="quickindex" id="quickindex.ULOC_US"></div>enum string <code class="ddoc_psymbol">ULOC_US</code>;
+<br></div></dt>
+<dd><div class="ddoc_summary">Common country/region constants</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ULOC_LANG_CAPACITY"></span><div class="quickindex" id="quickindex.ULOC_LANG_CAPACITY"></div>enum int <code class="ddoc_psymbol">ULOC_LANG_CAPACITY</code>;
+<br></div></dt>
+<dd><div class="ddoc_summary">Maximum size of the language part of a locale ID including the terminating NULL.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ULOC_COUNTRY_CAPACITY"></span><div class="quickindex" id="quickindex.ULOC_COUNTRY_CAPACITY"></div>enum int <code class="ddoc_psymbol">ULOC_COUNTRY_CAPACITY</code>;
+<br></div></dt>
+<dd><div class="ddoc_summary">Maximum size of the country part of a locale ID including the terminating NULL.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ULOC_FULLNAME_CAPACITY"></span><div class="quickindex" id="quickindex.ULOC_FULLNAME_CAPACITY"></div>enum int <code class="ddoc_psymbol">ULOC_FULLNAME_CAPACITY</code>;
+<br></div></dt>
+<dd><div class="ddoc_summary">Maximum size of the whole locale ID including the terminating NULL and keywords.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ULOC_SCRIPT_CAPACITY"></span><div class="quickindex" id="quickindex.ULOC_SCRIPT_CAPACITY"></div>enum int <code class="ddoc_psymbol">ULOC_SCRIPT_CAPACITY</code>;
+<br></div></dt>
+<dd><div class="ddoc_summary">Maximum size of the script part of a locale ID including the terminating NULL.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ULOC_KEYWORDS_CAPACITY"></span><div class="quickindex" id="quickindex.ULOC_KEYWORDS_CAPACITY"></div>enum int <code class="ddoc_psymbol">ULOC_KEYWORDS_CAPACITY</code>;
+<br></div></dt>
+<dd><div class="ddoc_summary">Maximum size of keywords in a locale ID including the terminating NULL.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ULOC_KEYWORD_AND_VALUES_CAPACITY"></span><div class="quickindex" id="quickindex.ULOC_KEYWORD_AND_VALUES_CAPACITY"></div>enum int <code class="ddoc_psymbol">ULOC_KEYWORD_AND_VALUES_CAPACITY</code>;
+<br></div></dt>
+<dd><div class="ddoc_summary">Maximum size of keywords and their values in a locale.</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ULOC_KEYWORD_SEPARATOR"></span><div class="quickindex" id="quickindex.ULOC_KEYWORD_SEPARATOR"></div>enum char <code class="ddoc_psymbol">ULOC_KEYWORD_SEPARATOR</code>;
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ULOC_KEYWORD_SEPARATOR_UNICODE"></span><div class="quickindex" id="quickindex.ULOC_KEYWORD_SEPARATOR_UNICODE"></div>enum int <code class="ddoc_psymbol">ULOC_KEYWORD_SEPARATOR_UNICODE</code>;
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ULOC_KEYWORD_ASSIGN"></span><div class="quickindex" id="quickindex.ULOC_KEYWORD_ASSIGN"></div>enum char <code class="ddoc_psymbol">ULOC_KEYWORD_ASSIGN</code>;
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ULOC_KEYWORD_ASSIGN_UNICODE"></span><div class="quickindex" id="quickindex.ULOC_KEYWORD_ASSIGN_UNICODE"></div>enum int <code class="ddoc_psymbol">ULOC_KEYWORD_ASSIGN_UNICODE</code>;
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ULOC_KEYWORD_ITEM_SEPARATOR"></span><div class="quickindex" id="quickindex.ULOC_KEYWORD_ITEM_SEPARATOR"></div>enum char <code class="ddoc_psymbol">ULOC_KEYWORD_ITEM_SEPARATOR</code>;
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ULOC_KEYWORD_ITEM_SEPARATOR_UNICODE"></span><div class="quickindex" id="quickindex.ULOC_KEYWORD_ITEM_SEPARATOR_UNICODE"></div>enum int <code class="ddoc_psymbol">ULOC_KEYWORD_ITEM_SEPARATOR_UNICODE</code>;
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ULocDataLocaleType"></span><div class="quickindex" id="quickindex.ULocDataLocaleType"></div>enum <code class="ddoc_psymbol">ULocDataLocaleType</code>: <span class="ddoc_enum_basetype">int</span>;
+<br></div></dt>
+<dd>
+<dl class="ddoc_members"><div class="ddoc_enum_members"><dt class="ddoc_decl"><div ><span class="def-anchor" id=".ULocDataLocaleType.ULOC_ACTUAL_LOCALE"></span><div class="quickindex" id="quickindex.ULocDataLocaleType.ULOC_ACTUAL_LOCALE"></div><code class="ddoc_psymbol">ULOC_ACTUAL_LOCALE</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ULocDataLocaleType.ULOC_VALID_LOCALE"></span><div class="quickindex" id="quickindex.ULocDataLocaleType.ULOC_VALID_LOCALE"></div><code class="ddoc_psymbol">ULOC_VALID_LOCALE</code><br></div></dt>
+<dd>
+</dd>
+</div></dl>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_getDefault_69"></span><div class="quickindex" id="quickindex.uloc_getDefault_69"></div>const(char)* <code class="ddoc_psymbol">uloc_getDefault_69</code>();
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_setDefault_69"></span><div class="quickindex" id="quickindex.uloc_setDefault_69"></div>void <code class="ddoc_psymbol">uloc_setDefault_69</code>(const(char)* <span class="ddoc_param">localeID</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_getLanguage_69"></span><div class="quickindex" id="quickindex.uloc_getLanguage_69"></div>int <code class="ddoc_psymbol">uloc_getLanguage_69</code>(const(char)* <span class="ddoc_param">localeID</span>, char* <span class="ddoc_param">language</span>, int <span class="ddoc_param">languageCapacity</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_getScript_69"></span><div class="quickindex" id="quickindex.uloc_getScript_69"></div>int <code class="ddoc_psymbol">uloc_getScript_69</code>(const(char)* <span class="ddoc_param">localeID</span>, char* <span class="ddoc_param">script</span>, int <span class="ddoc_param">scriptCapacity</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_getCountry_69"></span><div class="quickindex" id="quickindex.uloc_getCountry_69"></div>int <code class="ddoc_psymbol">uloc_getCountry_69</code>(const(char)* <span class="ddoc_param">localeID</span>, char* <span class="ddoc_param">country</span>, int <span class="ddoc_param">countryCapacity</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_getVariant_69"></span><div class="quickindex" id="quickindex.uloc_getVariant_69"></div>int <code class="ddoc_psymbol">uloc_getVariant_69</code>(const(char)* <span class="ddoc_param">localeID</span>, char* <span class="ddoc_param">variant</span>, int <span class="ddoc_param">variantCapacity</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_getName_69"></span><div class="quickindex" id="quickindex.uloc_getName_69"></div>int <code class="ddoc_psymbol">uloc_getName_69</code>(const(char)* <span class="ddoc_param">localeID</span>, char* <span class="ddoc_param">name</span>, int <span class="ddoc_param">nameCapacity</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_canonicalize_69"></span><div class="quickindex" id="quickindex.uloc_canonicalize_69"></div>int <code class="ddoc_psymbol">uloc_canonicalize_69</code>(const(char)* <span class="ddoc_param">localeID</span>, char* <span class="ddoc_param">name</span>, int <span class="ddoc_param">nameCapacity</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_getISO3Language_69"></span><div class="quickindex" id="quickindex.uloc_getISO3Language_69"></div>const(char)* <code class="ddoc_psymbol">uloc_getISO3Language_69</code>(const(char)* <span class="ddoc_param">localeID</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_getISO3Country_69"></span><div class="quickindex" id="quickindex.uloc_getISO3Country_69"></div>const(char)* <code class="ddoc_psymbol">uloc_getISO3Country_69</code>(const(char)* <span class="ddoc_param">localeID</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_getLCID_69"></span><div class="quickindex" id="quickindex.uloc_getLCID_69"></div>uint <code class="ddoc_psymbol">uloc_getLCID_69</code>(const(char)* <span class="ddoc_param">localeID</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_getDisplayLanguage_69"></span><div class="quickindex" id="quickindex.uloc_getDisplayLanguage_69"></div>int <code class="ddoc_psymbol">uloc_getDisplayLanguage_69</code>(const(char)* <span class="ddoc_param">locale</span>, const(char)* <span class="ddoc_param">displayLocale</span>, UChar* <span class="ddoc_param">language</span>, int <span class="ddoc_param">languageCapacity</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_getDisplayScript_69"></span><div class="quickindex" id="quickindex.uloc_getDisplayScript_69"></div>int <code class="ddoc_psymbol">uloc_getDisplayScript_69</code>(const(char)* <span class="ddoc_param">locale</span>, const(char)* <span class="ddoc_param">displayLocale</span>, UChar* <span class="ddoc_param">script</span>, int <span class="ddoc_param">scriptCapacity</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_getDisplayCountry_69"></span><div class="quickindex" id="quickindex.uloc_getDisplayCountry_69"></div>int <code class="ddoc_psymbol">uloc_getDisplayCountry_69</code>(const(char)* <span class="ddoc_param">locale</span>, const(char)* <span class="ddoc_param">displayLocale</span>, UChar* <span class="ddoc_param">country</span>, int <span class="ddoc_param">countryCapacity</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_getDisplayVariant_69"></span><div class="quickindex" id="quickindex.uloc_getDisplayVariant_69"></div>int <code class="ddoc_psymbol">uloc_getDisplayVariant_69</code>(const(char)* <span class="ddoc_param">locale</span>, const(char)* <span class="ddoc_param">displayLocale</span>, UChar* <span class="ddoc_param">variant</span>, int <span class="ddoc_param">variantCapacity</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_getDisplayKeyword_69"></span><div class="quickindex" id="quickindex.uloc_getDisplayKeyword_69"></div>int <code class="ddoc_psymbol">uloc_getDisplayKeyword_69</code>(const(char)* <span class="ddoc_param">keyword</span>, const(char)* <span class="ddoc_param">displayLocale</span>, UChar* <span class="ddoc_param">dest</span>, int <span class="ddoc_param">destCapacity</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_getDisplayKeywordValue_69"></span><div class="quickindex" id="quickindex.uloc_getDisplayKeywordValue_69"></div>int <code class="ddoc_psymbol">uloc_getDisplayKeywordValue_69</code>(const(char)* <span class="ddoc_param">locale</span>, const(char)* <span class="ddoc_param">keyword</span>, const(char)* <span class="ddoc_param">displayLocale</span>, UChar* <span class="ddoc_param">dest</span>, int <span class="ddoc_param">destCapacity</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_getDisplayName_69"></span><div class="quickindex" id="quickindex.uloc_getDisplayName_69"></div>int <code class="ddoc_psymbol">uloc_getDisplayName_69</code>(const(char)* <span class="ddoc_param">localeID</span>, const(char)* <span class="ddoc_param">inLocaleID</span>, UChar* <span class="ddoc_param">result</span>, int <span class="ddoc_param">maxResultSize</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_getAvailable_69"></span><div class="quickindex" id="quickindex.uloc_getAvailable_69"></div>const(char)* <code class="ddoc_psymbol">uloc_getAvailable_69</code>(int <span class="ddoc_param">n</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_countAvailable_69"></span><div class="quickindex" id="quickindex.uloc_countAvailable_69"></div>int <code class="ddoc_psymbol">uloc_countAvailable_69</code>();
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ULocAvailableType"></span><div class="quickindex" id="quickindex.ULocAvailableType"></div>enum <code class="ddoc_psymbol">ULocAvailableType</code>: <span class="ddoc_enum_basetype">int</span>;
+<br></div></dt>
+<dd>
+<dl class="ddoc_members"><div class="ddoc_enum_members"><dt class="ddoc_decl"><div ><span class="def-anchor" id=".ULocAvailableType.DEFAULT"></span><div class="quickindex" id="quickindex.ULocAvailableType.DEFAULT"></div><code class="ddoc_psymbol">DEFAULT</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ULocAvailableType.ONLY_LEGACY_ALIASES"></span><div class="quickindex" id="quickindex.ULocAvailableType.ONLY_LEGACY_ALIASES"></div><code class="ddoc_psymbol">ONLY_LEGACY_ALIASES</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ULocAvailableType.WITH_LEGACY_ALIASES"></span><div class="quickindex" id="quickindex.ULocAvailableType.WITH_LEGACY_ALIASES"></div><code class="ddoc_psymbol">WITH_LEGACY_ALIASES</code><br></div></dt>
+<dd>
+</dd>
+</div></dl>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_openAvailableByType_69"></span><div class="quickindex" id="quickindex.uloc_openAvailableByType_69"></div>UEnumeration* <code class="ddoc_psymbol">uloc_openAvailableByType_69</code>(ULocAvailableType <span class="ddoc_param">type</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_getISOLanguages_69"></span><div class="quickindex" id="quickindex.uloc_getISOLanguages_69"></div>const(char*)* <code class="ddoc_psymbol">uloc_getISOLanguages_69</code>();
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_getISOCountries_69"></span><div class="quickindex" id="quickindex.uloc_getISOCountries_69"></div>const(char*)* <code class="ddoc_psymbol">uloc_getISOCountries_69</code>();
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_getParent_69"></span><div class="quickindex" id="quickindex.uloc_getParent_69"></div>int <code class="ddoc_psymbol">uloc_getParent_69</code>(const(char)* <span class="ddoc_param">localeID</span>, char* <span class="ddoc_param">parent</span>, int <span class="ddoc_param">parentCapacity</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_getBaseName_69"></span><div class="quickindex" id="quickindex.uloc_getBaseName_69"></div>int <code class="ddoc_psymbol">uloc_getBaseName_69</code>(const(char)* <span class="ddoc_param">localeID</span>, char* <span class="ddoc_param">name</span>, int <span class="ddoc_param">nameCapacity</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_openKeywords_69"></span><div class="quickindex" id="quickindex.uloc_openKeywords_69"></div>UEnumeration* <code class="ddoc_psymbol">uloc_openKeywords_69</code>(const(char)* <span class="ddoc_param">localeID</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_getKeywordValue_69"></span><div class="quickindex" id="quickindex.uloc_getKeywordValue_69"></div>int <code class="ddoc_psymbol">uloc_getKeywordValue_69</code>(const(char)* <span class="ddoc_param">localeID</span>, const(char)* <span class="ddoc_param">keywordName</span>, char* <span class="ddoc_param">buffer</span>, int <span class="ddoc_param">bufferCapacity</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_setKeywordValue_69"></span><div class="quickindex" id="quickindex.uloc_setKeywordValue_69"></div>int <code class="ddoc_psymbol">uloc_setKeywordValue_69</code>(const(char)* <span class="ddoc_param">keywordName</span>, const(char)* <span class="ddoc_param">keywordValue</span>, char* <span class="ddoc_param">buffer</span>, int <span class="ddoc_param">bufferCapacity</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_isRightToLeft_69"></span><div class="quickindex" id="quickindex.uloc_isRightToLeft_69"></div>UBool <code class="ddoc_psymbol">uloc_isRightToLeft_69</code>(const(char)* <span class="ddoc_param">locale</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ULayoutType"></span><div class="quickindex" id="quickindex.ULayoutType"></div>enum <code class="ddoc_psymbol">ULayoutType</code>: <span class="ddoc_enum_basetype">int</span>;
+<br></div></dt>
+<dd>
+<dl class="ddoc_members"><div class="ddoc_enum_members"><dt class="ddoc_decl"><div ><span class="def-anchor" id=".ULayoutType.LTR"></span><div class="quickindex" id="quickindex.ULayoutType.LTR"></div><code class="ddoc_psymbol">LTR</code><br></div></dt>
+<dd><div class="ddoc_summary">left-to-right</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ULayoutType.RTL"></span><div class="quickindex" id="quickindex.ULayoutType.RTL"></div><code class="ddoc_psymbol">RTL</code><br></div></dt>
+<dd><div class="ddoc_summary">right-to-left</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ULayoutType.TTB"></span><div class="quickindex" id="quickindex.ULayoutType.TTB"></div><code class="ddoc_psymbol">TTB</code><br></div></dt>
+<dd><div class="ddoc_summary">top-to-bottom</div></dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".ULayoutType.BTT"></span><div class="quickindex" id="quickindex.ULayoutType.BTT"></div><code class="ddoc_psymbol">BTT</code><br></div></dt>
+<dd><div class="ddoc_summary">bottom-to-top</div></dd>
+</div></dl>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_getCharacterOrientation_69"></span><div class="quickindex" id="quickindex.uloc_getCharacterOrientation_69"></div>ULayoutType <code class="ddoc_psymbol">uloc_getCharacterOrientation_69</code>(const(char)* <span class="ddoc_param">localeId</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_getLineOrientation_69"></span><div class="quickindex" id="quickindex.uloc_getLineOrientation_69"></div>ULayoutType <code class="ddoc_psymbol">uloc_getLineOrientation_69</code>(const(char)* <span class="ddoc_param">localeId</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UAcceptResult"></span><div class="quickindex" id="quickindex.UAcceptResult"></div>enum <code class="ddoc_psymbol">UAcceptResult</code>: <span class="ddoc_enum_basetype">int</span>;
+<br></div></dt>
+<dd>
+<dl class="ddoc_members"><div class="ddoc_enum_members"><dt class="ddoc_decl"><div ><span class="def-anchor" id=".UAcceptResult.FAILED"></span><div class="quickindex" id="quickindex.UAcceptResult.FAILED"></div><code class="ddoc_psymbol">FAILED</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UAcceptResult.VALID"></span><div class="quickindex" id="quickindex.UAcceptResult.VALID"></div><code class="ddoc_psymbol">VALID</code><br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".UAcceptResult.FALLBACK"></span><div class="quickindex" id="quickindex.UAcceptResult.FALLBACK"></div><code class="ddoc_psymbol">FALLBACK</code><br></div></dt>
+<dd>
+</dd>
+</div></dl>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_acceptLanguageFromHTTP_69"></span><div class="quickindex" id="quickindex.uloc_acceptLanguageFromHTTP_69"></div>int <code class="ddoc_psymbol">uloc_acceptLanguageFromHTTP_69</code>(char* <span class="ddoc_param">result</span>, int <span class="ddoc_param">resultAvailable</span>, UAcceptResult* <span class="ddoc_param">outResult</span>, const(char)* <span class="ddoc_param">httpAcceptLanguage</span>, UEnumeration* <span class="ddoc_param">availableLocales</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_acceptLanguage_69"></span><div class="quickindex" id="quickindex.uloc_acceptLanguage_69"></div>int <code class="ddoc_psymbol">uloc_acceptLanguage_69</code>(char* <span class="ddoc_param">result</span>, int <span class="ddoc_param">resultAvailable</span>, UAcceptResult* <span class="ddoc_param">outResult</span>, const(char)** <span class="ddoc_param">acceptList</span>, int <span class="ddoc_param">acceptListCount</span>, UEnumeration* <span class="ddoc_param">availableLocales</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_getLocaleForLCID_69"></span><div class="quickindex" id="quickindex.uloc_getLocaleForLCID_69"></div>int <code class="ddoc_psymbol">uloc_getLocaleForLCID_69</code>(uint <span class="ddoc_param">hostID</span>, char* <span class="ddoc_param">locale</span>, int <span class="ddoc_param">localeCapacity</span>, UErrorCode* <span class="ddoc_param">status</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_addLikelySubtags_69"></span><div class="quickindex" id="quickindex.uloc_addLikelySubtags_69"></div>int <code class="ddoc_psymbol">uloc_addLikelySubtags_69</code>(const(char)* <span class="ddoc_param">localeID</span>, char* <span class="ddoc_param">maximizedLocaleID</span>, int <span class="ddoc_param">maximizedLocaleIDCapacity</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_minimizeSubtags_69"></span><div class="quickindex" id="quickindex.uloc_minimizeSubtags_69"></div>int <code class="ddoc_psymbol">uloc_minimizeSubtags_69</code>(const(char)* <span class="ddoc_param">localeID</span>, char* <span class="ddoc_param">minimizedLocaleID</span>, int <span class="ddoc_param">minimizedLocaleIDCapacity</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_forLanguageTag_69"></span><div class="quickindex" id="quickindex.uloc_forLanguageTag_69"></div>int <code class="ddoc_psymbol">uloc_forLanguageTag_69</code>(const(char)* <span class="ddoc_param">langtag</span>, char* <span class="ddoc_param">localeID</span>, int <span class="ddoc_param">localeIDCapacity</span>, int* <span class="ddoc_param">parsedLength</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_toLanguageTag_69"></span><div class="quickindex" id="quickindex.uloc_toLanguageTag_69"></div>int <code class="ddoc_psymbol">uloc_toLanguageTag_69</code>(const(char)* <span class="ddoc_param">localeID</span>, char* <span class="ddoc_param">langtag</span>, int <span class="ddoc_param">langtagCapacity</span>, UBool <span class="ddoc_param">strict</span>, UErrorCode* <span class="ddoc_param">err</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_toUnicodeLocaleKey_69"></span><div class="quickindex" id="quickindex.uloc_toUnicodeLocaleKey_69"></div>const(char)* <code class="ddoc_psymbol">uloc_toUnicodeLocaleKey_69</code>(const(char)* <span class="ddoc_param">keyword</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_toUnicodeLocaleType_69"></span><div class="quickindex" id="quickindex.uloc_toUnicodeLocaleType_69"></div>const(char)* <code class="ddoc_psymbol">uloc_toUnicodeLocaleType_69</code>(const char* <span class="ddoc_param">keyword</span>, const char* <span class="ddoc_param">value</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_toLegacyKey_69"></span><div class="quickindex" id="quickindex.uloc_toLegacyKey_69"></div>const(char)* <code class="ddoc_psymbol">uloc_toLegacyKey_69</code>(const(char)* <span class="ddoc_param">keyword</span>);
+<br></div></dt>
+<dd>
+</dd>
+<dt class="ddoc_decl"><div ><span class="def-anchor" id=".uloc_toLegacyType_69"></span><div class="quickindex" id="quickindex.uloc_toLegacyType_69"></div>const(char)* <code class="ddoc_psymbol">uloc_toLegacyType_69</code>(const(char)* <span class="ddoc_param">keyword</span>, const(char)* <span class="ddoc_param">value</span>);
+<br></div></dt>
+<dd>
+</dd>
+</div></dl>
+
+                
+            </div>
+        </div>
+        
+        <script type="text/javascript">jQuery(document).ready(listanchors);</script>
+        
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+     </body>
+</html>
