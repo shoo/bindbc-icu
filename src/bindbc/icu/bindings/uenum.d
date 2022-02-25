@@ -2,6 +2,8 @@
  * uenum.h
  * 
  * License: [BSL-1.0](http://boost.org/LICENSE_1_0.txt).
+ *
+ * Documentation: https://unicode-org.github.io/icu-docs/apidoc/dev/icu4c/uenum_8h.html
  */
 @("icuuc")
 module bindbc.icu.bindings.uenum;

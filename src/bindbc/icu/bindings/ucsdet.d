@@ -2,6 +2,8 @@
  * ucsdet.h
  * 
  * License: [BSL-1.0](http://boost.org/LICENSE_1_0.txt).
+ *
+ * Documentation: https://unicode-org.github.io/icu-docs/apidoc/dev/icu4c/ucsdet_8h.html
  */
 @("icuin")
 module bindbc.icu.bindings.ucsdet;
