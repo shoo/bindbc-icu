@@ -107,7 +107,7 @@
  * locale like the currency symbol, the grouping separator , monetary separator
  * etc by making use of functions unum_setSymbols() and unum_getSymbols().
  */
-@("icuio")
+@("icuin")
 module bindbc.icu.bindings.unum;
 
 import bindbc.icu.bindings.utypes;
