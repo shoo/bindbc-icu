@@ -20,40 +20,40 @@ struct UCharsetDetector{}
 struct UCharsetMatch{}
 
 ///
-UCharsetDetector* ucsdet_open_69(UErrorCode* status) @system;
+UCharsetDetector* ucsdet_open_70(UErrorCode* status) @system;
 
 ///
-void ucsdet_close_69(UCharsetDetector* ucsd) @system;
+void ucsdet_close_70(UCharsetDetector* ucsd) @system;
 
 ///
-void ucsdet_setText_69(UCharsetDetector* ucsd, const(Char)* textIn, int len, UErrorCode* status);
+void ucsdet_setText_70(UCharsetDetector* ucsd, const(Char)* textIn, int len, UErrorCode* status);
 
 ///
-void ucsdet_setDeclaredEncoding_69(UCharsetDetector* ucsd, const(char)* encoding, int length, UErrorCode* status);
+void ucsdet_setDeclaredEncoding_70(UCharsetDetector* ucsd, const(char)* encoding, int length, UErrorCode* status);
 
 ///
-const(UCharsetMatch)* ucsdet_detect_69(UCharsetDetector* ucsd, UErrorCode* status);
+const(UCharsetMatch)* ucsdet_detect_70(UCharsetDetector* ucsd, UErrorCode* status);
 
 ///
-const(UCharsetMatch)** ucsdet_detectAll_69(UCharsetDetector* ucsd, int *matchesFound, UErrorCode* status);
+const(UCharsetMatch)** ucsdet_detectAll_70(UCharsetDetector* ucsd, int *matchesFound, UErrorCode* status);
 
 ///
-const(char)* ucsdet_getName_69(const(UCharsetMatch)* ucsm, UErrorCode* status);
+const(char)* ucsdet_getName_70(const(UCharsetMatch)* ucsm, UErrorCode* status);
 
 ///
-int ucsdet_getConfidence_69(const(UCharsetMatch)* ucsm, UErrorCode* status);
+int ucsdet_getConfidence_70(const(UCharsetMatch)* ucsm, UErrorCode* status);
 
 ///
-const(char)* ucsdet_getLanguage_69(const(UCharsetMatch)* ucsm, UErrorCode* status);
+const(char)* ucsdet_getLanguage_70(const(UCharsetMatch)* ucsm, UErrorCode* status);
 
 ///
-int ucsdet_getUChars_69(const(UCharsetMatch)* ucsm, UChar *buf, int cap, UErrorCode* status);
+int ucsdet_getUChars_70(const(UCharsetMatch)* ucsm, UChar *buf, int cap, UErrorCode* status);
 
 ///
-UEnumeration* ucsdet_getAllDetectableCharsets_69(const(UCharsetDetector)* ucsd,  UErrorCode* status);
+UEnumeration* ucsdet_getAllDetectableCharsets_70(const(UCharsetDetector)* ucsd,  UErrorCode* status);
 
 ///
-UBool ucsdet_isInputFilterEnabled_69(const(UCharsetDetector)* ucsd);
+UBool ucsdet_isInputFilterEnabled_70(const(UCharsetDetector)* ucsd);
 
 ///
-UBool ucsdet_enableInputFilter_69(UCharsetDetector* ucsd, UBool filter);
+UBool ucsdet_enableInputFilter_70(UCharsetDetector* ucsd, UBool filter);

@@ -35,40 +35,40 @@ enum UFormattableType
 alias UFormattable = void*;
 
 ///
-UFormattable* ufmt_open_69(UErrorCode* status);
+UFormattable* ufmt_open_70(UErrorCode* status);
 
 ///
-void ufmt_close_69(UFormattable* fmt);
+void ufmt_close_70(UFormattable* fmt);
 
 ///
-UFormattableType ufmt_getType_69(const(UFormattable)* fmt, UErrorCode* status);
+UFormattableType ufmt_getType_70(const(UFormattable)* fmt, UErrorCode* status);
 
 ///
-UBool ufmt_isNumeric_69(const(UFormattable)* fmt);
+UBool ufmt_isNumeric_70(const(UFormattable)* fmt);
 
 ///
-UDate ufmt_getDate_69(const(UFormattable)* fmt, UErrorCode* status);
+UDate ufmt_getDate_70(const(UFormattable)* fmt, UErrorCode* status);
 
 ///
-double ufmt_getDouble_69(UFormattable* fmt, UErrorCode* status);
+double ufmt_getDouble_70(UFormattable* fmt, UErrorCode* status);
 
 ///
-int ufmt_getLong_69(UFormattable* fmt, UErrorCode* status);
+int ufmt_getLong_70(UFormattable* fmt, UErrorCode* status);
 
 ///
-long ufmt_getInt64_69(UFormattable* fmt, UErrorCode* status);
+long ufmt_getInt64_70(UFormattable* fmt, UErrorCode* status);
 
 ///
-const(void)* ufmt_getObject_69(const(UFormattable)* fmt, UErrorCode* status);
+const(void)* ufmt_getObject_70(const(UFormattable)* fmt, UErrorCode* status);
 
 ///
-const(UChar)* ufmt_getUChars_69(UFormattable* fmt, int* len, UErrorCode* status);
+const(UChar)* ufmt_getUChars_70(UFormattable* fmt, int* len, UErrorCode* status);
 
 ///
-int ufmt_getArrayLength_69(const(UFormattable)* fmt, UErrorCode* status);
+int ufmt_getArrayLength_70(const(UFormattable)* fmt, UErrorCode* status);
 
 ///
-UFormattable* ufmt_getArrayItemByIndex_69(UFormattable* fmt, int n, UErrorCode* status);
+UFormattable* ufmt_getArrayItemByIndex_70(UFormattable* fmt, int n, UErrorCode* status);
 
 ///
-const(char)* ufmt_getDecNumChars_69(UFormattable* fmt, int* len, UErrorCode* status);
+const(char)* ufmt_getDecNumChars_70(UFormattable* fmt, int* len, UErrorCode* status);

@@ -21,7 +21,7 @@ import bindbc.icu.bindings.umisc;
 import bindbc.icu.bindings.unum;
 import bindbc.icu.bindings.utypes;
 
-package(bindbc.icu) enum string icuVersion = "69";
+package(bindbc.icu) enum string icuVersion = "70";
 package(bindbc.icu) alias icuLibraries = AliasSeq!("icudt", "icuin", "icuio", "icutu", "icuuc");
 package(bindbc.icu) string libFileName(string libName)
 {
