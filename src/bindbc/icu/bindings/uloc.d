@@ -86,93 +86,93 @@ enum ULocDataLocaleType
 }
 
 ///
-const(char)* uloc_getDefault_69();
+const(char)* uloc_getDefault_70();
 
 ///
-void uloc_setDefault_69(const(char)* localeID, UErrorCode* status);
+void uloc_setDefault_70(const(char)* localeID, UErrorCode* status);
 
 ///
-int uloc_getLanguage_69(const(char)* localeID,
+int uloc_getLanguage_70(const(char)* localeID,
 	char* language,
 	int languageCapacity,
 	UErrorCode* err);
 
 ///
-int uloc_getScript_69(const(char)* localeID,
+int uloc_getScript_70(const(char)* localeID,
 	char* script,
 	int scriptCapacity,
 	UErrorCode* err);
 
 ///
-int uloc_getCountry_69(const(char)* localeID,
+int uloc_getCountry_70(const(char)* localeID,
 	char* country,
 	int countryCapacity,
 	UErrorCode* err);
 
 ///
-int uloc_getVariant_69(const(char)* localeID,
+int uloc_getVariant_70(const(char)* localeID,
 	char* variant,
 	int variantCapacity,
 	UErrorCode* err);
 
 ///
-int uloc_getName_69(const(char)* localeID,
+int uloc_getName_70(const(char)* localeID,
 	char* name,
 	int nameCapacity,
 	UErrorCode* err);
 
 ///
-int uloc_canonicalize_69(const(char)* localeID,
+int uloc_canonicalize_70(const(char)* localeID,
 	char* name,
 	int nameCapacity,
 	UErrorCode* err);
 
 ///
-const(char)* uloc_getISO3Language_69(const(char)* localeID);
+const(char)* uloc_getISO3Language_70(const(char)* localeID);
 
 ///
-const(char)* uloc_getISO3Country_69(const(char)* localeID);
+const(char)* uloc_getISO3Country_70(const(char)* localeID);
 
 ///
-uint uloc_getLCID_69(const(char)* localeID);
+uint uloc_getLCID_70(const(char)* localeID);
 
 ///
-int uloc_getDisplayLanguage_69(const(char)* locale,
+int uloc_getDisplayLanguage_70(const(char)* locale,
 	const(char)* displayLocale,
 	UChar* language,
 	int languageCapacity,
 	UErrorCode* status);
 
 ///
-int uloc_getDisplayScript_69(const(char)* locale,
+int uloc_getDisplayScript_70(const(char)* locale,
 	const(char)* displayLocale,
 	UChar* script,
 	int scriptCapacity,
 	UErrorCode* status);
 
 ///
-int uloc_getDisplayCountry_69(const(char)* locale,
+int uloc_getDisplayCountry_70(const(char)* locale,
 	const(char)* displayLocale,
 	UChar* country,
 	int countryCapacity,
 	UErrorCode* status);
 
 ///
-int uloc_getDisplayVariant_69(const(char)* locale,
+int uloc_getDisplayVariant_70(const(char)* locale,
 	const(char)* displayLocale,
 	UChar* variant,
 	int variantCapacity,
 	UErrorCode* status);
 
 ///
-int uloc_getDisplayKeyword_69(const(char)* keyword,
+int uloc_getDisplayKeyword_70(const(char)* keyword,
 	const(char)* displayLocale,
 	UChar* dest,
 	int destCapacity,
 	UErrorCode* status);
 
 ///
-int uloc_getDisplayKeywordValue_69(const(char)* locale,
+int uloc_getDisplayKeywordValue_70(const(char)* locale,
 	const(char)* keyword,
 	const(char)* displayLocale,
 	UChar* dest,
@@ -180,17 +180,17 @@ int uloc_getDisplayKeywordValue_69(const(char)* locale,
 	UErrorCode* status);
 
 ///
-int uloc_getDisplayName_69(const(char)* localeID,
+int uloc_getDisplayName_70(const(char)* localeID,
 	const(char)* inLocaleID,
 	UChar* result,
 	int maxResultSize,
 	UErrorCode* err);
 
 ///
-const(char)* uloc_getAvailable_69(int n);
+const(char)* uloc_getAvailable_70(int n);
 
 ///
-int uloc_countAvailable_69();
+int uloc_countAvailable_70();
 
 ///
 enum ULocAvailableType
@@ -206,45 +206,45 @@ enum ULocAvailableType
 }
 
 ///
-UEnumeration* uloc_openAvailableByType_69(ULocAvailableType type, UErrorCode* status);
+UEnumeration* uloc_openAvailableByType_70(ULocAvailableType type, UErrorCode* status);
 
 ///
-const(char*)* uloc_getISOLanguages_69();
+const(char*)* uloc_getISOLanguages_70();
 
 ///
-const(char*)* uloc_getISOCountries_69();
+const(char*)* uloc_getISOCountries_70();
 
 ///
-int uloc_getParent_69(const(char)* localeID,
+int uloc_getParent_70(const(char)* localeID,
 	char* parent,
 	int parentCapacity,
 	UErrorCode* err);
 
 ///
-int uloc_getBaseName_69(const(char)* localeID,
+int uloc_getBaseName_70(const(char)* localeID,
 	char* name,
 	int nameCapacity,
 	UErrorCode* err);
 
 ///
-UEnumeration* uloc_openKeywords_69(const(char)* localeID,
+UEnumeration* uloc_openKeywords_70(const(char)* localeID,
 	UErrorCode* status);
 
 ///
-int uloc_getKeywordValue_69(const(char)* localeID,
+int uloc_getKeywordValue_70(const(char)* localeID,
 	const(char)* keywordName,
 	char* buffer, int bufferCapacity,
 	UErrorCode* status);
 
 ///
-int uloc_setKeywordValue_69(const(char)* keywordName,
+int uloc_setKeywordValue_70(const(char)* keywordName,
 	const(char)* keywordValue,
 	char* buffer,
 	int bufferCapacity,
 	UErrorCode* status);
 
 ///
-UBool uloc_isRightToLeft_69(const(char)* locale);
+UBool uloc_isRightToLeft_70(const(char)* locale);
 
 ///
 enum ULayoutType
@@ -257,11 +257,11 @@ enum ULayoutType
 }
 
 ///
-ULayoutType uloc_getCharacterOrientation_69(const(char)* localeId,
+ULayoutType uloc_getCharacterOrientation_70(const(char)* localeId,
 	UErrorCode* status);
 
 ///
-ULayoutType uloc_getLineOrientation_69(const(char)* localeId,
+ULayoutType uloc_getLineOrientation_70(const(char)* localeId,
 	UErrorCode* status);
 
 ///
@@ -276,7 +276,7 @@ enum UAcceptResult
 }
 
 ///
-int uloc_acceptLanguageFromHTTP_69(char* result,
+int uloc_acceptLanguageFromHTTP_70(char* result,
 	int resultAvailable,
 	UAcceptResult* outResult,
 	const(char)* httpAcceptLanguage,
@@ -284,7 +284,7 @@ int uloc_acceptLanguageFromHTTP_69(char* result,
 	UErrorCode* status);
 
 ///
-int uloc_acceptLanguage_69(char* result,
+int uloc_acceptLanguage_70(char* result,
 	int resultAvailable,
 	UAcceptResult* outResult,
 	const(char)** acceptList,
@@ -293,45 +293,45 @@ int uloc_acceptLanguage_69(char* result,
 	UErrorCode* status);
 
 ///
-int uloc_getLocaleForLCID_69(uint hostID,
+int uloc_getLocaleForLCID_70(uint hostID,
 	char* locale,
 	int localeCapacity,
 	UErrorCode* status);
 
 ///
-int uloc_addLikelySubtags_69(const(char)* localeID,
+int uloc_addLikelySubtags_70(const(char)* localeID,
 	char* maximizedLocaleID,
 	int maximizedLocaleIDCapacity,
 	UErrorCode* err);
 
 ///
-int uloc_minimizeSubtags_69(const(char)* localeID,
+int uloc_minimizeSubtags_70(const(char)* localeID,
 	char* minimizedLocaleID,
 	int minimizedLocaleIDCapacity,
 	UErrorCode* err);
 
 ///
-int uloc_forLanguageTag_69(const(char)* langtag,
+int uloc_forLanguageTag_70(const(char)* langtag,
 	char* localeID,
 	int localeIDCapacity,
 	int* parsedLength,
 	UErrorCode* err);
 
 ///
-int uloc_toLanguageTag_69(const(char)* localeID,
+int uloc_toLanguageTag_70(const(char)* localeID,
 	char* langtag,
 	int langtagCapacity,
 	UBool strict,
 	UErrorCode* err);
 
 ///
-const(char)* uloc_toUnicodeLocaleKey_69(const(char)* keyword);
+const(char)* uloc_toUnicodeLocaleKey_70(const(char)* keyword);
 
 ///
-const(char)* uloc_toUnicodeLocaleType_69(const char* keyword, const char* value);
+const(char)* uloc_toUnicodeLocaleType_70(const char* keyword, const char* value);
 
 ///
-const(char)* uloc_toLegacyKey_69(const(char)* keyword);
+const(char)* uloc_toLegacyKey_70(const(char)* keyword);
 
 ///
-const(char)* uloc_toLegacyType_69(const(char)* keyword, const(char)* value);
+const(char)* uloc_toLegacyType_70(const(char)* keyword, const(char)* value);

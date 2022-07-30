@@ -99,6 +99,8 @@ enum UErrorCode
 	U_COLLATOR_VERSION_MISMATCH = 28,   /**< Collator version is not compatible with the base version */
 	U_USELESS_COLLATOR_ERROR  = 29,     /**< Collator is options only and no base is specified */
 	U_NO_WRITE_PERMISSION     = 30,     /**< Attempt to modify read-only or constant data. */
+	U_INPUT_TOO_LONG_ERROR    = 31,
+	
 	/*
 	 * Error codes in the range 0x10000 0x10100 are reserved for Transliterator.
 	 */
@@ -240,4 +242,4 @@ pragma(inline) extern (D) UBool U_SUCCESS()(UErrorCode code) { return code <= UE
 pragma(inline) extern (D) UBool U_FAILURE()(UErrorCode code) { return code > UErrorCode.U_ZERO_ERROR; }
 
 ///
-const(char)* u_errorName_69(UErrorCode code);
+const(char)* u_errorName_70(UErrorCode code);
