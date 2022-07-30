@@ -33,6 +33,7 @@ apt install libicu-dev=70.1-2
 If the required version is not provided by the package manager, you will need to build it from source code.
 
 ```sh
+apt install -y git build-essential libicu-le-hb0 libicu-le-hb-dev
 git clone -b release-70-1 --depth 1 --single-branch https://github.com/unicode-org/icu.git
 cd icu/icu4c/source
 ./runConfigureICU Linux --disable-samples --disable-tests --with-data-packaging=library
