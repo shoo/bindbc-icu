@@ -6,37 +6,37 @@ on:
     - cron: 0 12 * * *
 
 jobs:
-  pretest-osx-x86_64-icu_build:
-    name: pretest-osx-x86_64-icu_build
-    runs-on: macos-latest
+  pretest-macos13-x86_64-icu_build:
+    name: pretest-macos13-x86_64-icu_build
+    runs-on: macos-13
     steps:
       - name: Compiling ICU
         run: |
-          git clone -b release-70-1 --depth 1 --single-branch https://github.com/unicode-org/icu.git
-          cd icu/icu4c/source
-          ./runConfigureICU MacOSX --disable-samples --disable-tests --with-data-packaging=library --prefix=$(pwd)/install
-          make -j4 && make install
+          curl https://github.com/unicode-org/icu/releases/download/release-74-2/icu4c-74_2-src.tgz -LfsS | tar xzv
+          cd icu/source
+          ./runConfigureICU MacOSX --disable-samples --disable-tests --with-data-packaging=library
+          make -j4 && make install prefix=$(pwd)/install
           cd install
-          tar zcvf ../../../../icu-osx-x86_64.tar.gz *
+          tar zcvf ../../../icu-macos13-x86_64.tar.gz *
       - name: Upload generated icu binaries
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
-          name: icu-osx-x86_64
-          path: icu-osx-x86_64.tar.gz
+          name: icu-macos13-x86_64
+          path: icu-macos13-x86_64.tar.gz
   pretest-linux-x86_64-icu_build:
     name: pretest-linux-x86_64-icu_build
     runs-on: ubuntu-20.04
     steps:
       - name: Compiling ICU
         run: |
-          git clone -b release-70-1 --depth 1 --single-branch https://github.com/unicode-org/icu.git
-          cd icu/icu4c/source
-          ./runConfigureICU Linux --disable-samples --disable-tests --with-data-packaging=library --prefix=$(pwd)/install
-          make -j4 && make install
+          curl https://github.com/unicode-org/icu/releases/download/release-74-2/icu4c-74_2-src.tgz -LfsS | tar xzv
+          cd icu/source
+          ./runConfigureICU Linux --disable-samples --disable-tests --with-data-packaging=library
+          make -j4 && make install prefix=$(pwd)/install
           cd install
-          tar zcvf ../../../../icu-linux-x86_64.tar.gz *
+          tar zcvf ../../../icu-linux-x86_64.tar.gz *
       - name: Upload generated icu binaries
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: icu-linux-x86_64
           path: icu-linux-x86_64.tar.gz
@@ -47,15 +47,15 @@ jobs:
       - name: Compiling ICU
         run: |
           sudo apt-get update
-          sudo apt-get install -y gcc-multilib g++-multilib libicu-le-hb0 libicu-le-hb-dev
-          git clone -b release-70-1 --depth 1 --single-branch https://github.com/unicode-org/icu.git
-          cd icu/icu4c/source
-          ./runConfigureICU Linux --disable-samples --disable-tests --with-data-packaging=library --with-library-bits=32 --prefix=$(pwd)/install
-          make -j4 && make install
+          sudo apt-get install -y gcc-multilib g++-multilib
+          curl https://github.com/unicode-org/icu/releases/download/release-74-2/icu4c-74_2-src.tgz -LfsS | tar xzv
+          cd icu/source
+          ./runConfigureICU Linux --disable-samples --disable-tests --with-data-packaging=library --with-library-bits=32
+          make -j4 && make install prefix=$(pwd)/install
           cd install
-          tar zcvf ../../../../icu-linux-x86.tar.gz *
+          tar zcvf ../../../icu-linux-x86.tar.gz *
       - name: Upload generated icu binaries
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: icu-linux-x86
           path: icu-linux-x86.tar.gz
@@ -98,11 +98,11 @@ jobs:
   #  name: test-${OS}-${ARCH}-${COMPILER}
   #  runs-on: ${OS}
   #  steps:
-  #    - uses: actions/checkout@v2
+  #    - uses: actions/checkout@v4
   #      with:
   #        ref: master
   #    - name: Install D compiler
-  #      uses: dlang-community/setup-dlang@v1
+  #      uses: dlang-community/setup-dlang@v2
   #      with:
   #        compiler: ${COMPILER}
   #    # UT:テストをする場合は以下を実行
@@ -119,16 +119,17 @@ jobs:
   #      run: rdmd ./scripts/runner.d -a=${ARCH} --mode=generate-document
   #    # DOC:ドキュメントを記録する場合は以下を実行(Artifactに6か月保管されます)
   #    - name: Upload generated pages
-  #      uses: actions/upload-artifact@v2
+  #      uses: actions/upload-artifact@v4
   #      with:
   #        name: docs
   #        path: docs
   #    # COV:カバレッジを記録する場合は以下を実行(Artifactに6か月保管されます)
   #    - name: Upload coverage result
-  #      uses: actions/upload-artifact@v2
+  #      uses: actions/upload-artifact@v4
   #      with:
   #        name: coverage-${OS}
   #        path: .cov
+  #        include-hidden-files: true
 
   # No. OS      ARCH    COMPILER   UT  TT  BLD DOC COV
   #  1. Windows x86     dmd        o   x   x   x   x
@@ -136,11 +137,11 @@ jobs:
     name: test-windows-x86-dmd-latest
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           ref: master
       - name: Install D compiler
-        uses: dlang-community/setup-dlang@v1
+        uses: dlang-community/setup-dlang@v2
         with:
           compiler: dmd-latest
       - name: Run unit tests
@@ -152,11 +153,11 @@ jobs:
     name: test-windows-x86-ldc-latest
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           ref: master
       - name: Install D compiler
-        uses: dlang-community/setup-dlang@v1
+        uses: dlang-community/setup-dlang@v2
         with:
           compiler: ldc-latest
       - name: Run integration tests
@@ -178,11 +179,11 @@ jobs:
     name: test-windows-x86_64-dmd-latest
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           ref: master
       - name: Install D compiler
-        uses: dlang-community/setup-dlang@v1
+        uses: dlang-community/setup-dlang@v2
         with:
           compiler: dmd-latest
       - name: Run unit tests
@@ -190,10 +191,11 @@ jobs:
       - name: Run integration tests
         run: rdmd ./scripts/runner.d -a=x86_64 --mode=integration-test
       - name: Upload coverage result
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: coverage-windows
           path: .cov
+          include-hidden-files: true
 
   # No. OS      ARCH    COMPILER   UT  TT  BLD DOC COV
   #  6. Windows x86_64  ldc        o   x   o   o   x
@@ -201,11 +203,11 @@ jobs:
     name: test-windows-x86_64-ldc-latest
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           ref: master
       - name: Install D compiler
-        uses: dlang-community/setup-dlang@v1
+        uses: dlang-community/setup-dlang@v2
         with:
           compiler: ldc-latest
       - name: Run unit tests
@@ -225,11 +227,11 @@ jobs:
     name: test-windows-x86_64-ldc-master
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           ref: master
       - name: Install D compiler
-        uses: dlang-community/setup-dlang@v1
+        uses: dlang-community/setup-dlang@v2
         with:
           compiler: ldc-master
           gh_token: ${{ secrets.GITHUB_TOKEN }}
@@ -251,23 +253,23 @@ jobs:
     needs: [pretest-linux-x86-icu_build]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           ref: master
       - name: Download Prebuild binaries
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: icu-linux-x86
       - name: Expand tarball
         run: sudo tar xvzf icu-linux-x86.tar.gz -C /usr/local && sudo ldconfig /usr/local/lib
       - name: Install D compiler
-        uses: dlang-community/setup-dlang@v1
+        uses: dlang-community/setup-dlang@v2
         with:
           compiler: ldc-latest
       - name: Install gcc-multilib
         run: |
           sudo apt-get update
-          sudo apt-get -y install gcc-multilib g++-multilib libicu-le-hb0 libicu-le-hb-dev
+          sudo apt-get -y install gcc-multilib g++-multilib
       - name: Run unit tests
         run: rdmd ./scripts/runner.d -a=x86 --mode=unit-test
       - name: Build tests
@@ -281,26 +283,26 @@ jobs:
   # 12. Ubuntu  x86     ldc-master x   x   x   x   x
   # do-nothing
 
-  # No. OS      ARCH    COMPILER   UT  TT  BLD DOC COV
+  # No.   OS            ARCH    COMPILER   UT  TT  BLD DOC COV
   # 13.   Ubuntu        x86_64  dmd        o   x   o   O   x
   # 13.1. Ubuntu-20.04  x86_64  dmd        o   o   o   o   x
-  # 13.2. Ubuntu-22.04  x86_64  dmd        o   x   o   O   x
+  # 13.2. ubuntu-24.04  x86_64  dmd        o   x   o   O   x
   test-ubuntu20-x86_64-dmd-latest:
     name: test-ubuntu20-x86_64-dmd-latest
     needs: [pretest-linux-x86_64-icu_build]
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           ref: master
       - name: Download Prebuild binaries
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: icu-linux-x86_64
       - name: Expand tarball
         run: sudo tar xvzf icu-linux-x86_64.tar.gz -C /usr/local && sudo ldconfig /usr/local/lib
       - name: Install D compiler
-        uses: dlang-community/setup-dlang@v1
+        uses: dlang-community/setup-dlang@v2
         with:
           compiler: dmd-latest
       - name: Run unit tests
@@ -313,13 +315,13 @@ jobs:
         run: rdmd ./scripts/runner.d -a=x86_64 --mode=generate-document
   test-linux-x86_64-dmd-latest:
     name: test-linux-x86_64-dmd-latest
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v2
-      - name: Install ICU 70.1
-        run: sudo apt-get install -y libicu-dev=70.1-2
+      - uses: actions/checkout@v4
+      - name: Install ICU 74.2
+        run: sudo apt-get install -y libicu-dev=74.2-1ubuntu3.1
       - name: Install D compiler
-        uses: dlang-community/setup-dlang@v1
+        uses: dlang-community/setup-dlang@v2
         with:
           compiler: dmd-latest
       - name: Run unit tests
@@ -329,7 +331,7 @@ jobs:
       - name: Generate document tests
         run: rdmd ./scripts/runner.d -a=x86_64 --mode=generate-document
       - name: Upload generated pages
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: docs
           path: docs
@@ -338,15 +340,15 @@ jobs:
   # 14. Ubuntu  x86_64  ldc        o   o   x   x   o
   test-linux-x86_64-ldc-latest:
     name: test-linux-x86_64-ldc-latest
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           ref: master
-      - name: Install ICU 70.1
-        run: sudo apt-get install -y libicu-dev=70.1-2
+      - name: Install ICU 74.2
+        run: sudo apt-get install -y libicu-dev=74.2-1ubuntu3.1
       - name: Install D compiler
-        uses: dlang-community/setup-dlang@v1
+        uses: dlang-community/setup-dlang@v2
         with:
           compiler: ldc-latest
       - name: Run unit tests
@@ -354,24 +356,25 @@ jobs:
       - name: Run integration tests
         run: rdmd ./scripts/runner.d -a=x86_64 --mode=integration-test
       - name: Upload coverage result
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: coverage-linux
           path: .cov
+          include-hidden-files: true
 
   # No. OS      ARCH    COMPILER   UT  TT  BLD DOC COV
   # 15. Ubuntu  x86_64  dmd-master o   o   o   x   x
   test-linux-x86_64-dmd-master:
     name: test-linux-x86_64-dmd-master
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           ref: master
-      - name: Install ICU 70.1
-        run: sudo apt-get install -y libicu-dev=70.1-2
+      - name: Install ICU 74.2
+        run: sudo apt-get install -y libicu-dev=74.2-1ubuntu3.1
       - name: Install D compiler
-        uses: dlang-community/setup-dlang@v1
+        uses: dlang-community/setup-dlang@v2
         with:
           #compiler: dmd-master ... change to beta tempolarily
           compiler: dmd-beta
@@ -404,22 +407,24 @@ jobs:
 
   # No. OS      ARCH    COMPILER   UT  TT  BLD DOC COV
   # 21. macOS   x86_64  dmd        o   o   x   x   o
-  test-osx-x86_64-dmd-latest:
-    name: test-osx-x86_64-dmd-latest
-    needs: [pretest-osx-x86_64-icu_build]
-    runs-on: macos-latest
+  test-macos13-x86_64-dmd-latest:
+    name: test-macos13-x86_64-dmd-latest
+    needs: [pretest-macos13-x86_64-icu_build]
+    runs-on: macos-13
+    env:
+      DYLD_LIBRARY_PATH: /usr/local/lib
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           ref: master
       - name: Download Prebuild binaries
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
-          name: icu-osx-x86_64
+          name: icu-macos13-x86_64
       - name: Expand tarball
-        run: sudo tar xvzf icu-osx-x86_64.tar.gz -C /usr/local
+        run: sudo tar xvzf icu-macos13-x86_64.tar.gz -C /usr/local
       - name: Install D compiler
-        uses: dlang-community/setup-dlang@v1
+        uses: dlang-community/setup-dlang@v2
         with:
           compiler: dmd-latest
       - name: Run unit tests
@@ -427,30 +432,33 @@ jobs:
       - name: Run integration tests
         run: rdmd ./scripts/runner.d -a=x86_64 --mode=integration-test
       - name: Upload coverage result
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
-          name: coverage-osx
+          name: coverage-macos13
           path: .cov
+          include-hidden-files: true
 
 
   # No. OS      ARCH    COMPILER   UT  TT  BLD DOC COV
   # 22. macOS   x86_64  ldc        o   x   o   o   x
-  test-osx-x86_64-ldc-latest:
-    name: test-osx-x86_64-ldc-latest
-    needs: [pretest-osx-x86_64-icu_build]
-    runs-on: macos-latest
+  test-macos13-x86_64-ldc-latest:
+    name: test-macos13-x86_64-ldc-latest
+    needs: [pretest-macos13-x86_64-icu_build]
+    runs-on: macos-13
+    env:
+      DYLD_LIBRARY_PATH: /usr/local/lib
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           ref: master
       - name: Download Prebuild binaries
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
-          name: icu-osx-x86_64
+          name: icu-macos13-x86_64
       - name: Expand tarball
-        run: sudo tar xvzf icu-osx-x86_64.tar.gz -C /usr/local
+        run: sudo tar xvzf icu-macos13-x86_64.tar.gz -C /usr/local
       - name: Install D compiler
-        uses: dlang-community/setup-dlang@v1
+        uses: dlang-community/setup-dlang@v2
         with:
           compiler: ldc-latest
       - name: Run unit tests
@@ -482,12 +490,12 @@ jobs:
       - test-linux-x86_64-dmd-latest
       - test-linux-x86_64-ldc-latest
       - test-linux-x86_64-dmd-master
-      - test-osx-x86_64-dmd-latest
-      - test-osx-x86_64-ldc-latest
+      - test-macos13-x86_64-dmd-latest
+      - test-macos13-x86_64-ldc-latest
     runs-on: ubuntu-latest
     steps:
       - name: Download generated pages
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: docs
           path: docs

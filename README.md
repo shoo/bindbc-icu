@@ -5,7 +5,7 @@
 [![downloads](https://img.shields.io/dub/dt/bindbc-icu.svg?cacheSeconds=3600)](https://code.dlang.org/packages/bindbc-icu)
 [![BSL-1.0](http://img.shields.io/badge/license-BSL--1.0-blue.svg?style=flat)](./LICENSE)
 [![codecov](https://codecov.io/gh/shoo/bindbc-icu/branch/master/graph/badge.svg)](https://codecov.io/gh/shoo/bindbc-icu)
-[![ICU-Version](http://img.shields.io/badge/icu%20version-70.1-green.svg?style=flat)](https://github.com/unicode-org/icu/releases/tag/release-70-1)
+[![ICU-Version](http://img.shields.io/badge/icu%20version-74.2-green.svg?style=flat)](https://github.com/unicode-org/icu/releases/tag/release-74-2)
 
 This project provides dynamic and static bindings to the C API of ICU(International Components for Unicode). The bindings are `@nogc` and `nothrow` compatible and can be compiled for compatibility with <s>`-betterC`</s>.
 
@@ -19,7 +19,7 @@ If you are using dub, you can add a dependency by describing it as follows:
 
 ```json
 "dependencies": {
-    "bindbc-icu": "~>70.1",
+    "bindbc-icu": "~>74.2",
 }
 ```
 
@@ -27,14 +27,14 @@ On Windows, the package includes binaries, so you can use it as is.
 On Linux or MacOS, the ICU must be installed. Be sure to specify the version of the ICU.
 
 ```sh
-apt install libicu-dev=70.1-2
+apt install libicu-dev=74.2-1ubuntu3.1
 ```
 
 If the required version is not provided by the package manager, you will need to build it from source code.
 
 ```sh
 apt install -y git build-essential libicu-le-hb0 libicu-le-hb-dev
-git clone -b release-70-1 --depth 1 --single-branch https://github.com/unicode-org/icu.git
+git clone -b release-74-2 --depth 1 --single-branch https://github.com/unicode-org/icu.git
 cd icu/icu4c/source
 ./runConfigureICU Linux --disable-samples --disable-tests --with-data-packaging=library
 make -j2
@@ -46,7 +46,7 @@ For dynamic linking, use subconfigurations in addition to dependencies.
 
 ```json
 "dependencies": {
-    "bindbc-icu": "~>70.1",
+    "bindbc-icu": "~>74.2",
 }
 "subConfigurations": {
     "bindbc-icu": "dynamic"
@@ -72,8 +72,8 @@ In particular, ICU functions are characterized by a versioned function name (sym
 Inside the library, create the alias as following:
 
 ```d
-UCharsetDetector* ucsdet_open_70(UErrorCode* status) @system;   // real symbol
-typeof(&ucsdet_open_70) ucsdet_open;                            // usable function pointer from dynamic link libraries
+UCharsetDetector* ucsdet_open_74(UErrorCode* status) @system;   // real symbol
+typeof(&ucsdet_open_74) ucsdet_open;                            // usable function pointer from dynamic link libraries
 ```
 
 ## Static link
@@ -81,7 +81,7 @@ For static linking, use subconfigurations in addition to dependencies.
 
 ```json
 "dependencies": {
-    "bindbc-icu": "~>70.1",
+    "bindbc-icu": "~>74.2",
 }
 "subConfigurations": {
     "bindbc-icu": "static"
@@ -100,8 +100,8 @@ In particular, ICU functions are characterized by a versioned function name (sym
 Inside the library, create the alias as following:
 
 ```d
-UCharsetDetector* ucsdet_open_70(UErrorCode* status) @system;   // real symbol
-alias ucsdet_open = ucsdet_open_70;                             // usable alias
+UCharsetDetector* ucsdet_open_74(UErrorCode* status) @system;   // real symbol
+alias ucsdet_open = ucsdet_open_74;                             // usable alias
 ```
 
 # Support status

@@ -23,11 +23,11 @@ else:
 struct UFieldPositionIterator;
 
 ///
-UFieldPositionIterator* ufieldpositer_open_70(UErrorCode* status);
+UFieldPositionIterator* ufieldpositer_open_74(UErrorCode* status);
 
 ///
-void ufieldpositer_close_70(UFieldPositionIterator* fpositer);
+void ufieldpositer_close_74(UFieldPositionIterator* fpositer);
 
 ///
-int ufieldpositer_next_70(UFieldPositionIterator* fpositer,
+int ufieldpositer_next_74(UFieldPositionIterator* fpositer,
 	int* beginIndex, int* endIndex);

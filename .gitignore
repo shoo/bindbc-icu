@@ -27,5 +27,6 @@ __dummy.html
 *.json
 !dub.json
 *.bat
+*.pdb
 *.ninja
 /reggaefile.d
