@@ -17,8 +17,7 @@
 - [x] Update windows static libiraries  
   from https://github.com/unicode-org/icu/releases
   - libs/windows-x86_64/*
-  - libs/windows-x86_mscoff/*
-  - libs/windows-x86_omf/*  
+  - libs/windows-x86/*  
     from mscoff, use coffimplib (helper: libs/windows-x86_omf/make_lib_from_mscoff.bat)
 - [x] dub.json
   - copyFiles-windows-x86

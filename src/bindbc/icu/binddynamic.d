@@ -145,6 +145,6 @@ void unloadIcu() @nogc nothrow
 
 @system unittest
 {
-	loadIcu();
+	cast(void)loadIcu();
 	unloadIcu();
 }

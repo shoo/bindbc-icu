@@ -242,4 +242,4 @@ pragma(inline) extern (D) UBool U_SUCCESS()(UErrorCode code) { return code <= UE
 pragma(inline) extern (D) UBool U_FAILURE()(UErrorCode code) { return code > UErrorCode.U_ZERO_ERROR; }
 
 ///
-const(char)* u_errorName_70(UErrorCode code);
+const(char)* u_errorName_74(UErrorCode code);

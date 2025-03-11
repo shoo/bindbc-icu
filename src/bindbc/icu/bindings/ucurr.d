@@ -30,7 +30,7 @@ enum UCurrencyUsage
 }
 
 ///
-int ucurr_forLocale_70(const(char)* locale,
+int ucurr_forLocale_74(const(char)* locale,
 	UChar* buff,
 	int buffCapacity,
 	UErrorCode* ec);
@@ -63,16 +63,16 @@ else
 	alias UCurrRegistryKey = const(void)*;
 
 	///
-	UCurrRegistryKey ucurr_register_70(const(UChar)* isoCode,
+	UCurrRegistryKey ucurr_register_74(const(UChar)* isoCode,
 		const(char)* locale,
 		UErrorCode* status);
 
 	///
-	UBool ucurr_unregister_70(UCurrRegistryKey key, UErrorCode* status);
+	UBool ucurr_unregister_74(UCurrRegistryKey key, UErrorCode* status);
 }
 
 ///
-const(UChar)* ucurr_getName_70(const(UChar)* currency,
+const(UChar)* ucurr_getName_74(const(UChar)* currency,
 	const(char)* locale,
 	UCurrNameStyle nameStyle,
 	UBool* isChoiceFormat,
@@ -80,7 +80,7 @@ const(UChar)* ucurr_getName_70(const(UChar)* currency,
 	UErrorCode* ec);
 
 ///
-const(UChar)* ucurr_getPluralName_70(const(UChar)* currency,
+const(UChar)* ucurr_getPluralName_74(const(UChar)* currency,
 	const(char)* locale,
 	UBool* isChoiceFormat,
 	const(char)* pluralCount,
@@ -88,20 +88,20 @@ const(UChar)* ucurr_getPluralName_70(const(UChar)* currency,
 	UErrorCode* ec);
 
 ///
-int ucurr_getDefaultFractionDigits_70(const(UChar)* currency,
+int ucurr_getDefaultFractionDigits_74(const(UChar)* currency,
 	UErrorCode* ec);
 
 ///
-int ucurr_getDefaultFractionDigitsForUsage_70(const(UChar)* currency,
+int ucurr_getDefaultFractionDigitsForUsage_74(const(UChar)* currency,
 	const UCurrencyUsage usage,
 	UErrorCode* ec);
 
 ///
-double ucurr_getRoundingIncrement_70(const(UChar)* currency,
+double ucurr_getRoundingIncrement_74(const(UChar)* currency,
 	UErrorCode* ec);
 
 ///
-double ucurr_getRoundingIncrementForUsage_70(const(UChar)* currency,
+double ucurr_getRoundingIncrementForUsage_74(const(UChar)* currency,
 	const UCurrencyUsage usage,
 	UErrorCode* ec);
 
@@ -121,21 +121,21 @@ enum UCurrCurrencyType
 }
 
 ///
-UEnumeration* ucurr_openISOCurrencies_70(uint currType, UErrorCode* pErrorCode);
+UEnumeration* ucurr_openISOCurrencies_74(uint currType, UErrorCode* pErrorCode);
 
 ///
-UBool ucurr_isAvailable_70(const(UChar)* isoCode,
+UBool ucurr_isAvailable_74(const(UChar)* isoCode,
 	UDate from,
 	UDate to,
 	UErrorCode* errorCode);
 
 ///
-int ucurr_countCurrencies_70(const(char)* locale,
+int ucurr_countCurrencies_74(const(char)* locale,
 	UDate date,
 	UErrorCode* ec);
 
 ///
-int ucurr_forLocaleAndDate_70(const(char)* locale,
+int ucurr_forLocaleAndDate_74(const(char)* locale,
 	UDate date,
 	int index,
 	UChar* buff,
@@ -143,10 +143,10 @@ int ucurr_forLocaleAndDate_70(const(char)* locale,
 	UErrorCode* ec);
 
 ///
-UEnumeration* ucurr_getKeywordValuesForLocale_70(const(char)* key,
+UEnumeration* ucurr_getKeywordValuesForLocale_74(const(char)* key,
 	const(char)* locale,
 	UBool commonlyUsed,
 	UErrorCode* status);
 
 ///
-int ucurr_getNumericCode_70(const(UChar)* currency);
+int ucurr_getNumericCode_74(const(UChar)* currency);
