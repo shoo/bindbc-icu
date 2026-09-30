@@ -151,7 +151,7 @@ enum UNumberFormatMinimumGroupingDigits
 }
 
 ///
-UNumberFormat* unum_open_74(UNumberFormatStyle style,
+UNumberFormat* unum_open_78(UNumberFormatStyle style,
 	const(UChar)* pattern,
 	int patternLength,
 	const(char)* locale,
@@ -159,14 +159,14 @@ UNumberFormat* unum_open_74(UNumberFormatStyle style,
 	UErrorCode* status);
 
 ///
-void unum_close_74(UNumberFormat* fmt);
+void unum_close_78(UNumberFormat* fmt);
 
 ///
-UNumberFormat* unum_clone_74(const(UNumberFormat)* fmt,
+UNumberFormat* unum_clone_78(const(UNumberFormat)* fmt,
 	UErrorCode* status);
 
 ///
-int unum_format_74(const(UNumberFormat)* fmt,
+int unum_format_78(const(UNumberFormat)* fmt,
 	int number,
 	UChar* result,
 	int resultLength,
@@ -174,7 +174,7 @@ int unum_format_74(const(UNumberFormat)* fmt,
 	UErrorCode* status);
 
 ///
-int unum_formatInt64_74(const(UNumberFormat)* fmt,
+int unum_formatInt64_78(const(UNumberFormat)* fmt,
 	long number,
 	UChar* result,
 	int resultLength,
@@ -182,7 +182,7 @@ int unum_formatInt64_74(const(UNumberFormat)* fmt,
 	UErrorCode* status);
 
 ///
-int unum_formatDouble_74(const(UNumberFormat)* fmt,
+int unum_formatDouble_78(const(UNumberFormat)* fmt,
 	double number,
 	UChar* result,
 	int resultLength,
@@ -190,7 +190,7 @@ int unum_formatDouble_74(const(UNumberFormat)* fmt,
 	UErrorCode* status);
 
 ///
-int unum_formatDoubleForFields_74(const(UNumberFormat)* format,
+int unum_formatDoubleForFields_78(const(UNumberFormat)* format,
 	double number,
 	UChar* result,
 	int resultLength,
@@ -198,7 +198,7 @@ int unum_formatDoubleForFields_74(const(UNumberFormat)* format,
 	UErrorCode* status);
 
 ///
-int unum_formatDecimal_74(const(UNumberFormat)* fmt,
+int unum_formatDecimal_78(const(UNumberFormat)* fmt,
 	const(char)* number,
 	int length,
 	UChar* result,
@@ -207,7 +207,7 @@ int unum_formatDecimal_74(const(UNumberFormat)* fmt,
 	UErrorCode* status);
 
 ///
-int unum_formatDoubleCurrency_74(const(UNumberFormat)* fmt,
+int unum_formatDoubleCurrency_78(const(UNumberFormat)* fmt,
 	double number,
 	UChar* currency,
 	UChar* result,
@@ -216,7 +216,7 @@ int unum_formatDoubleCurrency_74(const(UNumberFormat)* fmt,
 	UErrorCode* status);
 
 ///
-int unum_formatUFormattable_74(const(UNumberFormat)* fmt,
+int unum_formatUFormattable_78(const(UNumberFormat)* fmt,
 	const(UFormattable)* number,
 	UChar* result,
 	int resultLength,
@@ -224,28 +224,28 @@ int unum_formatUFormattable_74(const(UNumberFormat)* fmt,
 	UErrorCode* status);
 
 ///
-int unum_parse_74(const(UNumberFormat)* fmt,
+int unum_parse_78(const(UNumberFormat)* fmt,
 	const(UChar)* text,
 	int textLength,
 	int* parsePos /* 0 = start */ ,
 	UErrorCode* status);
 
 ///
-long unum_parseInt64_74(const(UNumberFormat)* fmt,
+long unum_parseInt64_78(const(UNumberFormat)* fmt,
 	const(UChar)* text,
 	int textLength,
 	int* parsePos /* 0 = start */ ,
 	UErrorCode* status);
 
 ///
-double unum_parseDouble_74(const(UNumberFormat)* fmt,
+double unum_parseDouble_78(const(UNumberFormat)* fmt,
 	const(UChar)* text,
 	int textLength,
 	int* parsePos /* 0 = start */ ,
 	UErrorCode* status);
 
 ///
-int unum_parseDecimal_74(const(UNumberFormat)* fmt,
+int unum_parseDecimal_78(const(UNumberFormat)* fmt,
 	const(UChar)* text,
 	int textLength,
 	int* parsePos /* 0 = start */ ,
@@ -254,7 +254,7 @@ int unum_parseDecimal_74(const(UNumberFormat)* fmt,
 	UErrorCode* status);
 
 ///
-double unum_parseDoubleCurrency_74(const(UNumberFormat)* fmt,
+double unum_parseDoubleCurrency_78(const(UNumberFormat)* fmt,
 	const(UChar)* text,
 	int textLength,
 	int* parsePos, /* 0 = start */
@@ -262,7 +262,7 @@ double unum_parseDoubleCurrency_74(const(UNumberFormat)* fmt,
 	UErrorCode* status);
 
 ///
-UFormattable* unum_parseToUFormattable_74(const(UNumberFormat)* fmt,
+UFormattable* unum_parseToUFormattable_78(const(UNumberFormat)* fmt,
 	UFormattable* result,
 	const(UChar)* text,
 	int textLength,
@@ -270,7 +270,7 @@ UFormattable* unum_parseToUFormattable_74(const(UNumberFormat)* fmt,
 	UErrorCode* status);
 
 ///
-void unum_applyPattern_74(UNumberFormat* format,
+void unum_applyPattern_78(UNumberFormat* format,
 	UBool localized,
 	const(UChar)* pattern,
 	int patternLength,
@@ -279,10 +279,10 @@ void unum_applyPattern_74(UNumberFormat* format,
 );
 
 ///
-const(char)* unum_getAvailable_74(int localeIndex);
+const(char)* unum_getAvailable_78(int localeIndex);
 
 ///
-int unum_countAvailable_74();
+int unum_countAvailable_78();
 
 version (UCONFIG_HAVE_PARSEALLINPUT)
 {
@@ -364,24 +364,24 @@ enum UNumberFormatAttribute
 }
 
 ///
-bool unum_hasAttribute_74(const(UNumberFormat)* fmt,
+bool unum_hasAttribute_78(const(UNumberFormat)* fmt,
 	UNumberFormatAttribute attr);
 
 ///
-int unum_getAttribute_74(const(UNumberFormat)* fmt,
+int unum_getAttribute_78(const(UNumberFormat)* fmt,
 	UNumberFormatAttribute attr);
 
 ///
-void unum_setAttribute_74(UNumberFormat* fmt,
+void unum_setAttribute_78(UNumberFormat* fmt,
 	UNumberFormatAttribute attr,
 	int newValue);
 
 ///
-double unum_getDoubleAttribute_74(const(UNumberFormat)* fmt,
+double unum_getDoubleAttribute_78(const(UNumberFormat)* fmt,
 	UNumberFormatAttribute attr);
 
 ///
-void unum_setDoubleAttribute_74(UNumberFormat* fmt,
+void unum_setDoubleAttribute_78(UNumberFormat* fmt,
 	UNumberFormatAttribute attr,
 	double newValue);
 
@@ -407,21 +407,21 @@ enum UNumberFormatTextAttribute
 }
 
 ///
-int unum_getTextAttribute_74(const(UNumberFormat)* fmt,
+int unum_getTextAttribute_78(const(UNumberFormat)* fmt,
 	UNumberFormatTextAttribute tag,
 	UChar* result,
 	int resultLength,
 	UErrorCode* status);
 
 ///
-void unum_setTextAttribute_74(UNumberFormat* fmt,
+void unum_setTextAttribute_78(UNumberFormat* fmt,
 	UNumberFormatTextAttribute tag,
 	const(UChar)* newValue,
 	int newValueLength,
 	UErrorCode* status);
 
 ///
-int unum_toPattern_74(const(UNumberFormat)* fmt,
+int unum_toPattern_78(const(UNumberFormat)* fmt,
 	UBool isPatternLocalized,
 	UChar* result,
 	int resultLength,
@@ -490,28 +490,28 @@ enum UNumberFormatSymbol
 }
 
 ///
-int unum_getSymbol_74(const(UNumberFormat)* fmt,
+int unum_getSymbol_78(const(UNumberFormat)* fmt,
 	UNumberFormatSymbol symbol,
 	UChar* buffer,
 	int size,
 	UErrorCode* status);
 
 ///
-void unum_setSymbol_74(UNumberFormat* fmt,
+void unum_setSymbol_78(UNumberFormat* fmt,
 	UNumberFormatSymbol symbol,
 	const(UChar)* value,
 	int length,
 	UErrorCode* status);
 
 ///
-const(char)* unum_getLocaleByType_74(const(UNumberFormat)* fmt,
+const(char)* unum_getLocaleByType_78(const(UNumberFormat)* fmt,
 	ULocDataLocaleType type,
 	UErrorCode* status);
 
 ///
-void unum_setContext_74(UNumberFormat* fmt, UDisplayContext value, UErrorCode* status);
+void unum_setContext_78(UNumberFormat* fmt, UDisplayContext value, UErrorCode* status);
 
 ///
-UDisplayContext unum_getContext_74(const(UNumberFormat)* fmt,
+UDisplayContext unum_getContext_78(const(UNumberFormat)* fmt,
 	UDisplayContextType type,
 	UErrorCode* status);
