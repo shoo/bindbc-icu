@@ -136,59 +136,59 @@ enum string UCNV_VERSION_OPTION_STRING = ",version=";
 enum string UCNV_SWAP_LFNL_OPTION_STRING = ",swaplfnl";
 
 ///
-int ucnv_compareNames_74(const(char)* name1, const(char)* name2);
+int ucnv_compareNames_78(const(char)* name1, const(char)* name2);
 
 ///
-UConverter* ucnv_open_74(const(char)* converterName, UErrorCode* err) @system;
+UConverter* ucnv_open_78(const(char)* converterName, UErrorCode* err) @system;
 
 ///
-UConverter* ucnv_openU_74(const(char)* name, UErrorCode* err) @system;
+UConverter* ucnv_openU_78(const(char)* name, UErrorCode* err) @system;
 
 ///
-UConverter* ucnv_openCCSID_74(int codepage, UConverterPlatform platform, UErrorCode* err) @system;
+UConverter* ucnv_openCCSID_78(int codepage, UConverterPlatform platform, UErrorCode* err) @system;
 
 ///
-UConverter* ucnv_openPackage_74(const(char)* packageName, const(char)* converterName, UErrorCode* err) @system;
+UConverter* ucnv_openPackage_78(const(char)* packageName, const(char)* converterName, UErrorCode* err) @system;
 
 ///
-UConverter* ucnv_clone_74(const(UConverter)* cnv, UErrorCode *status) @system;
+UConverter* ucnv_clone_78(const(UConverter)* cnv, UErrorCode *status) @system;
 
 ///
 //deprecated("Deprecated at ICU 71")
-UConverter* ucnv_safeClone_74(const(UConverter)* cnv, void* stackBuffer, int* pBufferSize, UErrorCode* status) @system;
+UConverter* ucnv_safeClone_78(const(UConverter)* cnv, void* stackBuffer, int* pBufferSize, UErrorCode* status) @system;
 
 ///
 enum int U_CNV_SAFECLONE_BUFFERSIZE = 1024;
 
 ///
-void ucnv_close_74(UConverter* converter) @system;
+void ucnv_close_78(UConverter* converter) @system;
 
 ///
-void ucnv_getSubstChars_74(const(UConverter)* converter, Char* subChars, byte* len, UErrorCode* err);
+void ucnv_getSubstChars_78(const(UConverter)* converter, Char* subChars, byte* len, UErrorCode* err);
 
 ///
-void ucnv_setSubstChars_74(UConverter* converter, const(Char)* subChars, byte len, UErrorCode* err);
+void ucnv_setSubstChars_78(UConverter* converter, const(Char)* subChars, byte len, UErrorCode* err);
 
 ///
-void ucnv_setSubstString_74(UConverter* cnv, const(UChar)* s, int length, UErrorCode* err);
+void ucnv_setSubstString_78(UConverter* cnv, const(UChar)* s, int length, UErrorCode* err);
 
 ///
-void ucnv_getInvalidChars_74(const(UConverter)* converter, Char* errBytes, byte* len, UErrorCode* err);
+void ucnv_getInvalidChars_78(const(UConverter)* converter, Char* errBytes, byte* len, UErrorCode* err);
 
 ///
-void ucnv_getInvalidUChars_74(const(UConverter)* converter, UChar* errUChars, byte* len, UErrorCode* err);
+void ucnv_getInvalidUChars_78(const(UConverter)* converter, UChar* errUChars, byte* len, UErrorCode* err);
 
 ///
-void ucnv_reset_74(UConverter* converter);
+void ucnv_reset_78(UConverter* converter);
 
 ///
-void ucnv_resetToUnicode_74(UConverter* converter);
+void ucnv_resetToUnicode_78(UConverter* converter);
 
 ///
-void ucnv_resetFromUnicode_74(UConverter* converter);
+void ucnv_resetFromUnicode_78(UConverter* converter);
 
 ///
-byte ucnv_getMaxCharSize_74(const(UConverter)* converter);
+byte ucnv_getMaxCharSize_78(const(UConverter)* converter);
 
 ///
 extern(D) pragma(inline) int UCNV_GET_MAX_BYTES_FOR_STRING()(int length, int maxCharSize)
@@ -197,26 +197,26 @@ extern(D) pragma(inline) int UCNV_GET_MAX_BYTES_FOR_STRING()(int length, int max
 }
 
 ///
-byte ucnv_getMinCharSize_74(const(UConverter)* converter);
+byte ucnv_getMinCharSize_78(const(UConverter)* converter);
 
 ///
-int ucnv_getDisplayName_74(const(UConverter)* converter, const(char)* displayLocale, UChar* displayName,
+int ucnv_getDisplayName_78(const(UConverter)* converter, const(char)* displayLocale, UChar* displayName,
 	int displayNameCapacity, UErrorCode* err);
 
 ///
-const(char)* ucnv_getName_74(const(UConverter)* converter, UErrorCode* err);
+const(char)* ucnv_getName_78(const(UConverter)* converter, UErrorCode* err);
 
 ///
-int ucnv_getCCSID_74(const(UConverter)* converter, UErrorCode *err);
+int ucnv_getCCSID_78(const(UConverter)* converter, UErrorCode *err);
 
 ///
-UConverterPlatform ucnv_getPlatform_74(const(UConverter)* converter, UErrorCode* err);
+UConverterPlatform ucnv_getPlatform_78(const(UConverter)* converter, UErrorCode* err);
 
 ///
-UConverterType ucnv_getType_74(const(UConverter)* converter);
+UConverterType ucnv_getType_78(const(UConverter)* converter);
 
 ///
-void ucnv_getStarters_74(const(UConverter)* converter, ref UBool[256] starters, UErrorCode* err);
+void ucnv_getStarters_78(const(UConverter)* converter, ref UBool[256] starters, UErrorCode* err);
 
 ///
 enum UConverterUnicodeSet
@@ -228,123 +228,123 @@ enum UConverterUnicodeSet
 }
 
 ///
-void ucnv_getUnicodeSet_74(const(UConverter)* cnv, USet* setFillIn, UConverterUnicodeSet whichSet,
+void ucnv_getUnicodeSet_78(const(UConverter)* cnv, USet* setFillIn, UConverterUnicodeSet whichSet,
 	UErrorCode* pErrorCode);
 
 ///
-void ucnv_getToUCallBack_74(const(UConverter)* converter, UConverterToUCallback *action, const(void*)* context);
+void ucnv_getToUCallBack_78(const(UConverter)* converter, UConverterToUCallback *action, const(void*)* context);
 
 ///
-void ucnv_getFromUCallBack_74(const(UConverter)* converter, UConverterFromUCallback* action, const(void*)* context);
+void ucnv_getFromUCallBack_78(const(UConverter)* converter, UConverterFromUCallback* action, const(void*)* context);
 
 ///
-void ucnv_setToUCallBack_74(UConverter* converter, UConverterToUCallback newAction, const(void)* newContext,
+void ucnv_setToUCallBack_78(UConverter* converter, UConverterToUCallback newAction, const(void)* newContext,
 	UConverterToUCallback* oldAction, const(void*)* oldContext, UErrorCode* err);
 
 ///
-void ucnv_setFromUCallBack_74(UConverter* converter, UConverterFromUCallback newAction, const(void)* newContext,
+void ucnv_setFromUCallBack_78(UConverter* converter, UConverterFromUCallback newAction, const(void)* newContext,
 	UConverterFromUCallback* oldAction, const(void*)* oldContext, UErrorCode* err);
 
 ///
-void ucnv_fromUnicode_74(UConverter* converter, Char** target, const(Char)* targetLimit,
+void ucnv_fromUnicode_78(UConverter* converter, Char** target, const(Char)* targetLimit,
 	const(UChar*)* source, const(UChar)* sourceLimit, int* offsets, UBool flush, UErrorCode* err);
 
 ///
-void ucnv_toUnicode_74(UConverter* converter, UChar** target, const(UChar)* targetLimit,
+void ucnv_toUnicode_78(UConverter* converter, UChar** target, const(UChar)* targetLimit,
 	const(Char*)* source, const(Char)* sourceLimit, int* offsets, UBool flush, UErrorCode* err);
 
 ///
-int ucnv_fromUChars_74(UConverter* cnv, Char* dest, int destCapacity,
+int ucnv_fromUChars_78(UConverter* cnv, Char* dest, int destCapacity,
 	const(UChar)* src, int srcLength, UErrorCode* pErrorCode);
 
 ///
-int ucnv_toUChars_74(UConverter* cnv, UChar* dest, int destCapacity,
+int ucnv_toUChars_78(UConverter* cnv, UChar* dest, int destCapacity,
 	const(Char)* src, int srcLength, UErrorCode* pErrorCode);
 
 ///
-UChar32 ucnv_getNextUChar_74(UConverter* converter, const(Char*)* source, const(Char)* sourceLimit, UErrorCode* err);
+UChar32 ucnv_getNextUChar_78(UConverter* converter, const(Char*)* source, const(Char)* sourceLimit, UErrorCode* err);
 
 ///
-void ucnv_convertEx_74(UConverter* targetCnv, UConverter* sourceCnv,
+void ucnv_convertEx_78(UConverter* targetCnv, UConverter* sourceCnv,
 	Char** target, const(Char)* targetLimit, const(Char*)* source, const(Char)* sourceLimit,
 	UChar* pivotStart, UChar** pivotSource, UChar** pivotTarget, const(UChar)* pivotLimit,
 	UBool reset, UBool flush, UErrorCode* pErrorCode);
 
 ///
-int ucnv_convert_74(const(char)* toConverterName, const(char)* fromConverterName, Char* target, int targetCapacity,
+int ucnv_convert_78(const(char)* toConverterName, const(char)* fromConverterName, Char* target, int targetCapacity,
 	const(Char)* source, int sourceLength, UErrorCode* pErrorCode);
 
 ///
-int ucnv_toAlgorithmic_74(UConverterType algorithmicType, UConverter* cnv, Char* target, int targetCapacity,
+int ucnv_toAlgorithmic_78(UConverterType algorithmicType, UConverter* cnv, Char* target, int targetCapacity,
 	const(Char)* source, int sourceLength, UErrorCode* pErrorCode);
 
 ///
-int ucnv_fromAlgorithmic_74(UConverter* cnv, UConverterType algorithmicType, Char* target, int targetCapacity,
+int ucnv_fromAlgorithmic_78(UConverter* cnv, UConverterType algorithmicType, Char* target, int targetCapacity,
 	const(Char)* source, int sourceLength, UErrorCode*pErrorCode);
 
 ///
-int ucnv_flushCache_74();
+int ucnv_flushCache_78();
 
 ///
-int ucnv_countAvailable_74();
+int ucnv_countAvailable_78();
 
 ///
-const(char)* ucnv_getAvailableName_74(int n);
+const(char)* ucnv_getAvailableName_78(int n);
 
 ///
-UEnumeration* ucnv_openAllNames_74(UErrorCode* pErrorCode) @system;
+UEnumeration* ucnv_openAllNames_78(UErrorCode* pErrorCode) @system;
 
 ///
-ushort ucnv_countAliases_74(const(char)* alias_, UErrorCode* pErrorCode);
+ushort ucnv_countAliases_78(const(char)* alias_, UErrorCode* pErrorCode);
 
 ///
-const(char)* ucnv_getAlias_74(const(char)* alias_, ushort n, UErrorCode* pErrorCode);
+const(char)* ucnv_getAlias_78(const(char)* alias_, ushort n, UErrorCode* pErrorCode);
 
 ///
-void ucnv_getAliases_74(const(char)* alias_, const(char*)* aliases, UErrorCode* pErrorCode);
+void ucnv_getAliases_78(const(char)* alias_, const(char*)* aliases, UErrorCode* pErrorCode);
 
 ///
-UEnumeration* ucnv_openStandardNames_74(const(char)* convName, const(char)* standard, UErrorCode* pErrorCode) @system;
+UEnumeration* ucnv_openStandardNames_78(const(char)* convName, const(char)* standard, UErrorCode* pErrorCode) @system;
 
 ///
-ushort ucnv_countStandards_74();
+ushort ucnv_countStandards_78();
 
 ///
-const(char)* ucnv_getStandard_74(ushort n, UErrorCode* pErrorCode);
+const(char)* ucnv_getStandard_78(ushort n, UErrorCode* pErrorCode);
 
 ///
-const(char)* ucnv_getStandardName_74(const(char)* name, const(char)* standard, UErrorCode* pErrorCode);
+const(char)* ucnv_getStandardName_78(const(char)* name, const(char)* standard, UErrorCode* pErrorCode);
 
 ///
-const(char)* ucnv_getCanonicalName_74(const(char)* alias_, const(char)* standard, UErrorCode* pErrorCode);
+const(char)* ucnv_getCanonicalName_78(const(char)* alias_, const(char)* standard, UErrorCode* pErrorCode);
 
 ///
-const(char)* ucnv_getDefaultName_74();
+const(char)* ucnv_getDefaultName_78();
 
 ///
-void ucnv_setDefaultName_74(const(char)* name);
+void ucnv_setDefaultName_78(const(char)* name);
 
 ///
-void ucnv_fixFileSeparator_74(const(UConverter)* cnv, UChar* source, int sourceLen);
+void ucnv_fixFileSeparator_78(const(UConverter)* cnv, UChar* source, int sourceLen);
 
 ///
-UBool ucnv_isAmbiguous_74(const(UConverter)* cnv);
+UBool ucnv_isAmbiguous_78(const(UConverter)* cnv);
 
 ///
-void ucnv_setFallback_74(UConverter* cnv, UBool usesFallback);
+void ucnv_setFallback_78(UConverter* cnv, UBool usesFallback);
 
 ///
-UBool ucnv_usesFallback_74(const(UConverter)* cnv);
+UBool ucnv_usesFallback_78(const(UConverter)* cnv);
 
 ///
-const(char)* ucnv_detectUnicodeSignature_74(const(Char)* source, int sourceLength,
+const(char)* ucnv_detectUnicodeSignature_78(const(Char)* source, int sourceLength,
 	int* signatureLength, UErrorCode* pErrorCode);
 
 ///
-int ucnv_fromUCountPending_74(const(UConverter)* cnv, UErrorCode* status);
+int ucnv_fromUCountPending_78(const(UConverter)* cnv, UErrorCode* status);
 
 ///
-int ucnv_toUCountPending_74(const(UConverter)* cnv, UErrorCode* status);
+int ucnv_toUCountPending_78(const(UConverter)* cnv, UErrorCode* status);
 
 ///
-UBool ucnv_isFixedWidth_74(UConverter* cnv, UErrorCode* status);
+UBool ucnv_isFixedWidth_78(UConverter* cnv, UErrorCode* status);

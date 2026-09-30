@@ -4,30 +4,46 @@ on:
   pull_request:
 
 jobs:
-  pretest-macos13-x86_64-icu_build:
-    name: pretest-macos13-x86_64-icu_build
-    runs-on: macos-13
+  pretest-macos-x86_64-icu_build:
+    name: pretest-macos-x86_64-icu_build
+    runs-on: macos-latest
     steps:
-      - name: Compiling ICU
+      - name: Download ICU sources
+        run: curl https://github.com/unicode-org/icu/releases/download/release-78.2/icu4c-78.2-sources.tgz -LfsS | tar xz
+      - name: Build ICU (native, for cross-build tools)
         run: |
-          curl https://github.com/unicode-org/icu/releases/download/release-74-2/icu4c-74_2-src.tgz -LfsS | tar xzv
-          cd icu/source
-          ./runConfigureICU MacOSX --disable-samples --disable-tests --with-data-packaging=library
-          make -j4 && make install prefix=$(pwd)/install
-          cd install
-          tar zcvf ../../../icu-macos13-x86_64.tar.gz *
+          mkdir icu-native && cd icu-native
+          ../icu/source/runConfigureICU MacOSX --disable-samples --disable-tests
+          make -j4
+      - name: Cross-build ICU (x86_64)
+        run: |
+          mkdir icu-cross && cd icu-cross
+          export CFLAGS="-arch x86_64" CXXFLAGS="-arch x86_64" LDFLAGS="-arch x86_64"
+          ../icu/source/configure \
+            --host=x86_64-apple-darwin \
+            --with-cross-build="$GITHUB_WORKSPACE/icu-native" \
+            --disable-samples --disable-tests --with-data-packaging=library
+          make -j4
+          make install prefix="$GITHUB_WORKSPACE/icu-cross/install"
+      - name: Verify architecture
+        run: |
+          lipo -info icu-cross/install/lib/libicuuc.dylib
+          lipo -info icu-cross/install/lib/libicuuc.dylib | grep -q x86_64
+          otool -D icu-cross/install/lib/libicuuc.dylib   # install_name の確認
+      - name: Pack
+        run: tar zcvf icu-macos-x86_64.tar.gz -C icu-cross/install .
       - name: Upload generated icu binaries
         uses: actions/upload-artifact@v4
         with:
-          name: icu-macos13-x86_64
-          path: icu-macos13-x86_64.tar.gz
+          name: icu-macos-x86_64
+          path: icu-macos-x86_64.tar.gz
   pretest-linux-x86_64-icu_build:
     name: pretest-linux-x86_64-icu_build
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     steps:
       - name: Compiling ICU
         run: |
-          curl https://github.com/unicode-org/icu/releases/download/release-74-2/icu4c-74_2-src.tgz -LfsS | tar xzv
+          curl https://github.com/unicode-org/icu/releases/download/release-78.2/icu4c-78.2-sources.tgz -LfsS | tar xzv
           cd icu/source
           ./runConfigureICU Linux --disable-samples --disable-tests --with-data-packaging=library
           make -j4 && make install prefix=$(pwd)/install
@@ -46,7 +62,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y gcc-multilib g++-multilib
-          curl https://github.com/unicode-org/icu/releases/download/release-74-2/icu4c-74_2-src.tgz -LfsS | tar xzv
+          curl https://github.com/unicode-org/icu/releases/download/release-78.2/icu4c-78.2-sources.tgz -LfsS | tar xzv
           cd icu/source
           ./runConfigureICU Linux --disable-samples --disable-tests --with-data-packaging=library --with-library-bits=32
           make -j4 && make install prefix=$(pwd)/install
@@ -269,12 +285,12 @@ jobs:
 
   # No. OS              ARCH    COMPILER   UT  TT  BLD DOC COV
   # 13.   Ubuntu        x86_64  dmd        o   x   o   O   x
-  # 13.1. Ubuntu-20.04  x86_64  dmd        o   o   o   o   x
-  # 13.2. ubuntu-24.04  x86_64  dmd        o   x   o   O   x
-  test-ubuntu20-x86_64-dmd-latest:
-    name: test-ubuntu20-x86_64-dmd-latest
+  # 13.1. Ubuntu-24.04  x86_64  dmd        o   o   o   o   x
+  # 13.2. ubuntu-26.04  x86_64  dmd        o   x   o   O   x
+  test-ubuntu24-x86_64-dmd-latest:
+    name: test-ubuntu24-x86_64-dmd-latest
     needs: [pretest-linux-x86_64-icu_build]
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
       - name: Download Prebuild binaries
@@ -297,11 +313,11 @@ jobs:
         run: rdmd ./scripts/runner.d -a=x86_64 --mode=generate-document
   test-linux-x86_64-dmd-latest:
     name: test-linux-x86_64-dmd-latest
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     steps:
       - uses: actions/checkout@v4
-      - name: Install ICU 74.2
-        run: sudo apt-get install -y libicu-dev=74.2-1ubuntu3.1
+      - name: Install ICU 78.2
+        run: sudo apt-get install -y libicu-dev=78.2-2ubuntu1
       - name: Install D compiler
         uses: dlang-community/setup-dlang@v2
         with:
@@ -322,11 +338,11 @@ jobs:
   # 14. Ubuntu  x86_64  ldc        o   o   x   x   o
   test-linux-x86_64-ldc-latest:
     name: test-linux-x86_64-ldc-latest
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     steps:
       - uses: actions/checkout@v4
-      - name: Install ICU 74.2
-        run: sudo apt-get install -y libicu-dev=74.2-1ubuntu3.1
+      - name: Install ICU 78.2
+        run: sudo apt-get install -y libicu-dev=78.2-2ubuntu1
       - name: Install D compiler
         uses: dlang-community/setup-dlang@v2
         with:
@@ -346,11 +362,11 @@ jobs:
   # 15. Ubuntu  x86_64  dmd-master o   o   o   x   x
   test-linux-x86_64-dmd-master:
     name: test-linux-x86_64-dmd-master
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     steps:
       - uses: actions/checkout@v4
-      - name: Install ICU 74.2
-        run: sudo apt-get install -y libicu-dev=74.2-1ubuntu3.1
+      - name: Install ICU 78.2
+        run: sudo apt-get install -y libicu-dev=78.2-2ubuntu1
       - name: Install D compiler
         uses: dlang-community/setup-dlang@v2
         with:
@@ -385,20 +401,21 @@ jobs:
 
   # No. OS      ARCH    COMPILER   UT  TT  BLD DOC COV
   # 21. macOS   x86_64  dmd        o   o   x   x   o
-  test-macos13-x86_64-dmd-latest:
-    name: test-macos13-x86_64-dmd-latest
-    needs: [pretest-macos13-x86_64-icu_build]
-    runs-on: macos-13
+  test-macos-x86_64-dmd-latest:
+    name: test-macos-x86_64-dmd-latest
+    needs: [pretest-macos-x86_64-icu_build]
+    runs-on: macos-latest
     env:
       DYLD_LIBRARY_PATH: /usr/local/lib
+      DFLAGS: -L-ld_classic
     steps:
       - uses: actions/checkout@v4
       - name: Download Prebuild binaries
         uses: actions/download-artifact@v4
         with:
-          name: icu-macos13-x86_64
+          name: icu-macos-x86_64
       - name: Expand tarball
-        run: sudo tar xvzf icu-macos13-x86_64.tar.gz -C /usr/local
+        run: sudo tar xvzf icu-macos-x86_64.tar.gz -C /usr/local
       - name: Install D compiler
         uses: dlang-community/setup-dlang@v2
         with:
@@ -410,17 +427,17 @@ jobs:
       - name: Upload coverage result
         uses: actions/upload-artifact@v4
         with:
-          name: coverage-macos13
+          name: coverage-macos
           path: .cov
           include-hidden-files: true
 
 
   # No. OS      ARCH    COMPILER   UT  TT  BLD DOC COV
   # 22. macOS   x86_64  ldc        o   x   o   o   x
-  test-macos13-x86_64-ldc-latest:
-    name: test-macos13-x86_64-ldc-latest
-    needs: [pretest-macos13-x86_64-icu_build]
-    runs-on: macos-13
+  test-macos-x86_64-ldc-latest:
+    name: test-macos-x86_64-ldc-latest
+    needs: [pretest-macos-x86_64-icu_build]
+    runs-on: macos-latest
     env:
       DYLD_LIBRARY_PATH: /usr/local/lib
     steps:
@@ -428,9 +445,9 @@ jobs:
       - name: Download Prebuild binaries
         uses: actions/download-artifact@v4
         with:
-          name: icu-macos13-x86_64
+          name: icu-macos-x86_64
       - name: Expand tarball
-        run: sudo tar xvzf icu-macos13-x86_64.tar.gz -C /usr/local
+        run: sudo tar xvzf icu-macos-x86_64.tar.gz -C /usr/local
       - name: Install D compiler
         uses: dlang-community/setup-dlang@v2
         with:
@@ -460,12 +477,12 @@ jobs:
       - test-windows-x86_64-ldc-latest
       - test-windows-x86_64-ldc-master
       - test-linux-x86-ldc-latest
-      - test-ubuntu20-x86_64-dmd-latest
+      - test-ubuntu24-x86_64-dmd-latest
       - test-linux-x86_64-dmd-latest
       - test-linux-x86_64-ldc-latest
       - test-linux-x86_64-dmd-master
-      - test-macos13-x86_64-dmd-latest
-      - test-macos13-x86_64-ldc-latest
+      - test-macos-x86_64-dmd-latest
+      - test-macos-x86_64-ldc-latest
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -486,7 +503,7 @@ jobs:
       - name: Download coverage result
         uses: actions/download-artifact@v4
         with:
-          name: coverage-macos13
-          path: coverage-macos13
+          name: coverage-macos
+          path: coverage-macos
       - name: Upload coverage to Codecov
         run: bash <(curl -s https://codecov.io/bash) -t ${{ secrets.CODECOV_TOKEN }} -s coverage-osx

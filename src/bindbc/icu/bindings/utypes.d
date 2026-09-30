@@ -165,6 +165,21 @@ enum UErrorCode
 	U_FORMAT_INEXACT_ERROR,           /**< Cannot format a number exactly and rounding mode is ROUND_UNNECESSARY @stable ICU 4.8 */
 	U_NUMBER_ARG_OUTOFBOUNDS_ERROR,   /**< The argument to a NumberFormatter helper method was out of bounds; the bounds are usually 0 to 999. @stable ICU 61 */
 	U_NUMBER_SKELETON_SYNTAX_ERROR,   /**< The number skeleton passed to C++ NumberFormatter or C UNumberFormatter was invalid or contained a syntax error. @stable ICU 62 */
+
+	/* MessageFormat 2.0 errors */
+	U_MF_UNRESOLVED_VARIABLE_ERROR,    /**< A variable is referred to but not bound by any definition @internal ICU 75 technology preview @deprecated This API is for technology preview only. */
+	U_MF_SYNTAX_ERROR,                 /**< Includes all syntax errors @internal ICU 75 technology preview @deprecated This API is for technology preview only. */
+	U_MF_UNKNOWN_FUNCTION_ERROR,       /**< An annotation refers to a function not defined by the standard or custom function registry @internal ICU 75 technology preview @deprecated This API is for technology preview only. */
+	U_MF_VARIANT_KEY_MISMATCH_ERROR,   /**< In a match-construct, one or more variants had a different number of keys from the number of selectors @internal ICU 75 technology preview @deprecated This API is for technology preview only. */
+	U_MF_FORMATTING_ERROR,             /**< Covers all runtime errors: for example, an internally inconsistent set of options. @internal ICU 75 technology preview @deprecated This API is for technology preview only. */
+	U_MF_NONEXHAUSTIVE_PATTERN_ERROR,  /**< In a match-construct, the variants do not cover all possible values @internal ICU 75 technology preview @deprecated This API is for technology preview only. */
+	U_MF_DUPLICATE_OPTION_NAME_ERROR,  /**< In an annotation, the same option name appears more than once @internal ICU 75 technology preview @deprecated This API is for technology preview only. */
+	U_MF_SELECTOR_ERROR,               /**< A selector function is applied to an operand of the wrong type @internal ICU 75 technology preview @deprecated This API is for technology preview only. */
+	U_MF_MISSING_SELECTOR_ANNOTATION_ERROR,  /**< A selector expression evaluates to an unannotated operand. @internal ICU 75 technology preview @deprecated This API is for technology preview only. */
+	U_MF_DUPLICATE_DECLARATION_ERROR, /**< The same variable is declared in more than one .local or .input declaration. @internal ICU 75 technology preview @deprecated This API is for technology preview only. */
+	U_MF_OPERAND_MISMATCH_ERROR,     /**< An operand provided to a function does not have the required form for that function @internal ICU 75 technology preview @deprecated This API is for technology preview only. */
+	U_MF_DUPLICATE_VARIANT_ERROR, /**< A message includes a variant with the same key list as another variant. @internal ICU 76 technology preview @deprecated This API is for technology preview only. */
+	U_MF_BAD_OPTION,             /**< An option value provided to a function does not have the required form for that option. @internal ICU 77 technology preview @deprecated This API is for technology preview only. */
 	/*
 	 * Error codes in the range 0x10200 0x102ff are reserved for BreakIterator.
 	 */
@@ -242,4 +257,4 @@ pragma(inline) extern (D) UBool U_SUCCESS()(UErrorCode code) { return code <= UE
 pragma(inline) extern (D) UBool U_FAILURE()(UErrorCode code) { return code > UErrorCode.U_ZERO_ERROR; }
 
 ///
-const(char)* u_errorName_74(UErrorCode code);
+const(char)* u_errorName_78(UErrorCode code);
